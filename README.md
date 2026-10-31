@@ -1,26 +1,25 @@
 # FedPASA 服务器备份
 
-目标仓库：A1234-bot/FedPASA。备份日期：2026-10-31（北京时间）。
+备份日期：2026-10-31（北京时间）。
 
-**状态：全量备份上传中，已通过云端 SHA-256 校验 213/241 卷；服务器源文件尚未删除。** 更新时间：2026-10-31T19:07:14+08:00。
+**状态：全量云端备份已校验，服务器源文件仍保留；正在验证公共下载。**
 
-最近的传输是 Release 大文件附件上传，不会产生 Git 提交。附件目前位于 [Release 草稿](https://github.com/A1234-bot/FedPASA/releases/tag/untagged-9e5c54fc2d6752107ca3)，须登录仓库所有者账号查看；全部上传和校验完成后会正式发布。可在 [上传进度记录](backup-audit/upload-progress.json) 查看本次核验的每卷名称、体积和 SHA-256。此记录是上述时间的快照，后台上传继续进行。
+完整备份：[server-backup-20261031 Release](https://github.com/A1234-bot/FedPASA/releases/tag/server-backup-20261031)，共 241 个分卷，压缩体积 258,702,519,849 字节。每个归档文件均核对 SHA-256，每个云端附件均匹配 GitHub 返回的 SHA-256。
 
-- `server/FedPASA/`：服务器的代码、配置、JSON/CSV 结果及日志，保留三个工作区的相对位置。这是便于浏览的文本子集。
-- `latest-local-handoff/handoff.md` 和 `handoff.docx`：本地最新交接文档，包含 2026-10-29 完成的补实验；与服务器历史版本分别保存。
-- `backup-audit/`：文件范围、凭据扫描、完整性核验与迁移记录。
-- 全量原图、缓存、预测和模型文件将作为本仓库 Releases 的分卷附件保存；上传并校验全部附件前不删除服务器源文件。
+- `server/FedPASA/`：可浏览的代码、配置、JSON/CSV 结果及日志文本子集，保留三个工作区的相对位置。
+- `latest-local-handoff/`：包含 2026-10-29 补实验的本地最新交接文档及图片。
+- `backup-audit/`：完整文件清单、读取审计、恢复证据、云端校验、公共下载验证与服务器清理记录。
 
 ## 全量范围
 
-`/root/autodl-tmp/FedPASA` 整个目录，以及同级三个相关归档：`fedpasa_final_20260910.tar.gz`、`fedpasa_resume_20260907.tar.gz`、`icme2027_final_20260913.tar.gz`。
+`/root/autodl-tmp/FedPASA` 整个目录，以及同级 `fedpasa_final_20260910.tar.gz`、`fedpasa_resume_20260907.tar.gz`、`icme2027_final_20260913.tar.gz`。
 
-范围内共 347,718 个普通文件、207 个符号链接，普通文件逻辑体积 285,906,975,894 字节。独立的其他实验目录、共享 Conda 环境和服务器系统文件不属于清理范围。
+范围内共 347,718 个普通文件、207 个符号链接，普通文件逻辑体积 285,906,975,894 字节。独立实验目录、共享 Conda 环境及系统文件保留。
 
-## 当前读取问题
+## 图片恢复记录
 
-全量读取审计发现 3 张 COCO 图片出现服务器磁盘 I/O 错误；其余普通文件均可完整读取。3 张图片的本地健康副本已全部匹配 2026-09-22 迁移台账中的 SHA-256，作为备份内容来源，服务器原路径未覆盖。逐文件读取审计和恢复证据见 `backup-audit/`。没有默默排除无法读取的文件。
+服务器有 3 张 COCO 图片存在磁盘 I/O 错误。备份采用本地健康副本，其 SHA-256 全部匹配 2026-09-22 历史迁移台账；未覆盖原服务器路径。其余文件直接读取自服务器，未重新训练或改写实验结果。证据见 `backup-audit/recovered-files.json`。
 
 ## 恢复
 
-恢复步骤见 [RESTORE.md](RESTORE.md)；[verify_backup.py](verify_backup.py) 可只读校验全部下载分卷和归档文件。工具已测试跨分卷、多个 gzip 成员、普通文件、硬链接和符号链接。最终清单和云端完整性记录须待全部上传完成。当前不应依据此仓库删除服务器文件。
+先下载全部 Release 分卷，再依照 [RESTORE.md](RESTORE.md) 操作。只克隆 Git 仓库不能恢复完整数据。运行 `python verify_backup.py /path/to/downloaded-assets` 可只读核对全部分卷和归档内容。

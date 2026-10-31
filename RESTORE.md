@@ -1,6 +1,6 @@
 # 恢复全量服务器备份
 
-当前上传进行中；须待首页和完整性记录标记全量备份通过后再按此说明恢复。
+全量备份已通过归档逐文件校验和云端附件 SHA-256 校验。下载地址：[https://github.com/A1234-bot/FedPASA/releases/tag/server-backup-20261031](https://github.com/A1234-bot/FedPASA/releases/tag/server-backup-20261031)。
 
 1. 从 `server-backup-20261031` Release 下载所有 `fedpasa-server-20261031.tar.gz.part-*`、`snapshot.json` 和 `files.jsonl.gz`，放在同一目录。Git 克隆仅包含文本子集，不能代替下载分卷。
 2. 使用 Python 3 运行只读校验：`python verify_backup.py /path/to/downloaded-assets`。工具核对每卷 SHA-256、清单 SHA-256、所有普通文件内容以及目录和链接记录。必须得到 `PASS`。
