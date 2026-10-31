@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "components": [
+    {
+      "component": "backbone",
+      "equal_normalized_AST": true,
+      "difference": "builder rename and unused pdb import",
+      "benchmark_sha256": "44095e8a04553f59e5e2d581f9595f15ed58d511c7010900b48dc5d53562d0d4",
+      "author_sha256": "78f35766b4508ef660d16e320d2c5fa3ad0959502453db31b8aec0c03e9739d1"
+    },
+    {
+      "component": "LLA",
+      "equal_normalized_AST": true,
+      "benchmark_sha256": "0c81b9da20f5e8ca4132761edf567396d5248cfd35c0b96f66e9ec178bf9ac6a",
+      "author_sha256": "5e4e14f8cac0d3b7884e43297f187f3656b63cc748e6a97ccdb191005dcee7d9"
+    },
+    {
+      "component": "Sinkhorn",
+      "equal_normalized_AST": true,
+      "difference": "unused default reg; forward passes reg explicitly",
+      "benchmark_sha256": "733a16d47bd761e8370fc738082b1ee84176c99ddbcbcffa3d3b3be85588dae2",
+      "author_sha256": "03d4ce61b46a71a03286737f248a193d2f31bb703d0470595057bc56e0540574"
+    },
+    {
+      "component": "MMC",
+      "equal_normalized_AST": true,
+      "benchmark_sha256": "c7fa4d89e7c9ecdb9a41a4c0d7c14c7736dbf501a6793fccda63c40f7badd1fa",
+      "author_sha256": "5d07d413b9275de623d6b444bbe5b8e78100f145a93d5b6f55ec831c6c0e7b4d"
+    }
+  ],
+  "author_source_url": "https://github.com/EricTan7/RAM",
+  "archive_sha256": "49bee71f0b23fd4819396afb3f925ef104fba5d48effb5c8133e6a9b613cbfd3",
+  "scope": "core source matching; full experimental author-equivalence is not claimed",
+  "adaptations": [
+    "all target classes supervised instead of original seen/unseen split",
+    "sample-weighted FedAvg across 10 clients",
+    "BN floating buffers averaged, integer counters max",
+    "200-round cosine validation-selected duration; no EMA",
+    "common center-crop image protocol"
+  ],
+  "time": "2026-09-19T08:09:42Z"
+}

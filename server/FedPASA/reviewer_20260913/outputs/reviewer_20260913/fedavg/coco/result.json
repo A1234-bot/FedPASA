@@ -1,0 +1,43 @@
+{
+  "status": "COMPLETE",
+  "rows": [
+    {
+      "dataset": "coco",
+      "method": "FedAvg Linear Head",
+      "mAP": 43.23834492147835,
+      "features": "cls+patch_mean+patch_max_text",
+      "rounds": 50,
+      "uploads_per_client": 50,
+      "local_epochs": 1,
+      "batch_size": 256,
+      "loss": "BCEWithLogits",
+      "optimizer": "SGD momentum 0.9; reset each local round",
+      "selected_lr": 1.0,
+      "clients": 10,
+      "partition_seed": 7,
+      "split_seed": 17,
+      "client_fitting_seconds": 3.0713768522255123,
+      "server_solve_seconds": 0.013621865538880229,
+      "fit_wall_seconds": 3.0849987177643925,
+      "selection_seconds": 7.893258666852489,
+      "uplink_FP32_bytes": 176800000
+    }
+  ],
+  "tuning": [
+    {
+      "lr": 0.01,
+      "validation_mAP": 5.458578941117692,
+      "seconds": 2.972210123669356
+    },
+    {
+      "lr": 0.1,
+      "validation_mAP": 8.494108386465594,
+      "seconds": 2.437747248681262
+    },
+    {
+      "lr": 1.0,
+      "validation_mAP": 39.4858476218241,
+      "seconds": 2.483301294501871
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "dataset": "nus",
+  "training_seed": 7,
+  "partition_seed": 7,
+  "partition_sha256": "8c6c53f5efd922a2a4480f5702d005d3aa254603ae6aa32ac08d8e9265c70f1a",
+  "target_rounds": 200,
+  "batch_size": 32,
+  "local_epochs": 1,
+  "clients": 10,
+  "participation": 1.0,
+  "lr": 0.001,
+  "momentum": 0.9,
+  "weight_decay": 1e-05,
+  "schedule": "round cosine, initial lr 0.001; fixed last checkpoint",
+  "loss": "0.02 * (AsymmetricLoss_Pos(gamma_neg=2,gamma_pos=1) + KG cosine consistency)",
+  "source_commit": "9bb5d9f688ff37b030c76b4f5c3b168fbc08999f",
+  "method": "FedMVP, FedMPT-release multilabel adaptation",
+  "official_original_reproduction": false,
+  "test_labels_used_for_selection": false,
+  "precision": "BF16 autocast / FP32 parameters / FP64 FedAvg sum",
+  "data_transform": "CLIP resize+center crop, 224",
+  "communication": "all prompt learner state tensors, including PromptFormer; image-weighted FedAvg",
+  "differences": [
+    "Multilabel patch pooling and ASL from FedMPT benchmark release; original FedMVP is single-label and uses LLM attribute features",
+    "Same predeclared FedPASA image IDs, labels, checkpoint, 224 center crop and 10-client seed7 partition",
+    "BF16 autocast, FP32 trainable parameters; 200 fixed rounds; no selection by test metrics"
+  ],
+  "created": "2026-09-10T01:56:44.752813+00:00"
+}

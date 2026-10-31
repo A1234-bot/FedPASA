@@ -1,0 +1,35 @@
+{
+  "status": "COMPLETE",
+  "mode": "central",
+  "config": {
+    "optimizer": "sgd",
+    "lr": 1000.0,
+    "weight_decay": 0.0
+  },
+  "seed": 27,
+  "rounds": 60,
+  "best_round": null,
+  "best_validation_mAP": null,
+  "train_seconds": 3.4847274019848555,
+  "validation_seconds": 0.0020165559835731983,
+  "peak_cuda_MiB": 469.85595703125,
+  "uplink_bytes": 0,
+  "downlink_bytes": 0,
+  "curve": [
+    {
+      "round": 20,
+      "train_BCE": 0.04042992368340492,
+      "train_seconds": 1.1704387920326553
+    },
+    {
+      "round": 40,
+      "train_BCE": 0.03998979553580284,
+      "train_seconds": 2.3343976250034757
+    },
+    {
+      "round": 60,
+      "train_BCE": 0.03775230050086975,
+      "train_seconds": 3.4847274019848555
+    }
+  ]
+}

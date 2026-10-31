@@ -1,0 +1,178 @@
+{
+  "dataset": "voc07",
+  "protocol": {
+    "selection_data": "training-side held-out 20% split inherited from label_ridge",
+    "test_labels_used_for_selection": false,
+    "validation_predictions": "both ridge and PIAA fit on the disjoint 80% fit split",
+    "calibration": "per-class z-score using training-side validation predictions",
+    "ridge_weight_definition": "1.0 is label-aware ridge; 0.0 is QAFedPASA/PIAA"
+  },
+  "tuning": [
+    {
+      "ridge_weight": 0.0,
+      "validation_mAP": 92.53053879801826
+    },
+    {
+      "ridge_weight": 0.05,
+      "validation_mAP": 92.86802966797651
+    },
+    {
+      "ridge_weight": 0.1,
+      "validation_mAP": 93.12949775397121
+    },
+    {
+      "ridge_weight": 0.15000000000000002,
+      "validation_mAP": 93.3967729962306
+    },
+    {
+      "ridge_weight": 0.2,
+      "validation_mAP": 93.58735913683482
+    },
+    {
+      "ridge_weight": 0.25,
+      "validation_mAP": 93.75385816786535
+    },
+    {
+      "ridge_weight": 0.30000000000000004,
+      "validation_mAP": 93.93246116356597
+    },
+    {
+      "ridge_weight": 0.35000000000000003,
+      "validation_mAP": 94.03280225640079
+    },
+    {
+      "ridge_weight": 0.4,
+      "validation_mAP": 94.11753046203988
+    },
+    {
+      "ridge_weight": 0.45,
+      "validation_mAP": 94.1501469412717
+    },
+    {
+      "ridge_weight": 0.5,
+      "validation_mAP": 94.20920682581988
+    },
+    {
+      "ridge_weight": 0.55,
+      "validation_mAP": 94.27948917007146
+    },
+    {
+      "ridge_weight": 0.6000000000000001,
+      "validation_mAP": 94.29154596457667
+    },
+    {
+      "ridge_weight": 0.65,
+      "validation_mAP": 94.30623298907899
+    },
+    {
+      "ridge_weight": 0.7000000000000001,
+      "validation_mAP": 94.2754613000348
+    },
+    {
+      "ridge_weight": 0.75,
+      "validation_mAP": 94.2235940478446
+    },
+    {
+      "ridge_weight": 0.8,
+      "validation_mAP": 94.16105139801287
+    },
+    {
+      "ridge_weight": 0.8500000000000001,
+      "validation_mAP": 94.12272686811903
+    },
+    {
+      "ridge_weight": 0.9,
+      "validation_mAP": 94.02873028202434
+    },
+    {
+      "ridge_weight": 0.9500000000000001,
+      "validation_mAP": 93.92930864013428
+    },
+    {
+      "ridge_weight": 1.0,
+      "validation_mAP": 93.85133610980367
+    }
+  ],
+  "global_weight": {
+    "selection": {
+      "ridge_weight": 0.65,
+      "validation_mAP": 94.30623298907899
+    },
+    "test_mAP": 94.30561161949083,
+    "per_class_AP": [
+      99.90031331099154,
+      97.898075693461,
+      98.7555055366448,
+      97.79677145103005,
+      78.37927421762994,
+      96.43624706652393,
+      96.40396000849628,
+      98.57794942398574,
+      80.73937699444978,
+      98.40832556599996,
+      89.12764126899101,
+      98.82233284350617,
+      99.2267930675921,
+      97.59635192266762,
+      98.32736290548026,
+      83.89066278069632,
+      99.4765700971794,
+      86.12513455366766,
+      99.77735473557911,
+      90.44622894524377
+    ],
+    "margin_over_strongest_fedmpt_points": 4.175611619490837,
+    "passes_plus_2": true
+  },
+  "classwise_weight": {
+    "weights": [
+      0.0,
+      0.75,
+      0.6499999761581421,
+      1.0,
+      0.3499999940395355,
+      0.8999999761581421,
+      0.699999988079071,
+      0.05000000074505806,
+      0.75,
+      0.699999988079071,
+      0.550000011920929,
+      1.0,
+      0.0,
+      1.0,
+      0.75,
+      0.6000000238418579,
+      0.30000001192092896,
+      0.8999999761581421,
+      0.0,
+      0.4000000059604645
+    ],
+    "test_mAP": 94.12276444818112,
+    "per_class_AP": [
+      99.91332569337283,
+      97.8971713106905,
+      98.75550553664479,
+      97.85844406500527,
+      77.81348512751151,
+      96.35269664764424,
+      96.39412523234132,
+      98.69627731670715,
+      80.42080785822276,
+      98.45047713696154,
+      88.61842213723843,
+      98.88571244875136,
+      99.38250864598966,
+      97.27138938551543,
+      98.32949511845912,
+      83.6893672111757,
+      99.49797562484555,
+      84.9070489894435,
+      99.72541801160159,
+      89.59563546550035
+    ],
+    "margin_over_strongest_fedmpt_points": 3.99276444818112,
+    "passes_plus_2": true
+  },
+  "strongest_fedmpt_mAP": 90.13,
+  "runtime_seconds": 0.4198554999893531
+}

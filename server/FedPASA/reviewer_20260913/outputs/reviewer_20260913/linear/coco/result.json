@@ -1,0 +1,157 @@
+{
+  "status": "COMPLETE",
+  "rows": [
+    {
+      "dataset": "coco",
+      "method": "Centralized Ridge",
+      "mAP": 79.82984112839291,
+      "features": "cls+patch_mean+patch_max_text",
+      "alpha": 0.0001,
+      "split_seed": 17,
+      "partition_seed": 7,
+      "clients": 10,
+      "client_fitting_seconds": 0.7187218931503594,
+      "server_solve_seconds": 0,
+      "fit_wall_seconds": 0.7187218931503594,
+      "uploads_per_client": 0,
+      "uplink_FP64_bytes": 0
+    },
+    {
+      "dataset": "coco",
+      "method": "Three-view pooled Ridge",
+      "mAP": 79.82984111760146,
+      "features": "cls+patch_mean+patch_max_text",
+      "alpha": 0.0001,
+      "split_seed": 17,
+      "partition_seed": 7,
+      "clients": 10,
+      "client_fitting_seconds": 0.8015259949024767,
+      "server_solve_seconds": 0.017739268951117992,
+      "fit_wall_seconds": 0.8192652638535947,
+      "uploads_per_client": 1,
+      "uplink_FP64_bytes": 104665680
+    },
+    {
+      "dataset": "coco",
+      "method": "Local Ridge + Avg (matched penalty)",
+      "mAP": 79.06865346570629,
+      "features": "cls+patch_mean+patch_max_text",
+      "alpha": 0.0001,
+      "split_seed": 17,
+      "partition_seed": 7,
+      "clients": 10,
+      "client_fitting_seconds": 0.8843561098910868,
+      "server_solve_seconds": 0,
+      "fit_wall_seconds": 0.8843561098910868,
+      "uploads_per_client": 1,
+      "uplink_FP64_bytes": 3536000
+    },
+    {
+      "dataset": "coco",
+      "method": "Local Ridge + Avg",
+      "mAP": 79.07759695961873,
+      "features": "cls+patch_mean+patch_max_text",
+      "alpha": 0.03,
+      "validation_tuning": [
+        [
+          78.77978322106779,
+          0.0001
+        ],
+        [
+          78.79436098708543,
+          0.0003
+        ],
+        [
+          78.83400495346484,
+          0.001
+        ],
+        [
+          78.8909840378331,
+          0.003
+        ],
+        [
+          78.98564095123993,
+          0.01
+        ],
+        [
+          78.98748183486342,
+          0.03
+        ],
+        [
+          78.80029163085348,
+          0.1
+        ]
+      ],
+      "split_seed": 17,
+      "clients": 10
+    },
+    {
+      "dataset": "coco",
+      "method": "Fed3R-style pooled ridge",
+      "mAP": 76.12784056051997,
+      "features": "normalized CLS; no bias or centering; multilabel adaptation",
+      "lambda_value": 0.001,
+      "split_seed": 17,
+      "clients": 10,
+      "validation_tuning": [
+        [
+          76.33134129314541,
+          1e-06
+        ],
+        [
+          76.33133516720241,
+          1e-05
+        ],
+        [
+          76.33129824685014,
+          0.0001
+        ],
+        [
+          76.33148099423217,
+          0.001
+        ],
+        [
+          76.32684469858249,
+          0.01
+        ],
+        [
+          76.30755808482989,
+          0.1
+        ],
+        [
+          76.23057049695942,
+          1
+        ],
+        [
+          75.76516150366075,
+          10
+        ],
+        [
+          73.16687434931353,
+          100
+        ]
+      ],
+      "client_fitting_seconds": 0.19171620882116258,
+      "server_solve_seconds": 0.0020493229385465384,
+      "fit_wall_seconds": 0.19376553175970912,
+      "uploads_per_client": 1,
+      "uplink_FP64_bytes": 24248320
+    }
+  ],
+  "packing": [
+    {
+      "dtype": "float64",
+      "dense_bytes": 104665680,
+      "packed_bytes": 55957200,
+      "mAP": 79.82984111760146,
+      "max_abs_score_error": 0.0
+    },
+    {
+      "dtype": "float32",
+      "dense_bytes": 52332880,
+      "packed_bytes": 27978640,
+      "mAP": 79.82987520438941,
+      "max_abs_score_error": 7.88271427154541e-05
+    }
+  ]
+}

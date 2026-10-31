@@ -1,0 +1,30 @@
+
+QUEUE_START 2026-09-11T08:20:01.871613+00:00
+Traceback (most recent call last):
+  File "/root/autodl-tmp/FedPASA/icme2027_workspace/scripts/build_icme2027_server_report.py", line 47, in <module>
+    if __name__=='__main__':main()
+  File "/root/autodl-tmp/FedPASA/icme2027_workspace/scripts/build_icme2027_server_report.py", line 33, in main
+    'hardware':{'gpu':torch.cuda.get_device_name(),'torch':torch.__version__,'python':sys.version,'platform':platform.platform()},
+  File "/root/autodl-tmp/miniconda3/envs/fbu/lib/python3.10/site-packages/torch/cuda/__init__.py", line 653, in get_device_name
+    return get_device_properties(device).name
+  File "/root/autodl-tmp/miniconda3/envs/fbu/lib/python3.10/site-packages/torch/cuda/__init__.py", line 686, in get_device_properties
+    _lazy_init()  # will define _get_device_properties
+  File "/root/autodl-tmp/miniconda3/envs/fbu/lib/python3.10/site-packages/torch/cuda/__init__.py", line 478, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: No CUDA GPUs are available
+
+QUEUE_START 2026-09-12T18:31:34.462669+00:00
+Traceback (most recent call last):
+  File "/root/autodl-tmp/FedPASA/icme2027_workspace/scripts/build_icme2027_server_report.py", line 47, in <module>
+    if __name__=='__main__':main()
+  File "/root/autodl-tmp/FedPASA/icme2027_workspace/scripts/build_icme2027_server_report.py", line 33, in main
+    'hardware':{'gpu':torch.cuda.get_device_name(),'torch':torch.__version__,'python':sys.version,'platform':platform.platform()},
+  File "/root/autodl-tmp/miniconda3/envs/fbu/lib/python3.10/site-packages/torch/cuda/__init__.py", line 653, in get_device_name
+    return get_device_properties(device).name
+  File "/root/autodl-tmp/miniconda3/envs/fbu/lib/python3.10/site-packages/torch/cuda/__init__.py", line 686, in get_device_properties
+    _lazy_init()  # will define _get_device_properties
+  File "/root/autodl-tmp/miniconda3/envs/fbu/lib/python3.10/site-packages/torch/cuda/__init__.py", line 478, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: No CUDA GPUs are available
+
+QUEUE_START 2026-09-13T00:56:04.160073+00:00

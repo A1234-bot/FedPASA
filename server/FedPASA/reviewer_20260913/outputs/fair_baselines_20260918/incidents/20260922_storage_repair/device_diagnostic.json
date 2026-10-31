@@ -1,0 +1,44 @@
+{
+  "time": "2026-09-22T00:19:41.370531+00:00",
+  "note": "Container root cannot open NVIDIA devices despite mode 0666; existing CUDA context still progressing. Host container-device authorization suspected, exact host trigger unconfirmed.",
+  "/dev/nvidia0": {
+    "errno": 1,
+    "message": "[Errno 1] Operation not permitted: '/dev/nvidia0'"
+  },
+  "/dev/nvidiactl": {
+    "errno": 1,
+    "message": "[Errno 1] Operation not permitted: '/dev/nvidiactl'"
+  },
+  "/dev/nvidia-uvm": {
+    "errno": 1,
+    "message": "[Errno 1] Operation not permitted: '/dev/nvidia-uvm'"
+  },
+  "nvidia-smi": {
+    "code": 255,
+    "stdout": "Failed to initialize NVML: Unknown Error\n",
+    "stderr": ""
+  },
+  "findmnt -T /root/BCP/data/raw/coco2017/train2017/000000378929.jpg": {
+    "code": 0,
+    "stdout": "TARGET SOURCE  FSTYPE  OPTIONS\n/      overlay overlay rw,relatime,lowerdir=/var/lib/docker/overlay2/l/WSXYHXUX6NI2Y5P3R3JHCOAA3S:/var/lib/docker/overlay2/l/LXSRUAEKU6URMNGXMZD5V5P2HT:/var/lib/docker/overlay2/l/IXAAL7CRP226TKFNZEDWTNJFG7:/var/lib/docker/overlay2/l/IYW73B4JGCLFANKR532KUZI5P5:/var/lib/docker/overlay2/l/F23FVBNVF4E2OEF5UYL4QEHJDQ:/var/lib/docker/overlay2/l/5ZQYEUZ63LF37HPZUYZQXPYT5K:/var/lib/docker/overlay2/l/5WKKXIEQTALW75JBGA5QQPS2EX:/var/lib/docker/overlay2/l/ZDRKTMGDXXZIRNFTNKNZX23GZR:/var/lib/docker/overlay2/l/PU2NEOUMAPOQ6NYA3R7DYLJ3JQ:/var/lib/docker/overlay2/l/KXHXGZLNROWL7IHNDF2UQ2MMPK:/var/lib/docker/overlay2/l/4NVT24D4TXU3ZVYTB2VHM435A2:/var/lib/docker/overlay2/l/7CBG6ZIHTDFBNGKXG6OLM3LSNT:/var/lib/docker/overlay2/l/XHOIJOLRJUK4FDET33AOZGCDTH:/var/lib/docker/overlay2/l/7B32CCQKWQA3HQPTIEPGYHANTG:/var/lib/docker/overlay2/l/FQJFOP4I7262HR5FQWYEMRFQQZ:/var/lib/docker/overlay2/l/SXKRALDLA7FUDZNBNWQ3HFDF3J:/var/lib/docker/overlay2/l/ZFXMZB2AGVXR4W6KSEXJX5GOOU:/var/lib/docker/overlay2/l/X2OD7EXKZDVAYE6HNMHSTX4HUA:/var/lib/docker/overlay2/l/HYX2LEQOZW3XPNMKDKU5LJMG6W:/var/lib/docker/overlay2/l/CHJ64LGGSEN7NWAR4T46AR62JD:/var/lib/docker/overlay2/l/ZKXUFIMNT4LDJG3R5MEWO6YGYE,upperdir=/var/lib/docker/overlay2/5f43710dc5d67fd476b5e44ccce24cc38dc34594394b3acb1e16871453b9e2d4/diff,workdir=/var/lib/docker/overlay2/5f43710dc5d67fd476b5e44ccce24cc38dc34594394b3acb1e16871453b9e2d4/work,nouserxattr\n",
+    "stderr": ""
+  },
+  "findmnt -T /root/autodl-tmp/FedPASA/data/coco2014/train2014": {
+    "code": 0,
+    "stdout": "TARGET           SOURCE                                                                          FSTYPE OPTIONS\n/root/autodl-tmp /dev/nvme0n1p1[/privatecloud/data/autodl-container-481b48ba00-62c757f1-storage] ext4   rw,relatime,stripe=64\n",
+    "stderr": ""
+  },
+  "io.stat": "259:0 rbytes=1322876928 wbytes=3730485248 rios=33216 wios=38287 dbytes=0 dios=0\n8:0 rbytes=104864792576 wbytes=20480 rios=1855967 wios=5 dbytes=0 dios=0\n",
+  "io.pressure": "some avg10=70.95 avg60=72.26 avg300=71.64 total=6496881908\nfull avg10=70.66 avg60=71.87 avg300=71.05 total=6401515050\n",
+  "memory.events": "low 0\nhigh 0\nmax 21907\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+  "cpu.max": "1000000 100000\n",
+  "memory.max": "17179869184\n",
+  "driver": "NVRM version: NVIDIA UNIX Open Kernel Module for x86_64  580.173.02  Release Build  (dvs-builder@U22-I3-AK02-24-4)  Tue Jun 23 08:17:01 UTC 2026\nGCC version:  gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04.1) \n",
+  "proc_status_caps": [
+    "CapInh:\t0000000000000000",
+    "CapPrm:\t00000000a80425fb",
+    "CapEff:\t00000000a80425fb",
+    "CapBnd:\t00000000a80425fb",
+    "CapAmb:\t0000000000000000"
+  ]
+}

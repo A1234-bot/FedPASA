@@ -1,0 +1,111 @@
+{
+  "status": "REPAIRED_DIAGNOSTIC_ONLY_NOT_AN_OFFICIAL_NUMERICAL_REPRODUCTION",
+  "comparison_policy": {
+    "main_table": "use the published FedMPT Table 1 values as external results",
+    "local_diagnostic": "use only for source runnability, memory, runtime, and communication auditing",
+    "reason": "execution required semantic model repairs whose equivalence to the authors' unpublished working setup cannot be established"
+  },
+  "upstream_blockers": [
+    {
+      "stage": "checkpoint",
+      "observed": "official loader only searched the user cache or network",
+      "repair": "FEDMPT_CLIP_CHECKPOINT hook with official SHA256 verification",
+      "changes_predictions": false
+    },
+    {
+      "stage": "cluster cache",
+      "observed": "feature directory was not created and first-write pickle.dump return value replaced the in-memory assignments with None",
+      "repair": "create output-scoped cache directory and preserve assignments after pickle.dump",
+      "changes_predictions": false
+    },
+    {
+      "stage": "Windows DataLoader",
+      "observed": "Can't pickle local object '_transform.<locals>.<lambda>'",
+      "repair": "use zero DataLoader workers on Windows",
+      "changes_predictions": false
+    },
+    {
+      "stage": "condition prompt",
+      "observed": "73-token prompt was added to CLIP's 77-token positional embedding at --cond 5",
+      "repair": "one condition placeholder for the one inserted attr_ctx vector",
+      "changes_predictions": true
+    },
+    {
+      "stage": "vanilla patch aggregation",
+      "observed": "conv1d received a four-dimensional weight and the patch-count logit multiplier saturated sigmoid outputs with zero prompt gradients",
+      "repair": "use [C,D,1] conv1d weights and the fixed 5x factor used by sibling multi-label models",
+      "changes_predictions": true
+    },
+    {
+      "stage": "mixed precision",
+      "observed": "Float condition tokens entered a Half CLIP transformer",
+      "repair": "cast attr_ctx rows to the CLIP dtype",
+      "changes_predictions": false
+    },
+    {
+      "stage": "VOC split",
+      "observed": "trainval.txt was paired with *_train.txt labels, retaining 2,501 of 5,011 training images",
+      "repair": "pair trainval.txt with *_trainval.txt annotations",
+      "changes_predictions": true
+    },
+    {
+      "stage": "test protocol",
+      "observed": "train and test shared one 2,501-entry cluster cache, truncating test iteration to 2,501 of 4,952 images",
+      "repair": "use split-specific clustering caches",
+      "changes_predictions": true
+    },
+    {
+      "stage": "CLIP clustering",
+      "observed": "CPU image features were multiplied by CUDA text features",
+      "repair": "move text features to CPU for cached zero-shot probability construction",
+      "changes_predictions": false
+    },
+    {
+      "stage": "CLIP clustering tensor shape",
+      "observed": "the modified CLIP encoder returned [B,D,L] patch tensors where the clustering code assumed [B,D] global embeddings",
+      "repair": "select the CLS token at index 0 for the intended global-image clustering feature",
+      "changes_predictions": true
+    }
+  ],
+  "dataset_cardinality_audit": {
+    "expected_train": 5011,
+    "expected_test": 4952,
+    "original_shared_cache_entries": 2501,
+    "repaired_train_cache_entries": 5011,
+    "repaired_test_cache_entries": 4952
+  },
+  "repaired_one_round_diagnostic": {
+    "dataset": "voc",
+    "method": "fedmpt",
+    "rounds": 1,
+    "clients": 2,
+    "selected_clients_per_round": 2,
+    "trainable_parameters": 1171141,
+    "prompt_state_scalars": 1171141,
+    "estimated_bidirectional_prompt_communication_MiB": 17.870193481445312,
+    "training_seconds": 82.35489535331726,
+    "final_evaluation_seconds": 108.1438901424408,
+    "training_plus_final_evaluation_seconds": 190.49878549575806,
+    "peak_cuda_memory_MiB": 3810.23095703125,
+    "global_metrics": {
+      "P_C": 59.36614455655217,
+      "R_C": 91.0999670624733,
+      "F_C": 42.469971307530194,
+      "P_O": 68.17204284667969,
+      "R_O": 92.6707534790039,
+      "F_O": 44.1266730668135,
+      "mAP": 47.423162666689294
+    },
+    "instrumentation_changes_training_or_predictions": false
+  },
+  "systems_comparison_at_voc07_t10": {
+    "fedpasa_full_fp64_one_shot_MiB": 21.357650756835938,
+    "fedpasa_full_fp32_ridge_one_shot_MiB": 12.874671936035156,
+    "fedpasa_qafed_adapter_fit_seconds": 0.338178500009235,
+    "fedpasa_kmeans_seconds": 4.504773299966473,
+    "fedmpt_prompt_MiB_per_round": 17.870193481445312,
+    "fedmpt_prompt_MiB_for_50_rounds": 893.5096740722656
+  },
+  "source_edits_are_disclosed": true,
+  "published_external_mAP_is_not_replaced_by_diagnostic_mAP": true
+}

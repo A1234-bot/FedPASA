@@ -1,0 +1,114 @@
+[
+  {
+    "dataset": "coco",
+    "method": "QAFedPASA",
+    "mAP": 73.19298745954835,
+    "uplink_MiB": 53.80619812011719,
+    "stages": 4,
+    "scope": "full label-free QA"
+  },
+  {
+    "dataset": "coco",
+    "method": "Ridge locked penalty",
+    "mAP": 79.82984111760146,
+    "uplink_MiB": 99.81697082519531,
+    "stages": 1,
+    "scope": "final fit only; penalty already fixed; selection excluded"
+  },
+  {
+    "dataset": "coco",
+    "method": "Ridge training-selected",
+    "mAP": 79.82984111760146,
+    "uplink_MiB": 235.95474243164062,
+    "stages": 3,
+    "scope": "full and fit moments plus pooled 7-candidate validation scores and labels"
+  },
+  {
+    "dataset": "coco",
+    "method": "Full-1split",
+    "mAP": 80.57554478148084,
+    "uplink_MiB": 348.5302047729492,
+    "stages": 11,
+    "scope": "complete exact selection; full QA and ridge statistics shared"
+  },
+  {
+    "dataset": "coco",
+    "method": "Full-2split",
+    "mAP": 80.58527281023309,
+    "uplink_MiB": 543.4371948242188,
+    "stages": 17,
+    "scope": "complete exact selection; full QA and ridge statistics shared"
+  },
+  {
+    "dataset": "coco",
+    "method": "Full-3split",
+    "mAP": 80.57877978028806,
+    "uplink_MiB": 738.3473587036133,
+    "stages": 23,
+    "scope": "complete exact selection; full QA and ridge statistics shared"
+  },
+  {
+    "dataset": "coco",
+    "method": "Full-3split packed",
+    "mAP": 80.57877978028806,
+    "uplink_MiB": 472.6955032348633,
+    "stages": 23,
+    "scope": "Single-server Full replay, actual FP64 moment serialize/decode before every solve; reuses identical local banks, refits and reselects; entropy and validation scores uncompressed; no physical network"
+  },
+  {
+    "dataset": "nus",
+    "method": "QAFedPASA",
+    "mAP": 50.64116465662438,
+    "uplink_MiB": 54.12088394165039,
+    "stages": 4,
+    "scope": "full label-free QA"
+  },
+  {
+    "dataset": "nus",
+    "method": "Ridge locked penalty",
+    "mAP": 60.19300692686526,
+    "uplink_MiB": 100.07606506347656,
+    "stages": 1,
+    "scope": "final fit only; penalty already fixed; selection excluded"
+  },
+  {
+    "dataset": "nus",
+    "method": "Ridge training-selected",
+    "mAP": 60.19300692686526,
+    "uplink_MiB": 267.35755920410156,
+    "stages": 3,
+    "scope": "full and fit moments plus pooled 7-candidate validation scores and labels"
+  },
+  {
+    "dataset": "nus",
+    "method": "Full-1split",
+    "mAP": 60.50830084841811,
+    "uplink_MiB": 384.85256576538086,
+    "stages": 11,
+    "scope": "complete exact selection; full QA and ridge statistics shared"
+  },
+  {
+    "dataset": "nus",
+    "method": "Full-2split",
+    "mAP": 60.73048953444309,
+    "uplink_MiB": 615.5052032470703,
+    "stages": 17,
+    "scope": "complete exact selection; full QA and ridge statistics shared"
+  },
+  {
+    "dataset": "nus",
+    "method": "Full-3split",
+    "mAP": 60.678535964041146,
+    "uplink_MiB": 846.1581916809082,
+    "stages": 23,
+    "scope": "complete exact selection; full QA and ridge statistics shared"
+  },
+  {
+    "dataset": "nus",
+    "method": "Full-3split packed",
+    "mAP": 60.678535964041146,
+    "uplink_MiB": 580.1694221496582,
+    "stages": 23,
+    "scope": "Single-server Full replay, actual FP64 moment serialize/decode before every solve; reuses identical local banks, refits and reselects; entropy and validation scores uncompressed; no physical network"
+  }
+]

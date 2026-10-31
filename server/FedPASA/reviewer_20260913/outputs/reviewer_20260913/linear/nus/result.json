@@ -1,0 +1,157 @@
+{
+  "status": "COMPLETE",
+  "rows": [
+    {
+      "dataset": "nus",
+      "method": "Centralized Ridge",
+      "mAP": 60.19300692686526,
+      "features": "cls+patch_mean+patch_max_text",
+      "alpha": 0.0001,
+      "split_seed": 17,
+      "partition_seed": 7,
+      "clients": 10,
+      "client_fitting_seconds": 1.3130760409403592,
+      "server_solve_seconds": 0,
+      "fit_wall_seconds": 1.3130760409403592,
+      "uploads_per_client": 0,
+      "uplink_FP64_bytes": 0
+    },
+    {
+      "dataset": "nus",
+      "method": "Three-view pooled Ridge",
+      "mAP": 60.19300692686526,
+      "features": "cls+patch_mean+patch_max_text",
+      "alpha": 0.0001,
+      "split_seed": 17,
+      "partition_seed": 7,
+      "clients": 10,
+      "client_fitting_seconds": 1.5029767130035907,
+      "server_solve_seconds": 0.015557002974674106,
+      "fit_wall_seconds": 1.5185337159782648,
+      "uploads_per_client": 1,
+      "uplink_FP64_bytes": 104937360
+    },
+    {
+      "dataset": "nus",
+      "method": "Local Ridge + Avg (matched penalty)",
+      "mAP": 60.02554842172587,
+      "features": "cls+patch_mean+patch_max_text",
+      "alpha": 0.0001,
+      "split_seed": 17,
+      "partition_seed": 7,
+      "clients": 10,
+      "client_fitting_seconds": 1.5897574808914214,
+      "server_solve_seconds": 0,
+      "fit_wall_seconds": 1.5897574808914214,
+      "uploads_per_client": 1,
+      "uplink_FP64_bytes": 3583440
+    },
+    {
+      "dataset": "nus",
+      "method": "Local Ridge + Avg",
+      "mAP": 60.06562995559891,
+      "features": "cls+patch_mean+patch_max_text",
+      "alpha": 0.01,
+      "validation_tuning": [
+        [
+          60.580717622627176,
+          0.0001
+        ],
+        [
+          60.582066467957716,
+          0.0003
+        ],
+        [
+          60.60746093058368,
+          0.001
+        ],
+        [
+          60.65264998927189,
+          0.003
+        ],
+        [
+          60.695297928180295,
+          0.01
+        ],
+        [
+          60.645897229887716,
+          0.03
+        ],
+        [
+          60.65557175026826,
+          0.1
+        ]
+      ],
+      "split_seed": 17,
+      "clients": 10
+    },
+    {
+      "dataset": "nus",
+      "method": "Fed3R-style pooled ridge",
+      "mAP": 58.40696247221244,
+      "features": "normalized CLS; no bias or centering; multilabel adaptation",
+      "lambda_value": 0.001,
+      "split_seed": 17,
+      "clients": 10,
+      "validation_tuning": [
+        [
+          58.78041359269177,
+          1e-06
+        ],
+        [
+          58.780479056779356,
+          1e-05
+        ],
+        [
+          58.78075485230209,
+          0.0001
+        ],
+        [
+          58.781786523700006,
+          0.001
+        ],
+        [
+          58.77960140059876,
+          0.01
+        ],
+        [
+          58.74787325879246,
+          0.1
+        ],
+        [
+          58.7267968251992,
+          1
+        ],
+        [
+          58.61524389710971,
+          10
+        ],
+        [
+          57.82541522683765,
+          100
+        ]
+      ],
+      "client_fitting_seconds": 0.3912335420027375,
+      "server_solve_seconds": 0.0019773710519075394,
+      "fit_wall_seconds": 0.39321091305464506,
+      "uploads_per_client": 1,
+      "uplink_FP64_bytes": 24289280
+    }
+  ],
+  "packing": [
+    {
+      "dtype": "float64",
+      "dense_bytes": 104937360,
+      "packed_bytes": 56140560,
+      "mAP": 60.19300692686526,
+      "max_abs_score_error": 0.0
+    },
+    {
+      "dtype": "float32",
+      "dense_bytes": 52468720,
+      "packed_bytes": 28070320,
+      "mAP": 60.19311012709717,
+      "max_abs_score_error": 5.996227264404297e-05
+    }
+  ]
+}

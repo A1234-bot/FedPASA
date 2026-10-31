@@ -1,0 +1,154 @@
+{
+  "status": "RUNNING",
+  "jobs": [
+    {
+      "id": "calibration_voc07",
+      "script": "run_full_calibration_protocol.py",
+      "args": [
+        "--dataset",
+        "voc07"
+      ],
+      "status": "COMPLETE",
+      "started": "2026-09-19T02:28:27Z",
+      "script_sha256": "f3150d6a859c4cdc8c47029b72eb0a6c13e70ed245a81cee34f1e881e8f91701",
+      "code": 0,
+      "finished": "2026-09-19T02:28:30Z"
+    },
+    {
+      "id": "calibration_voc12",
+      "script": "run_full_calibration_protocol.py",
+      "args": [
+        "--dataset",
+        "voc12"
+      ],
+      "status": "COMPLETE",
+      "started": "2026-09-19T02:30:22Z",
+      "script_sha256": "6a346630c777e8ebace0f8d4ddd3f291ebe4381e8da947bb5290df729aee54ec",
+      "code": 0,
+      "finished": "2026-09-19T02:30:25Z"
+    },
+    {
+      "id": "calibration_coco",
+      "script": "run_full_calibration_protocol.py",
+      "args": [
+        "--dataset",
+        "coco"
+      ],
+      "status": "COMPLETE",
+      "started": "2026-09-19T02:30:25Z",
+      "script_sha256": "6a346630c777e8ebace0f8d4ddd3f291ebe4381e8da947bb5290df729aee54ec",
+      "code": 0,
+      "finished": "2026-09-19T02:30:43Z"
+    },
+    {
+      "id": "calibration_nus",
+      "script": "run_full_calibration_protocol.py",
+      "args": [
+        "--dataset",
+        "nus"
+      ],
+      "status": "RUNNING",
+      "started": "2026-09-19T02:30:43Z",
+      "script_sha256": "6a346630c777e8ebace0f8d4ddd3f291ebe4381e8da947bb5290df729aee54ec"
+    },
+    {
+      "id": "outer_voc07_1",
+      "script": "run_voc_outer_20260919.py",
+      "args": [
+        "--dataset",
+        "voc07",
+        "--index",
+        "0"
+      ],
+      "status": "PENDING"
+    },
+    {
+      "id": "outer_voc07_2",
+      "script": "run_voc_outer_20260919.py",
+      "args": [
+        "--dataset",
+        "voc07",
+        "--index",
+        "1"
+      ],
+      "status": "PENDING"
+    },
+    {
+      "id": "outer_voc07_3",
+      "script": "run_voc_outer_20260919.py",
+      "args": [
+        "--dataset",
+        "voc07",
+        "--index",
+        "2"
+      ],
+      "status": "PENDING"
+    },
+    {
+      "id": "outer_voc12_1",
+      "script": "run_voc_outer_20260919.py",
+      "args": [
+        "--dataset",
+        "voc12",
+        "--index",
+        "0"
+      ],
+      "status": "PENDING"
+    },
+    {
+      "id": "outer_voc12_2",
+      "script": "run_voc_outer_20260919.py",
+      "args": [
+        "--dataset",
+        "voc12",
+        "--index",
+        "1"
+      ],
+      "status": "PENDING"
+    },
+    {
+      "id": "outer_voc12_3",
+      "script": "run_voc_outer_20260919.py",
+      "args": [
+        "--dataset",
+        "voc12",
+        "--index",
+        "2"
+      ],
+      "status": "PENDING"
+    },
+    {
+      "id": "systems_coco",
+      "script": "run_full_tcp_systems.py",
+      "args": [
+        "--dataset",
+        "coco"
+      ],
+      "status": "PENDING"
+    },
+    {
+      "id": "systems_nus",
+      "script": "run_full_tcp_systems.py",
+      "args": [
+        "--dataset",
+        "nus"
+      ],
+      "status": "PENDING"
+    },
+    {
+      "id": "report",
+      "script": "build_full_protocol_report.py",
+      "args": [],
+      "status": "PENDING"
+    },
+    {
+      "id": "resume_fair_baselines",
+      "script": "fair_baselines_queue.py",
+      "args": [],
+      "status": "PENDING"
+    }
+  ],
+  "created": "2026-09-19T02:22:02Z",
+  "active": "calibration_nus",
+  "updated": "2026-09-19T02:30:43Z"
+}

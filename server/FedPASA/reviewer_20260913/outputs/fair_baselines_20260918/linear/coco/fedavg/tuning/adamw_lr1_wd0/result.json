@@ -1,0 +1,80 @@
+{
+  "status": "COMPLETE",
+  "mode": "fedavg",
+  "config": {
+    "optimizer": "adamw",
+    "lr": 1.0,
+    "weight_decay": 0.0
+  },
+  "seed": 17,
+  "rounds": 200,
+  "best_round": 40,
+  "best_validation_mAP": 77.76468490573508,
+  "train_seconds": 13.12092956219567,
+  "validation_seconds": 1.065249039005721,
+  "peak_cuda_MiB": 446.875,
+  "uplink_bytes": 707200000,
+  "downlink_bytes": 707200000,
+  "curve": [
+    {
+      "round": 20,
+      "train_BCE": 0.10539589077234268,
+      "train_seconds": 1.2904900249559432,
+      "validation_mAP": 77.65501411518224
+    },
+    {
+      "round": 40,
+      "train_BCE": 0.10399851948022842,
+      "train_seconds": 2.5964992489898577,
+      "validation_mAP": 77.76468490573508
+    },
+    {
+      "round": 60,
+      "train_BCE": 0.10465589165687561,
+      "train_seconds": 3.9176933769485913,
+      "validation_mAP": 77.53590896252625
+    },
+    {
+      "round": 80,
+      "train_BCE": 0.09945476055145264,
+      "train_seconds": 5.252531922975322,
+      "validation_mAP": 77.30100369497796
+    },
+    {
+      "round": 100,
+      "train_BCE": 0.09803847223520279,
+      "train_seconds": 6.570739350048825,
+      "validation_mAP": 77.14144823343341
+    },
+    {
+      "round": 120,
+      "train_BCE": 0.10503853857517242,
+      "train_seconds": 7.870416346180718,
+      "validation_mAP": 77.07389457704681
+    },
+    {
+      "round": 140,
+      "train_BCE": 0.10058034211397171,
+      "train_seconds": 9.210577057179762,
+      "validation_mAP": 76.97722375911736
+    },
+    {
+      "round": 160,
+      "train_BCE": 0.10175798833370209,
+      "train_seconds": 10.53183002921287,
+      "validation_mAP": 76.83152670980145
+    },
+    {
+      "round": 180,
+      "train_BCE": 0.1010325625538826,
+      "train_seconds": 11.837174152227817,
+      "validation_mAP": 76.72444205931181
+    },
+    {
+      "round": 200,
+      "train_BCE": 0.09784644097089767,
+      "train_seconds": 13.12092956219567,
+      "validation_mAP": 76.65492681767618
+    }
+  ]
+}

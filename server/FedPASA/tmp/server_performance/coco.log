@@ -1,0 +1,13 @@
+FedMPT: 4 conditions -> ['color', 'background', 'scene type', 'spatial layout'], agg=vanilla
+{"variant": "baseline", "dataset": "coco", "cpu_threads": 4, "checkpointing": true, "cache_static_text": false, "fused_checks": false, "steps": 12, "seconds_per_step": 0.13817448691891818, "peak_allocated_MiB": 1862.01708984375, "three_step_bitwise_equal": true, "max_absolute_error": 0.0, "max_scaled_error": 0.0}
+FedMPT: 4 conditions -> ['color', 'background', 'scene type', 'spatial layout'], agg=vanilla
+{"variant": "no_recompute", "dataset": "coco", "cpu_threads": 4, "checkpointing": false, "cache_static_text": false, "fused_checks": false, "steps": 12, "seconds_per_step": 0.11224771691680265, "peak_allocated_MiB": 7474.26953125, "three_step_bitwise_equal": true, "max_absolute_error": 0.0, "max_scaled_error": 0.0}
+FedMPT: 4 conditions -> ['color', 'background', 'scene type', 'spatial layout'], agg=vanilla
+{"variant": "static_text", "dataset": "coco", "cpu_threads": 4, "checkpointing": false, "cache_static_text": true, "fused_checks": false, "steps": 12, "seconds_per_step": 0.09996894116435821, "peak_allocated_MiB": 7523.87890625, "three_step_bitwise_equal": true, "max_absolute_error": 0.0, "max_scaled_error": 0.0}
+FedMPT: 4 conditions -> ['color', 'background', 'scene type', 'spatial layout'], agg=vanilla
+{"variant": "fused_checks", "dataset": "coco", "cpu_threads": 4, "checkpointing": false, "cache_static_text": true, "fused_checks": true, "steps": 12, "seconds_per_step": 0.10009400658115435, "peak_allocated_MiB": 7523.87890625, "three_step_bitwise_equal": true, "max_absolute_error": 0.0, "max_scaled_error": 0.0}
+FedMPT: 4 conditions -> ['color', 'background', 'scene type', 'spatial layout'], agg=vanilla
+{"variant": "one_cpu_thread", "dataset": "coco", "cpu_threads": 1, "checkpointing": false, "cache_static_text": true, "fused_checks": true, "steps": 12, "seconds_per_step": 0.09975739875032257, "peak_allocated_MiB": 7523.87890625, "three_step_bitwise_equal": true, "max_absolute_error": 0.0, "max_scaled_error": 0.0}
+FedMPT: 4 conditions -> ['color', 'background', 'scene type', 'spatial layout'], agg=vanilla
+{"variant": "two_cpu_threads", "dataset": "coco", "cpu_threads": 2, "checkpointing": false, "cache_static_text": true, "fused_checks": true, "steps": 12, "seconds_per_step": 0.1001841515826527, "peak_allocated_MiB": 7523.87890625, "three_step_bitwise_equal": true, "max_absolute_error": 0.0, "max_scaled_error": 0.0}
+BENCHMARK_COMPLETE

@@ -1,0 +1,277 @@
+{
+  "status": "COMPLETE",
+  "rows": [
+    {
+      "dataset": "nus",
+      "method": "Full single split17",
+      "mAP_mean": 60.63197088795499,
+      "mAP_sample_std": null,
+      "runs": 1,
+      "run_mAP": [
+        60.63197088795499
+      ],
+      "uncertainty_scope": "fixed partition7; selection split17 fixed; training randomness only; deterministic methods single fit"
+    },
+    {
+      "dataset": "nus",
+      "method": "Three-view pooled Ridge",
+      "mAP_mean": 60.19327307611112,
+      "mAP_sample_std": null,
+      "runs": 1,
+      "run_mAP": [
+        60.19327307611112
+      ],
+      "uncertainty_scope": "fixed partition7; selection split17 fixed; training randomness only; deterministic methods single fit"
+    },
+    {
+      "dataset": "nus",
+      "method": "Local Ridge Avg",
+      "mAP_mean": 60.06562995559891,
+      "mAP_sample_std": null,
+      "runs": 1,
+      "run_mAP": [
+        60.06562995559891
+      ],
+      "uncertainty_scope": "fixed partition7; selection split17 fixed; training randomness only; deterministic methods single fit"
+    },
+    {
+      "dataset": "nus",
+      "method": "Global fusion",
+      "mAP_mean": 60.31465542587995,
+      "mAP_sample_std": null,
+      "runs": 1,
+      "run_mAP": [
+        60.31465542587995
+      ],
+      "uncertainty_scope": "fixed partition7; selection split17 fixed; training randomness only; deterministic methods single fit"
+    },
+    {
+      "dataset": "nus",
+      "method": "Full three-split ensemble",
+      "mAP_mean": 60.68078351508258,
+      "mAP_sample_std": null,
+      "runs": 1,
+      "run_mAP": [
+        60.68078351508258
+      ],
+      "uncertainty_scope": "fixed partition7; selection split17 fixed; training randomness only; deterministic methods single fit"
+    },
+    {
+      "dataset": "nus",
+      "method": "Central linear BCE",
+      "mAP_mean": 62.98150457762771,
+      "mAP_sample_std": 0.00774420947701898,
+      "runs": 3,
+      "run_mAP": [
+        62.97271134840585,
+        62.98449331429191,
+        62.98730907018536
+      ],
+      "uncertainty_scope": "fixed partition7; selection split17 fixed; training randomness only; deterministic methods single fit"
+    },
+    {
+      "dataset": "nus",
+      "method": "FedAvg linear BCE",
+      "mAP_mean": 62.68209002182278,
+      "mAP_sample_std": 0.004471510069182909,
+      "runs": 3,
+      "run_mAP": [
+        62.68669285119785,
+        62.68181465590239,
+        62.67776255836811
+      ],
+      "uncertainty_scope": "fixed partition7; selection split17 fixed; training randomness only; deterministic methods single fit"
+    },
+    {
+      "dataset": "nus",
+      "method": "FedMVP release multilabel adaptation",
+      "mAP_mean": 48.75703824699869,
+      "mAP_sample_std": 0.7733378479507306,
+      "runs": 3,
+      "run_mAP": [
+        49.60350847108825,
+        48.08749530545919,
+        48.580110964448636
+      ],
+      "uncertainty_scope": "fixed partition7; selection split17 fixed; training randomness only; deterministic methods single fit"
+    },
+    {
+      "dataset": "nus",
+      "method": "Fed-RAM verified-core adaptation",
+      "mAP_mean": 49.29984798240656,
+      "mAP_sample_std": 0.2574214410744451,
+      "runs": 3,
+      "run_mAP": [
+        49.43735987892504,
+        49.4593104756935,
+        49.002873592601155
+      ],
+      "uncertainty_scope": "fixed partition7; selection split17 fixed; training randomness only; deterministic methods single fit"
+    }
+  ],
+  "comparisons": [
+    {
+      "comparison": "Full single split17 minus Three-view pooled Ridge",
+      "difference_mAP": 0.43869781184387335,
+      "paired_image_bootstrap_95_CI": [
+        0.2446943543936376,
+        0.6462749367144903
+      ],
+      "interpretation": "conditional on fitted models; average of per-run mAP differences, not averaged predictions; uncorrected percentile CI, not training-repeat inference"
+    },
+    {
+      "comparison": "Full single split17 minus Local Ridge Avg",
+      "difference_mAP": 0.5663409323560842,
+      "paired_image_bootstrap_95_CI": [
+        0.3284081854332387,
+        0.8485898339871177
+      ],
+      "interpretation": "conditional on fitted models; average of per-run mAP differences, not averaged predictions; uncorrected percentile CI, not training-repeat inference"
+    },
+    {
+      "comparison": "Full single split17 minus Global fusion",
+      "difference_mAP": 0.3173154620750438,
+      "paired_image_bootstrap_95_CI": [
+        0.1504670328313793,
+        0.49702731471424816
+      ],
+      "interpretation": "conditional on fitted models; average of per-run mAP differences, not averaged predictions; uncorrected percentile CI, not training-repeat inference"
+    },
+    {
+      "comparison": "Full single split17 minus Full three-split ensemble",
+      "difference_mAP": -0.048812627127588826,
+      "paired_image_bootstrap_95_CI": [
+        -0.15298141355617415,
+        0.06977214065700675
+      ],
+      "interpretation": "conditional on fitted models; average of per-run mAP differences, not averaged predictions; uncorrected percentile CI, not training-repeat inference"
+    },
+    {
+      "comparison": "Full single split17 minus Central linear BCE",
+      "difference_mAP": -2.349533689672718,
+      "paired_image_bootstrap_95_CI": [
+        -2.7226057479737444,
+        -1.9337425368020902
+      ],
+      "interpretation": "conditional on fitted models; average of per-run mAP differences, not averaged predictions; uncorrected percentile CI, not training-repeat inference"
+    },
+    {
+      "comparison": "Full single split17 minus FedAvg linear BCE",
+      "difference_mAP": -2.0501191338677884,
+      "paired_image_bootstrap_95_CI": [
+        -2.4333732411031126,
+        -1.6421370883136202
+      ],
+      "interpretation": "conditional on fitted models; average of per-run mAP differences, not averaged predictions; uncorrected percentile CI, not training-repeat inference"
+    },
+    {
+      "comparison": "Full single split17 minus FedMVP release multilabel adaptation",
+      "difference_mAP": 11.874932640956303,
+      "paired_image_bootstrap_95_CI": [
+        11.25844318650328,
+        12.464485678609968
+      ],
+      "interpretation": "conditional on fitted models; average of per-run mAP differences, not averaged predictions; uncorrected percentile CI, not training-repeat inference"
+    },
+    {
+      "comparison": "Full single split17 minus Fed-RAM verified-core adaptation",
+      "difference_mAP": 11.332122905548431,
+      "paired_image_bootstrap_95_CI": [
+        10.657457679943773,
+        11.802226207046923
+      ],
+      "interpretation": "conditional on fitted models; average of per-run mAP differences, not averaged predictions; uncorrected percentile CI, not training-repeat inference"
+    }
+  ],
+  "replicates": 2000,
+  "resampling_seed": 20260918,
+  "sources": [
+    {
+      "method": "Full single split17",
+      "path": "outputs/fair_baselines_20260918/ridge/nus/full_single_test_scores.npy",
+      "sha256": "a968789b3c32a26e5be29fb2003efa67035a486b3387b59eae0b92ba4c0569f6"
+    },
+    {
+      "method": "Three-view pooled Ridge",
+      "path": "outputs/fair_baselines_20260918/ridge/nus/pooled_test_scores.npy",
+      "sha256": "f0dffdf0570ff43f372323355781c9a9276918da6ac07f12651ba230a492de19"
+    },
+    {
+      "method": "Local Ridge Avg",
+      "path": "outputs/fair_baselines_20260918/ridge/nus/local_avg_test_scores.npy",
+      "sha256": "b9e40c0ac0831ffc9ce6990cee2347f0bb3a0d51c9ddd2e96e8894bbc17dcb52"
+    },
+    {
+      "method": "Global fusion",
+      "path": "outputs/fair_baselines_20260918/ridge/nus/global_fusion_test_scores.npy",
+      "sha256": "3914f6556dadde19e18eb5d6f3378d77b0a00206db1cd027e79970b7d3f3dfed"
+    },
+    {
+      "method": "Full three-split ensemble",
+      "path": "outputs/fair_baselines_20260918/full_cost/nus/full_runtime/nus/test_scores.npy",
+      "sha256": "b681ba38fa7ae24489843d7349357568d1fbc309250d066688352651fe489405"
+    },
+    {
+      "method": "Central linear BCE",
+      "path": "outputs/fair_baselines_20260918/linear/nus/central/final/seed7/test_scores.npy",
+      "sha256": "82f22ad3ff88713c9247babb3451b554abfc354bb1289eb3a13c3abef566d3ae"
+    },
+    {
+      "method": "Central linear BCE",
+      "path": "outputs/fair_baselines_20260918/linear/nus/central/final/seed17/test_scores.npy",
+      "sha256": "31667309676b2b0d0414c4f967dac5c12c17e4ca125b1e79dca35379b34b864c"
+    },
+    {
+      "method": "Central linear BCE",
+      "path": "outputs/fair_baselines_20260918/linear/nus/central/final/seed27/test_scores.npy",
+      "sha256": "40bed40272aa098b702f9b6031feeb8e4ef2ecc88005d9b5d6becc7ed8b9ea55"
+    },
+    {
+      "method": "FedAvg linear BCE",
+      "path": "outputs/fair_baselines_20260918/linear/nus/fedavg/final/seed7/test_scores.npy",
+      "sha256": "88e9d581a9a88b4ebfaed7c73a77a36271c7df9a5fe75cc35dd6807930ad404b"
+    },
+    {
+      "method": "FedAvg linear BCE",
+      "path": "outputs/fair_baselines_20260918/linear/nus/fedavg/final/seed17/test_scores.npy",
+      "sha256": "8705fbd70412b5c5debcd4908500e3f0112a7c97e626c1291229bcc2c87817f1"
+    },
+    {
+      "method": "FedAvg linear BCE",
+      "path": "outputs/fair_baselines_20260918/linear/nus/fedavg/final/seed27/test_scores.npy",
+      "sha256": "e5fc0250b0406fc7f2af8c57c9c67b405487de37609850d10439b381ca81142e"
+    },
+    {
+      "method": "FedMVP release multilabel adaptation",
+      "path": "outputs/fair_baselines_20260918/fedmvp/nus/final/seed7/test_scores.npy",
+      "sha256": "b2ba242568299c54eeac1b8992f7810a58e6c7aed69e669f7ae56ff4a08bda23"
+    },
+    {
+      "method": "FedMVP release multilabel adaptation",
+      "path": "outputs/fair_baselines_20260918/fedmvp/nus/final/seed17/test_scores.npy",
+      "sha256": "4214cc06b9f68f28176a37502bacb6d7a4e5861722e9740fa9a2c23346495f40"
+    },
+    {
+      "method": "FedMVP release multilabel adaptation",
+      "path": "outputs/fair_baselines_20260918/fedmvp/nus/final/seed27/test_scores.npy",
+      "sha256": "2587d8219b78ea19a7aa988642f40487b495ebec34babc1512a8dcff01359ae0"
+    },
+    {
+      "method": "Fed-RAM verified-core adaptation",
+      "path": "outputs/fair_baselines_20260918/fedram/nus/final/seed7/test_scores.npy",
+      "sha256": "2cea7d33a86260f917e3880a91db2f789b303d6319de5bed330e2d1768fcecb4"
+    },
+    {
+      "method": "Fed-RAM verified-core adaptation",
+      "path": "outputs/fair_baselines_20260918/fedram/nus/final/seed17/test_scores.npy",
+      "sha256": "f9f7ebcffd2e1c7ee7adfad6f00629f0e6e58f7cbca4e44412a86bcb965365e5"
+    },
+    {
+      "method": "Fed-RAM verified-core adaptation",
+      "path": "outputs/fair_baselines_20260918/fedram/nus/final/seed27/test_scores.npy",
+      "sha256": "46adb4b199b43915055df7967c2de0feb1c78b59b4f4c1d06b579f3b1dbbfacc"
+    }
+  ],
+  "test_targets_sha256": "4667e6497058961bad145ea9278e9301bd13d2d4a9611563054c266db08d8d8d",
+  "finished": "2026-09-25T08:05:46Z"
+}

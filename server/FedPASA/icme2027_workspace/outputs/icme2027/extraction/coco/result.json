@@ -1,0 +1,57 @@
+{
+  "status": "COMPLETE",
+  "dataset": "coco",
+  "cold_definition": "No precomputed feature cache; OS image page cache was not forcibly evicted",
+  "seconds_wall": 466.9969274010509,
+  "artifacts": [
+    {
+      "path": "/root/autodl-tmp/FedPASA/icme2027_workspace/outputs/icme2027/server_cache/coco/train_cls.npy",
+      "shape": [
+        82081,
+        512
+      ],
+      "dtype": "float16",
+      "seconds": 67.70969091798179,
+      "peak_cuda_memory_MiB": 701.88525390625
+    },
+    {
+      "path": "/root/autodl-tmp/FedPASA/icme2027_workspace/outputs/icme2027/server_cache/coco/test_cls.npy",
+      "shape": [
+        40137,
+        512
+      ],
+      "dtype": "float16",
+      "seconds": 151.1707480798941,
+      "peak_cuda_memory_MiB": 701.88525390625
+    },
+    {
+      "path": "/root/autodl-tmp/FedPASA/icme2027_workspace/outputs/icme2027/server_cache/coco/train_patch.npy",
+      "shape": [
+        82081,
+        196,
+        512
+      ],
+      "dtype": "float16",
+      "seconds": 69.20497242896818,
+      "peak_cuda_memory_MiB": 1020.1357421875
+    },
+    {
+      "path": "/root/autodl-tmp/FedPASA/icme2027_workspace/outputs/icme2027/server_cache/coco/test_patch.npy",
+      "shape": [
+        40137,
+        196,
+        512
+      ],
+      "dtype": "float16",
+      "seconds": 173.27117520780303,
+      "peak_cuda_memory_MiB": 1019.7607421875
+    }
+  ],
+  "server_vs_archived_cls_max_abs_difference": {
+    "train": 0.001953125,
+    "test": 0.004150390625
+  },
+  "image_ids_and_labels_match": true,
+  "checkpoint_sha256": "5806e77cd80f8b59890b7e101eabd078d9fb84e6937f9e85e4ecb61988df416f",
+  "completed": "2026-09-10T02:10:23.217573+00:00"
+}

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/root/autodl-tmp/FedPASA/reviewer_20260913/scripts/run_fair_ridge.py", line 67, in <module>
+    (tune if args.phase=='tune' else final)(args.dataset)
+  File "/root/autodl-tmp/FedPASA/reviewer_20260913/scripts/run_fair_ridge.py", line 59, in final
+    q=np.load(qpath);assert q.shape==ridge.shape
+  File "/root/autodl-tmp/miniconda3/envs/fbu/lib/python3.10/site-packages/numpy/lib/_npyio_impl.py", line 451, in load
+    fid = stack.enter_context(open(os.fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '/root/autodl-tmp/FedPASA/reviewer_20260913/outputs/priority_20260913/controlled_full/coco/qa_scores.npy'

@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "commit": "9bb5d9f688ff37b030c76b4f5c3b168fbc08999f",
+  "files": [
+    {
+      "path": "model/fedmvp.py",
+      "url": "https://api.github.com/repos/xuc865/FedMPT-main/contents/model/fedmvp.py?ref=9bb5d9f688ff37b030c76b4f5c3b168fbc08999f",
+      "local_sha256": "132fdc38048f14fcc3de318bf3b7d8baa2ea8ff2634ef522e3a0ce88a8919ab6",
+      "upstream_sha256": "50c78f41643b832908fb1b348e4f62c697a5a668fcf5ecb2bf62bf4201b81a2c",
+      "equal_ignoring_line_endings": true
+    },
+    {
+      "path": "convclip/fdmvpmodel.py",
+      "url": "https://api.github.com/repos/xuc865/FedMPT-main/contents/convclip/fdmvpmodel.py?ref=9bb5d9f688ff37b030c76b4f5c3b168fbc08999f",
+      "local_sha256": "2b3ea4c5d5a4755cce297abba33571a02bb987130c143bf65753892371723311",
+      "upstream_sha256": "be4da98eb73c284965a6dd57e91c12ecdff7a555b38e08212a2df6137625f3c5",
+      "equal_ignoring_line_endings": true
+    },
+    {
+      "path": "utilss/asl.py",
+      "url": "https://api.github.com/repos/xuc865/FedMPT-main/contents/utilss/asl.py?ref=9bb5d9f688ff37b030c76b4f5c3b168fbc08999f",
+      "local_sha256": "4c7788dbdaa62a4a7ecf491230bc246ef99ea5994b86b5bb5217e2b8b3da56fa",
+      "upstream_sha256": "67cbf153b18138cf727329288ca4631bb1ba6d4b5063a8ff2426ea5e75643ddd",
+      "equal_ignoring_line_endings": true
+    },
+    {
+      "path": "federated/client.py",
+      "url": "https://api.github.com/repos/xuc865/FedMPT-main/contents/federated/client.py?ref=9bb5d9f688ff37b030c76b4f5c3b168fbc08999f",
+      "local_sha256": "a41599e3f5c12c3c7133f8be73a1661725111876056a32cacce0a8f1aa73a7a0",
+      "upstream_sha256": "589443227756c0b00498d79955f9088a8e3219dbbc1e6e4d4c29c0d51fcb22e2",
+      "equal_ignoring_line_endings": true
+    },
+    {
+      "path": "config/utils.py",
+      "url": "https://api.github.com/repos/xuc865/FedMPT-main/contents/config/utils.py?ref=9bb5d9f688ff37b030c76b4f5c3b168fbc08999f",
+      "local_sha256": "a0fa568adcbc600cc6c91e65f3e15cd946ec9a2fef98a4f920f96a4cc57b000f",
+      "upstream_sha256": "869ddf45512907c34b17fc08f8fffe452ff5de62131bb2f0e0a6b08be265261b",
+      "equal_ignoring_line_endings": false
+    },
+    {
+      "path": "config/defaults.py",
+      "url": "https://api.github.com/repos/xuc865/FedMPT-main/contents/config/defaults.py?ref=9bb5d9f688ff37b030c76b4f5c3b168fbc08999f",
+      "local_sha256": "cc2868c3ec8bf13de6b68442a8a90e95a765411bfd2b000ce964f7d7793b6095",
+      "upstream_sha256": "ec8bb728a3e6638f3a15310068a22ca30e1a0f42ec247d4943b3b8c6c3b35ec5",
+      "equal_ignoring_line_endings": true
+    }
+  ],
+  "baseline": "FedMVP, FedMPT-release multilabel adaptation",
+  "original_FedMVP_author_equivalent": false,
+  "reference": "https://github.com/mainaksingha01/FedMVP",
+  "differences": [
+    "Multilabel patch pooling and ASL from FedMPT benchmark release; original FedMVP is single-label and uses LLM attribute features",
+    "Same predeclared FedPASA image IDs, labels, checkpoint, 224 center crop and 10-client seed7 partition",
+    "BF16 autocast, FP32 trainable parameters; 200 fixed rounds; no selection by test metrics"
+  ],
+  "loss": "0.02 * (AsymmetricLoss_Pos(gamma_neg=2,gamma_pos=1) + KG cosine consistency)",
+  "completed": "2026-09-10T01:55:57.610032+00:00"
+}

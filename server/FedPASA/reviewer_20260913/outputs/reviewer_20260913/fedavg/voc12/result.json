@@ -1,0 +1,43 @@
+{
+  "status": "COMPLETE",
+  "rows": [
+    {
+      "dataset": "voc12",
+      "method": "FedAvg Linear Head",
+      "mAP": 35.09839969013582,
+      "features": "cls+patch_mean+patch_max_text",
+      "rounds": 50,
+      "uploads_per_client": 50,
+      "local_epochs": 1,
+      "batch_size": 256,
+      "loss": "BCEWithLogits",
+      "optimizer": "SGD momentum 0.9; reset each local round",
+      "selected_lr": 1.0,
+      "clients": 10,
+      "partition_seed": 7,
+      "split_seed": 17,
+      "client_fitting_seconds": 0.35299735818989575,
+      "server_solve_seconds": 0.012306334683671594,
+      "fit_wall_seconds": 0.36530369287356734,
+      "selection_seconds": 1.461505154846236,
+      "uplink_FP32_bytes": 41800000
+    }
+  ],
+  "tuning": [
+    {
+      "lr": 0.01,
+      "validation_mAP": 13.383614102870547,
+      "seconds": 0.836889085592702
+    },
+    {
+      "lr": 0.1,
+      "validation_mAP": 14.149556445316705,
+      "seconds": 0.31403851113282144
+    },
+    {
+      "lr": 1.0,
+      "validation_mAP": 27.47467975371101,
+      "seconds": 0.31057755812071264
+    }
+  ]
+}

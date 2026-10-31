@@ -1,0 +1,102 @@
+
+QUEUE_START 2026-09-10T02:02:36.174750+00:00
+/root/autodl-tmp/FedPASA/icme2027_workspace/scripts/run_icme2027_extract_worker.py:5: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import pkg_resources
+EXTRACT dataset=coco kind=cls images=64/82081 rate=139.5/s
+EXTRACT dataset=coco kind=cls images=6464/82081 rate=1155.6/s
+EXTRACT dataset=coco kind=cls images=12864/82081 rate=1189.2/s
+EXTRACT dataset=coco kind=cls images=19264/82081 rate=1202.7/s
+EXTRACT dataset=coco kind=cls images=25664/82081 rate=1208.4/s
+EXTRACT dataset=coco kind=cls images=32064/82081 rate=1207.2/s
+EXTRACT dataset=coco kind=cls images=38464/82081 rate=1208.1/s
+EXTRACT dataset=coco kind=cls images=44864/82081 rate=1210.0/s
+EXTRACT dataset=coco kind=cls images=51264/82081 rate=1209.4/s
+EXTRACT dataset=coco kind=cls images=57664/82081 rate=1211.1/s
+EXTRACT dataset=coco kind=cls images=64064/82081 rate=1211.9/s
+EXTRACT dataset=coco kind=cls images=70464/82081 rate=1211.7/s
+EXTRACT dataset=coco kind=cls images=76864/82081 rate=1211.4/s
+EXTRACT dataset=coco kind=cls images=82081/82081 rate=1212.8/s
+EXTRACT dataset=coco kind=cls images=64/40137 rate=18.4/s
+EXTRACT dataset=coco kind=cls images=6464/40137 rate=68.4/s
+EXTRACT dataset=coco kind=cls images=12864/40137 rate=100.6/s
+EXTRACT dataset=coco kind=cls images=19264/40137 rate=144.7/s
+EXTRACT dataset=coco kind=cls images=25664/40137 rate=184.7/s
+EXTRACT dataset=coco kind=cls images=32064/40137 rate=222.0/s
+EXTRACT dataset=coco kind=cls images=38464/40137 rate=256.9/s
+EXTRACT dataset=coco kind=cls images=40137/40137 rate=265.6/s
+EXTRACT dataset=coco kind=patch images=64/82081 rate=76.2/s
+EXTRACT dataset=coco kind=patch images=6464/82081 rate=1098.7/s
+EXTRACT dataset=coco kind=patch images=12864/82081 rate=1152.4/s
+EXTRACT dataset=coco kind=patch images=19264/82081 rate=1170.7/s
+EXTRACT dataset=coco kind=patch images=25664/82081 rate=1181.0/s
+EXTRACT dataset=coco kind=patch images=32064/82081 rate=1183.8/s
+EXTRACT dataset=coco kind=patch images=38464/82081 rate=1188.4/s
+EXTRACT dataset=coco kind=patch images=44864/82081 rate=1192.4/s
+EXTRACT dataset=coco kind=patch images=51264/82081 rate=1194.1/s
+EXTRACT dataset=coco kind=patch images=57664/82081 rate=1194.6/s
+EXTRACT dataset=coco kind=patch images=64064/82081 rate=1193.5/s
+EXTRACT dataset=coco kind=patch images=70464/82081 rate=1192.4/s
+EXTRACT dataset=coco kind=patch images=76864/82081 rate=1192.4/s
+EXTRACT dataset=coco kind=patch images=82081/82081 rate=1187.3/s
+EXTRACT dataset=coco kind=patch images=64/40137 rate=15.5/s
+EXTRACT dataset=coco kind=patch images=6464/40137 rate=71.4/s
+EXTRACT dataset=coco kind=patch images=12864/40137 rate=96.9/s
+EXTRACT dataset=coco kind=patch images=19264/40137 rate=123.7/s
+EXTRACT dataset=coco kind=patch images=25664/40137 rate=159.4/s
+EXTRACT dataset=coco kind=patch images=32064/40137 rate=192.8/s
+EXTRACT dataset=coco kind=patch images=38464/40137 rate=224.2/s
+EXTRACT dataset=coco kind=patch images=40137/40137 rate=231.8/s
+{
+  "dataset": "coco",
+  "train_images": 82081,
+  "test_images": 40137,
+  "classes": 80,
+  "train_root": "/root/autodl-tmp/FedPASA/data/coco2014/train2014",
+  "test_root": "/root/autodl-tmp/FedPASA/data/coco2014/val2014",
+  "weight_path": "/root/BCP/external/FedMPT-main/ViT-B-16.pt",
+  "weight_sha256": "5806e77cd80f8b59890b7e101eabd078d9fb84e6937f9e85e4ecb61988df416f",
+  "artifacts": [
+    {
+      "path": "/root/autodl-tmp/FedPASA/icme2027_workspace/outputs/icme2027/server_cache/coco/train_cls.npy",
+      "shape": [
+        82081,
+        512
+      ],
+      "dtype": "float16",
+      "seconds": 67.70969091798179,
+      "peak_cuda_memory_MiB": 701.88525390625
+    },
+    {
+      "path": "/root/autodl-tmp/FedPASA/icme2027_workspace/outputs/icme2027/server_cache/coco/test_cls.npy",
+      "shape": [
+        40137,
+        512
+      ],
+      "dtype": "float16",
+      "seconds": 151.1707480798941,
+      "peak_cuda_memory_MiB": 701.88525390625
+    },
+    {
+      "path": "/root/autodl-tmp/FedPASA/icme2027_workspace/outputs/icme2027/server_cache/coco/train_patch.npy",
+      "shape": [
+        82081,
+        196,
+        512
+      ],
+      "dtype": "float16",
+      "seconds": 69.20497242896818,
+      "peak_cuda_memory_MiB": 1020.1357421875
+    },
+    {
+      "path": "/root/autodl-tmp/FedPASA/icme2027_workspace/outputs/icme2027/server_cache/coco/test_patch.npy",
+      "shape": [
+        40137,
+        196,
+        512
+      ],
+      "dtype": "float16",
+      "seconds": 173.27117520780303,
+      "peak_cuda_memory_MiB": 1019.7607421875
+    }
+  ]
+}

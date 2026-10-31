@@ -1,0 +1,32 @@
+/root/autodl-tmp/FedPASA/reviewer_20260913/scripts/run_priority_backbone.py:11: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import packaging, packaging.version, pkg_resources
+WEIGHT VERIFIED
+EXTRACT train cls 12800 82081
+EXTRACT train cls 25600 82081
+EXTRACT train cls 38400 82081
+/root/autodl-tmp/FedPASA/reviewer_20260913/scripts/run_priority_backbone.py:11: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import packaging, packaging.version, pkg_resources
+WEIGHT VERIFIED
+EXTRACT train cls 1280 82081 seconds 19.25
+EXTRACT train cls 2560 82081 seconds 35.5
+EXTRACT train cls 3840 82081 seconds 54.08
+EXTRACT train cls 5120 82081 seconds 70.96
+EXTRACT train cls 6400 82081 seconds 90.09
+EXTRACT train cls 7680 82081 seconds 107.04
+/root/autodl-tmp/FedPASA/reviewer_20260913/scripts/run_priority_backbone.py:11: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+  import packaging, packaging.version, pkg_resources
+WEIGHT VERIFIED
+Traceback (most recent call last):
+  File "/root/autodl-tmp/FedPASA/reviewer_20260913/scripts/run_priority_backbone.py", line 98, in <module>
+    else:extract();evaluate()
+  File "/root/autodl-tmp/FedPASA/reviewer_20260913/scripts/run_priority_backbone.py", line 39, in extract
+    assert repr(preprocess)==repr(patch_preprocess)
+AssertionError
+Traceback (most recent call last):
+  File "/root/autodl-tmp/FedPASA/reviewer_20260913/scripts/run_priority_extras.py", line 39, in <module>
+    else:phase(sys.argv[1])
+  File "/root/autodl-tmp/FedPASA/reviewer_20260913/scripts/run_priority_extras.py", line 17, in phase
+    elif name=='backbone':subprocess.run([sys.executable,str(r.ROOT/'scripts/run_priority_backbone.py')],check=True)
+  File "/root/autodl-tmp/miniconda3/envs/fbu/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/root/autodl-tmp/miniconda3/envs/fbu/bin/python', '/root/autodl-tmp/FedPASA/reviewer_20260913/scripts/run_priority_backbone.py']' returned non-zero exit status 1.

@@ -1,0 +1,180 @@
+{
+  "status": "RUNNING",
+  "created": "2026-09-18T01:48:39Z",
+  "jobs": [
+    {
+      "id": "run_fair_ridge_tune_coco",
+      "script": "run_fair_ridge.py",
+      "phase": "tune",
+      "dataset": "coco",
+      "status": "COMPLETE",
+      "started": "2026-09-18T01:48:39Z",
+      "command": [
+        "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+        "/root/autodl-tmp/FedPASA/reviewer_20260913/scripts/run_fair_ridge.py",
+        "--phase",
+        "tune",
+        "--dataset",
+        "coco"
+      ],
+      "script_sha256": "793901e969e56e24775e94e6b54a51f0dd0046a4ab53a62b0741cd98957ea129",
+      "exit_code": 0,
+      "finished": "2026-09-18T01:48:57Z"
+    },
+    {
+      "id": "run_fair_ridge_tune_nus",
+      "script": "run_fair_ridge.py",
+      "phase": "tune",
+      "dataset": "nus",
+      "status": "COMPLETE",
+      "started": "2026-09-18T01:48:57Z",
+      "command": [
+        "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+        "/root/autodl-tmp/FedPASA/reviewer_20260913/scripts/run_fair_ridge.py",
+        "--phase",
+        "tune",
+        "--dataset",
+        "nus"
+      ],
+      "script_sha256": "793901e969e56e24775e94e6b54a51f0dd0046a4ab53a62b0741cd98957ea129",
+      "exit_code": 0,
+      "finished": "2026-09-18T01:49:28Z"
+    },
+    {
+      "id": "run_fair_fedmvp_tune_coco",
+      "script": "run_fair_fedmvp.py",
+      "phase": "tune",
+      "dataset": "coco",
+      "status": "COMPLETE",
+      "started": "2026-09-18T06:12:22Z",
+      "command": [
+        "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+        "/root/autodl-tmp/FedPASA/reviewer_20260913/scripts/run_fair_fedmvp.py",
+        "--phase",
+        "tune",
+        "--dataset",
+        "coco"
+      ],
+      "script_sha256": "75dcfc21c4e5ea90b64d645f4a79d2448e20cb4dc2ccfcbb4ed462a41300920e",
+      "exit_code": 0,
+      "finished": "2026-09-18T14:55:04Z"
+    },
+    {
+      "id": "run_fair_fedmvp_tune_nus",
+      "script": "run_fair_fedmvp.py",
+      "phase": "tune",
+      "dataset": "nus",
+      "status": "RUNNING",
+      "started": "2026-09-18T14:55:04Z",
+      "command": [
+        "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+        "/root/autodl-tmp/FedPASA/reviewer_20260913/scripts/run_fair_fedmvp.py",
+        "--phase",
+        "tune",
+        "--dataset",
+        "nus"
+      ],
+      "script_sha256": "75dcfc21c4e5ea90b64d645f4a79d2448e20cb4dc2ccfcbb4ed462a41300920e"
+    },
+    {
+      "id": "run_fair_ram_audit_coco",
+      "script": "run_fair_ram.py",
+      "phase": "audit",
+      "dataset": "coco",
+      "status": "PENDING"
+    },
+    {
+      "id": "run_fair_ram_audit_nus",
+      "script": "run_fair_ram.py",
+      "phase": "audit",
+      "dataset": "nus",
+      "status": "PENDING"
+    },
+    {
+      "id": "run_fair_ram_tune_coco",
+      "script": "run_fair_ram.py",
+      "phase": "tune",
+      "dataset": "coco",
+      "status": "PENDING"
+    },
+    {
+      "id": "run_fair_ram_tune_nus",
+      "script": "run_fair_ram.py",
+      "phase": "tune",
+      "dataset": "nus",
+      "status": "PENDING"
+    },
+    {
+      "id": "run_fair_linear_repeat_coco",
+      "script": "run_fair_linear.py",
+      "phase": "repeat",
+      "dataset": "coco",
+      "status": "PENDING"
+    },
+    {
+      "id": "run_fair_linear_repeat_nus",
+      "script": "run_fair_linear.py",
+      "phase": "repeat",
+      "dataset": "nus",
+      "status": "PENDING"
+    },
+    {
+      "id": "run_fair_ridge_final_coco",
+      "script": "run_fair_ridge.py",
+      "phase": "final",
+      "dataset": "coco",
+      "status": "PENDING"
+    },
+    {
+      "id": "run_fair_ridge_final_nus",
+      "script": "run_fair_ridge.py",
+      "phase": "final",
+      "dataset": "nus",
+      "status": "PENDING"
+    },
+    {
+      "id": "run_fair_fedmvp_repeat_coco",
+      "script": "run_fair_fedmvp.py",
+      "phase": "repeat",
+      "dataset": "coco",
+      "status": "PENDING"
+    },
+    {
+      "id": "run_fair_fedmvp_repeat_nus",
+      "script": "run_fair_fedmvp.py",
+      "phase": "repeat",
+      "dataset": "nus",
+      "status": "PENDING"
+    },
+    {
+      "id": "run_fair_ram_repeat_coco",
+      "script": "run_fair_ram.py",
+      "phase": "repeat",
+      "dataset": "coco",
+      "status": "PENDING"
+    },
+    {
+      "id": "run_fair_ram_repeat_nus",
+      "script": "run_fair_ram.py",
+      "phase": "repeat",
+      "dataset": "nus",
+      "status": "PENDING"
+    },
+    {
+      "id": "build_fair_baselines_report_report_coco",
+      "script": "build_fair_baselines_report.py",
+      "phase": "report",
+      "dataset": "coco",
+      "status": "PENDING"
+    },
+    {
+      "id": "build_fair_baselines_report_report_nus",
+      "script": "build_fair_baselines_report.py",
+      "phase": "report",
+      "dataset": "nus",
+      "status": "PENDING"
+    }
+  ],
+  "active": "run_fair_fedmvp_tune_nus",
+  "updated": "2026-09-18T14:55:04Z"
+}

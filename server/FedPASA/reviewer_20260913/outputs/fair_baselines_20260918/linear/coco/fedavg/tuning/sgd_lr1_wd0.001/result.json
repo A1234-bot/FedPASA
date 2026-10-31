@@ -1,0 +1,80 @@
+{
+  "status": "COMPLETE",
+  "mode": "fedavg",
+  "config": {
+    "optimizer": "sgd",
+    "lr": 1.0,
+    "weight_decay": 0.001
+  },
+  "seed": 17,
+  "rounds": 200,
+  "best_round": 160,
+  "best_validation_mAP": 9.99542361323115,
+  "train_seconds": 12.996021646016743,
+  "validation_seconds": 1.0757167210103944,
+  "peak_cuda_MiB": 446.53759765625,
+  "uplink_bytes": 707200000,
+  "downlink_bytes": 707200000,
+  "curve": [
+    {
+      "round": 20,
+      "train_BCE": 0.19032393395900726,
+      "train_seconds": 1.0510967870650347,
+      "validation_mAP": 9.855991010202883
+    },
+    {
+      "round": 40,
+      "train_BCE": 0.19032356142997742,
+      "train_seconds": 2.7073695780709386,
+      "validation_mAP": 9.989509173743645
+    },
+    {
+      "round": 60,
+      "train_BCE": 0.1903029829263687,
+      "train_seconds": 4.452047865168424,
+      "validation_mAP": 9.988808954566368
+    },
+    {
+      "round": 80,
+      "train_BCE": 0.19031856954097748,
+      "train_seconds": 5.909129946143366,
+      "validation_mAP": 9.987466502958808
+    },
+    {
+      "round": 100,
+      "train_BCE": 0.19032041728496552,
+      "train_seconds": 7.74409197611385,
+      "validation_mAP": 9.991631759997855
+    },
+    {
+      "round": 120,
+      "train_BCE": 0.19031260907649994,
+      "train_seconds": 8.821158793114591,
+      "validation_mAP": 9.993286993736227
+    },
+    {
+      "round": 140,
+      "train_BCE": 0.1903214454650879,
+      "train_seconds": 9.883166778075974,
+      "validation_mAP": 9.988363654973007
+    },
+    {
+      "round": 160,
+      "train_BCE": 0.19031019508838654,
+      "train_seconds": 10.909817535051843,
+      "validation_mAP": 9.99542361323115
+    },
+    {
+      "round": 180,
+      "train_BCE": 0.19031614065170288,
+      "train_seconds": 11.954881393001415,
+      "validation_mAP": 9.994888363965112
+    },
+    {
+      "round": 200,
+      "train_BCE": 0.19031310081481934,
+      "train_seconds": 12.996021646016743,
+      "validation_mAP": 9.988729349150253
+    }
+  ]
+}

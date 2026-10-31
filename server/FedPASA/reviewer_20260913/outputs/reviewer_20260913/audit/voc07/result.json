@@ -1,0 +1,99 @@
+{
+  "status": "COMPLETE",
+  "rows": [
+    {
+      "dataset": "voc07",
+      "method": "seed 7 only",
+      "mAP": 94.18651159656143,
+      "setting": "single-split",
+      "seed": 7,
+      "ridge_mAP": 94.03260521130623
+    },
+    {
+      "dataset": "voc07",
+      "method": "seed 17 only",
+      "mAP": 94.07356666192766,
+      "setting": "single-split",
+      "seed": 17,
+      "ridge_mAP": 94.03260521130623
+    },
+    {
+      "dataset": "voc07",
+      "method": "seed 27 only",
+      "mAP": 94.12276444818112,
+      "setting": "single-split",
+      "seed": 27,
+      "ridge_mAP": 94.03260521130623
+    },
+    {
+      "dataset": "voc07",
+      "method": "Mean single-split",
+      "mAP": 94.12761423555673,
+      "setting": "arithmetic mean of three mAP values"
+    },
+    {
+      "dataset": "voc07",
+      "method": "3-split score average",
+      "mAP": 94.22048683088519,
+      "setting": "historical fixed score ensemble",
+      "gain_over_mean_single": 0.09287259532845837,
+      "ridge_mAP": 94.03260521130623
+    }
+  ],
+  "fingerprints": [
+    {
+      "path": "outputs/icme/voc07/full_seeds/seed7/ridge/fit_indices.npy",
+      "sha256": "a7817a30bccb841a39af7a7d222df4c264d4cbe945118669010e37bbdc29857f"
+    },
+    {
+      "path": "outputs/icme/voc07/full_seeds/seed7/ridge/validation_indices.npy",
+      "sha256": "e598eaf8571e63b5525eef312bd8852249bf086acda45de220eba96f2844ecf0"
+    },
+    {
+      "path": "outputs/icme/voc07/full_seeds/seed7/ridge_patch_fusion/result.json",
+      "sha256": "ac688672719bb69147998c22e2ebfeece207e2b6920652da96b25567fd0fcfa1"
+    },
+    {
+      "path": "outputs/icme/voc07/full_seeds/seed17/ridge/fit_indices.npy",
+      "sha256": "6ec32c1c8a1b111009b1a737278de808c1323dd1f8c69879b02a997fca7d2ce6"
+    },
+    {
+      "path": "outputs/icme/voc07/full_seeds/seed17/ridge/validation_indices.npy",
+      "sha256": "1f1cc684936de17c2cc3993730310236efbbc746b0a334bc77ee6b6a14723ca6"
+    },
+    {
+      "path": "outputs/icme/voc07/full_seeds/seed17/ridge_patch_fusion/result.json",
+      "sha256": "7e1f110cd214e803a91fb5ff831a7c5d3041baae876e5d61a0a482ef20eb8879"
+    },
+    {
+      "path": "outputs/icme/voc07/full_seeds/seed27/ridge/fit_indices.npy",
+      "sha256": "411e321c50019e71394e09e213fc1d8300fc67d4c892123f3bc4b9219d81be39"
+    },
+    {
+      "path": "outputs/icme/voc07/full_seeds/seed27/ridge/validation_indices.npy",
+      "sha256": "b9af68c880da151b72ba83c2cfdd524e0961b3ef56a3dc72873a0e376146dd04"
+    },
+    {
+      "path": "outputs/icme/voc07/full_seeds/seed27/ridge_patch_fusion/result.json",
+      "sha256": "78af614597d31bc23a83fc5cf4347d948295cf4df4b29dc7f8f7772b3a121d73"
+    },
+    {
+      "path": "outputs/voc07/cache/manifest.json",
+      "sha256": "e61bb4dc5a70e7f04829b0cb177892178089158f67139cbd01577f01c65b6406"
+    },
+    {
+      "path": "outputs/voc07/cache/train_targets.npy",
+      "sha256": "c403744b4a162008aca5c5f712cf25d1f56694f1b514209fe4102e79b53a9be6"
+    },
+    {
+      "path": "outputs/voc07/cache/test_targets.npy",
+      "sha256": "3101744f5cb99b1b57c5d0ae878c8a09bd5edd7c87020c864bcf0e8876821903"
+    },
+    {
+      "path": "outputs/icme/voc07/partitions/clients10_seed7.npy",
+      "sha256": "1ae2fbd17115ed0ca6da3c40d5c515ad9c7fd152a89a59d30c1adcdf0a1fdfec"
+    }
+  ],
+  "headline_seed": 17,
+  "rule": "Seed 17 fixed before new runs; no replacement based on test mAP. Historical scores are not new reruns."
+}

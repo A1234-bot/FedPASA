@@ -1,0 +1,80 @@
+{
+  "status": "COMPLETE",
+  "mode": "fedavg",
+  "config": {
+    "optimizer": "sgd",
+    "lr": 0.1,
+    "weight_decay": 0.0
+  },
+  "seed": 47,
+  "rounds": 200,
+  "best_round": 200,
+  "best_validation_mAP": 13.455409096798826,
+  "train_seconds": 23.408786464482546,
+  "validation_seconds": 2.4507381909061223,
+  "peak_cuda_MiB": 804.75439453125,
+  "uplink_bytes": 716688000,
+  "downlink_bytes": 716688000,
+  "curve": [
+    {
+      "round": 20,
+      "train_BCE": 0.12002165615558624,
+      "train_seconds": 2.293974484782666,
+      "validation_mAP": 5.8133072782950554
+    },
+    {
+      "round": 40,
+      "train_BCE": 0.09826214611530304,
+      "train_seconds": 4.549029467976652,
+      "validation_mAP": 7.3061964247496585
+    },
+    {
+      "round": 60,
+      "train_BCE": 0.0917830839753151,
+      "train_seconds": 6.638648812309839,
+      "validation_mAP": 8.377865113367292
+    },
+    {
+      "round": 80,
+      "train_BCE": 0.0887286588549614,
+      "train_seconds": 8.749646282289177,
+      "validation_mAP": 9.342445769381111
+    },
+    {
+      "round": 100,
+      "train_BCE": 0.08692063391208649,
+      "train_seconds": 10.988974479259923,
+      "validation_mAP": 10.188373789654259
+    },
+    {
+      "round": 120,
+      "train_BCE": 0.0856865793466568,
+      "train_seconds": 13.342500588973053,
+      "validation_mAP": 10.933542634529102
+    },
+    {
+      "round": 140,
+      "train_BCE": 0.08475840836763382,
+      "train_seconds": 15.943539249128662,
+      "validation_mAP": 11.612376370333246
+    },
+    {
+      "round": 160,
+      "train_BCE": 0.08401117473840714,
+      "train_seconds": 18.324573066201992,
+      "validation_mAP": 12.253097752082585
+    },
+    {
+      "round": 180,
+      "train_BCE": 0.08337912708520889,
+      "train_seconds": 20.824078465346247,
+      "validation_mAP": 12.866830332270649
+    },
+    {
+      "round": 200,
+      "train_BCE": 0.0828246921300888,
+      "train_seconds": 23.408786464482546,
+      "validation_mAP": 13.455409096798826
+    }
+  ]
+}

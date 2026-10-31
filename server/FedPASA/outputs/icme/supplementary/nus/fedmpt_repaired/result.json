@@ -1,0 +1,233 @@
+{
+  "round": 200,
+  "train_seconds": 470.33940114849247,
+  "client_losses": [
+    {
+      "client": 0,
+      "images": 12381,
+      "loss_sum": 12349.570213317871,
+      "finite_optimizer_steps": 387,
+      "seconds": 38.51452621887438
+    },
+    {
+      "client": 1,
+      "images": 14799,
+      "loss_sum": 25194.62287902832,
+      "finite_optimizer_steps": 463,
+      "seconds": 46.32408514409326
+    },
+    {
+      "client": 2,
+      "images": 23935,
+      "loss_sum": 14821.475895881653,
+      "finite_optimizer_steps": 748,
+      "seconds": 75.36437971284613
+    },
+    {
+      "client": 3,
+      "images": 17572,
+      "loss_sum": 21397.05906534195,
+      "finite_optimizer_steps": 550,
+      "seconds": 55.5429044009652
+    },
+    {
+      "client": 4,
+      "images": 7794,
+      "loss_sum": 12622.883958816528,
+      "finite_optimizer_steps": 244,
+      "seconds": 24.77560296980664
+    },
+    {
+      "client": 5,
+      "images": 11728,
+      "loss_sum": 16453.170497894287,
+      "finite_optimizer_steps": 367,
+      "seconds": 37.16882085008547
+    },
+    {
+      "client": 6,
+      "images": 11931,
+      "loss_sum": 10706.361442565918,
+      "finite_optimizer_steps": 373,
+      "seconds": 37.65089480881579
+    },
+    {
+      "client": 7,
+      "images": 21593,
+      "loss_sum": 15981.479453086853,
+      "finite_optimizer_steps": 675,
+      "seconds": 67.06141139101237
+    },
+    {
+      "client": 8,
+      "images": 14895,
+      "loss_sum": 22121.879692077637,
+      "finite_optimizer_steps": 466,
+      "seconds": 46.32791140000336
+    },
+    {
+      "client": 9,
+      "images": 13372,
+      "loss_sum": 27030.05520248413,
+      "finite_optimizer_steps": 418,
+      "seconds": 41.60886425198987
+    }
+  ],
+  "mAP": 35.82352714696033,
+  "evaluation_seconds": 80.47418952221051,
+  "protocol": {
+    "dataset": "nus",
+    "method": "FedMPT repaired image-input rerun",
+    "status": "RUNNING",
+    "target_rounds": 200,
+    "clients": 10,
+    "seed": 7,
+    "participation": 1.0,
+    "local_epochs": 1,
+    "batch_size": 32,
+    "backbone": "CLIP ViT-B/16",
+    "input_resolution": 224,
+    "train_images": 150000,
+    "test_images": 60260,
+    "partition_sha256": "8c6c53f5efd922a2a4480f5702d005d3aa254603ae6aa32ac08d8e9265c70f1a",
+    "label_order": "exact cache train/test targets and image IDs",
+    "parameter_count": 1170564,
+    "upload_MiB_per_round": 44.653472900390625,
+    "runtime": {
+      "activation_checkpointing": false,
+      "cache_static_text": true,
+      "fused_gradient_check": true,
+      "cpu_threads": 1,
+      "workers": 8,
+      "torch_version": "2.11.0+cu128",
+      "gpu": "NVIDIA GeForce RTX 5090"
+    },
+    "bidirectional_MiB_per_round": 89.30694580078125,
+    "test_labels_used_for_selection": false,
+    "final_checkpoint": "fixed last round, never best test mAP",
+    "original_source": "https://github.com/xuc865/FedMPT-main",
+    "repairs": {
+      "status": "REPAIRED_DIAGNOSTIC_ONLY_NOT_AN_OFFICIAL_NUMERICAL_REPRODUCTION",
+      "comparison_policy": {
+        "main_table": "use the published FedMPT Table 1 values as external results",
+        "local_diagnostic": "use only for source runnability, memory, runtime, and communication auditing",
+        "reason": "execution required semantic model repairs whose equivalence to the authors' unpublished working setup cannot be established"
+      },
+      "upstream_blockers": [
+        {
+          "stage": "checkpoint",
+          "observed": "official loader only searched the user cache or network",
+          "repair": "FEDMPT_CLIP_CHECKPOINT hook with official SHA256 verification",
+          "changes_predictions": false
+        },
+        {
+          "stage": "cluster cache",
+          "observed": "feature directory was not created and first-write pickle.dump return value replaced the in-memory assignments with None",
+          "repair": "create output-scoped cache directory and preserve assignments after pickle.dump",
+          "changes_predictions": false
+        },
+        {
+          "stage": "Windows DataLoader",
+          "observed": "Can't pickle local object '_transform.<locals>.<lambda>'",
+          "repair": "use zero DataLoader workers on Windows",
+          "changes_predictions": false
+        },
+        {
+          "stage": "condition prompt",
+          "observed": "73-token prompt was added to CLIP's 77-token positional embedding at --cond 5",
+          "repair": "one condition placeholder for the one inserted attr_ctx vector",
+          "changes_predictions": true
+        },
+        {
+          "stage": "vanilla patch aggregation",
+          "observed": "conv1d received a four-dimensional weight and the patch-count logit multiplier saturated sigmoid outputs with zero prompt gradients",
+          "repair": "use [C,D,1] conv1d weights and the fixed 5x factor used by sibling multi-label models",
+          "changes_predictions": true
+        },
+        {
+          "stage": "mixed precision",
+          "observed": "Float condition tokens entered a Half CLIP transformer",
+          "repair": "cast attr_ctx rows to the CLIP dtype",
+          "changes_predictions": false
+        },
+        {
+          "stage": "VOC split",
+          "observed": "trainval.txt was paired with *_train.txt labels, retaining 2,501 of 5,011 training images",
+          "repair": "pair trainval.txt with *_trainval.txt annotations",
+          "changes_predictions": true
+        },
+        {
+          "stage": "test protocol",
+          "observed": "train and test shared one 2,501-entry cluster cache, truncating test iteration to 2,501 of 4,952 images",
+          "repair": "use split-specific clustering caches",
+          "changes_predictions": true
+        },
+        {
+          "stage": "CLIP clustering",
+          "observed": "CPU image features were multiplied by CUDA text features",
+          "repair": "move text features to CPU for cached zero-shot probability construction",
+          "changes_predictions": false
+        },
+        {
+          "stage": "CLIP clustering tensor shape",
+          "observed": "the modified CLIP encoder returned [B,D,L] patch tensors where the clustering code assumed [B,D] global embeddings",
+          "repair": "select the CLS token at index 0 for the intended global-image clustering feature",
+          "changes_predictions": true
+        }
+      ],
+      "dataset_cardinality_audit": {
+        "expected_train": 5011,
+        "expected_test": 4952,
+        "original_shared_cache_entries": 2501,
+        "repaired_train_cache_entries": 5011,
+        "repaired_test_cache_entries": 4952
+      },
+      "repaired_one_round_diagnostic": {
+        "dataset": "voc",
+        "method": "fedmpt",
+        "rounds": 1,
+        "clients": 2,
+        "selected_clients_per_round": 2,
+        "trainable_parameters": 1171141,
+        "prompt_state_scalars": 1171141,
+        "estimated_bidirectional_prompt_communication_MiB": 17.870193481445312,
+        "training_seconds": 82.35489535331726,
+        "final_evaluation_seconds": 108.1438901424408,
+        "training_plus_final_evaluation_seconds": 190.49878549575806,
+        "peak_cuda_memory_MiB": 3810.23095703125,
+        "global_metrics": {
+          "P_C": 59.36614455655217,
+          "R_C": 91.0999670624733,
+          "F_C": 42.469971307530194,
+          "P_O": 68.17204284667969,
+          "R_O": 92.6707534790039,
+          "F_O": 44.1266730668135,
+          "mAP": 47.423162666689294
+        },
+        "instrumentation_changes_training_or_predictions": false
+      },
+      "systems_comparison_at_voc07_t10": {
+        "fedpasa_full_fp64_one_shot_MiB": 21.357650756835938,
+        "fedpasa_full_fp32_ridge_one_shot_MiB": 12.874671936035156,
+        "fedpasa_qafed_adapter_fit_seconds": 0.338178500009235,
+        "fedpasa_kmeans_seconds": 4.504773299966473,
+        "fedmpt_prompt_MiB_per_round": 17.870193481445312,
+        "fedmpt_prompt_MiB_for_50_rounds": 893.5096740722656
+      },
+      "source_edits_are_disclosed": true,
+      "published_external_mAP_is_not_replaced_by_diagnostic_mAP": true
+    },
+    "disclosed_differences": [
+      "Uses previously repaired FedMPT forward; not an official numerical reproduction.",
+      "Final frozen patch cache cannot replace image encoder with visual prompts.",
+      "Deterministic CLIP resize/center crop matches feature extraction; no random image augmentation.",
+      "Four built-in conditions, four class context tokens, latent width 64, temperature 4.",
+      "Repaired vanilla conv/softmax aggregation retained; not paper OT equivalence.",
+      "Image-count-weighted FedAvg; optimizer momentum resets each client-round.",
+      "SGD lr 0.001 cosine to zero, momentum 0.9, weight decay 1e-5; ASL neg=2,pos=1, summed reduction.",
+      "BF16 AMP; master parameters/aggregation FP32. Activation checkpointing was used on the 8 GiB GPU; current performance options are recorded in runtime. FP16 smoke overflowed gradients."
+    ]
+  },
+  "status": "COMPLETE",
+  "official_reproduction": false
+}

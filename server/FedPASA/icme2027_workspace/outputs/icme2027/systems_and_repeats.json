@@ -1,0 +1,146 @@
+{
+  "status": "COMPLETE",
+  "rows": [
+    {
+      "dataset": "coco",
+      "method": "Full histogram-calibration variant, three training splits",
+      "cold_feature_extraction_seconds": 466.9969274010509,
+      "warm_feature_cache_fit_calibration_selection_inference_seconds": 173.4193624148611,
+      "cold_total_seconds": 640.416289815912,
+      "peak_training_cuda_MiB": 166.51806640625,
+      "uplink_payload_bytes": 9774485416,
+      "downlink_payload_bytes": 131364480,
+      "stage_seconds": {
+        "input_loading_seconds": 0.5504497780930251,
+        "ridge_fit_statistics_seconds": 1.9849091181531549,
+        "ridge_candidate_solves_validation_histograms_reference_seconds": 3.8779689429793507,
+        "ridge_refit_seconds": 2.6650406720582396,
+        "qa_fit_bank_statistics_and_reference_seconds": 88.9676587851718,
+        "qa_validation_inference_seconds": 9.39676613197662,
+        "fusion_calibration_selection_and_reference_seconds": 9.19933287287131,
+        "qa_refit_and_reference_seconds": 36.325322416843846,
+        "test_inference_and_final_model_delivery_seconds": 18.78565264190547
+      },
+      "scope": "Measured single-server protocol simulation with cached CLIP arrays; all three splits/candidates/refits/inference and independent central audit computations included; conservative audit-run cost, not production latency or physical network RTT"
+    },
+    {
+      "dataset": "nus",
+      "method": "Full histogram-calibration variant, three training splits",
+      "cold_feature_extraction_seconds": 213.8623317508027,
+      "warm_feature_cache_fit_calibration_selection_inference_seconds": 390.5969909080304,
+      "cold_total_seconds": 604.4593226588331,
+      "peak_training_cuda_MiB": 166.61865234375,
+      "uplink_payload_bytes": 9888282732,
+      "downlink_payload_bytes": 133084296,
+      "stage_seconds": {
+        "input_loading_seconds": 0.9643702071625739,
+        "ridge_fit_statistics_seconds": 3.7646808638237417,
+        "ridge_candidate_solves_validation_histograms_reference_seconds": 6.525278753135353,
+        "ridge_refit_seconds": 4.86212835367769,
+        "qa_fit_bank_statistics_and_reference_seconds": 208.80104093882255,
+        "qa_validation_inference_seconds": 33.12336010416038,
+        "fusion_calibration_selection_and_reference_seconds": 15.808115154970437,
+        "qa_refit_and_reference_seconds": 89.13056411105208,
+        "test_inference_and_final_model_delivery_seconds": 25.106456825742498
+      },
+      "scope": "Measured single-server protocol simulation with cached CLIP arrays; all three splits/candidates/refits/inference and independent central audit computations included; conservative audit-run cost, not production latency or physical network RTT"
+    },
+    {
+      "dataset": "coco",
+      "method": "FedMVP released multilabel adaptation",
+      "training_seed": 7,
+      "training_seconds": 29995.073412862374,
+      "evaluation_seconds": 524.9475606889464,
+      "uplink_payload_bytes": 9083392000,
+      "downlink_payload_bytes": 9083392000
+    },
+    {
+      "dataset": "coco",
+      "method": "FedMVP released multilabel adaptation",
+      "training_seed": 17,
+      "training_seconds": 26625.001104479423,
+      "evaluation_seconds": 582.523297745036,
+      "uplink_payload_bytes": 9083392000,
+      "downlink_payload_bytes": 9083392000
+    },
+    {
+      "dataset": "coco",
+      "method": "FedMVP released multilabel adaptation",
+      "training_seed": 27,
+      "training_seconds": 26567.63117275457,
+      "evaluation_seconds": 412.0997329328675,
+      "uplink_payload_bytes": 9083392000,
+      "downlink_payload_bytes": 9083392000
+    },
+    {
+      "dataset": "nus",
+      "method": "FedMVP released multilabel adaptation",
+      "training_seed": 7,
+      "training_seconds": 49239.52665312332,
+      "evaluation_seconds": 621.0882908939384,
+      "uplink_payload_bytes": 9083392000,
+      "downlink_payload_bytes": 9083392000
+    },
+    {
+      "dataset": "nus",
+      "method": "FedMVP released multilabel adaptation",
+      "training_seed": 17,
+      "training_seconds": 47591.1778375688,
+      "evaluation_seconds": 743.4930837829597,
+      "uplink_payload_bytes": 9083392000,
+      "downlink_payload_bytes": 9083392000
+    },
+    {
+      "dataset": "nus",
+      "method": "FedMVP released multilabel adaptation",
+      "training_seed": 27,
+      "training_seconds": 47536.76355734607,
+      "evaluation_seconds": 48.893534931819886,
+      "uplink_payload_bytes": 9083392000,
+      "downlink_payload_bytes": 9083392000
+    }
+  ],
+  "baseline_repeats": [
+    {
+      "dataset": "coco",
+      "training_seeds": [
+        7,
+        17,
+        27
+      ],
+      "fixed_partition_seed": 7,
+      "mAP": [
+        71.96199951578869,
+        71.54054577052548,
+        71.47853835083954
+      ],
+      "mean": 71.66036121238456,
+      "sample_std": 0.2630598403109325
+    },
+    {
+      "dataset": "nus",
+      "training_seeds": [
+        7,
+        17,
+        27
+      ],
+      "fixed_partition_seed": 7,
+      "mAP": [
+        49.7588925209393,
+        50.29159499273691,
+        50.70894654251141
+      ],
+      "mean": 50.253144685395874,
+      "sample_std": 0.47619269269624676
+    }
+  ],
+  "missing": [],
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "torch": "2.11.0+cu128",
+    "python": "3.10.20 (main, Mar 11 2026, 17:46:40) [GCC 14.3.0]",
+    "platform": "Linux-7.0.0-28-generic-x86_64-with-glibc2.35"
+  },
+  "comparability": "Cold and warm Full costs reported separately. Existing repaired FedMPT mixed-hardware historical runtime is excluded from the uniform benchmark.",
+  "completed": "2026-09-13T00:56:04.771370+00:00"
+}

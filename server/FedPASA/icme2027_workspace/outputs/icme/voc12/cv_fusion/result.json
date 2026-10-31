@@ -1,0 +1,44 @@
+{
+  "dataset": "voc12",
+  "method": "three_split_training_side_cv_aggregation",
+  "selection_seeds": [
+    7,
+    17,
+    27
+  ],
+  "test_labels_used_for_selection": false,
+  "inference": "arithmetic mean collapses to one affine per-class ridge/PIAA score",
+  "seed_mAP": [
+    93.84779702338494,
+    93.83480274013381,
+    93.91234264332141
+  ],
+  "seed_mean_mAP": 93.86498080228004,
+  "seed_std_mAP": 0.041527952506987764,
+  "test_mAP": 93.98235339046906,
+  "per_class_AP": [
+    99.55521906171082,
+    96.10814033960041,
+    98.87205266669355,
+    96.50721482940376,
+    83.04154436251338,
+    96.31119373843511,
+    89.82104644618319,
+    99.71787189161624,
+    86.96053048719826,
+    98.66856534003907,
+    85.20455359161005,
+    99.54846119459245,
+    98.50098475400154,
+    96.35733228406448,
+    97.9987727173626,
+    78.95696284887846,
+    98.46103226565444,
+    85.028498942677,
+    99.51906899290417,
+    94.50802105424196
+  ],
+  "strongest_fedmpt_mAP": null,
+  "margin_over_strongest_fedmpt_points": null,
+  "passes_plus_2": null
+}

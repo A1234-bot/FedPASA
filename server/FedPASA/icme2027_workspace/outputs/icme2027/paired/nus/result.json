@@ -1,0 +1,101 @@
+{
+  "status": "COMPLETE",
+  "replicates": 1000,
+  "resampling": "same image multiplicities for all methods and all classes",
+  "tie_handling": "group equal scores before precision/recall updates; sklearn unit-weight agreement <=1e-12",
+  "rng_seed": 20270910,
+  "methods": [
+    "Full",
+    "Ridge_calibrated",
+    "Global_fusion"
+  ],
+  "point_mAP": {
+    "Full": 60.67067302390697,
+    "Ridge_calibrated": 60.19300662225088,
+    "Global_fusion": 60.32578410885515
+  },
+  "comparisons": [
+    {
+      "comparison": "Full minus Ridge_calibrated",
+      "point_difference_mAP": 0.4776664016560943,
+      "percentile_95_CI_mAP": [
+        0.29302795776124296,
+        0.6639768332552648
+      ],
+      "bootstrap_nonpositive_fraction": 0.0,
+      "interpretation": "paired percentile interval conditional on these fitted models; not independent training repetitions or a permutation p-value"
+    },
+    {
+      "comparison": "Full minus Global_fusion",
+      "point_difference_mAP": 0.3448889150518184,
+      "percentile_95_CI_mAP": [
+        0.19581865416200728,
+        0.49812470811190773
+      ],
+      "bootstrap_nonpositive_fraction": 0.0,
+      "interpretation": "paired percentile interval conditional on these fitted models; not independent training repetitions or a permutation p-value"
+    }
+  ],
+  "single_training_splits": [
+    {
+      "training_split_seed": 7,
+      "Full": 60.51172851550931,
+      "Ridge_calibrated": 60.19300662082478,
+      "Global_fusion": 60.314145226649906
+    },
+    {
+      "training_split_seed": 17,
+      "Full": 60.68714980911749,
+      "Ridge_calibrated": 60.193006590562405,
+      "Global_fusion": 60.33077240399821
+    },
+    {
+      "training_split_seed": 27,
+      "Full": 60.452336856203694,
+      "Ridge_calibrated": 60.19300662153122,
+      "Global_fusion": 60.311483532990195
+    }
+  ],
+  "outer_training_repeats": false,
+  "targets_sha256": "4667e6497058961bad145ea9278e9301bd13d2d4a9611563054c266db08d8d8d",
+  "sources": [
+    {
+      "path": "outputs/icme/nus/full_seeds/seed7/ridge_patch_fusion/test_scores_classwise.npy",
+      "sha256": "5ccbca54e1521e2a5348daf720cd89882349bd74ad5fef3ce94084cea8e5aa02"
+    },
+    {
+      "path": "outputs/icme/nus/full_seeds/seed7/ridge/test_scores.npy",
+      "sha256": "68fa5dc25c49a2fb7a04e7c2ec1ca82e1309bf537a8d71ee4403f4d742236d43"
+    },
+    {
+      "path": "outputs/icme/nus/full_seeds/seed7/ridge_patch_fusion/test_scores_global.npy",
+      "sha256": "7fbc02ff9e5c8cae34fe15558a26aff3fdd8d98b86e8242264fdfb0d0481499d"
+    },
+    {
+      "path": "outputs/icme/nus/full_seeds/seed17/ridge_patch_fusion/test_scores_classwise.npy",
+      "sha256": "fc2df3d6cf9888a5ffa4fbd8056c969d5faeeb7c2876ac72c78ca2a598237590"
+    },
+    {
+      "path": "outputs/icme/nus/full_seeds/seed17/ridge/test_scores.npy",
+      "sha256": "68fa5dc25c49a2fb7a04e7c2ec1ca82e1309bf537a8d71ee4403f4d742236d43"
+    },
+    {
+      "path": "outputs/icme/nus/full_seeds/seed17/ridge_patch_fusion/test_scores_global.npy",
+      "sha256": "d2cbdf7aac64edd53c8ed9c0cb2dd44273bb3cbe5d09ba9060ea21304f628785"
+    },
+    {
+      "path": "outputs/icme/nus/full_seeds/seed27/ridge_patch_fusion/test_scores_classwise.npy",
+      "sha256": "d4696c78527e04de069950789f5b80471508ba758f711102f13742b1804531e2"
+    },
+    {
+      "path": "outputs/icme/nus/full_seeds/seed27/ridge/test_scores.npy",
+      "sha256": "68fa5dc25c49a2fb7a04e7c2ec1ca82e1309bf537a8d71ee4403f4d742236d43"
+    },
+    {
+      "path": "outputs/icme/nus/full_seeds/seed27/ridge_patch_fusion/test_scores_global.npy",
+      "sha256": "5d69ab94b5898542caffe0eb2578293896cdb62883326922b406f225d91e4953"
+    }
+  ],
+  "seconds": 310.31745754904114,
+  "completed": "2026-09-10T02:02:28.340718+00:00"
+}

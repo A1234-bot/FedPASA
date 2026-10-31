@@ -1,0 +1,80 @@
+{
+  "status": "COMPLETE",
+  "mode": "central",
+  "config": {
+    "optimizer": "adamw",
+    "lr": 0.1,
+    "weight_decay": 0.0
+  },
+  "seed": 17,
+  "rounds": 200,
+  "best_round": 20,
+  "best_validation_mAP": 79.78607508175094,
+  "train_seconds": 14.921762795129325,
+  "validation_seconds": 1.0784148239763454,
+  "peak_cuda_MiB": 446.64501953125,
+  "uplink_bytes": 0,
+  "downlink_bytes": 0,
+  "curve": [
+    {
+      "round": 20,
+      "train_BCE": 0.03623265027999878,
+      "train_seconds": 1.210203525988618,
+      "validation_mAP": 79.78607508175094
+    },
+    {
+      "round": 40,
+      "train_BCE": 0.03433474898338318,
+      "train_seconds": 2.430913541058544,
+      "validation_mAP": 79.29097230632055
+    },
+    {
+      "round": 60,
+      "train_BCE": 0.033926822245121,
+      "train_seconds": 3.681746636022581,
+      "validation_mAP": 79.05851498560928
+    },
+    {
+      "round": 80,
+      "train_BCE": 0.03289303183555603,
+      "train_seconds": 5.379227553028613,
+      "validation_mAP": 78.92241927928588
+    },
+    {
+      "round": 100,
+      "train_BCE": 0.03342198207974434,
+      "train_seconds": 7.568037146003917,
+      "validation_mAP": 78.69813251120972
+    },
+    {
+      "round": 120,
+      "train_BCE": 0.032717108726501465,
+      "train_seconds": 9.792779440933373,
+      "validation_mAP": 78.51429670482577
+    },
+    {
+      "round": 140,
+      "train_BCE": 0.03246231749653816,
+      "train_seconds": 11.20756219298346,
+      "validation_mAP": 78.46290286300561
+    },
+    {
+      "round": 160,
+      "train_BCE": 0.03285742178559303,
+      "train_seconds": 12.470220146060456,
+      "validation_mAP": 78.34294390239283
+    },
+    {
+      "round": 180,
+      "train_BCE": 0.032467421144247055,
+      "train_seconds": 13.701935507095186,
+      "validation_mAP": 78.29166108310753
+    },
+    {
+      "round": 200,
+      "train_BCE": 0.03193502873182297,
+      "train_seconds": 14.921762795129325,
+      "validation_mAP": 78.27289032464513
+    }
+  ]
+}

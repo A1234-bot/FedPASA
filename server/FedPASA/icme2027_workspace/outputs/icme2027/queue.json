@@ -1,0 +1,395 @@
+{
+  "status": "COMPLETE",
+  "pid": 220,
+  "workspace": "/root/autodl-tmp/FedPASA/icme2027_workspace",
+  "created": "2026-09-10T01:54:27.153604+00:00",
+  "jobs": [
+    {
+      "id": "protocol_tests",
+      "status": "COMPLETE",
+      "started": "2026-09-10T01:54:27.153736+00:00",
+      "command": [
+        "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+        "/root/autodl-tmp/FedPASA/icme2027_workspace/scripts/test_icme2027_protocols.py"
+      ],
+      "pid": 273,
+      "exit_code": 0,
+      "finished": "2026-09-10T01:54:28.196891+00:00",
+      "wall_seconds": 1.043046624166891
+    },
+    {
+      "id": "paired_coco",
+      "status": "COMPLETE",
+      "started": "2026-09-10T01:54:28.197231+00:00",
+      "command": [
+        "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+        "/root/autodl-tmp/FedPASA/icme2027_workspace/scripts/run_icme2027_paired.py",
+        "--datasets",
+        "coco",
+        "--replicates",
+        "1000"
+      ],
+      "pid": 281,
+      "exit_code": 0,
+      "finished": "2026-09-10T01:57:17.692879+00:00",
+      "wall_seconds": 169.4947647708468
+    },
+    {
+      "id": "paired_nus",
+      "status": "COMPLETE",
+      "started": "2026-09-10T01:57:17.693227+00:00",
+      "command": [
+        "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+        "/root/autodl-tmp/FedPASA/icme2027_workspace/scripts/run_icme2027_paired.py",
+        "--datasets",
+        "nus",
+        "--replicates",
+        "1000"
+      ],
+      "pid": 461,
+      "exit_code": 0,
+      "finished": "2026-09-10T02:02:28.399588+00:00",
+      "wall_seconds": 310.7062466070056
+    },
+    {
+      "id": "paired_voc07",
+      "status": "COMPLETE",
+      "started": "2026-09-10T02:02:28.399945+00:00",
+      "command": [
+        "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+        "/root/autodl-tmp/FedPASA/icme2027_workspace/scripts/run_icme2027_paired.py",
+        "--datasets",
+        "voc07",
+        "--replicates",
+        "1000"
+      ],
+      "pid": 686,
+      "exit_code": 0,
+      "finished": "2026-09-10T02:02:31.985420+00:00",
+      "wall_seconds": 3.585318182827905
+    },
+    {
+      "id": "paired_voc12",
+      "status": "COMPLETE",
+      "started": "2026-09-10T02:02:31.985769+00:00",
+      "command": [
+        "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+        "/root/autodl-tmp/FedPASA/icme2027_workspace/scripts/run_icme2027_paired.py",
+        "--datasets",
+        "voc12",
+        "--replicates",
+        "1000"
+      ],
+      "pid": 697,
+      "exit_code": 0,
+      "finished": "2026-09-10T02:02:36.174222+00:00",
+      "wall_seconds": 4.188105192966759
+    },
+    {
+      "id": "extract_coco",
+      "status": "COMPLETE",
+      "started": "2026-09-10T02:02:36.174587+00:00",
+      "command": [
+        "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+        "/root/autodl-tmp/FedPASA/icme2027_workspace/scripts/run_icme2027_extract.py",
+        "--dataset",
+        "coco"
+      ],
+      "pid": 708,
+      "exit_code": 0,
+      "finished": "2026-09-10T02:10:23.227489+00:00",
+      "wall_seconds": 467.052793511888
+    },
+    {
+      "id": "extract_nus",
+      "status": "COMPLETE",
+      "started": "2026-09-10T02:10:23.228040+00:00",
+      "command": [
+        "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+        "/root/autodl-tmp/FedPASA/icme2027_workspace/scripts/run_icme2027_extract.py",
+        "--dataset",
+        "nus"
+      ],
+      "pid": 1012,
+      "exit_code": 0,
+      "finished": "2026-09-10T02:13:57.189977+00:00",
+      "wall_seconds": 213.96179951890372
+    },
+    {
+      "id": "calibration_coco_7",
+      "status": "COMPLETE",
+      "started": "2026-09-10T02:13:57.190520+00:00",
+      "command": [
+        "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+        "/root/autodl-tmp/FedPASA/icme2027_workspace/scripts/run_icme2027_calibration.py",
+        "--dataset",
+        "coco",
+        "--seed",
+        "7",
+        "--bins",
+        "8192"
+      ],
+      "pid": 1188,
+      "exit_code": 0,
+      "finished": "2026-09-10T02:15:19.548654+00:00",
+      "wall_seconds": 82.35801861598156
+    },
+    {
+      "id": "calibration_coco_17",
+      "status": "COMPLETE",
+      "started": "2026-09-10T02:15:19.568543+00:00",
+      "command": [
+        "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+        "/root/autodl-tmp/FedPASA/icme2027_workspace/scripts/run_icme2027_calibration.py",
+        "--dataset",
+        "coco",
+        "--seed",
+        "17",
+        "--bins",
+        "8192"
+      ],
+      "pid": 1238,
+      "exit_code": 0,
+      "finished": "2026-09-10T02:16:07.404916+00:00",
+      "wall_seconds": 47.83619341114536
+    },
+    {
+      "id": "calibration_coco_27",
+      "status": "COMPLETE",
+      "started": "2026-09-10T02:16:07.406163+00:00",
+      "command": [
+        "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+        "/root/autodl-tmp/FedPASA/icme2027_workspace/scripts/run_icme2027_calibration.py",
+        "--dataset",
+        "coco",
+        "--seed",
+        "27",
+        "--bins",
+        "8192"
+      ],
+      "pid": 1276,
+      "exit_code": 0,
+      "finished": "2026-09-10T02:16:55.101194+00:00",
+      "wall_seconds": 47.69487580587156
+    },
+    {
+      "id": "calibration_nus_7",
+      "status": "COMPLETE",
+      "started": "2026-09-10T02:16:55.118583+00:00",
+      "command": [
+        "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+        "/root/autodl-tmp/FedPASA/icme2027_workspace/scripts/run_icme2027_calibration.py",
+        "--dataset",
+        "nus",
+        "--seed",
+        "7",
+        "--bins",
+        "8192"
+      ],
+      "pid": 1314,
+      "exit_code": 0,
+      "finished": "2026-09-10T02:20:04.489414+00:00",
+      "wall_seconds": 189.3706402340904
+    },
+    {
+      "id": "calibration_nus_17",
+      "status": "COMPLETE",
+      "started": "2026-09-10T02:20:04.506444+00:00",
+      "command": [
+        "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+        "/root/autodl-tmp/FedPASA/icme2027_workspace/scripts/run_icme2027_calibration.py",
+        "--dataset",
+        "nus",
+        "--seed",
+        "17",
+        "--bins",
+        "8192"
+      ],
+      "pid": 1406,
+      "exit_code": 0,
+      "finished": "2026-09-10T02:21:47.421945+00:00",
+      "wall_seconds": 102.91534381685778
+    },
+    {
+      "id": "calibration_nus_27",
+      "status": "COMPLETE",
+      "started": "2026-09-10T02:21:47.423257+00:00",
+      "command": [
+        "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+        "/root/autodl-tmp/FedPASA/icme2027_workspace/scripts/run_icme2027_calibration.py",
+        "--dataset",
+        "nus",
+        "--seed",
+        "27",
+        "--bins",
+        "8192"
+      ],
+      "pid": 1467,
+      "exit_code": 0,
+      "finished": "2026-09-10T02:23:30.122158+00:00",
+      "wall_seconds": 102.69874338782392
+    },
+    {
+      "id": "baseline_source_audit",
+      "status": "COMPLETE",
+      "started": "2026-09-10T02:23:30.123603+00:00",
+      "command": [
+        "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+        "/root/autodl-tmp/FedPASA/icme2027_workspace/scripts/run_icme2027_baseline.py",
+        "--audit-only"
+      ],
+      "pid": 1527,
+      "exit_code": 0,
+      "finished": "2026-09-10T02:23:33.042006+00:00",
+      "wall_seconds": 2.918230822077021
+    },
+    {
+      "id": "baseline_smoke_coco",
+      "status": "COMPLETE",
+      "started": "2026-09-10T02:23:33.042414+00:00",
+      "command": [
+        "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+        "/root/autodl-tmp/FedPASA/icme2027_workspace/scripts/run_icme2027_baseline.py",
+        "--dataset",
+        "coco",
+        "--smoke"
+      ],
+      "pid": 1537,
+      "exit_code": 0,
+      "finished": "2026-09-10T02:23:41.729789+00:00",
+      "wall_seconds": 8.686702011153102
+    },
+    {
+      "id": "baseline_smoke_nus",
+      "status": "COMPLETE",
+      "started": "2026-09-10T02:23:41.730209+00:00",
+      "command": [
+        "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+        "/root/autodl-tmp/FedPASA/icme2027_workspace/scripts/run_icme2027_baseline.py",
+        "--dataset",
+        "nus",
+        "--smoke"
+      ],
+      "pid": 1578,
+      "exit_code": 0,
+      "finished": "2026-09-10T02:23:48.423884+00:00",
+      "wall_seconds": 6.692785427905619
+    },
+    {
+      "id": "baseline_coco_7",
+      "status": "COMPLETE",
+      "started": "2026-09-10T07:07:06.411921+00:00",
+      "command": [
+        "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+        "/root/autodl-tmp/FedPASA/icme2027_workspace/scripts/run_icme2027_baseline.py",
+        "--dataset",
+        "coco",
+        "--seed",
+        "7"
+      ],
+      "pid": 27156,
+      "exit_code": 0,
+      "finished": "2026-09-10T10:54:04.920085+00:00",
+      "wall_seconds": 13618.50736689684
+    },
+    {
+      "id": "baseline_nus_7",
+      "status": "COMPLETE",
+      "started": "2026-09-10T10:54:04.921318+00:00",
+      "command": [
+        "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+        "/root/autodl-tmp/FedPASA/icme2027_workspace/scripts/run_icme2027_baseline.py",
+        "--dataset",
+        "nus",
+        "--seed",
+        "7"
+      ],
+      "pid": 50387,
+      "exit_code": 0,
+      "finished": "2026-09-11T00:45:44.767261+00:00",
+      "wall_seconds": 49899.84578374587
+    },
+    {
+      "id": "baseline_coco_17",
+      "status": "COMPLETE",
+      "started": "2026-09-11T00:45:44.768370+00:00",
+      "command": [
+        "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+        "/root/autodl-tmp/FedPASA/icme2027_workspace/scripts/run_icme2027_baseline.py",
+        "--dataset",
+        "coco",
+        "--seed",
+        "17"
+      ],
+      "pid": 106386,
+      "exit_code": 0,
+      "finished": "2026-09-11T08:19:51.747780+00:00",
+      "wall_seconds": 27246.97919432004
+    },
+    {
+      "id": "baseline_nus_17",
+      "status": "COMPLETE",
+      "started": "2026-09-11T08:21:00.751892+00:00",
+      "command": [
+        "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+        "/root/autodl-tmp/FedPASA/icme2027_workspace/scripts/run_icme2027_baseline.py",
+        "--dataset",
+        "nus",
+        "--seed",
+        "17"
+      ],
+      "pid": 167,
+      "exit_code": 0,
+      "finished": "2026-09-11T21:47:18.386270+00:00",
+      "wall_seconds": 48377.633615636034
+    },
+    {
+      "id": "baseline_coco_27",
+      "status": "COMPLETE",
+      "started": "2026-09-11T21:47:18.386709+00:00",
+      "command": [
+        "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+        "/root/autodl-tmp/FedPASA/icme2027_workspace/scripts/run_icme2027_baseline.py",
+        "--dataset",
+        "coco",
+        "--seed",
+        "27"
+      ],
+      "pid": 55575,
+      "exit_code": 0,
+      "finished": "2026-09-12T05:17:43.679045+00:00",
+      "wall_seconds": 27025.29146579909
+    },
+    {
+      "id": "baseline_nus_27",
+      "status": "COMPLETE",
+      "started": "2026-09-12T05:17:43.679622+00:00",
+      "command": [
+        "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+        "/root/autodl-tmp/FedPASA/icme2027_workspace/scripts/run_icme2027_baseline.py",
+        "--dataset",
+        "nus",
+        "--seed",
+        "27"
+      ],
+      "pid": 102469,
+      "exit_code": 0,
+      "finished": "2026-09-12T18:31:34.461429+00:00",
+      "wall_seconds": 47630.78105050302
+    },
+    {
+      "id": "systems_and_repeats",
+      "status": "COMPLETE",
+      "started": "2026-09-13T00:56:04.159277+00:00",
+      "command": [
+        "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+        "/root/autodl-tmp/FedPASA/icme2027_workspace/scripts/build_icme2027_server_report.py"
+      ],
+      "pid": 226,
+      "exit_code": 0,
+      "finished": "2026-09-13T00:56:04.930004+00:00",
+      "wall_seconds": 0.7699792780913413
+    }
+  ],
+  "updated": "2026-09-13T00:56:04.930430+00:00"
+}

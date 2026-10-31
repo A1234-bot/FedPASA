@@ -1,0 +1,50 @@
+{
+  "method": "Fed3R-style multi-label CLS ridge",
+  "tuning": [
+    {
+      "regularization": 1e-06,
+      "validation_mAP": 58.897935304043045
+    },
+    {
+      "regularization": 1e-05,
+      "validation_mAP": 58.897942658134575
+    },
+    {
+      "regularization": 0.0001,
+      "validation_mAP": 58.89783323222613
+    },
+    {
+      "regularization": 0.001,
+      "validation_mAP": 58.8971358034351
+    },
+    {
+      "regularization": 0.01,
+      "validation_mAP": 58.89608999401174
+    },
+    {
+      "regularization": 0.1,
+      "validation_mAP": 58.87791261595052
+    },
+    {
+      "regularization": 1.0,
+      "validation_mAP": 58.78142819186984
+    },
+    {
+      "regularization": 10.0,
+      "validation_mAP": 58.60337638717659
+    },
+    {
+      "regularization": 100.0,
+      "validation_mAP": 57.7635029370145
+    }
+  ],
+  "selection": {
+    "regularization": 1e-05,
+    "validation_mAP": 58.897942658134575
+  },
+  "features": "same frozen CLIP CLS",
+  "bias": false,
+  "target": "multi-hot labels; adaptation of the single-label method",
+  "source": "https://arxiv.org/abs/2406.01116",
+  "test_labels_used_for_selection": false
+}

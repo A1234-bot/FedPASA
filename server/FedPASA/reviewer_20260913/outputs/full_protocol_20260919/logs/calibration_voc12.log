@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/root/autodl-tmp/FedPASA/reviewer_20260913/scripts/run_full_calibration_protocol.py", line 103, in <module>
+    p=argparse.ArgumentParser();p.add_argument('--dataset',required=True);a=p.parse_args();run(a.dataset)
+  File "/root/autodl-tmp/FedPASA/reviewer_20260913/scripts/run_full_calibration_protocol.py", line 55, in run
+    if err>1e-4:raise AssertionError((d,seed,'central reference differs materially',err))
+AssertionError: ('voc12', 17, 'central reference differs materially', 0.09401464462280273)
+CALIBRATION_COMPLETE voc12 93.98234223941617 93.98234223941617

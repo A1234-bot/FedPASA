@@ -1,0 +1,358 @@
+[
+  {
+    "dataset": "coco",
+    "method": "FedMPT repaired diagnostic",
+    "seed": 7,
+    "mAP": 69.80611229981797,
+    "rounds": 200,
+    "uplink_MiB": 8930.694580078125,
+    "partition_sha256": "42dae9907d9422c1359284a83708e8d4c91ef43bd3b458bc9ce0710464ca6b08",
+    "prediction_sha256": "a00ce59bdfc4a644c6cf04bef60a865c8b83822f5b3ba086c127c85c43da85d8",
+    "source_result": "/root/autodl-tmp/FedPASA/outputs/icme/supplementary/coco/fedmpt_repaired/result.json",
+    "source_prediction": "/root/autodl-tmp/FedPASA/outputs/icme/supplementary/coco/fedmpt_repaired/round200_test_scores.npy",
+    "prediction_metric_difference": 0.0,
+    "new_training": false,
+    "author_equivalent": false,
+    "scope": "same images/labels/checkpoint/partition; method adaptation disclosed",
+    "repairs": {
+      "status": "REPAIRED_DIAGNOSTIC_ONLY_NOT_AN_OFFICIAL_NUMERICAL_REPRODUCTION",
+      "comparison_policy": {
+        "main_table": "use the published FedMPT Table 1 values as external results",
+        "local_diagnostic": "use only for source runnability, memory, runtime, and communication auditing",
+        "reason": "execution required semantic model repairs whose equivalence to the authors' unpublished working setup cannot be established"
+      },
+      "upstream_blockers": [
+        {
+          "stage": "checkpoint",
+          "observed": "official loader only searched the user cache or network",
+          "repair": "FEDMPT_CLIP_CHECKPOINT hook with official SHA256 verification",
+          "changes_predictions": false
+        },
+        {
+          "stage": "cluster cache",
+          "observed": "feature directory was not created and first-write pickle.dump return value replaced the in-memory assignments with None",
+          "repair": "create output-scoped cache directory and preserve assignments after pickle.dump",
+          "changes_predictions": false
+        },
+        {
+          "stage": "Windows DataLoader",
+          "observed": "Can't pickle local object '_transform.<locals>.<lambda>'",
+          "repair": "use zero DataLoader workers on Windows",
+          "changes_predictions": false
+        },
+        {
+          "stage": "condition prompt",
+          "observed": "73-token prompt was added to CLIP's 77-token positional embedding at --cond 5",
+          "repair": "one condition placeholder for the one inserted attr_ctx vector",
+          "changes_predictions": true
+        },
+        {
+          "stage": "vanilla patch aggregation",
+          "observed": "conv1d received a four-dimensional weight and the patch-count logit multiplier saturated sigmoid outputs with zero prompt gradients",
+          "repair": "use [C,D,1] conv1d weights and the fixed 5x factor used by sibling multi-label models",
+          "changes_predictions": true
+        },
+        {
+          "stage": "mixed precision",
+          "observed": "Float condition tokens entered a Half CLIP transformer",
+          "repair": "cast attr_ctx rows to the CLIP dtype",
+          "changes_predictions": false
+        },
+        {
+          "stage": "VOC split",
+          "observed": "trainval.txt was paired with *_train.txt labels, retaining 2,501 of 5,011 training images",
+          "repair": "pair trainval.txt with *_trainval.txt annotations",
+          "changes_predictions": true
+        },
+        {
+          "stage": "test protocol",
+          "observed": "train and test shared one 2,501-entry cluster cache, truncating test iteration to 2,501 of 4,952 images",
+          "repair": "use split-specific clustering caches",
+          "changes_predictions": true
+        },
+        {
+          "stage": "CLIP clustering",
+          "observed": "CPU image features were multiplied by CUDA text features",
+          "repair": "move text features to CPU for cached zero-shot probability construction",
+          "changes_predictions": false
+        },
+        {
+          "stage": "CLIP clustering tensor shape",
+          "observed": "the modified CLIP encoder returned [B,D,L] patch tensors where the clustering code assumed [B,D] global embeddings",
+          "repair": "select the CLS token at index 0 for the intended global-image clustering feature",
+          "changes_predictions": true
+        }
+      ],
+      "dataset_cardinality_audit": {
+        "expected_train": 5011,
+        "expected_test": 4952,
+        "original_shared_cache_entries": 2501,
+        "repaired_train_cache_entries": 5011,
+        "repaired_test_cache_entries": 4952
+      },
+      "repaired_one_round_diagnostic": {
+        "dataset": "voc",
+        "method": "fedmpt",
+        "rounds": 1,
+        "clients": 2,
+        "selected_clients_per_round": 2,
+        "trainable_parameters": 1171141,
+        "prompt_state_scalars": 1171141,
+        "estimated_bidirectional_prompt_communication_MiB": 17.870193481445312,
+        "training_seconds": 82.35489535331726,
+        "final_evaluation_seconds": 108.1438901424408,
+        "training_plus_final_evaluation_seconds": 190.49878549575806,
+        "peak_cuda_memory_MiB": 3810.23095703125,
+        "global_metrics": {
+          "P_C": 59.36614455655217,
+          "R_C": 91.0999670624733,
+          "F_C": 42.469971307530194,
+          "P_O": 68.17204284667969,
+          "R_O": 92.6707534790039,
+          "F_O": 44.1266730668135,
+          "mAP": 47.423162666689294
+        },
+        "instrumentation_changes_training_or_predictions": false
+      },
+      "systems_comparison_at_voc07_t10": {
+        "fedpasa_full_fp64_one_shot_MiB": 21.357650756835938,
+        "fedpasa_full_fp32_ridge_one_shot_MiB": 12.874671936035156,
+        "fedpasa_qafed_adapter_fit_seconds": 0.338178500009235,
+        "fedpasa_kmeans_seconds": 4.504773299966473,
+        "fedmpt_prompt_MiB_per_round": 17.870193481445312,
+        "fedmpt_prompt_MiB_for_50_rounds": 893.5096740722656
+      },
+      "source_edits_are_disclosed": true,
+      "published_external_mAP_is_not_replaced_by_diagnostic_mAP": true
+    }
+  },
+  {
+    "dataset": "coco",
+    "method": "FedMVP release multilabel adaptation",
+    "seed": 7,
+    "mAP": 71.96199951578869,
+    "rounds": 200,
+    "uplink_MiB": 8662.59765625,
+    "partition_sha256": "42dae9907d9422c1359284a83708e8d4c91ef43bd3b458bc9ce0710464ca6b08",
+    "prediction_sha256": "a6345db60eb71d729a215faf5f3168264feb5412eff120b2a477e5af8351e6c7",
+    "source_result": "/root/autodl-tmp/FedPASA/icme2027_workspace/outputs/icme2027/baselines/fedmvp_release_mlc/coco/seed7/result.json",
+    "source_prediction": "/root/autodl-tmp/FedPASA/icme2027_workspace/outputs/icme2027/baselines/fedmvp_release_mlc/coco/seed7/round200_test_scores.npy",
+    "prediction_metric_difference": 0.0,
+    "new_training": false,
+    "author_equivalent": false,
+    "scope": "same images/labels/checkpoint/partition; method adaptation disclosed",
+    "repairs": {}
+  },
+  {
+    "dataset": "coco",
+    "method": "FedMVP release multilabel adaptation",
+    "seed": 17,
+    "mAP": 71.54054577052548,
+    "rounds": 200,
+    "uplink_MiB": 8662.59765625,
+    "partition_sha256": "42dae9907d9422c1359284a83708e8d4c91ef43bd3b458bc9ce0710464ca6b08",
+    "prediction_sha256": "799b2f0bd1f4208091174e7d3d15b0d407cafa1f48a36e458f9bf6dfa0af6b5d",
+    "source_result": "/root/autodl-tmp/FedPASA/icme2027_workspace/outputs/icme2027/baselines/fedmvp_release_mlc/coco/seed17/result.json",
+    "source_prediction": "/root/autodl-tmp/FedPASA/icme2027_workspace/outputs/icme2027/baselines/fedmvp_release_mlc/coco/seed17/round200_test_scores.npy",
+    "prediction_metric_difference": 0.0,
+    "new_training": false,
+    "author_equivalent": false,
+    "scope": "same images/labels/checkpoint/partition; method adaptation disclosed",
+    "repairs": {}
+  },
+  {
+    "dataset": "coco",
+    "method": "FedMVP release multilabel adaptation",
+    "seed": 27,
+    "mAP": 71.47853835083954,
+    "rounds": 200,
+    "uplink_MiB": 8662.59765625,
+    "partition_sha256": "42dae9907d9422c1359284a83708e8d4c91ef43bd3b458bc9ce0710464ca6b08",
+    "prediction_sha256": "4fafe404a6952d03cd3b6eaf953a12e529f914ecc18584934da345c24f5994ac",
+    "source_result": "/root/autodl-tmp/FedPASA/icme2027_workspace/outputs/icme2027/baselines/fedmvp_release_mlc/coco/seed27/result.json",
+    "source_prediction": "/root/autodl-tmp/FedPASA/icme2027_workspace/outputs/icme2027/baselines/fedmvp_release_mlc/coco/seed27/round200_test_scores.npy",
+    "prediction_metric_difference": 0.0,
+    "new_training": false,
+    "author_equivalent": false,
+    "scope": "same images/labels/checkpoint/partition; method adaptation disclosed",
+    "repairs": {}
+  },
+  {
+    "dataset": "nus",
+    "method": "FedMPT repaired diagnostic",
+    "seed": 7,
+    "mAP": 35.82352714696033,
+    "rounds": 200,
+    "uplink_MiB": 8930.694580078125,
+    "partition_sha256": "8c6c53f5efd922a2a4480f5702d005d3aa254603ae6aa32ac08d8e9265c70f1a",
+    "prediction_sha256": "4094407dbb2dde4d319eb293def4f9a13988cbb07d35d064c57536cef8cfcb0c",
+    "source_result": "/root/autodl-tmp/FedPASA/outputs/icme/supplementary/nus/fedmpt_repaired/result.json",
+    "source_prediction": "/root/autodl-tmp/FedPASA/outputs/icme/supplementary/nus/fedmpt_repaired/round200_test_scores.npy",
+    "prediction_metric_difference": 0.0,
+    "new_training": false,
+    "author_equivalent": false,
+    "scope": "same images/labels/checkpoint/partition; method adaptation disclosed",
+    "repairs": {
+      "status": "REPAIRED_DIAGNOSTIC_ONLY_NOT_AN_OFFICIAL_NUMERICAL_REPRODUCTION",
+      "comparison_policy": {
+        "main_table": "use the published FedMPT Table 1 values as external results",
+        "local_diagnostic": "use only for source runnability, memory, runtime, and communication auditing",
+        "reason": "execution required semantic model repairs whose equivalence to the authors' unpublished working setup cannot be established"
+      },
+      "upstream_blockers": [
+        {
+          "stage": "checkpoint",
+          "observed": "official loader only searched the user cache or network",
+          "repair": "FEDMPT_CLIP_CHECKPOINT hook with official SHA256 verification",
+          "changes_predictions": false
+        },
+        {
+          "stage": "cluster cache",
+          "observed": "feature directory was not created and first-write pickle.dump return value replaced the in-memory assignments with None",
+          "repair": "create output-scoped cache directory and preserve assignments after pickle.dump",
+          "changes_predictions": false
+        },
+        {
+          "stage": "Windows DataLoader",
+          "observed": "Can't pickle local object '_transform.<locals>.<lambda>'",
+          "repair": "use zero DataLoader workers on Windows",
+          "changes_predictions": false
+        },
+        {
+          "stage": "condition prompt",
+          "observed": "73-token prompt was added to CLIP's 77-token positional embedding at --cond 5",
+          "repair": "one condition placeholder for the one inserted attr_ctx vector",
+          "changes_predictions": true
+        },
+        {
+          "stage": "vanilla patch aggregation",
+          "observed": "conv1d received a four-dimensional weight and the patch-count logit multiplier saturated sigmoid outputs with zero prompt gradients",
+          "repair": "use [C,D,1] conv1d weights and the fixed 5x factor used by sibling multi-label models",
+          "changes_predictions": true
+        },
+        {
+          "stage": "mixed precision",
+          "observed": "Float condition tokens entered a Half CLIP transformer",
+          "repair": "cast attr_ctx rows to the CLIP dtype",
+          "changes_predictions": false
+        },
+        {
+          "stage": "VOC split",
+          "observed": "trainval.txt was paired with *_train.txt labels, retaining 2,501 of 5,011 training images",
+          "repair": "pair trainval.txt with *_trainval.txt annotations",
+          "changes_predictions": true
+        },
+        {
+          "stage": "test protocol",
+          "observed": "train and test shared one 2,501-entry cluster cache, truncating test iteration to 2,501 of 4,952 images",
+          "repair": "use split-specific clustering caches",
+          "changes_predictions": true
+        },
+        {
+          "stage": "CLIP clustering",
+          "observed": "CPU image features were multiplied by CUDA text features",
+          "repair": "move text features to CPU for cached zero-shot probability construction",
+          "changes_predictions": false
+        },
+        {
+          "stage": "CLIP clustering tensor shape",
+          "observed": "the modified CLIP encoder returned [B,D,L] patch tensors where the clustering code assumed [B,D] global embeddings",
+          "repair": "select the CLS token at index 0 for the intended global-image clustering feature",
+          "changes_predictions": true
+        }
+      ],
+      "dataset_cardinality_audit": {
+        "expected_train": 5011,
+        "expected_test": 4952,
+        "original_shared_cache_entries": 2501,
+        "repaired_train_cache_entries": 5011,
+        "repaired_test_cache_entries": 4952
+      },
+      "repaired_one_round_diagnostic": {
+        "dataset": "voc",
+        "method": "fedmpt",
+        "rounds": 1,
+        "clients": 2,
+        "selected_clients_per_round": 2,
+        "trainable_parameters": 1171141,
+        "prompt_state_scalars": 1171141,
+        "estimated_bidirectional_prompt_communication_MiB": 17.870193481445312,
+        "training_seconds": 82.35489535331726,
+        "final_evaluation_seconds": 108.1438901424408,
+        "training_plus_final_evaluation_seconds": 190.49878549575806,
+        "peak_cuda_memory_MiB": 3810.23095703125,
+        "global_metrics": {
+          "P_C": 59.36614455655217,
+          "R_C": 91.0999670624733,
+          "F_C": 42.469971307530194,
+          "P_O": 68.17204284667969,
+          "R_O": 92.6707534790039,
+          "F_O": 44.1266730668135,
+          "mAP": 47.423162666689294
+        },
+        "instrumentation_changes_training_or_predictions": false
+      },
+      "systems_comparison_at_voc07_t10": {
+        "fedpasa_full_fp64_one_shot_MiB": 21.357650756835938,
+        "fedpasa_full_fp32_ridge_one_shot_MiB": 12.874671936035156,
+        "fedpasa_qafed_adapter_fit_seconds": 0.338178500009235,
+        "fedpasa_kmeans_seconds": 4.504773299966473,
+        "fedmpt_prompt_MiB_per_round": 17.870193481445312,
+        "fedmpt_prompt_MiB_for_50_rounds": 893.5096740722656
+      },
+      "source_edits_are_disclosed": true,
+      "published_external_mAP_is_not_replaced_by_diagnostic_mAP": true
+    }
+  },
+  {
+    "dataset": "nus",
+    "method": "FedMVP release multilabel adaptation",
+    "seed": 7,
+    "mAP": 49.7588925209393,
+    "rounds": 200,
+    "uplink_MiB": 8662.59765625,
+    "partition_sha256": "8c6c53f5efd922a2a4480f5702d005d3aa254603ae6aa32ac08d8e9265c70f1a",
+    "prediction_sha256": "58df4a278a9eceb93b8ca5be4c07ab5a0fa95c3634245e4c966d7ae52e6d583a",
+    "source_result": "/root/autodl-tmp/FedPASA/icme2027_workspace/outputs/icme2027/baselines/fedmvp_release_mlc/nus/seed7/result.json",
+    "source_prediction": "/root/autodl-tmp/FedPASA/icme2027_workspace/outputs/icme2027/baselines/fedmvp_release_mlc/nus/seed7/round200_test_scores.npy",
+    "prediction_metric_difference": 0.0,
+    "new_training": false,
+    "author_equivalent": false,
+    "scope": "same images/labels/checkpoint/partition; method adaptation disclosed",
+    "repairs": {}
+  },
+  {
+    "dataset": "nus",
+    "method": "FedMVP release multilabel adaptation",
+    "seed": 17,
+    "mAP": 50.29159499273691,
+    "rounds": 200,
+    "uplink_MiB": 8662.59765625,
+    "partition_sha256": "8c6c53f5efd922a2a4480f5702d005d3aa254603ae6aa32ac08d8e9265c70f1a",
+    "prediction_sha256": "054967cd7377a0fa47d6799224ca693a22806f8b1b01b33932c556b603c107cb",
+    "source_result": "/root/autodl-tmp/FedPASA/icme2027_workspace/outputs/icme2027/baselines/fedmvp_release_mlc/nus/seed17/result.json",
+    "source_prediction": "/root/autodl-tmp/FedPASA/icme2027_workspace/outputs/icme2027/baselines/fedmvp_release_mlc/nus/seed17/round200_test_scores.npy",
+    "prediction_metric_difference": 0.0,
+    "new_training": false,
+    "author_equivalent": false,
+    "scope": "same images/labels/checkpoint/partition; method adaptation disclosed",
+    "repairs": {}
+  },
+  {
+    "dataset": "nus",
+    "method": "FedMVP release multilabel adaptation",
+    "seed": 27,
+    "mAP": 50.70894654251141,
+    "rounds": 200,
+    "uplink_MiB": 8662.59765625,
+    "partition_sha256": "8c6c53f5efd922a2a4480f5702d005d3aa254603ae6aa32ac08d8e9265c70f1a",
+    "prediction_sha256": "e19388fed17550cf87d6c87965675ba7a9731e484e3512110a97375671ba0632",
+    "source_result": "/root/autodl-tmp/FedPASA/icme2027_workspace/outputs/icme2027/baselines/fedmvp_release_mlc/nus/seed27/result.json",
+    "source_prediction": "/root/autodl-tmp/FedPASA/icme2027_workspace/outputs/icme2027/baselines/fedmvp_release_mlc/nus/seed27/round200_test_scores.npy",
+    "prediction_metric_difference": 0.0,
+    "new_training": false,
+    "author_equivalent": false,
+    "scope": "same images/labels/checkpoint/partition; method adaptation disclosed",
+    "repairs": {}
+  }
+]

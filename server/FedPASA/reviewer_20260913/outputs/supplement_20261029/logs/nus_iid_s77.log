@@ -1,0 +1,204 @@
+STAGE nus_iid_m10_s77 full/ridge_statistics
+STAGE nus_iid_m10_s77 full/bank_build
+STAGE nus_iid_m10_s77 full/bank_client0
+BANK client=1/1 images=15000 classes=81
+STAGE nus_iid_m10_s77 full/bank_client1
+BANK client=1/1 images=15000 classes=81
+STAGE nus_iid_m10_s77 full/bank_client2
+BANK client=1/1 images=15000 classes=81
+STAGE nus_iid_m10_s77 full/bank_client3
+BANK client=1/1 images=15000 classes=81
+STAGE nus_iid_m10_s77 full/bank_client4
+BANK client=1/1 images=15000 classes=81
+STAGE nus_iid_m10_s77 full/bank_client5
+BANK client=1/1 images=15000 classes=81
+STAGE nus_iid_m10_s77 full/bank_client6
+BANK client=1/1 images=15000 classes=81
+STAGE nus_iid_m10_s77 full/bank_client7
+BANK client=1/1 images=15000 classes=81
+STAGE nus_iid_m10_s77 full/bank_client8
+BANK client=1/1 images=15000 classes=81
+STAGE nus_iid_m10_s77 full/bank_client9
+BANK client=1/1 images=15000 classes=81
+STAGE nus_iid_m10_s77 full/qa_fit
+STAGE nus_iid_m10_s77 full/qa_inference
+FUSION_PIAA images=128/60260
+FUSION_PIAA images=6528/60260
+FUSION_PIAA images=12928/60260
+FUSION_PIAA images=19328/60260
+FUSION_PIAA images=25728/60260
+FUSION_PIAA images=32128/60260
+FUSION_PIAA images=38528/60260
+FUSION_PIAA images=44928/60260
+FUSION_PIAA images=51328/60260
+FUSION_PIAA images=57728/60260
+FUSION_PIAA images=60260/60260
+STAGE nus_iid_m10_s77 full/union_fit
+STAGE nus_iid_m10_s77 full/union_inference
+FUSION_PIAA images=128/60260
+FUSION_PIAA images=6528/60260
+FUSION_PIAA images=12928/60260
+FUSION_PIAA images=19328/60260
+FUSION_PIAA images=25728/60260
+FUSION_PIAA images=32128/60260
+FUSION_PIAA images=38528/60260
+FUSION_PIAA images=44928/60260
+FUSION_PIAA images=51328/60260
+FUSION_PIAA images=57728/60260
+FUSION_PIAA images=60260/60260
+STAGE nus_iid_m10_s77 split7707/ridge_statistics
+STAGE nus_iid_m10_s77 split7707/ridge_alpha1e-06
+STAGE nus_iid_m10_s77 split7707/ridge_alpha3e-06
+STAGE nus_iid_m10_s77 split7707/ridge_alpha1e-05
+STAGE nus_iid_m10_s77 split7707/ridge_alpha3e-05
+STAGE nus_iid_m10_s77 split7707/ridge_alpha0.0001
+STAGE nus_iid_m10_s77 split7707/ridge_alpha0.0003
+STAGE nus_iid_m10_s77 split7707/ridge_alpha0.001
+STAGE nus_iid_m10_s77 split7707/ridge_alpha0.003
+STAGE nus_iid_m10_s77 split7707/ridge_alpha0.01
+STAGE nus_iid_m10_s77 split7707/ridge_alpha0.03
+STAGE nus_iid_m10_s77 split7707/ridge_alpha0.1
+STAGE nus_iid_m10_s77 split7707/ridge_alpha0.3
+STAGE nus_iid_m10_s77 split7707/ridge_alpha1.0
+STAGE nus_iid_m10_s77 split7707/ridge_refit
+STAGE nus_iid_m10_s77 split7707/bank_build
+STAGE nus_iid_m10_s77 split7707/bank_client0
+BANK client=1/1 images=12043 classes=81
+STAGE nus_iid_m10_s77 split7707/bank_client1
+BANK client=1/1 images=11943 classes=81
+STAGE nus_iid_m10_s77 split7707/bank_client2
+BANK client=1/1 images=11979 classes=81
+STAGE nus_iid_m10_s77 split7707/bank_client3
+BANK client=1/1 images=12084 classes=81
+STAGE nus_iid_m10_s77 split7707/bank_client4
+BANK client=1/1 images=12017 classes=81
+STAGE nus_iid_m10_s77 split7707/bank_client5
+BANK client=1/1 images=11986 classes=81
+STAGE nus_iid_m10_s77 split7707/bank_client6
+BANK client=1/1 images=11961 classes=81
+STAGE nus_iid_m10_s77 split7707/bank_client7
+BANK client=1/1 images=12046 classes=81
+STAGE nus_iid_m10_s77 split7707/bank_client8
+BANK client=1/1 images=11938 classes=81
+STAGE nus_iid_m10_s77 split7707/bank_client9
+BANK client=1/1 images=12003 classes=81
+STAGE nus_iid_m10_s77 split7707/qa_fit
+STAGE nus_iid_m10_s77 split7707/qa_inference
+FUSION_PIAA images=128/30000
+FUSION_PIAA images=6528/30000
+FUSION_PIAA images=12928/30000
+FUSION_PIAA images=19328/30000
+FUSION_PIAA images=25728/30000
+FUSION_PIAA images=30000/30000
+STAGE nus_iid_m10_s77 split7707/union_fit
+STAGE nus_iid_m10_s77 split7707/union_inference
+FUSION_PIAA images=128/30000
+FUSION_PIAA images=6528/30000
+FUSION_PIAA images=12928/30000
+FUSION_PIAA images=19328/30000
+FUSION_PIAA images=25728/30000
+FUSION_PIAA images=30000/30000
+STAGE nus_iid_m10_s77 central_ridge
+STAGE nus_iid_m10_s77 local_alpha1e-06
+STAGE nus_iid_m10_s77 local_alpha3e-06
+STAGE nus_iid_m10_s77 local_alpha1e-05
+STAGE nus_iid_m10_s77 local_alpha3e-05
+STAGE nus_iid_m10_s77 local_alpha0.0001
+STAGE nus_iid_m10_s77 local_alpha0.0003
+STAGE nus_iid_m10_s77 local_alpha0.001
+STAGE nus_iid_m10_s77 local_alpha0.003
+STAGE nus_iid_m10_s77 local_alpha0.01
+STAGE nus_iid_m10_s77 local_alpha0.03
+STAGE nus_iid_m10_s77 local_alpha0.1
+STAGE nus_iid_m10_s77 local_alpha0.3
+STAGE nus_iid_m10_s77 local_alpha1.0
+STAGE nus_iid_m10_s77 local_refit
+STAGE nus_iid_m10_s77 split7717/ridge_statistics
+STAGE nus_iid_m10_s77 split7717/ridge_alpha1e-06
+STAGE nus_iid_m10_s77 split7717/ridge_alpha3e-06
+STAGE nus_iid_m10_s77 split7717/ridge_alpha1e-05
+STAGE nus_iid_m10_s77 split7717/ridge_alpha3e-05
+STAGE nus_iid_m10_s77 split7717/ridge_alpha0.0001
+STAGE nus_iid_m10_s77 split7717/ridge_alpha0.0003
+STAGE nus_iid_m10_s77 split7717/ridge_alpha0.001
+STAGE nus_iid_m10_s77 split7717/ridge_alpha0.003
+STAGE nus_iid_m10_s77 split7717/ridge_alpha0.01
+STAGE nus_iid_m10_s77 split7717/ridge_alpha0.03
+STAGE nus_iid_m10_s77 split7717/ridge_alpha0.1
+STAGE nus_iid_m10_s77 split7717/ridge_alpha0.3
+STAGE nus_iid_m10_s77 split7717/ridge_alpha1.0
+STAGE nus_iid_m10_s77 split7717/ridge_refit
+STAGE nus_iid_m10_s77 split7717/bank_build
+STAGE nus_iid_m10_s77 split7717/bank_client0
+BANK client=1/1 images=11977 classes=81
+STAGE nus_iid_m10_s77 split7717/bank_client1
+BANK client=1/1 images=11964 classes=81
+STAGE nus_iid_m10_s77 split7717/bank_client2
+BANK client=1/1 images=12003 classes=81
+STAGE nus_iid_m10_s77 split7717/bank_client3
+BANK client=1/1 images=12025 classes=81
+STAGE nus_iid_m10_s77 split7717/bank_client4
+BANK client=1/1 images=11962 classes=81
+STAGE nus_iid_m10_s77 split7717/bank_client5
+BANK client=1/1 images=12004 classes=81
+STAGE nus_iid_m10_s77 split7717/bank_client6
+BANK client=1/1 images=12077 classes=81
+STAGE nus_iid_m10_s77 split7717/bank_client7
+BANK client=1/1 images=12005 classes=81
+STAGE nus_iid_m10_s77 split7717/bank_client8
+BANK client=1/1 images=11948 classes=81
+STAGE nus_iid_m10_s77 split7717/bank_client9
+BANK client=1/1 images=12035 classes=81
+STAGE nus_iid_m10_s77 split7717/qa_fit
+STAGE nus_iid_m10_s77 split7717/qa_inference
+FUSION_PIAA images=128/30000
+FUSION_PIAA images=6528/30000
+FUSION_PIAA images=12928/30000
+FUSION_PIAA images=19328/30000
+FUSION_PIAA images=25728/30000
+FUSION_PIAA images=30000/30000
+STAGE nus_iid_m10_s77 split7727/ridge_statistics
+STAGE nus_iid_m10_s77 split7727/ridge_alpha1e-06
+STAGE nus_iid_m10_s77 split7727/ridge_alpha3e-06
+STAGE nus_iid_m10_s77 split7727/ridge_alpha1e-05
+STAGE nus_iid_m10_s77 split7727/ridge_alpha3e-05
+STAGE nus_iid_m10_s77 split7727/ridge_alpha0.0001
+STAGE nus_iid_m10_s77 split7727/ridge_alpha0.0003
+STAGE nus_iid_m10_s77 split7727/ridge_alpha0.001
+STAGE nus_iid_m10_s77 split7727/ridge_alpha0.003
+STAGE nus_iid_m10_s77 split7727/ridge_alpha0.01
+STAGE nus_iid_m10_s77 split7727/ridge_alpha0.03
+STAGE nus_iid_m10_s77 split7727/ridge_alpha0.1
+STAGE nus_iid_m10_s77 split7727/ridge_alpha0.3
+STAGE nus_iid_m10_s77 split7727/ridge_alpha1.0
+STAGE nus_iid_m10_s77 split7727/ridge_refit
+STAGE nus_iid_m10_s77 split7727/bank_build
+STAGE nus_iid_m10_s77 split7727/bank_client0
+BANK client=1/1 images=11928 classes=81
+STAGE nus_iid_m10_s77 split7727/bank_client1
+BANK client=1/1 images=11987 classes=81
+STAGE nus_iid_m10_s77 split7727/bank_client2
+BANK client=1/1 images=11963 classes=81
+STAGE nus_iid_m10_s77 split7727/bank_client3
+BANK client=1/1 images=12029 classes=81
+STAGE nus_iid_m10_s77 split7727/bank_client4
+BANK client=1/1 images=12039 classes=81
+STAGE nus_iid_m10_s77 split7727/bank_client5
+BANK client=1/1 images=11928 classes=81
+STAGE nus_iid_m10_s77 split7727/bank_client6
+BANK client=1/1 images=12058 classes=81
+STAGE nus_iid_m10_s77 split7727/bank_client7
+BANK client=1/1 images=11985 classes=81
+STAGE nus_iid_m10_s77 split7727/bank_client8
+BANK client=1/1 images=12030 classes=81
+STAGE nus_iid_m10_s77 split7727/bank_client9
+BANK client=1/1 images=12053 classes=81
+STAGE nus_iid_m10_s77 split7727/qa_fit
+STAGE nus_iid_m10_s77 split7727/qa_inference
+FUSION_PIAA images=128/30000
+FUSION_PIAA images=6528/30000
+FUSION_PIAA images=12928/30000
+FUSION_PIAA images=19328/30000
+FUSION_PIAA images=25728/30000
+FUSION_PIAA images=30000/30000
+RUN_COMPLETE nus_iid_m10_s77 [('Patch', 50.6411646287483), ('Pooled_Ridge', 60.19327307611112), ('Full_1', 60.74539146739792), ('Fixed_0.5', 59.098978171304985), ('Global_fusion', 60.31913314857732), ('Central_Ridge', 60.19327306727834), ('Local_Ridge', 60.19251391102887), ('Union_fusion', 60.99248642669393), ('Full_3', 60.79809624970884), ('Pooled_Ridge_3', 60.19448789199471)]

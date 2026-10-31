@@ -1,0 +1,1561 @@
+{
+  "status": "LOCKED",
+  "dataset": "coco",
+  "mode": "central",
+  "config": {
+    "optimizer": "sgd",
+    "lr": 1000.0,
+    "weight_decay": 0.0
+  },
+  "rounds": 60,
+  "validation_mAP": 81.46929568183039,
+  "selected_at_last_evaluation": false,
+  "optimization_claim": "validation optimum attained before budget",
+  "selection_train_seconds": 219.37088333815336,
+  "selection_validation_seconds": 20.545916325121652,
+  "selection_uplink_bytes": 0,
+  "selection_downlink_bytes": 0,
+  "candidates": [
+    {
+      "status": "COMPLETE",
+      "mode": "central",
+      "config": {
+        "optimizer": "sgd",
+        "lr": 0.1,
+        "weight_decay": 0.0
+      },
+      "seed": 17,
+      "rounds": 200,
+      "best_round": 200,
+      "best_validation_mAP": 53.37302736190183,
+      "train_seconds": 10.392669848224614,
+      "validation_seconds": 1.1330799640272744,
+      "peak_cuda_MiB": 446.3076171875,
+      "uplink_bytes": 0,
+      "downlink_bytes": 0,
+      "curve": [
+        {
+          "round": 20,
+          "train_BCE": 0.13387183845043182,
+          "train_seconds": 0.9806437591032591,
+          "validation_mAP": 28.9940237738907
+        },
+        {
+          "round": 40,
+          "train_BCE": 0.13101427257061005,
+          "train_seconds": 1.91135577505338,
+          "validation_mAP": 40.48373795513419
+        },
+        {
+          "round": 60,
+          "train_BCE": 0.12853749096393585,
+          "train_seconds": 2.8411127271247096,
+          "validation_mAP": 45.21701745888881
+        },
+        {
+          "round": 80,
+          "train_BCE": 0.12623564898967743,
+          "train_seconds": 3.758458926138701,
+          "validation_mAP": 47.89437618413028
+        },
+        {
+          "round": 100,
+          "train_BCE": 0.12407421320676804,
+          "train_seconds": 4.723257518169703,
+          "validation_mAP": 49.589644009530716
+        },
+        {
+          "round": 120,
+          "train_BCE": 0.1220344752073288,
+          "train_seconds": 5.905547407222912,
+          "validation_mAP": 50.770617207970204
+        },
+        {
+          "round": 140,
+          "train_BCE": 0.12010286748409271,
+          "train_seconds": 7.089259219123051,
+          "validation_mAP": 51.651808239714356
+        },
+        {
+          "round": 160,
+          "train_BCE": 0.11826872825622559,
+          "train_seconds": 8.290415239112917,
+          "validation_mAP": 52.33921159330808
+        },
+        {
+          "round": 180,
+          "train_BCE": 0.11652348190546036,
+          "train_seconds": 9.456962772150291,
+          "validation_mAP": 52.899084552336525
+        },
+        {
+          "round": 200,
+          "train_BCE": 0.11485966295003891,
+          "train_seconds": 10.392669848224614,
+          "validation_mAP": 53.37302736190183
+        }
+      ],
+      "path": "/root/autodl-tmp/FedPASA/reviewer_20260913/outputs/fair_baselines_20260918/linear/coco/central/tuning/sgd_lr0.1_wd0"
+    },
+    {
+      "status": "COMPLETE",
+      "mode": "central",
+      "config": {
+        "optimizer": "sgd",
+        "lr": 0.1,
+        "weight_decay": 0.0001
+      },
+      "seed": 17,
+      "rounds": 200,
+      "best_round": 200,
+      "best_validation_mAP": 42.04180943774172,
+      "train_seconds": 9.481110078340862,
+      "validation_seconds": 1.087124291982036,
+      "peak_cuda_MiB": 446.3076171875,
+      "uplink_bytes": 0,
+      "downlink_bytes": 0,
+      "curve": [
+        {
+          "round": 20,
+          "train_BCE": 0.13771530985832214,
+          "train_seconds": 0.9432576050166972,
+          "validation_mAP": 26.455236772169894
+        },
+        {
+          "round": 40,
+          "train_BCE": 0.13627742230892181,
+          "train_seconds": 1.882170105993282,
+          "validation_mAP": 35.37483337770927
+        },
+        {
+          "round": 60,
+          "train_BCE": 0.13556696474552155,
+          "train_seconds": 2.8343015650461894,
+          "validation_mAP": 38.70013756725454
+        },
+        {
+          "round": 80,
+          "train_BCE": 0.13516399264335632,
+          "train_seconds": 3.771349901042413,
+          "validation_mAP": 40.24232887915634
+        },
+        {
+          "round": 100,
+          "train_BCE": 0.13493160903453827,
+          "train_seconds": 4.716857307066675,
+          "validation_mAP": 41.042620714188175
+        },
+        {
+          "round": 120,
+          "train_BCE": 0.13479606807231903,
+          "train_seconds": 5.665610173164168,
+          "validation_mAP": 41.490706172571066
+        },
+        {
+          "round": 140,
+          "train_BCE": 0.13472090661525726,
+          "train_seconds": 6.606946263171267,
+          "validation_mAP": 41.74589512007636
+        },
+        {
+          "round": 160,
+          "train_BCE": 0.13467638194561005,
+          "train_seconds": 7.550574843218783,
+          "validation_mAP": 41.897574455885895
+        },
+        {
+          "round": 180,
+          "train_BCE": 0.13464988768100739,
+          "train_seconds": 8.506700263300445,
+          "validation_mAP": 41.988535276236746
+        },
+        {
+          "round": 200,
+          "train_BCE": 0.13463586568832397,
+          "train_seconds": 9.481110078340862,
+          "validation_mAP": 42.04180943774172
+        }
+      ],
+      "path": "/root/autodl-tmp/FedPASA/reviewer_20260913/outputs/fair_baselines_20260918/linear/coco/central/tuning/sgd_lr0.1_wd0.0001"
+    },
+    {
+      "status": "COMPLETE",
+      "mode": "central",
+      "config": {
+        "optimizer": "sgd",
+        "lr": 0.1,
+        "weight_decay": 0.001
+      },
+      "seed": 17,
+      "rounds": 200,
+      "best_round": 140,
+      "best_validation_mAP": 11.408690466879378,
+      "train_seconds": 9.600305819069035,
+      "validation_seconds": 1.0680263219692279,
+      "peak_cuda_MiB": 446.3076171875,
+      "uplink_bytes": 0,
+      "downlink_bytes": 0,
+      "curve": [
+        {
+          "round": 20,
+          "train_BCE": 0.18973195552825928,
+          "train_seconds": 1.0023597129329573,
+          "validation_mAP": 11.352921533111937
+        },
+        {
+          "round": 40,
+          "train_BCE": 0.18971441686153412,
+          "train_seconds": 1.9535828070365824,
+          "validation_mAP": 11.40658644353267
+        },
+        {
+          "round": 60,
+          "train_BCE": 0.18972903490066528,
+          "train_seconds": 2.900228216079995,
+          "validation_mAP": 11.406133383746852
+        },
+        {
+          "round": 80,
+          "train_BCE": 0.18973730504512787,
+          "train_seconds": 3.865942166070454,
+          "validation_mAP": 11.408206629797395
+        },
+        {
+          "round": 100,
+          "train_BCE": 0.18972915410995483,
+          "train_seconds": 4.816336047952063,
+          "validation_mAP": 11.4076750534073
+        },
+        {
+          "round": 120,
+          "train_BCE": 0.18971362709999084,
+          "train_seconds": 5.760597416985547,
+          "validation_mAP": 11.404204202214771
+        },
+        {
+          "round": 140,
+          "train_BCE": 0.1897282749414444,
+          "train_seconds": 6.713947731972439,
+          "validation_mAP": 11.408690466879378
+        },
+        {
+          "round": 160,
+          "train_BCE": 0.18972837924957275,
+          "train_seconds": 7.670827612106223,
+          "validation_mAP": 11.406432487506853
+        },
+        {
+          "round": 180,
+          "train_BCE": 0.1897231787443161,
+          "train_seconds": 8.634040185104823,
+          "validation_mAP": 11.404644706297088
+        },
+        {
+          "round": 200,
+          "train_BCE": 0.189722940325737,
+          "train_seconds": 9.600305819069035,
+          "validation_mAP": 11.407831345932271
+        }
+      ],
+      "path": "/root/autodl-tmp/FedPASA/reviewer_20260913/outputs/fair_baselines_20260918/linear/coco/central/tuning/sgd_lr0.1_wd0.001"
+    },
+    {
+      "status": "COMPLETE",
+      "mode": "central",
+      "config": {
+        "optimizer": "sgd",
+        "lr": 1.0,
+        "weight_decay": 0.0
+      },
+      "seed": 17,
+      "rounds": 200,
+      "best_round": 200,
+      "best_validation_mAP": 64.3246447930911,
+      "train_seconds": 10.311557228007587,
+      "validation_seconds": 1.0818429400678724,
+      "peak_cuda_MiB": 446.3076171875,
+      "uplink_bytes": 0,
+      "downlink_bytes": 0,
+      "curve": [
+        {
+          "round": 20,
+          "train_BCE": 0.11488085240125656,
+          "train_seconds": 0.9487139880657196,
+          "validation_mAP": 53.35750225227191
+        },
+        {
+          "round": 40,
+          "train_BCE": 0.10167912393808365,
+          "train_seconds": 1.8854485270858277,
+          "validation_mAP": 56.11212264211506
+        },
+        {
+          "round": 60,
+          "train_BCE": 0.0927513837814331,
+          "train_seconds": 2.832058290077839,
+          "validation_mAP": 57.742884462754006
+        },
+        {
+          "round": 80,
+          "train_BCE": 0.08638952672481537,
+          "train_seconds": 3.7773899141466245,
+          "validation_mAP": 59.05606543325329
+        },
+        {
+          "round": 100,
+          "train_BCE": 0.08163764327764511,
+          "train_seconds": 4.7107726700778585,
+          "validation_mAP": 60.18982544991476
+        },
+        {
+          "round": 120,
+          "train_BCE": 0.07794877886772156,
+          "train_seconds": 5.645597128022928,
+          "validation_mAP": 61.20209258099701
+        },
+        {
+          "round": 140,
+          "train_BCE": 0.07499638944864273,
+          "train_seconds": 6.620486025058199,
+          "validation_mAP": 62.107966446756144
+        },
+        {
+          "round": 160,
+          "train_BCE": 0.07257210463285446,
+          "train_seconds": 7.873981621087296,
+          "validation_mAP": 62.92176454054217
+        },
+        {
+          "round": 180,
+          "train_BCE": 0.07054165005683899,
+          "train_seconds": 9.093599117040867,
+          "validation_mAP": 63.66012943039369
+        },
+        {
+          "round": 200,
+          "train_BCE": 0.06881248950958252,
+          "train_seconds": 10.311557228007587,
+          "validation_mAP": 64.3246447930911
+        }
+      ],
+      "path": "/root/autodl-tmp/FedPASA/reviewer_20260913/outputs/fair_baselines_20260918/linear/coco/central/tuning/sgd_lr1_wd0"
+    },
+    {
+      "status": "COMPLETE",
+      "mode": "central",
+      "config": {
+        "optimizer": "sgd",
+        "lr": 1.0,
+        "weight_decay": 0.0001
+      },
+      "seed": 17,
+      "rounds": 200,
+      "best_round": 80,
+      "best_validation_mAP": 42.12353425229532,
+      "train_seconds": 9.757319481228478,
+      "validation_seconds": 1.0822863259818405,
+      "peak_cuda_MiB": 446.3076171875,
+      "uplink_bytes": 0,
+      "downlink_bytes": 0,
+      "curve": [
+        {
+          "round": 20,
+          "train_BCE": 0.13463900983333588,
+          "train_seconds": 1.0101291670580395,
+          "validation_mAP": 42.04396808268939
+        },
+        {
+          "round": 40,
+          "train_BCE": 0.13459132611751556,
+          "train_seconds": 1.9692075490311254,
+          "validation_mAP": 42.116335881488354
+        },
+        {
+          "round": 60,
+          "train_BCE": 0.13461577892303467,
+          "train_seconds": 2.9495459510944784,
+          "validation_mAP": 42.12038522161617
+        },
+        {
+          "round": 80,
+          "train_BCE": 0.13462764024734497,
+          "train_seconds": 3.911158709146548,
+          "validation_mAP": 42.12353425229532
+        },
+        {
+          "round": 100,
+          "train_BCE": 0.13461804389953613,
+          "train_seconds": 4.914063139236532,
+          "validation_mAP": 42.121704618515864
+        },
+        {
+          "round": 120,
+          "train_BCE": 0.13460145890712738,
+          "train_seconds": 5.907846851303475,
+          "validation_mAP": 42.11601289818727
+        },
+        {
+          "round": 140,
+          "train_BCE": 0.1346142292022705,
+          "train_seconds": 6.873818590276642,
+          "validation_mAP": 42.12042311129977
+        },
+        {
+          "round": 160,
+          "train_BCE": 0.13461408019065857,
+          "train_seconds": 7.840048887272133,
+          "validation_mAP": 42.112946700449925
+        },
+        {
+          "round": 180,
+          "train_BCE": 0.13461744785308838,
+          "train_seconds": 8.789101357309846,
+          "validation_mAP": 42.11764826498063
+        },
+        {
+          "round": 200,
+          "train_BCE": 0.13460303843021393,
+          "train_seconds": 9.757319481228478,
+          "validation_mAP": 42.11395630020384
+        }
+      ],
+      "path": "/root/autodl-tmp/FedPASA/reviewer_20260913/outputs/fair_baselines_20260918/linear/coco/central/tuning/sgd_lr1_wd0.0001"
+    },
+    {
+      "status": "COMPLETE",
+      "mode": "central",
+      "config": {
+        "optimizer": "sgd",
+        "lr": 1.0,
+        "weight_decay": 0.001
+      },
+      "seed": 17,
+      "rounds": 200,
+      "best_round": 20,
+      "best_validation_mAP": 11.440278469749718,
+      "train_seconds": 10.566769049066352,
+      "validation_seconds": 1.0732939279696438,
+      "peak_cuda_MiB": 446.3076171875,
+      "uplink_bytes": 0,
+      "downlink_bytes": 0,
+      "curve": [
+        {
+          "round": 20,
+          "train_BCE": 0.18972845375537872,
+          "train_seconds": 0.9500132309331093,
+          "validation_mAP": 11.440278469749718
+        },
+        {
+          "round": 40,
+          "train_BCE": 0.18957413733005524,
+          "train_seconds": 1.937264036940178,
+          "validation_mAP": 11.379937096612135
+        },
+        {
+          "round": 60,
+          "train_BCE": 0.18977773189544678,
+          "train_seconds": 2.9034280729247257,
+          "validation_mAP": 11.436250358159802
+        },
+        {
+          "round": 80,
+          "train_BCE": 0.18984666466712952,
+          "train_seconds": 3.870241574884858,
+          "validation_mAP": 11.434448751203327
+        },
+        {
+          "round": 100,
+          "train_BCE": 0.18972522020339966,
+          "train_seconds": 5.164193523873109,
+          "validation_mAP": 11.431516659632045
+        },
+        {
+          "round": 120,
+          "train_BCE": 0.18975929915905,
+          "train_seconds": 6.659620648890268,
+          "validation_mAP": 11.371766070807436
+        },
+        {
+          "round": 140,
+          "train_BCE": 0.18969938158988953,
+          "train_seconds": 7.656900637986837,
+          "validation_mAP": 11.422295247718447
+        },
+        {
+          "round": 160,
+          "train_BCE": 0.18969905376434326,
+          "train_seconds": 8.654277451045346,
+          "validation_mAP": 11.395350701706437
+        },
+        {
+          "round": 180,
+          "train_BCE": 0.18981020152568817,
+          "train_seconds": 9.60143209504895,
+          "validation_mAP": 11.392311962080507
+        },
+        {
+          "round": 200,
+          "train_BCE": 0.1896822452545166,
+          "train_seconds": 10.566769049066352,
+          "validation_mAP": 11.384696717841338
+        }
+      ],
+      "path": "/root/autodl-tmp/FedPASA/reviewer_20260913/outputs/fair_baselines_20260918/linear/coco/central/tuning/sgd_lr1_wd0.001"
+    },
+    {
+      "status": "COMPLETE",
+      "mode": "central",
+      "config": {
+        "optimizer": "sgd",
+        "lr": 10.0,
+        "weight_decay": 0.0
+      },
+      "seed": 17,
+      "rounds": 200,
+      "best_round": 200,
+      "best_validation_mAP": 76.49216089161817,
+      "train_seconds": 10.882840554026188,
+      "validation_seconds": 1.099571541941259,
+      "peak_cuda_MiB": 446.3076171875,
+      "uplink_bytes": 0,
+      "downlink_bytes": 0,
+      "curve": [
+        {
+          "round": 20,
+          "train_BCE": 0.06883683055639267,
+          "train_seconds": 0.9365669750259258,
+          "validation_mAP": 64.30534644674188
+        },
+        {
+          "round": 40,
+          "train_BCE": 0.05941905453801155,
+          "train_seconds": 1.8730607750767376,
+          "validation_mAP": 68.75653351052317
+        },
+        {
+          "round": 60,
+          "train_BCE": 0.05525648221373558,
+          "train_seconds": 2.891899611102417,
+          "validation_mAP": 71.15366437095686
+        },
+        {
+          "round": 80,
+          "train_BCE": 0.0527665950357914,
+          "train_seconds": 4.055383773084031,
+          "validation_mAP": 72.68238113328599
+        },
+        {
+          "round": 100,
+          "train_BCE": 0.05106225982308388,
+          "train_seconds": 5.215629877115134,
+          "validation_mAP": 73.75436391318966
+        },
+        {
+          "round": 120,
+          "train_BCE": 0.04977571591734886,
+          "train_seconds": 6.510250576102408,
+          "validation_mAP": 74.55384872094862
+        },
+        {
+          "round": 140,
+          "train_BCE": 0.04877903312444687,
+          "train_seconds": 7.8406333271123,
+          "validation_mAP": 75.18751434895798
+        },
+        {
+          "round": 160,
+          "train_BCE": 0.04796832799911499,
+          "train_seconds": 9.014499168115435,
+          "validation_mAP": 75.69943393350235
+        },
+        {
+          "round": 180,
+          "train_BCE": 0.047294799238443375,
+          "train_seconds": 9.955632291123038,
+          "validation_mAP": 76.12596889091796
+        },
+        {
+          "round": 200,
+          "train_BCE": 0.04670950025320053,
+          "train_seconds": 10.882840554026188,
+          "validation_mAP": 76.49216089161817
+        }
+      ],
+      "path": "/root/autodl-tmp/FedPASA/reviewer_20260913/outputs/fair_baselines_20260918/linear/coco/central/tuning/sgd_lr10_wd0"
+    },
+    {
+      "status": "COMPLETE",
+      "mode": "central",
+      "config": {
+        "optimizer": "sgd",
+        "lr": 10.0,
+        "weight_decay": 0.0001
+      },
+      "seed": 17,
+      "rounds": 200,
+      "best_round": 100,
+      "best_validation_mAP": 42.16120188344704,
+      "train_seconds": 10.811612957710167,
+      "validation_seconds": 1.077316414040979,
+      "peak_cuda_MiB": 446.3076171875,
+      "uplink_bytes": 0,
+      "downlink_bytes": 0,
+      "curve": [
+        {
+          "round": 20,
+          "train_BCE": 0.1347043216228485,
+          "train_seconds": 0.9716017289611045,
+          "validation_mAP": 42.03840075328529
+        },
+        {
+          "round": 40,
+          "train_BCE": 0.13449551165103912,
+          "train_seconds": 1.9195830739627127,
+          "validation_mAP": 42.017108546209684
+        },
+        {
+          "round": 60,
+          "train_BCE": 0.13471826910972595,
+          "train_seconds": 2.8684011430013925,
+          "validation_mAP": 42.15318867278049
+        },
+        {
+          "round": 80,
+          "train_BCE": 0.13464315235614777,
+          "train_seconds": 3.8213364788971376,
+          "validation_mAP": 42.11673429879617
+        },
+        {
+          "round": 100,
+          "train_BCE": 0.1346486657857895,
+          "train_seconds": 4.791116683918517,
+          "validation_mAP": 42.16120188344704
+        },
+        {
+          "round": 120,
+          "train_BCE": 0.1347094029188156,
+          "train_seconds": 6.1039972639409825,
+          "validation_mAP": 42.10860954654868
+        },
+        {
+          "round": 140,
+          "train_BCE": 0.13468194007873535,
+          "train_seconds": 7.488859935867367,
+          "validation_mAP": 42.110693178223414
+        },
+        {
+          "round": 160,
+          "train_BCE": 0.1346748173236847,
+          "train_seconds": 8.448921976785641,
+          "validation_mAP": 42.13079950795004
+        },
+        {
+          "round": 180,
+          "train_BCE": 0.13474129140377045,
+          "train_seconds": 9.42011854678276,
+          "validation_mAP": 42.14349282675727
+        },
+        {
+          "round": 200,
+          "train_BCE": 0.13467788696289062,
+          "train_seconds": 10.811612957710167,
+          "validation_mAP": 42.11984231904616
+        }
+      ],
+      "path": "/root/autodl-tmp/FedPASA/reviewer_20260913/outputs/fair_baselines_20260918/linear/coco/central/tuning/sgd_lr10_wd0.0001"
+    },
+    {
+      "status": "COMPLETE",
+      "mode": "central",
+      "config": {
+        "optimizer": "sgd",
+        "lr": 10.0,
+        "weight_decay": 0.001
+      },
+      "seed": 17,
+      "rounds": 200,
+      "best_round": 20,
+      "best_validation_mAP": 11.702028425987573,
+      "train_seconds": 11.793539719947148,
+      "validation_seconds": 1.058145979011897,
+      "peak_cuda_MiB": 446.3076171875,
+      "uplink_bytes": 0,
+      "downlink_bytes": 0,
+      "curve": [
+        {
+          "round": 20,
+          "train_BCE": 0.1903001219034195,
+          "train_seconds": 0.9772115059895441,
+          "validation_mAP": 11.702028425987573
+        },
+        {
+          "round": 40,
+          "train_BCE": 0.18957433104515076,
+          "train_seconds": 1.9231489170342684,
+          "validation_mAP": 11.216155557950858
+        },
+        {
+          "round": 60,
+          "train_BCE": 0.18949276208877563,
+          "train_seconds": 3.485156990995165,
+          "validation_mAP": 11.59512668068131
+        },
+        {
+          "round": 80,
+          "train_BCE": 0.18967361748218536,
+          "train_seconds": 4.776560226018773,
+          "validation_mAP": 11.545812229306556
+        },
+        {
+          "round": 100,
+          "train_BCE": 0.18957650661468506,
+          "train_seconds": 6.1653155719686765,
+          "validation_mAP": 11.259188357554658
+        },
+        {
+          "round": 120,
+          "train_BCE": 0.18985925614833832,
+          "train_seconds": 7.597626024915371,
+          "validation_mAP": 11.581170477558885
+        },
+        {
+          "round": 140,
+          "train_BCE": 0.18978622555732727,
+          "train_seconds": 8.915037627972197,
+          "validation_mAP": 11.327211785867323
+        },
+        {
+          "round": 160,
+          "train_BCE": 0.18952244520187378,
+          "train_seconds": 9.874233326961985,
+          "validation_mAP": 11.20933259114695
+        },
+        {
+          "round": 180,
+          "train_BCE": 0.18984873592853546,
+          "train_seconds": 10.818557601887733,
+          "validation_mAP": 11.494796370754687
+        },
+        {
+          "round": 200,
+          "train_BCE": 0.18973343074321747,
+          "train_seconds": 11.793539719947148,
+          "validation_mAP": 11.254386932869624
+        }
+      ],
+      "path": "/root/autodl-tmp/FedPASA/reviewer_20260913/outputs/fair_baselines_20260918/linear/coco/central/tuning/sgd_lr10_wd0.001"
+    },
+    {
+      "status": "COMPLETE",
+      "mode": "central",
+      "config": {
+        "optimizer": "sgd",
+        "lr": 100.0,
+        "weight_decay": 0.0
+      },
+      "seed": 17,
+      "rounds": 200,
+      "best_round": 200,
+      "best_validation_mAP": 81.04559320900243,
+      "train_seconds": 10.668320475058863,
+      "validation_seconds": 1.0794826049532276,
+      "peak_cuda_MiB": 446.3076171875,
+      "uplink_bytes": 0,
+      "downlink_bytes": 0,
+      "curve": [
+        {
+          "round": 20,
+          "train_BCE": 0.047121256589889526,
+          "train_seconds": 0.9524934510700405,
+          "validation_mAP": 76.48352411716088
+        },
+        {
+          "round": 40,
+          "train_BCE": 0.04365832358598709,
+          "train_seconds": 1.8910871830885299,
+          "validation_mAP": 78.49870722321141
+        },
+        {
+          "round": 60,
+          "train_BCE": 0.04213058203458786,
+          "train_seconds": 2.821661649068119,
+          "validation_mAP": 79.44276698943438
+        },
+        {
+          "round": 80,
+          "train_BCE": 0.04100579023361206,
+          "train_seconds": 3.7581758331216406,
+          "validation_mAP": 79.99085796291952
+        },
+        {
+          "round": 100,
+          "train_BCE": 0.04026838019490242,
+          "train_seconds": 4.692546053091064,
+          "validation_mAP": 80.33553594710081
+        },
+        {
+          "round": 120,
+          "train_BCE": 0.03973151743412018,
+          "train_seconds": 5.7747301211056765,
+          "validation_mAP": 80.56988502684135
+        },
+        {
+          "round": 140,
+          "train_BCE": 0.039435338228940964,
+          "train_seconds": 6.967211614100961,
+          "validation_mAP": 80.74156025272295
+        },
+        {
+          "round": 160,
+          "train_BCE": 0.03895394876599312,
+          "train_seconds": 8.199817604123382,
+          "validation_mAP": 80.87102537080399
+        },
+        {
+          "round": 180,
+          "train_BCE": 0.03880053758621216,
+          "train_seconds": 9.451252384111285,
+          "validation_mAP": 80.96553754314206
+        },
+        {
+          "round": 200,
+          "train_BCE": 0.038321804255247116,
+          "train_seconds": 10.668320475058863,
+          "validation_mAP": 81.04559320900243
+        }
+      ],
+      "path": "/root/autodl-tmp/FedPASA/reviewer_20260913/outputs/fair_baselines_20260918/linear/coco/central/tuning/sgd_lr100_wd0"
+    },
+    {
+      "status": "COMPLETE",
+      "mode": "central",
+      "config": {
+        "optimizer": "sgd",
+        "lr": 100.0,
+        "weight_decay": 0.0001
+      },
+      "seed": 17,
+      "rounds": 200,
+      "best_round": 100,
+      "best_validation_mAP": 42.119337113116266,
+      "train_seconds": 11.952591972920345,
+      "validation_seconds": 1.0755717390566133,
+      "peak_cuda_MiB": 446.3076171875,
+      "uplink_bytes": 0,
+      "downlink_bytes": 0,
+      "curve": [
+        {
+          "round": 20,
+          "train_BCE": 0.13510556519031525,
+          "train_seconds": 1.2227943299221806,
+          "validation_mAP": 41.6815133641243
+        },
+        {
+          "round": 40,
+          "train_BCE": 0.13533537089824677,
+          "train_seconds": 2.207690593932057,
+          "validation_mAP": 41.737465312792686
+        },
+        {
+          "round": 60,
+          "train_BCE": 0.13484078645706177,
+          "train_seconds": 3.1536406049272045,
+          "validation_mAP": 41.66684126169066
+        },
+        {
+          "round": 80,
+          "train_BCE": 0.1352304369211197,
+          "train_seconds": 4.437324422964593,
+          "validation_mAP": 42.06566175660863
+        },
+        {
+          "round": 100,
+          "train_BCE": 0.13540813326835632,
+          "train_seconds": 5.677282065007603,
+          "validation_mAP": 42.119337113116266
+        },
+        {
+          "round": 120,
+          "train_BCE": 0.1353052705526352,
+          "train_seconds": 6.868171200942015,
+          "validation_mAP": 41.84327391437915
+        },
+        {
+          "round": 140,
+          "train_BCE": 0.13507084548473358,
+          "train_seconds": 8.363351758889621,
+          "validation_mAP": 41.46012740991294
+        },
+        {
+          "round": 160,
+          "train_BCE": 0.13504207134246826,
+          "train_seconds": 9.699717232928379,
+          "validation_mAP": 41.97936251711623
+        },
+        {
+          "round": 180,
+          "train_BCE": 0.13485313951969147,
+          "train_seconds": 10.689592816925142,
+          "validation_mAP": 42.03757980521605
+        },
+        {
+          "round": 200,
+          "train_BCE": 0.13536830246448517,
+          "train_seconds": 11.952591972920345,
+          "validation_mAP": 41.93153978076688
+        }
+      ],
+      "path": "/root/autodl-tmp/FedPASA/reviewer_20260913/outputs/fair_baselines_20260918/linear/coco/central/tuning/sgd_lr100_wd0.0001"
+    },
+    {
+      "status": "COMPLETE",
+      "mode": "central",
+      "config": {
+        "optimizer": "sgd",
+        "lr": 100.0,
+        "weight_decay": 0.001
+      },
+      "seed": 17,
+      "rounds": 200,
+      "best_round": 140,
+      "best_validation_mAP": 12.15174289380547,
+      "train_seconds": 10.840753273689188,
+      "validation_seconds": 1.079202463006368,
+      "peak_cuda_MiB": 446.3076171875,
+      "uplink_bytes": 0,
+      "downlink_bytes": 0,
+      "curve": [
+        {
+          "round": 20,
+          "train_BCE": 0.1901189535856247,
+          "train_seconds": 1.4995962760294788,
+          "validation_mAP": 12.132648531509856
+        },
+        {
+          "round": 40,
+          "train_BCE": 0.18918442726135254,
+          "train_seconds": 2.497945743933087,
+          "validation_mAP": 12.135574794393408
+        },
+        {
+          "round": 60,
+          "train_BCE": 0.19156420230865479,
+          "train_seconds": 3.4631467788422015,
+          "validation_mAP": 11.589428985990132
+        },
+        {
+          "round": 80,
+          "train_BCE": 0.19021821022033691,
+          "train_seconds": 4.450703704846092,
+          "validation_mAP": 11.278343119204921
+        },
+        {
+          "round": 100,
+          "train_BCE": 0.19034625589847565,
+          "train_seconds": 5.430597832804779,
+          "validation_mAP": 11.239630162366543
+        },
+        {
+          "round": 120,
+          "train_BCE": 0.18946190178394318,
+          "train_seconds": 6.415411624853732,
+          "validation_mAP": 10.855184271638821
+        },
+        {
+          "round": 140,
+          "train_BCE": 0.1899501383304596,
+          "train_seconds": 7.378028935898328,
+          "validation_mAP": 12.15174289380547
+        },
+        {
+          "round": 160,
+          "train_BCE": 0.18843229115009308,
+          "train_seconds": 8.347244622738799,
+          "validation_mAP": 11.57216347448973
+        },
+        {
+          "round": 180,
+          "train_BCE": 0.1905449628829956,
+          "train_seconds": 9.309015373786679,
+          "validation_mAP": 11.849349327735304
+        },
+        {
+          "round": 200,
+          "train_BCE": 0.1896246075630188,
+          "train_seconds": 10.840753273689188,
+          "validation_mAP": 11.33322039840981
+        }
+      ],
+      "path": "/root/autodl-tmp/FedPASA/reviewer_20260913/outputs/fair_baselines_20260918/linear/coco/central/tuning/sgd_lr100_wd0.001"
+    },
+    {
+      "status": "COMPLETE",
+      "mode": "central",
+      "config": {
+        "optimizer": "adamw",
+        "lr": 0.001,
+        "weight_decay": 0.0
+      },
+      "seed": 17,
+      "rounds": 200,
+      "best_round": 200,
+      "best_validation_mAP": 80.14875884502324,
+      "train_seconds": 13.28874449012801,
+      "validation_seconds": 1.0882593089772854,
+      "peak_cuda_MiB": 446.64501953125,
+      "uplink_bytes": 0,
+      "downlink_bytes": 0,
+      "curve": [
+        {
+          "round": 20,
+          "train_BCE": 0.055941905826330185,
+          "train_seconds": 2.0688217079732567,
+          "validation_mAP": 71.87955925221236
+        },
+        {
+          "round": 40,
+          "train_BCE": 0.04730544611811638,
+          "train_seconds": 3.4384885339532048,
+          "validation_mAP": 76.51744355266077
+        },
+        {
+          "round": 60,
+          "train_BCE": 0.04457368329167366,
+          "train_seconds": 4.655759371962631,
+          "validation_mAP": 78.0779866850336
+        },
+        {
+          "round": 80,
+          "train_BCE": 0.04311654344201088,
+          "train_seconds": 5.864466904953588,
+          "validation_mAP": 78.83129213308094
+        },
+        {
+          "round": 100,
+          "train_BCE": 0.042150016874074936,
+          "train_seconds": 7.0755576858937275,
+          "validation_mAP": 79.26852342633242
+        },
+        {
+          "round": 120,
+          "train_BCE": 0.04143082723021507,
+          "train_seconds": 8.366252770996653,
+          "validation_mAP": 79.57026294071694
+        },
+        {
+          "round": 140,
+          "train_BCE": 0.040865108370780945,
+          "train_seconds": 9.597971893032081,
+          "validation_mAP": 79.78153442114275
+        },
+        {
+          "round": 160,
+          "train_BCE": 0.040398139506578445,
+          "train_seconds": 10.80557157707517,
+          "validation_mAP": 79.92571133126422
+        },
+        {
+          "round": 180,
+          "train_BCE": 0.04000353068113327,
+          "train_seconds": 12.08103312907042,
+          "validation_mAP": 80.05118032302309
+        },
+        {
+          "round": 200,
+          "train_BCE": 0.03965695947408676,
+          "train_seconds": 13.28874449012801,
+          "validation_mAP": 80.14875884502324
+        }
+      ],
+      "path": "/root/autodl-tmp/FedPASA/reviewer_20260913/outputs/fair_baselines_20260918/linear/coco/central/tuning/adamw_lr0.001_wd0"
+    },
+    {
+      "status": "COMPLETE",
+      "mode": "central",
+      "config": {
+        "optimizer": "adamw",
+        "lr": 0.001,
+        "weight_decay": 0.01
+      },
+      "seed": 17,
+      "rounds": 200,
+      "best_round": 200,
+      "best_validation_mAP": 79.90358220805041,
+      "train_seconds": 15.136904257698916,
+      "validation_seconds": 1.087348894070601,
+      "peak_cuda_MiB": 446.64501953125,
+      "uplink_bytes": 0,
+      "downlink_bytes": 0,
+      "curve": [
+        {
+          "round": 20,
+          "train_BCE": 0.05629115551710129,
+          "train_seconds": 1.2254682619532105,
+          "validation_mAP": 71.81095147325709
+        },
+        {
+          "round": 40,
+          "train_BCE": 0.04768885672092438,
+          "train_seconds": 2.473409719968913,
+          "validation_mAP": 76.40163230151462
+        },
+        {
+          "round": 60,
+          "train_BCE": 0.04503539204597473,
+          "train_seconds": 3.9289126829826273,
+          "validation_mAP": 77.93335900242823
+        },
+        {
+          "round": 80,
+          "train_BCE": 0.043664637953042984,
+          "train_seconds": 6.185669833939755,
+          "validation_mAP": 78.66759356356094
+        },
+        {
+          "round": 100,
+          "train_BCE": 0.04278635233640671,
+          "train_seconds": 8.53033651394071,
+          "validation_mAP": 79.08770404552075
+        },
+        {
+          "round": 120,
+          "train_BCE": 0.042155299335718155,
+          "train_seconds": 9.942611463920912,
+          "validation_mAP": 79.37847299124246
+        },
+        {
+          "round": 140,
+          "train_BCE": 0.041677795350551605,
+          "train_seconds": 11.216246146912454,
+          "validation_mAP": 79.57362991148503
+        },
+        {
+          "round": 160,
+          "train_BCE": 0.041298676282167435,
+          "train_seconds": 12.441667430888629,
+          "validation_mAP": 79.71172949684517
+        },
+        {
+          "round": 180,
+          "train_BCE": 0.0409909226000309,
+          "train_seconds": 13.832463933853433,
+          "validation_mAP": 79.82507144101778
+        },
+        {
+          "round": 200,
+          "train_BCE": 0.04072990640997887,
+          "train_seconds": 15.136904257698916,
+          "validation_mAP": 79.90358220805041
+        }
+      ],
+      "path": "/root/autodl-tmp/FedPASA/reviewer_20260913/outputs/fair_baselines_20260918/linear/coco/central/tuning/adamw_lr0.001_wd0.01"
+    },
+    {
+      "status": "COMPLETE",
+      "mode": "central",
+      "config": {
+        "optimizer": "adamw",
+        "lr": 0.01,
+        "weight_decay": 0.0
+      },
+      "seed": 17,
+      "rounds": 200,
+      "best_round": 60,
+      "best_validation_mAP": 80.43261573501586,
+      "train_seconds": 14.02837049405207,
+      "validation_seconds": 1.074568566022208,
+      "peak_cuda_MiB": 446.64501953125,
+      "uplink_bytes": 0,
+      "downlink_bytes": 0,
+      "curve": [
+        {
+          "round": 20,
+          "train_BCE": 0.040678270161151886,
+          "train_seconds": 1.2403768849908374,
+          "validation_mAP": 79.85439703063052
+        },
+        {
+          "round": 40,
+          "train_BCE": 0.03815560042858124,
+          "train_seconds": 2.5788820399611723,
+          "validation_mAP": 80.37846038531832
+        },
+        {
+          "round": 60,
+          "train_BCE": 0.03697352483868599,
+          "train_seconds": 4.781296862958698,
+          "validation_mAP": 80.43261573501586
+        },
+        {
+          "round": 80,
+          "train_BCE": 0.03613900765776634,
+          "train_seconds": 6.587232100981055,
+          "validation_mAP": 80.37113868567917
+        },
+        {
+          "round": 100,
+          "train_BCE": 0.03550012409687042,
+          "train_seconds": 7.847688070993172,
+          "validation_mAP": 80.30135416591013
+        },
+        {
+          "round": 120,
+          "train_BCE": 0.03510360047221184,
+          "train_seconds": 9.13128582702484,
+          "validation_mAP": 80.22604517125153
+        },
+        {
+          "round": 140,
+          "train_BCE": 0.03471554443240166,
+          "train_seconds": 10.331490650045453,
+          "validation_mAP": 80.1640442256631
+        },
+        {
+          "round": 160,
+          "train_BCE": 0.034418366849422455,
+          "train_seconds": 11.546982147061499,
+          "validation_mAP": 80.07356729541571
+        },
+        {
+          "round": 180,
+          "train_BCE": 0.03421058505773544,
+          "train_seconds": 12.802617110020947,
+          "validation_mAP": 80.00112956590424
+        },
+        {
+          "round": 200,
+          "train_BCE": 0.03387153893709183,
+          "train_seconds": 14.02837049405207,
+          "validation_mAP": 79.94933011078086
+        }
+      ],
+      "path": "/root/autodl-tmp/FedPASA/reviewer_20260913/outputs/fair_baselines_20260918/linear/coco/central/tuning/adamw_lr0.01_wd0"
+    },
+    {
+      "status": "COMPLETE",
+      "mode": "central",
+      "config": {
+        "optimizer": "adamw",
+        "lr": 0.01,
+        "weight_decay": 0.01
+      },
+      "seed": 17,
+      "rounds": 200,
+      "best_round": 180,
+      "best_validation_mAP": 80.41296515701548,
+      "train_seconds": 12.425935032893904,
+      "validation_seconds": 1.0763717809750233,
+      "peak_cuda_MiB": 446.64501953125,
+      "uplink_bytes": 0,
+      "downlink_bytes": 0,
+      "curve": [
+        {
+          "round": 20,
+          "train_BCE": 0.041668158024549484,
+          "train_seconds": 1.2193106419872493,
+          "validation_mAP": 79.61896462721658
+        },
+        {
+          "round": 40,
+          "train_BCE": 0.039855826646089554,
+          "train_seconds": 2.4922434328473173,
+          "validation_mAP": 80.18854004440665
+        },
+        {
+          "round": 60,
+          "train_BCE": 0.03932793065905571,
+          "train_seconds": 3.761571492825169,
+          "validation_mAP": 80.31524369023091
+        },
+        {
+          "round": 80,
+          "train_BCE": 0.03905339911580086,
+          "train_seconds": 4.982738578837598,
+          "validation_mAP": 80.36086627651801
+        },
+        {
+          "round": 100,
+          "train_BCE": 0.038902536034584045,
+          "train_seconds": 6.244796041806694,
+          "validation_mAP": 80.39581156870534
+        },
+        {
+          "round": 120,
+          "train_BCE": 0.03889729082584381,
+          "train_seconds": 7.466184701916063,
+          "validation_mAP": 80.40201409447292
+        },
+        {
+          "round": 140,
+          "train_BCE": 0.03887909650802612,
+          "train_seconds": 8.704361533891642,
+          "validation_mAP": 80.40076289883805
+        },
+        {
+          "round": 160,
+          "train_BCE": 0.038866061717271805,
+          "train_seconds": 9.927567371923942,
+          "validation_mAP": 80.4095084641719
+        },
+        {
+          "round": 180,
+          "train_BCE": 0.03893721476197243,
+          "train_seconds": 11.195959896838758,
+          "validation_mAP": 80.41296515701548
+        },
+        {
+          "round": 200,
+          "train_BCE": 0.038789428770542145,
+          "train_seconds": 12.425935032893904,
+          "validation_mAP": 80.41181889266275
+        }
+      ],
+      "path": "/root/autodl-tmp/FedPASA/reviewer_20260913/outputs/fair_baselines_20260918/linear/coco/central/tuning/adamw_lr0.01_wd0.01"
+    },
+    {
+      "status": "COMPLETE",
+      "mode": "central",
+      "config": {
+        "optimizer": "adamw",
+        "lr": 0.1,
+        "weight_decay": 0.0
+      },
+      "seed": 17,
+      "rounds": 200,
+      "best_round": 20,
+      "best_validation_mAP": 79.78607508175094,
+      "train_seconds": 14.921762795129325,
+      "validation_seconds": 1.0784148239763454,
+      "peak_cuda_MiB": 446.64501953125,
+      "uplink_bytes": 0,
+      "downlink_bytes": 0,
+      "curve": [
+        {
+          "round": 20,
+          "train_BCE": 0.03623265027999878,
+          "train_seconds": 1.210203525988618,
+          "validation_mAP": 79.78607508175094
+        },
+        {
+          "round": 40,
+          "train_BCE": 0.03433474898338318,
+          "train_seconds": 2.430913541058544,
+          "validation_mAP": 79.29097230632055
+        },
+        {
+          "round": 60,
+          "train_BCE": 0.033926822245121,
+          "train_seconds": 3.681746636022581,
+          "validation_mAP": 79.05851498560928
+        },
+        {
+          "round": 80,
+          "train_BCE": 0.03289303183555603,
+          "train_seconds": 5.379227553028613,
+          "validation_mAP": 78.92241927928588
+        },
+        {
+          "round": 100,
+          "train_BCE": 0.03342198207974434,
+          "train_seconds": 7.568037146003917,
+          "validation_mAP": 78.69813251120972
+        },
+        {
+          "round": 120,
+          "train_BCE": 0.032717108726501465,
+          "train_seconds": 9.792779440933373,
+          "validation_mAP": 78.51429670482577
+        },
+        {
+          "round": 140,
+          "train_BCE": 0.03246231749653816,
+          "train_seconds": 11.20756219298346,
+          "validation_mAP": 78.46290286300561
+        },
+        {
+          "round": 160,
+          "train_BCE": 0.03285742178559303,
+          "train_seconds": 12.470220146060456,
+          "validation_mAP": 78.34294390239283
+        },
+        {
+          "round": 180,
+          "train_BCE": 0.032467421144247055,
+          "train_seconds": 13.701935507095186,
+          "validation_mAP": 78.29166108310753
+        },
+        {
+          "round": 200,
+          "train_BCE": 0.03193502873182297,
+          "train_seconds": 14.921762795129325,
+          "validation_mAP": 78.27289032464513
+        }
+      ],
+      "path": "/root/autodl-tmp/FedPASA/reviewer_20260913/outputs/fair_baselines_20260918/linear/coco/central/tuning/adamw_lr0.1_wd0"
+    },
+    {
+      "status": "COMPLETE",
+      "mode": "central",
+      "config": {
+        "optimizer": "adamw",
+        "lr": 0.1,
+        "weight_decay": 0.01
+      },
+      "seed": 17,
+      "rounds": 200,
+      "best_round": 180,
+      "best_validation_mAP": 80.03195071003469,
+      "train_seconds": 13.137194584036479,
+      "validation_seconds": 1.0815858429996297,
+      "peak_cuda_MiB": 446.64501953125,
+      "uplink_bytes": 0,
+      "downlink_bytes": 0,
+      "curve": [
+        {
+          "round": 20,
+          "train_BCE": 0.04084382206201553,
+          "train_seconds": 1.2361416510830168,
+          "validation_mAP": 80.00773458229396
+        },
+        {
+          "round": 40,
+          "train_BCE": 0.040404487401247025,
+          "train_seconds": 2.4826470052066725,
+          "validation_mAP": 79.97984913463718
+        },
+        {
+          "round": 60,
+          "train_BCE": 0.0407271645963192,
+          "train_seconds": 3.7342210421629716,
+          "validation_mAP": 79.98798405189194
+        },
+        {
+          "round": 80,
+          "train_BCE": 0.04069877415895462,
+          "train_seconds": 4.994818822102388,
+          "validation_mAP": 80.02768618749863
+        },
+        {
+          "round": 100,
+          "train_BCE": 0.040894556790590286,
+          "train_seconds": 6.276615044102073,
+          "validation_mAP": 79.937200746483
+        },
+        {
+          "round": 120,
+          "train_BCE": 0.041043609380722046,
+          "train_seconds": 8.051710148050915,
+          "validation_mAP": 79.95149948886959
+        },
+        {
+          "round": 140,
+          "train_BCE": 0.0406961552798748,
+          "train_seconds": 9.377247011987492,
+          "validation_mAP": 79.94707131918301
+        },
+        {
+          "round": 160,
+          "train_BCE": 0.041299931704998016,
+          "train_seconds": 10.62226856595953,
+          "validation_mAP": 79.91970730140088
+        },
+        {
+          "round": 180,
+          "train_BCE": 0.04107799753546715,
+          "train_seconds": 11.877341533021536,
+          "validation_mAP": 80.03195071003469
+        },
+        {
+          "round": 200,
+          "train_BCE": 0.0410011000931263,
+          "train_seconds": 13.137194584036479,
+          "validation_mAP": 79.99444870962782
+        }
+      ],
+      "path": "/root/autodl-tmp/FedPASA/reviewer_20260913/outputs/fair_baselines_20260918/linear/coco/central/tuning/adamw_lr0.1_wd0.01"
+    },
+    {
+      "status": "COMPLETE",
+      "mode": "central",
+      "config": {
+        "optimizer": "sgd",
+        "lr": 1000.0,
+        "weight_decay": 0.0
+      },
+      "seed": 17,
+      "rounds": 200,
+      "best_round": 60,
+      "best_validation_mAP": 81.46929568183039,
+      "train_seconds": 9.372581226925831,
+      "validation_seconds": 1.0644225940923207,
+      "peak_cuda_MiB": 446.3076171875,
+      "uplink_bytes": 0,
+      "downlink_bytes": 0,
+      "curve": [
+        {
+          "round": 20,
+          "train_BCE": 0.040035881102085114,
+          "train_seconds": 0.9343072159681469,
+          "validation_mAP": 81.03442578590811
+        },
+        {
+          "round": 40,
+          "train_BCE": 0.04035721719264984,
+          "train_seconds": 1.867715709930053,
+          "validation_mAP": 81.36621639517668
+        },
+        {
+          "round": 60,
+          "train_BCE": 0.037646032869815826,
+          "train_seconds": 2.8026379249058664,
+          "validation_mAP": 81.46929568183039
+        },
+        {
+          "round": 80,
+          "train_BCE": 0.03722511976957321,
+          "train_seconds": 3.732230106863426,
+          "validation_mAP": 81.44620343210323
+        },
+        {
+          "round": 100,
+          "train_BCE": 0.037942074239254,
+          "train_seconds": 4.6678634949203115,
+          "validation_mAP": 81.43066568401828
+        },
+        {
+          "round": 120,
+          "train_BCE": 0.03777851164340973,
+          "train_seconds": 5.602632359921699,
+          "validation_mAP": 81.35080672765949
+        },
+        {
+          "round": 140,
+          "train_BCE": 0.03626067936420441,
+          "train_seconds": 6.539332107931841,
+          "validation_mAP": 81.30058037620319
+        },
+        {
+          "round": 160,
+          "train_BCE": 0.03649540990591049,
+          "train_seconds": 7.492999890935607,
+          "validation_mAP": 81.21875325254983
+        },
+        {
+          "round": 180,
+          "train_BCE": 0.03631947189569473,
+          "train_seconds": 8.433176531951176,
+          "validation_mAP": 81.15982068634054
+        },
+        {
+          "round": 200,
+          "train_BCE": 0.03449630364775658,
+          "train_seconds": 9.372581226925831,
+          "validation_mAP": 81.105552930579
+        }
+      ],
+      "path": "/root/autodl-tmp/FedPASA/reviewer_20260913/outputs/fair_baselines_20260918/linear/coco/central/tuning/sgd_lr1000_wd0"
+    }
+  ],
+  "locked_at": "2026-09-18T01:24:42Z",
+  "test_labels_read": false
+}

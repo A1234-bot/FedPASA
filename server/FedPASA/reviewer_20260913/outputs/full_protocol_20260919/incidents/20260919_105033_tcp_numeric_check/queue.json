@@ -1,0 +1,184 @@
+{
+  "status": "FAILED",
+  "jobs": [
+    {
+      "id": "calibration_voc07",
+      "script": "run_full_calibration_protocol.py",
+      "args": [
+        "--dataset",
+        "voc07"
+      ],
+      "status": "COMPLETE",
+      "started": "2026-09-19T02:28:27Z",
+      "script_sha256": "f3150d6a859c4cdc8c47029b72eb0a6c13e70ed245a81cee34f1e881e8f91701",
+      "code": 0,
+      "finished": "2026-09-19T02:28:30Z"
+    },
+    {
+      "id": "calibration_voc12",
+      "script": "run_full_calibration_protocol.py",
+      "args": [
+        "--dataset",
+        "voc12"
+      ],
+      "status": "COMPLETE",
+      "started": "2026-09-19T02:30:22Z",
+      "script_sha256": "6a346630c777e8ebace0f8d4ddd3f291ebe4381e8da947bb5290df729aee54ec",
+      "code": 0,
+      "finished": "2026-09-19T02:30:25Z"
+    },
+    {
+      "id": "calibration_coco",
+      "script": "run_full_calibration_protocol.py",
+      "args": [
+        "--dataset",
+        "coco"
+      ],
+      "status": "COMPLETE",
+      "started": "2026-09-19T02:30:25Z",
+      "script_sha256": "6a346630c777e8ebace0f8d4ddd3f291ebe4381e8da947bb5290df729aee54ec",
+      "code": 0,
+      "finished": "2026-09-19T02:30:43Z"
+    },
+    {
+      "id": "calibration_nus",
+      "script": "run_full_calibration_protocol.py",
+      "args": [
+        "--dataset",
+        "nus"
+      ],
+      "status": "COMPLETE",
+      "started": "2026-09-19T02:37:14Z",
+      "script_sha256": "6a346630c777e8ebace0f8d4ddd3f291ebe4381e8da947bb5290df729aee54ec",
+      "code": 0,
+      "finished": "2026-09-19T02:37:44Z"
+    },
+    {
+      "id": "outer_voc07_1",
+      "script": "run_voc_outer_20260919.py",
+      "args": [
+        "--dataset",
+        "voc07",
+        "--index",
+        "0"
+      ],
+      "status": "COMPLETE",
+      "started": "2026-09-19T02:37:44Z",
+      "script_sha256": "98783ccd756c7a41d04077b50e1a25d2e0734e9f4c417c5c148187de117390d9",
+      "code": 0,
+      "finished": "2026-09-19T02:37:55Z"
+    },
+    {
+      "id": "outer_voc07_2",
+      "script": "run_voc_outer_20260919.py",
+      "args": [
+        "--dataset",
+        "voc07",
+        "--index",
+        "1"
+      ],
+      "status": "COMPLETE",
+      "started": "2026-09-19T02:37:55Z",
+      "script_sha256": "98783ccd756c7a41d04077b50e1a25d2e0734e9f4c417c5c148187de117390d9",
+      "code": 0,
+      "finished": "2026-09-19T02:38:06Z"
+    },
+    {
+      "id": "outer_voc07_3",
+      "script": "run_voc_outer_20260919.py",
+      "args": [
+        "--dataset",
+        "voc07",
+        "--index",
+        "2"
+      ],
+      "status": "COMPLETE",
+      "started": "2026-09-19T02:38:06Z",
+      "script_sha256": "98783ccd756c7a41d04077b50e1a25d2e0734e9f4c417c5c148187de117390d9",
+      "code": 0,
+      "finished": "2026-09-19T02:38:17Z"
+    },
+    {
+      "id": "outer_voc12_1",
+      "script": "run_voc_outer_20260919.py",
+      "args": [
+        "--dataset",
+        "voc12",
+        "--index",
+        "0"
+      ],
+      "status": "COMPLETE",
+      "started": "2026-09-19T02:38:17Z",
+      "script_sha256": "98783ccd756c7a41d04077b50e1a25d2e0734e9f4c417c5c148187de117390d9",
+      "code": 0,
+      "finished": "2026-09-19T02:38:30Z"
+    },
+    {
+      "id": "outer_voc12_2",
+      "script": "run_voc_outer_20260919.py",
+      "args": [
+        "--dataset",
+        "voc12",
+        "--index",
+        "1"
+      ],
+      "status": "COMPLETE",
+      "started": "2026-09-19T02:38:30Z",
+      "script_sha256": "98783ccd756c7a41d04077b50e1a25d2e0734e9f4c417c5c148187de117390d9",
+      "code": 0,
+      "finished": "2026-09-19T02:38:42Z"
+    },
+    {
+      "id": "outer_voc12_3",
+      "script": "run_voc_outer_20260919.py",
+      "args": [
+        "--dataset",
+        "voc12",
+        "--index",
+        "2"
+      ],
+      "status": "COMPLETE",
+      "started": "2026-09-19T02:38:42Z",
+      "script_sha256": "98783ccd756c7a41d04077b50e1a25d2e0734e9f4c417c5c148187de117390d9",
+      "code": 0,
+      "finished": "2026-09-19T02:38:54Z"
+    },
+    {
+      "id": "systems_coco",
+      "script": "run_full_tcp_systems.py",
+      "args": [
+        "--dataset",
+        "coco"
+      ],
+      "status": "FAILED",
+      "started": "2026-09-19T02:38:54Z",
+      "script_sha256": "d076fdda21dd339f88711404bac50c57e0477799bf8d2656b816baf4d9ca296f",
+      "code": 1,
+      "finished": "2026-09-19T02:43:56Z"
+    },
+    {
+      "id": "systems_nus",
+      "script": "run_full_tcp_systems.py",
+      "args": [
+        "--dataset",
+        "nus"
+      ],
+      "status": "PENDING"
+    },
+    {
+      "id": "report",
+      "script": "build_full_protocol_report.py",
+      "args": [],
+      "status": "PENDING"
+    },
+    {
+      "id": "resume_fair_baselines",
+      "script": "fair_baselines_queue.py",
+      "args": [],
+      "status": "PENDING"
+    }
+  ],
+  "created": "2026-09-19T02:22:02Z",
+  "active": "systems_coco",
+  "updated": "2026-09-19T02:43:56Z"
+}

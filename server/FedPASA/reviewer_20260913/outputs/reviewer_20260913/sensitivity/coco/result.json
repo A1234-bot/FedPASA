@@ -1,0 +1,81 @@
+{
+  "status": "COMPLETE",
+  "rows": [
+    {
+      "dataset": "coco",
+      "method": "lambda sweep: reselect fusion on validation",
+      "mAP": 80.35883554762637,
+      "parameter": "lambda",
+      "value": 0.0001,
+      "ridge_mAP": 79.82984112839291
+    },
+    {
+      "dataset": "coco",
+      "method": "lambda sweep: reselect fusion on validation",
+      "mAP": 80.33698470688273,
+      "parameter": "lambda",
+      "value": 0.001,
+      "ridge_mAP": 79.81037013208558
+    },
+    {
+      "dataset": "coco",
+      "method": "lambda sweep: reselect fusion on validation",
+      "mAP": 80.40050290373267,
+      "parameter": "lambda",
+      "value": 0.01,
+      "ridge_mAP": 79.66109128694492
+    },
+    {
+      "dataset": "coco",
+      "method": "lambda sweep: reselect fusion on validation",
+      "mAP": 79.7172932130444,
+      "parameter": "lambda",
+      "value": 0.1,
+      "ridge_mAP": 78.72570962498602
+    },
+    {
+      "dataset": "coco",
+      "method": "eta sweep: fixed global ridge mixing weight",
+      "mAP": 72.98428492288313,
+      "parameter": "eta",
+      "value": 0
+    },
+    {
+      "dataset": "coco",
+      "method": "eta sweep: fixed global ridge mixing weight",
+      "mAP": 75.10630459572057,
+      "parameter": "eta",
+      "value": 0.1
+    },
+    {
+      "dataset": "coco",
+      "method": "eta sweep: fixed global ridge mixing weight",
+      "mAP": 77.74166736370842,
+      "parameter": "eta",
+      "value": 0.3
+    },
+    {
+      "dataset": "coco",
+      "method": "eta sweep: fixed global ridge mixing weight",
+      "mAP": 79.30837677094343,
+      "parameter": "eta",
+      "value": 0.5
+    },
+    {
+      "dataset": "coco",
+      "method": "eta sweep: fixed global ridge mixing weight",
+      "mAP": 80.14977151344893,
+      "parameter": "eta",
+      "value": 0.7
+    },
+    {
+      "dataset": "coco",
+      "method": "eta sweep: fixed global ridge mixing weight",
+      "mAP": 79.82984093649222,
+      "parameter": "eta",
+      "value": 1
+    }
+  ],
+  "definition": "lambda is dimensionless trace-scaled ridge regularization; eta=ridge_weight, one global calibrated fusion weight, not per-class learned weights",
+  "selection": "seed17 only; all preset grid test results retained without changing headline"
+}

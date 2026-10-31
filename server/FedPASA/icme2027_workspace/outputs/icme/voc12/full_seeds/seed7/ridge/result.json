@@ -1,0 +1,85 @@
+{
+  "dataset": "voc12",
+  "method": {
+    "method": "label_aware_federated_ridge_statistics",
+    "clients": 1,
+    "regularization": 0.1,
+    "regularization_scale": 1.5444250548079939,
+    "individual_examples_transmitted": false,
+    "statistics_dtype": "float64",
+    "estimated_communication_MiB": 8.482978820800781
+  },
+  "protocol": {
+    "training_side_validation_fraction": 0.2,
+    "split_seed": 7,
+    "test_labels_used_for_selection": false,
+    "features": [
+      "cls",
+      "patch_mean",
+      "patch_max_text"
+    ]
+  },
+  "tuning": [
+    {
+      "alpha": 0.0001,
+      "validation_mAP": 93.52473841616427
+    },
+    {
+      "alpha": 0.0003,
+      "validation_mAP": 93.5379456636919
+    },
+    {
+      "alpha": 0.001,
+      "validation_mAP": 93.62063743980566
+    },
+    {
+      "alpha": 0.003,
+      "validation_mAP": 93.68214089927805
+    },
+    {
+      "alpha": 0.01,
+      "validation_mAP": 93.80580026405345
+    },
+    {
+      "alpha": 0.03,
+      "validation_mAP": 93.92672797661768
+    },
+    {
+      "alpha": 0.1,
+      "validation_mAP": 94.0187024676176
+    }
+  ],
+  "selection": {
+    "alpha": 0.1,
+    "validation_mAP": 94.0187024676176
+  },
+  "test": {
+    "mAP": 93.65172193427934,
+    "per_class_AP": [
+      99.76614496763678,
+      95.8225047543381,
+      98.69309498250297,
+      96.42338415828863,
+      81.49729097045606,
+      96.00910129152284,
+      89.59975251871082,
+      99.70844045614642,
+      86.09815320639292,
+      98.42349678914138,
+      85.04327699338401,
+      99.36539819538929,
+      98.5540357672835,
+      96.66986165527972,
+      97.85646236894429,
+      78.60089198775687,
+      98.32861155327535,
+      83.42660208972237,
+      99.44953111774491,
+      93.69840286166922
+    ],
+    "strongest_fedmpt_mAP": null,
+    "margin_over_strongest_fedmpt_points": null,
+    "passes_strongest_fedmpt_plus_2": null
+  },
+  "runtime_seconds": 0.41665059997467324
+}

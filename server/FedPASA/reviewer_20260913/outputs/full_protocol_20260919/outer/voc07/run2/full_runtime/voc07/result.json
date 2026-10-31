@@ -1,0 +1,1001 @@
+{
+  "status": "COMPLETE",
+  "rows": [
+    {
+      "dataset": "voc07",
+      "method": "Full exact runtime rerun seed2007",
+      "mAP": 94.20120643214818,
+      "seed": 2007,
+      "alpha": 0.1,
+      "validation_tuning": [
+        93.50229125278767,
+        93.51787460242613,
+        93.60779224670691,
+        93.68793340226134,
+        93.81292084415801,
+        93.93944326857613,
+        94.01261869622381
+      ],
+      "seconds": 2.138656662980793
+    },
+    {
+      "dataset": "voc07",
+      "method": "Full exact runtime rerun seed2017",
+      "mAP": 94.26494405310153,
+      "seed": 2017,
+      "alpha": 0.03,
+      "validation_tuning": [
+        93.24184635376419,
+        93.22631716967311,
+        93.28011525483214,
+        93.37981295111909,
+        93.55371714053963,
+        93.67632897159315,
+        93.67513342592508
+      ],
+      "seconds": 2.128680688998429
+    },
+    {
+      "dataset": "voc07",
+      "method": "Full exact runtime rerun seed2027",
+      "mAP": 94.30792197465703,
+      "seed": 2027,
+      "alpha": 0.03,
+      "validation_tuning": [
+        93.60128864663515,
+        93.62979370699426,
+        93.6696594224175,
+        93.77585625717118,
+        93.85125583469043,
+        93.96223179676021,
+        93.9381803510248
+      ],
+      "seconds": 2.123865706991637
+    },
+    {
+      "dataset": "voc07",
+      "method": "FedPASA-Full exact runtime rerun (3 splits)",
+      "mAP": 94.32269925102975
+    }
+  ],
+  "wall_seconds": 9.356350463989656,
+  "stages_seconds": {
+    "input_loading": 0.017264107998926193,
+    "ridge_full_client_statistics": 0.04943038598867133,
+    "qa_full_bank_build": 2.0279370679927524,
+    "qa_full_fit": 0.1658344650059007,
+    "qa_test_inference": 0.5787363960116636,
+    "seed2007_ridge_fit_statistics": 0.03760711298673414,
+    "seed2007_ridge_candidate_solve_predict_select": 0.12220755699672736,
+    "seed2007_qa_bank_build": 1.4738262549799401,
+    "seed2007_qa_fit": 0.15939578000688925,
+    "seed2007_qa_validation_inference": 0.12920659300289117,
+    "seed2007_exact_calibration_fusion_selection": 0.11419808201026171,
+    "seed2017_ridge_fit_statistics": 0.037831287016160786,
+    "seed2017_ridge_candidate_solve_predict_select": 0.1065855199994985,
+    "seed2017_qa_bank_build": 1.5013893629948143,
+    "seed2017_qa_fit": 0.14556954798172228,
+    "seed2017_qa_validation_inference": 0.12867329100845382,
+    "seed2017_exact_calibration_fusion_selection": 0.11418616201262921,
+    "seed2027_ridge_fit_statistics": 0.037155744998017326,
+    "seed2027_ridge_candidate_solve_predict_select": 0.10444383099093102,
+    "seed2027_qa_bank_build": 1.519500934984535,
+    "seed2027_qa_fit": 0.14057058698381297,
+    "seed2027_qa_validation_inference": 0.1297210759948939,
+    "seed2027_exact_calibration_fusion_selection": 0.1125661630067043
+  },
+  "client_fitting_seconds": 7.112837201770162,
+  "server_solve_seconds": 0.3786341671075206,
+  "uplink_bytes": 539654304,
+  "packed_uplink_bytes": 281709344,
+  "messages": [
+    {
+      "stage": "ridge_full_statistics",
+      "bytes": 88950480,
+      "packed_bytes": 45394800
+    },
+    {
+      "stage": "_global_quantile_selection",
+      "bytes": 245632,
+      "packed_bytes": 245632,
+      "FP32_bytes": 245632,
+      "packed_FP32_bytes": 245632
+    },
+    {
+      "stage": "_moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "_moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "_moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "_moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "_moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "_moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "_moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "_moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "_moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "_moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "_purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "_purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "_purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "_purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "_purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "_purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "_purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "_purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "_purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "_purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "_moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "_moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "_moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "_moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "_moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "_moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "_moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "_moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "_moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "_moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2007_ridge_fit_statistics",
+      "bytes": 88950480,
+      "packed_bytes": 45394800
+    },
+    {
+      "stage": "seed2007__global_quantile_selection",
+      "bytes": 234236,
+      "packed_bytes": 234236,
+      "FP32_bytes": 234236,
+      "packed_FP32_bytes": 234236
+    },
+    {
+      "stage": "seed2007__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2007__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2007__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2007__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2007__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2007__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2007__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2007__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2007__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2007__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2007__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2007__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2007__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2007__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2007__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2007__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2007__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2007__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2007__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2007__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2007__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2007__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2007__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2007__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2007__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2007__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2007__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2007__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2007__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2007__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2007_pooled_validation_scores_labels",
+      "bytes": 661320,
+      "packed_bytes": 661320
+    },
+    {
+      "stage": "seed2017_ridge_fit_statistics",
+      "bytes": 88950480,
+      "packed_bytes": 45394800
+    },
+    {
+      "stage": "seed2017__global_quantile_selection",
+      "bytes": 234004,
+      "packed_bytes": 234004,
+      "FP32_bytes": 234004,
+      "packed_FP32_bytes": 234004
+    },
+    {
+      "stage": "seed2017__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2017__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2017__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2017__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2017__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2017__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2017__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2017__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2017__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2017__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2017__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2017__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2017__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2017__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2017__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2017__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2017__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2017__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2017__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2017__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2017__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2017__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2017__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2017__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2017__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2017__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2017__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2017__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2017__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2017__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2017_pooled_validation_scores_labels",
+      "bytes": 661320,
+      "packed_bytes": 661320
+    },
+    {
+      "stage": "seed2027_ridge_fit_statistics",
+      "bytes": 88950480,
+      "packed_bytes": 45394800
+    },
+    {
+      "stage": "seed2027__global_quantile_selection",
+      "bytes": 230392,
+      "packed_bytes": 230392,
+      "FP32_bytes": 230392,
+      "packed_FP32_bytes": 230392
+    },
+    {
+      "stage": "seed2027__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2027__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2027__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2027__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2027__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2027__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2027__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2027__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2027__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2027__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2027__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2027__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2027__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2027__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2027__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2027__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2027__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2027__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2027__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2027__purification_packet",
+      "bytes": 480,
+      "packed_bytes": 480,
+      "FP32_bytes": 240,
+      "packed_FP32_bytes": 240
+    },
+    {
+      "stage": "seed2027__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2027__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2027__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2027__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2027__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2027__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2027__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2027__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2027__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2027__moment_packet",
+      "bytes": 2261312,
+      "packed_bytes": 1214784,
+      "FP32_bytes": 1130656,
+      "packed_FP32_bytes": 607392
+    },
+    {
+      "stage": "seed2027_pooled_validation_scores_labels",
+      "bytes": 661320,
+      "packed_bytes": 661320
+    }
+  ],
+  "logical_upload_stages": 23,
+  "protocol": "10 clients; three fit/validation splits; reuse full-fit QA and full ridge statistics. Four QA uploads, one ridge-stat upload, one pooled validation score/label upload per split.",
+  "scope": "Actual FP64 moments plus FP32 entropy and validation scores, uint8 validation labels; no downlink/headers; exact AP pooling discloses training-side validation labels and predictions. Single-server cached-feature simulation, not private distributed selection.",
+  "peak_process_RSS_MiB": 2594.19921875,
+  "peak_cuda_MiB": 160.61572265625
+}

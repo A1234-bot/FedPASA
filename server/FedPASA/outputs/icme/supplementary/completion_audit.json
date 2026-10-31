@@ -1,0 +1,59 @@
+{
+  "status": "COMPLETE",
+  "updated_at": "2026-09-09T22:50:56.913046+08:00",
+  "items": [
+    {
+      "item": "P0-1 protocol-matched strong/principle baselines",
+      "status": "COMPLETE",
+      "artifact": "protocol_matched_baselines.csv"
+    },
+    {
+      "item": "P0-2 estimator mismatch decomposition",
+      "status": "COMPLETE",
+      "artifact": "estimator_mismatch.csv"
+    },
+    {
+      "item": "P0-3 classwise complementarity / alpha",
+      "status": "COMPLETE",
+      "artifact": "classwise_complementarity.csv"
+    },
+    {
+      "item": "P1-4 centralized/federated gap",
+      "status": "COMPLETE",
+      "artifact": "federation_gap.csv"
+    },
+    {
+      "item": "P1-5 controlled boundary ties / global key",
+      "status": "COMPLETE",
+      "artifact": "boundary_ties.csv"
+    },
+    {
+      "item": "P1-6 client-number scaling",
+      "status": "COMPLETE",
+      "artifact": "client_scaling.csv"
+    },
+    {
+      "item": "P1-7 communication comparisons",
+      "status": "COMPLETE",
+      "artifact": "communication_baselines.csv"
+    },
+    {
+      "item": "P2-8 fusion strategies",
+      "status": "COMPLETE",
+      "artifact": "fusion_strategies.csv"
+    },
+    {
+      "item": "P2-9 three-view representation ablation",
+      "status": "COMPLETE",
+      "artifact": "representation_ablation.csv"
+    }
+  ],
+  "numerical_checks": {
+    "shared_key_exact_ID_recovery": true,
+    "shared_key_max_score_error": 1.9371509552001953e-07,
+    "max_federation_mAP_gap": 5.007194801009973e-07,
+    "finite_reported_mAP": true,
+    "test_labels_used_for_selection": false,
+    "new_tests": "tests/test_supplementary.py; 8 total tests passed at implementation validation"
+  }
+}

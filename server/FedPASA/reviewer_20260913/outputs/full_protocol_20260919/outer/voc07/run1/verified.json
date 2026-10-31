@@ -1,0 +1,30 @@
+{
+  "status": "COMPLETE",
+  "dataset": "voc07",
+  "run": 1,
+  "partition_seed": 107,
+  "inner_seeds": [
+    1007,
+    1017,
+    1027
+  ],
+  "rows": [
+    {
+      "method": "QAFedPASA",
+      "mAP": 92.52865494403272,
+      "prediction_sha256": "1d5a75ccebc8f1dbf496bb2711c1e4d1e9c2417c10338b372455a1041bed6c12"
+    },
+    {
+      "method": "3-view Ridge",
+      "mAP": 93.93741334952628,
+      "prediction_sha256": "6b106c1b6925d9265fccd5da8b05b518a0be5d8f0d921088e4ef9f60ad42bdf1"
+    },
+    {
+      "method": "FedPASA-Full",
+      "mAP": 94.17235084524718,
+      "prediction_sha256": "17866b5f0d10e24ac6033d0faff5406f40328087dc1048853bd8ff42024c251f"
+    }
+  ],
+  "hardware": "cuda",
+  "ensemble_identical": true
+}

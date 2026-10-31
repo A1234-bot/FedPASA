@@ -1,0 +1,402 @@
+[
+  {
+    "dataset": "voc07",
+    "scheme": "Global selected patch embeddings (oracle payload lower bound)",
+    "clients": 12,
+    "MiB": 20.0,
+    "bytes": 20971520,
+    "formula": "C*K*D*4; global selection coordination excluded",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "voc07",
+    "scheme": "Local selected patch embeddings",
+    "clients": 12,
+    "MiB": 240.0,
+    "bytes": 251658240,
+    "formula": "M*C*K*D*4; dense upper bound, selection changes",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "voc07",
+    "scheme": "All CLS features + labels",
+    "clients": 12,
+    "MiB": 10.169418334960938,
+    "bytes": 10663408,
+    "formula": "N*(D+C)*4",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "voc07",
+    "scheme": "All patch features + labels",
+    "clients": 12,
+    "MiB": 1918.655746459961,
+    "bytes": 2011856368,
+    "formula": "N*(P*D+C)*4",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "voc07",
+    "scheme": "Local GDA models",
+    "clients": 12,
+    "MiB": 0.46966552734375,
+    "bytes": 492480,
+    "formula": "M*(D*C+C)*4; not estimator preserving",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "voc07",
+    "scheme": "FedPASA QA FP32",
+    "clients": 12,
+    "MiB": 26.35015869140625,
+    "bytes": 27630144,
+    "formula": "M*(C*K+2*(D^2+2*C*D+2*C)+3*C)*4",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "voc07",
+    "scheme": "FedPASA Ridge FP32",
+    "clients": 12,
+    "MiB": 50.89787292480469,
+    "bytes": 53370288,
+    "formula": "M*(F^2+F*C+F+C+1)*4",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "voc07",
+    "scheme": "FedPASA Ridge FP64 (actual accumulation)",
+    "clients": 12,
+    "MiB": 101.79574584960938,
+    "bytes": 106740576,
+    "formula": "M*(F^2+F*C+F+C+1)*8",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "voc07",
+    "scheme": "FedPASA total FP32 wire",
+    "clients": 12,
+    "MiB": 77.24803161621094,
+    "bytes": 81000432,
+    "formula": "QA FP32 + Ridge FP32",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "voc07",
+    "scheme": "FedPASA total FP64 ridge reference",
+    "clients": 12,
+    "MiB": 128.14590454101562,
+    "bytes": 134370720,
+    "formula": "QA FP32 + Ridge FP64",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "voc12",
+    "scheme": "Global selected patch embeddings (oracle payload lower bound)",
+    "clients": 12,
+    "MiB": 20.0,
+    "bytes": 20971520,
+    "formula": "C*K*D*4; global selection coordination excluded",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "voc12",
+    "scheme": "Local selected patch embeddings",
+    "clients": 12,
+    "MiB": 240.0,
+    "bytes": 251658240,
+    "formula": "M*C*K*D*4; dense upper bound, selection changes",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "voc12",
+    "scheme": "All CLS features + labels",
+    "clients": 12,
+    "MiB": 11.602188110351562,
+    "bytes": 12165776,
+    "formula": "N*(D+C)*4",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "voc12",
+    "scheme": "All patch features + labels",
+    "clients": 12,
+    "MiB": 2188.9752349853516,
+    "bytes": 2295306896,
+    "formula": "N*(P*D+C)*4",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "voc12",
+    "scheme": "Local GDA models",
+    "clients": 12,
+    "MiB": 0.46966552734375,
+    "bytes": 492480,
+    "formula": "M*(D*C+C)*4; not estimator preserving",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "voc12",
+    "scheme": "FedPASA QA FP32",
+    "clients": 12,
+    "MiB": 26.35015869140625,
+    "bytes": 27630144,
+    "formula": "M*(C*K+2*(D^2+2*C*D+2*C)+3*C)*4",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "voc12",
+    "scheme": "FedPASA Ridge FP32",
+    "clients": 12,
+    "MiB": 50.89787292480469,
+    "bytes": 53370288,
+    "formula": "M*(F^2+F*C+F+C+1)*4",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "voc12",
+    "scheme": "FedPASA Ridge FP64 (actual accumulation)",
+    "clients": 12,
+    "MiB": 101.79574584960938,
+    "bytes": 106740576,
+    "formula": "M*(F^2+F*C+F+C+1)*8",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "voc12",
+    "scheme": "FedPASA total FP32 wire",
+    "clients": 12,
+    "MiB": 77.24803161621094,
+    "bytes": 81000432,
+    "formula": "QA FP32 + Ridge FP32",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "voc12",
+    "scheme": "FedPASA total FP64 ridge reference",
+    "clients": 12,
+    "MiB": 128.14590454101562,
+    "bytes": 134370720,
+    "formula": "QA FP32 + Ridge FP64",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "coco",
+    "scheme": "Global selected patch embeddings (oracle payload lower bound)",
+    "clients": 48,
+    "MiB": 80.0,
+    "bytes": 83886080,
+    "formula": "C*K*D*4; global selection coordination excluded",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "coco",
+    "scheme": "Local selected patch embeddings",
+    "clients": 48,
+    "MiB": 3840.0,
+    "bytes": 4026531840,
+    "formula": "M*C*K*D*4; dense upper bound, selection changes",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "coco",
+    "scheme": "All CLS features + labels",
+    "clients": 48,
+    "MiB": 185.36358642578125,
+    "bytes": 194367808,
+    "formula": "N*(D+C)*4",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "coco",
+    "scheme": "All patch features + labels",
+    "clients": 48,
+    "MiB": 31446.68194580078,
+    "bytes": 32974235968,
+    "formula": "N*(P*D+C)*4",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "coco",
+    "scheme": "Local GDA models",
+    "clients": 48,
+    "MiB": 7.5146484375,
+    "bytes": 7879680,
+    "formula": "M*(D*C+C)*4; not estimator preserving",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "coco",
+    "scheme": "FedPASA QA FP32",
+    "clients": 48,
+    "MiB": 133.6025390625,
+    "bytes": 140092416,
+    "formula": "M*(C*K+2*(D^2+2*C*D+2*C)+3*C)*4",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "coco",
+    "scheme": "FedPASA Ridge FP32",
+    "clients": 48,
+    "MiB": 239.56072998046875,
+    "bytes": 251197632,
+    "formula": "M*(F^2+F*C+F+C+1)*4",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "coco",
+    "scheme": "FedPASA Ridge FP64 (actual accumulation)",
+    "clients": 48,
+    "MiB": 479.1214599609375,
+    "bytes": 502395264,
+    "formula": "M*(F^2+F*C+F+C+1)*8",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "coco",
+    "scheme": "FedPASA total FP32 wire",
+    "clients": 48,
+    "MiB": 373.16326904296875,
+    "bytes": 391290048,
+    "formula": "QA FP32 + Ridge FP32",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "coco",
+    "scheme": "FedPASA total FP64 ridge reference",
+    "clients": 48,
+    "MiB": 612.7239990234375,
+    "bytes": 642487680,
+    "formula": "QA FP32 + Ridge FP64",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "nus",
+    "scheme": "Global selected patch embeddings (oracle payload lower bound)",
+    "clients": 49,
+    "MiB": 81.0,
+    "bytes": 84934656,
+    "formula": "C*K*D*4; global selection coordination excluded",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "nus",
+    "scheme": "Local selected patch embeddings",
+    "clients": 49,
+    "MiB": 3969.0,
+    "bytes": 4161798144,
+    "formula": "M*C*K*D*4; dense upper bound, selection changes",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "nus",
+    "scheme": "All CLS features + labels",
+    "clients": 49,
+    "MiB": 339.31732177734375,
+    "bytes": 355800000,
+    "formula": "N*(D+C)*4",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "nus",
+    "scheme": "All patch features + labels",
+    "clients": 49,
+    "MiB": 57468.223571777344,
+    "bytes": 60259800000,
+    "formula": "N*(P*D+C)*4",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "nus",
+    "scheme": "Local GDA models",
+    "clients": 49,
+    "MiB": 7.767093658447266,
+    "bytes": 8144388,
+    "formula": "M*(D*C+C)*4; not estimator preserving",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "nus",
+    "scheme": "FedPASA QA FP32",
+    "clients": 49,
+    "MiB": 136.86574935913086,
+    "bytes": 143514140,
+    "formula": "M*(C*K+2*(D^2+2*C*D+2*C)+3*C)*4",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "nus",
+    "scheme": "FedPASA Ridge FP32",
+    "clients": 49,
+    "MiB": 245.18635940551758,
+    "bytes": 257096532,
+    "formula": "M*(F^2+F*C+F+C+1)*4",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "nus",
+    "scheme": "FedPASA Ridge FP64 (actual accumulation)",
+    "clients": 49,
+    "MiB": 490.37271881103516,
+    "bytes": 514193064,
+    "formula": "M*(F^2+F*C+F+C+1)*8",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "nus",
+    "scheme": "FedPASA total FP32 wire",
+    "clients": 49,
+    "MiB": 382.05210876464844,
+    "bytes": 400610672,
+    "formula": "QA FP32 + Ridge FP32",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  },
+  {
+    "dataset": "nus",
+    "scheme": "FedPASA total FP64 ridge reference",
+    "clients": 49,
+    "MiB": 627.238468170166,
+    "bytes": 657707204,
+    "formula": "QA FP32 + Ridge FP64",
+    "direction": "client-to-server only",
+    "accounting": "analytical dense payload; no transport headers/downlink"
+  }
+]

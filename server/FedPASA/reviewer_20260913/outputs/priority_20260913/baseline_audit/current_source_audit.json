@@ -1,0 +1,11 @@
+{
+  "status": "SOURCE_BLOCKED",
+  "commit": "9bb5d9f688ff37b030c76b4f5c3b168fbc08999f",
+  "url": "https://api.github.com/repos/xuc865/FedMPT-main/contents/model/fedmpt.py?ref=9bb5d9f688ff37b030c76b4f5c3b168fbc08999f",
+  "sha256": "b097663a9380ad9943fc05a201d91bc76c8e3647e009b3c5d71fbc2c11130462",
+  "vanilla_component_error": "RuntimeError: Expected 4-dimensional input for 4-dimensional weight [1, 80, 512, 1], but got 3-dimensional input of size [2, 512, 49] instead",
+  "prompt_length_for_cond4": 74,
+  "CLIP_required_prompt_length": 77,
+  "two_author_equivalent_strong_baselines_complete": false,
+  "reason": "Released vanilla component fails conv1d rank; condition replacement also shortens prompt for COND>1. Existing repaired prediction semantics are explicitly different. FedMVP original single-label algorithm requires disclosed multilabel adaptation."
+}

@@ -1,0 +1,80 @@
+{
+  "status": "COMPLETE",
+  "mode": "fedavg",
+  "config": {
+    "optimizer": "sgd",
+    "lr": 100.0,
+    "weight_decay": 0.0001
+  },
+  "seed": 17,
+  "rounds": 200,
+  "best_round": 60,
+  "best_validation_mAP": 30.728270868003865,
+  "train_seconds": 10.71930105087813,
+  "validation_seconds": 1.0742453189741354,
+  "peak_cuda_MiB": 446.53759765625,
+  "uplink_bytes": 707200000,
+  "downlink_bytes": 707200000,
+  "curve": [
+    {
+      "round": 20,
+      "train_BCE": 0.13610230386257172,
+      "train_seconds": 1.051293205935508,
+      "validation_mAP": 30.54576710808784
+    },
+    {
+      "round": 40,
+      "train_BCE": 0.13616305589675903,
+      "train_seconds": 2.107111600926146,
+      "validation_mAP": 30.663447919739966
+    },
+    {
+      "round": 60,
+      "train_BCE": 0.13613563776016235,
+      "train_seconds": 3.4412368779012468,
+      "validation_mAP": 30.728270868003865
+    },
+    {
+      "round": 80,
+      "train_BCE": 0.1361238807439804,
+      "train_seconds": 4.466369831905467,
+      "validation_mAP": 30.6423757210057
+    },
+    {
+      "round": 100,
+      "train_BCE": 0.13610081374645233,
+      "train_seconds": 5.4880470188800246,
+      "validation_mAP": 30.638432185898424
+    },
+    {
+      "round": 120,
+      "train_BCE": 0.13608531653881073,
+      "train_seconds": 6.524192866811063,
+      "validation_mAP": 30.60832847576238
+    },
+    {
+      "round": 140,
+      "train_BCE": 0.13599255681037903,
+      "train_seconds": 7.575851182860788,
+      "validation_mAP": 30.71244642435268
+    },
+    {
+      "round": 160,
+      "train_BCE": 0.13620653748512268,
+      "train_seconds": 8.610353865893558,
+      "validation_mAP": 30.646824574564484
+    },
+    {
+      "round": 180,
+      "train_BCE": 0.13605795800685883,
+      "train_seconds": 9.645663809817052,
+      "validation_mAP": 30.64840476045373
+    },
+    {
+      "round": 200,
+      "train_BCE": 0.1360301822423935,
+      "train_seconds": 10.71930105087813,
+      "validation_mAP": 30.71984225693048
+    }
+  ]
+}

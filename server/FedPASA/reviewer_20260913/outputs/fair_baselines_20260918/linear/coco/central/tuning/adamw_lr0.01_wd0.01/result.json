@@ -1,0 +1,80 @@
+{
+  "status": "COMPLETE",
+  "mode": "central",
+  "config": {
+    "optimizer": "adamw",
+    "lr": 0.01,
+    "weight_decay": 0.01
+  },
+  "seed": 17,
+  "rounds": 200,
+  "best_round": 180,
+  "best_validation_mAP": 80.41296515701548,
+  "train_seconds": 12.425935032893904,
+  "validation_seconds": 1.0763717809750233,
+  "peak_cuda_MiB": 446.64501953125,
+  "uplink_bytes": 0,
+  "downlink_bytes": 0,
+  "curve": [
+    {
+      "round": 20,
+      "train_BCE": 0.041668158024549484,
+      "train_seconds": 1.2193106419872493,
+      "validation_mAP": 79.61896462721658
+    },
+    {
+      "round": 40,
+      "train_BCE": 0.039855826646089554,
+      "train_seconds": 2.4922434328473173,
+      "validation_mAP": 80.18854004440665
+    },
+    {
+      "round": 60,
+      "train_BCE": 0.03932793065905571,
+      "train_seconds": 3.761571492825169,
+      "validation_mAP": 80.31524369023091
+    },
+    {
+      "round": 80,
+      "train_BCE": 0.03905339911580086,
+      "train_seconds": 4.982738578837598,
+      "validation_mAP": 80.36086627651801
+    },
+    {
+      "round": 100,
+      "train_BCE": 0.038902536034584045,
+      "train_seconds": 6.244796041806694,
+      "validation_mAP": 80.39581156870534
+    },
+    {
+      "round": 120,
+      "train_BCE": 0.03889729082584381,
+      "train_seconds": 7.466184701916063,
+      "validation_mAP": 80.40201409447292
+    },
+    {
+      "round": 140,
+      "train_BCE": 0.03887909650802612,
+      "train_seconds": 8.704361533891642,
+      "validation_mAP": 80.40076289883805
+    },
+    {
+      "round": 160,
+      "train_BCE": 0.038866061717271805,
+      "train_seconds": 9.927567371923942,
+      "validation_mAP": 80.4095084641719
+    },
+    {
+      "round": 180,
+      "train_BCE": 0.03893721476197243,
+      "train_seconds": 11.195959896838758,
+      "validation_mAP": 80.41296515701548
+    },
+    {
+      "round": 200,
+      "train_BCE": 0.038789428770542145,
+      "train_seconds": 12.425935032893904,
+      "validation_mAP": 80.41181889266275
+    }
+  ]
+}

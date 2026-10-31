@@ -1,0 +1,25 @@
+{
+  "optimization": {
+    "version": "immutable_text_cache_v1",
+    "code_sha256": "d852c027022142bddc24dedecba3dcb6dd5d783b1c1908093b90e83d0082f4dc",
+    "benchmark_sha256": "ac5f2a0f78fd6821f4077f58a49298e0cc9925331df6c45affbfa9663b1056eb",
+    "speedup_control": {
+      "coco": 1.208913063168952,
+      "nus": 3.8413253108036787
+    },
+    "batch_size": 32,
+    "target_rounds": 200,
+    "dataset": "coco",
+    "training_seed": 7,
+    "checkpoint_completed_round": 101,
+    "checkpoint_active_round": 102,
+    "checkpoint_next_client": 9,
+    "checkpoint_sha256": "c60eb442e14a491ae76e39327d13be04980b4cab664153b5bd2a62a579407944",
+    "method": "cache immutable token embeddings and fixed zero-shot text encoder result; source forward/loss unchanged",
+    "restart_scope": "Completed clients preserved; partial next client replayed from saved boundary; SGD/dropout seeds unchanged",
+    "deployed": "2026-09-10T07:06:21.563944+00:00"
+  },
+  "resumed_from_completed_round": 0,
+  "resumed_from_next_client": 0,
+  "updated": "2026-09-11T00:45:47.887665+00:00"
+}

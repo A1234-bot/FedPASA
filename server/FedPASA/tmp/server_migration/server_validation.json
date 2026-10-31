@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "torch": "2.11.0+cu128",
+  "transferred_files_verified": 214,
+  "image_presence": {
+    "coco_train": 82081,
+    "coco_test": 40137,
+    "nus_train": 150000,
+    "nus_test": 60260
+  },
+  "image_sha256_samples_verified": 256,
+  "checkpoints": {
+    "coco": {
+      "completed_round": 8,
+      "target_rounds": 200
+    },
+    "nus": {
+      "completed_round": 7,
+      "active_round": 8,
+      "next_client": 6,
+      "target_rounds": 200
+    }
+  },
+  "coco_note": "Original 2014 IDs/labels/splits retained; 2017 storage reused by numeric image ID. All required IDs exist; 128 COCO image bytes sampled against local sources.",
+  "numerical_note": "Resumed on RTX 5090 / Linux / PyTorch 2.11; hardware/software differ from local run."
+}

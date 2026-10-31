@@ -1,0 +1,99 @@
+{
+  "status": "COMPLETE",
+  "rows": [
+    {
+      "dataset": "nus",
+      "method": "seed 7 only",
+      "mAP": 60.51172851550931,
+      "setting": "single-split",
+      "seed": 7,
+      "ridge_mAP": 60.193006622022196
+    },
+    {
+      "dataset": "nus",
+      "method": "seed 17 only",
+      "mAP": 60.68714980911749,
+      "setting": "single-split",
+      "seed": 17,
+      "ridge_mAP": 60.193006622022196
+    },
+    {
+      "dataset": "nus",
+      "method": "seed 27 only",
+      "mAP": 60.452336856203694,
+      "setting": "single-split",
+      "seed": 27,
+      "ridge_mAP": 60.193006622022196
+    },
+    {
+      "dataset": "nus",
+      "method": "Mean single-split",
+      "mAP": 60.55040506027683,
+      "setting": "arithmetic mean of three mAP values"
+    },
+    {
+      "dataset": "nus",
+      "method": "3-split score average",
+      "mAP": 60.670673005202644,
+      "setting": "historical fixed score ensemble",
+      "gain_over_mean_single": 0.12026794492581416,
+      "ridge_mAP": 60.19300658659045
+    }
+  ],
+  "fingerprints": [
+    {
+      "path": "outputs/icme/nus/full_seeds/seed7/ridge/fit_indices.npy",
+      "sha256": "bdbb3d6c3b56e595cbd1fc468c03ea2486dec221b9073ba691bc8e9a825ca167"
+    },
+    {
+      "path": "outputs/icme/nus/full_seeds/seed7/ridge/validation_indices.npy",
+      "sha256": "66c70f4b6c1d20b6e29d74bc6bab2e2f95f1b0de8a01101fac8c2a69f974bfdd"
+    },
+    {
+      "path": "outputs/icme/nus/full_seeds/seed7/ridge_patch_fusion/result.json",
+      "sha256": "0bb58886a1d1164dcbf86fab3b3806e7709d84ec11f0e65a7441524904d7cf78"
+    },
+    {
+      "path": "outputs/icme/nus/full_seeds/seed17/ridge/fit_indices.npy",
+      "sha256": "8049412b325448d48c2a895c8126ba76e3f4c954962e4a595ec53d7b4ae57763"
+    },
+    {
+      "path": "outputs/icme/nus/full_seeds/seed17/ridge/validation_indices.npy",
+      "sha256": "3e255fa4b942bebd0bd0a557b83c8f7912bbeec27fec582ae9c290d2b3bb3488"
+    },
+    {
+      "path": "outputs/icme/nus/full_seeds/seed17/ridge_patch_fusion/result.json",
+      "sha256": "6a42e8887a8209d890f9a93c32f2a84ab759094f45632a7f88ac3d39a8dd89b0"
+    },
+    {
+      "path": "outputs/icme/nus/full_seeds/seed27/ridge/fit_indices.npy",
+      "sha256": "57eeadb765d7ca784f746d09a020b1a077be0ffee3184d1dfb09fea5f9f3cf0d"
+    },
+    {
+      "path": "outputs/icme/nus/full_seeds/seed27/ridge/validation_indices.npy",
+      "sha256": "65ba97c1a66b6a41001b913eed53d164d0ee200f8f7790e24b8b36e896f69c7c"
+    },
+    {
+      "path": "outputs/icme/nus/full_seeds/seed27/ridge_patch_fusion/result.json",
+      "sha256": "6e4070125ac0bd41f489dec1f79c4a903139b857516e57ffb5aef398be06d07a"
+    },
+    {
+      "path": "outputs/icme/cache/nus/manifest.json",
+      "sha256": "41427a04393b7ae98a96b9f0dce67391c3244f444ea50e6cbc393294ab29c662"
+    },
+    {
+      "path": "outputs/icme/cache/nus/train_targets.npy",
+      "sha256": "9aed687b4f3fda9a65ab6697789a38928e0b3db5967c6743336732359f6ee74d"
+    },
+    {
+      "path": "outputs/icme/cache/nus/test_targets.npy",
+      "sha256": "4667e6497058961bad145ea9278e9301bd13d2d4a9611563054c266db08d8d8d"
+    },
+    {
+      "path": "outputs/icme/nus/partitions/clients10_seed7.npy",
+      "sha256": "8c6c53f5efd922a2a4480f5702d005d3aa254603ae6aa32ac08d8e9265c70f1a"
+    }
+  ],
+  "headline_seed": 17,
+  "rule": "Seed 17 fixed before new runs; no replacement based on test mAP. Historical scores are not new reruns."
+}

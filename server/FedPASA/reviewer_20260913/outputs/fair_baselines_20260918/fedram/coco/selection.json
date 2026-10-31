@@ -1,0 +1,71 @@
+{
+  "status": "LOCKED",
+  "lr": 0.0001,
+  "rounds": 40,
+  "validation_mAP": 78.94727012704725,
+  "history": [
+    {
+      "budget": 20,
+      "candidates": [
+        {
+          "lr": 3e-05,
+          "validation_mAP": 77.66468254068307,
+          "best_round": 20
+        },
+        {
+          "lr": 5e-05,
+          "validation_mAP": 77.94426452232182,
+          "best_round": 20
+        },
+        {
+          "lr": 0.0001,
+          "validation_mAP": 78.35095047187986,
+          "best_round": 20
+        }
+      ],
+      "retained": [
+        0.0001,
+        5e-05
+      ]
+    },
+    {
+      "budget": 60,
+      "candidates": [
+        {
+          "lr": 0.0001,
+          "validation_mAP": 78.94727012704725,
+          "best_round": 40
+        },
+        {
+          "lr": 5e-05,
+          "validation_mAP": 78.62444802848441,
+          "best_round": 60
+        }
+      ],
+      "retained": [
+        0.0001
+      ]
+    },
+    {
+      "budget": 200,
+      "candidates": [
+        {
+          "lr": 0.0001,
+          "validation_mAP": 78.94727012704725,
+          "best_round": 40
+        }
+      ],
+      "retained": [
+        0.0001
+      ]
+    }
+  ],
+  "selection_training_seconds": 39300.610573156184,
+  "selection_validation_seconds": 398.55630961302086,
+  "selection_uplink_bytes": 145850096000,
+  "selection_downlink_bytes": 145850096000,
+  "selected_at_budget_end": false,
+  "test_labels_read": false,
+  "locked_at": "2026-09-19T19:17:51Z",
+  "search_scope": "predeclared successive halving, not exhaustive full-budget grid"
+}

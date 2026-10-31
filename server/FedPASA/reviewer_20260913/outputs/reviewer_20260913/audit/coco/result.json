@@ -1,0 +1,99 @@
+{
+  "status": "COMPLETE",
+  "rows": [
+    {
+      "dataset": "coco",
+      "method": "seed 7 only",
+      "mAP": 80.53590029974117,
+      "setting": "single-split",
+      "seed": 7,
+      "ridge_mAP": 79.82984093649222
+    },
+    {
+      "dataset": "coco",
+      "method": "seed 17 only",
+      "mAP": 80.35883689790457,
+      "setting": "single-split",
+      "seed": 17,
+      "ridge_mAP": 79.82984093649222
+    },
+    {
+      "dataset": "coco",
+      "method": "seed 27 only",
+      "mAP": 80.4556889854199,
+      "setting": "single-split",
+      "seed": 27,
+      "ridge_mAP": 79.82984093649222
+    },
+    {
+      "dataset": "coco",
+      "method": "Mean single-split",
+      "mAP": 80.45014206102188,
+      "setting": "arithmetic mean of three mAP values"
+    },
+    {
+      "dataset": "coco",
+      "method": "3-split score average",
+      "mAP": 80.5280020441203,
+      "setting": "historical fixed score ensemble",
+      "gain_over_mean_single": 0.07785998309842057,
+      "ridge_mAP": 79.82984093649222
+    }
+  ],
+  "fingerprints": [
+    {
+      "path": "outputs/icme/coco/full_seeds/seed7/ridge/fit_indices.npy",
+      "sha256": "d72f02d136de13631108a9f0238fa41f1212212eb3c28f3161cf8b5b0d4513f7"
+    },
+    {
+      "path": "outputs/icme/coco/full_seeds/seed7/ridge/validation_indices.npy",
+      "sha256": "e8f362679d4a9ef1084e47cd913d5f897b7d2b3c546df07da22f75587d97f8d4"
+    },
+    {
+      "path": "outputs/icme/coco/full_seeds/seed7/ridge_patch_fusion/result.json",
+      "sha256": "637a500e5cabc590acf9308251359e47727b6a23dc90060f333f3b3f556d8fae"
+    },
+    {
+      "path": "outputs/icme/coco/full_seeds/seed17/ridge/fit_indices.npy",
+      "sha256": "24489ff63975ff22ec7e5ab301b7501f526dfbf01b6395ab83c222cb4bf178af"
+    },
+    {
+      "path": "outputs/icme/coco/full_seeds/seed17/ridge/validation_indices.npy",
+      "sha256": "e07ca6ecf68dcdf0eb12ddcb615e19903bd400e521b93f9231c80f0fb2677ff4"
+    },
+    {
+      "path": "outputs/icme/coco/full_seeds/seed17/ridge_patch_fusion/result.json",
+      "sha256": "d61ba8a0f190a1cf36b7baf9531ddddb4c86b332a2764f345fde0d06af6b14a9"
+    },
+    {
+      "path": "outputs/icme/coco/full_seeds/seed27/ridge/fit_indices.npy",
+      "sha256": "9b0f22be22886aeb1a0ca3ea2f8a0d4faeaa3dcca9e90b7306ad049a46e82761"
+    },
+    {
+      "path": "outputs/icme/coco/full_seeds/seed27/ridge/validation_indices.npy",
+      "sha256": "5cb324c8dee0e21f7d125ddf21445d113bc6ef8d17a9abdc1f07fd71e61b0cc2"
+    },
+    {
+      "path": "outputs/icme/coco/full_seeds/seed27/ridge_patch_fusion/result.json",
+      "sha256": "64abb28a70e84945e98059a728e8afe3c1f7d636ae103381688022fd17dbf740"
+    },
+    {
+      "path": "outputs/icme/cache/coco/manifest.json",
+      "sha256": "cd2c111a431e045ad111d58540d635850e698d9bd3b31c865776a752e2ddbca7"
+    },
+    {
+      "path": "outputs/icme/cache/coco/train_targets.npy",
+      "sha256": "4b07523744570723c4dedf96288cbf1e0c173604209b8320aafc4ba1a2d720d9"
+    },
+    {
+      "path": "outputs/icme/cache/coco/test_targets.npy",
+      "sha256": "ab75d66a93121f256887cd1e24027b94e0d7b0f18ddec13a8bc17b1f3aa1b250"
+    },
+    {
+      "path": "outputs/icme/coco/partitions/clients10_seed7.npy",
+      "sha256": "42dae9907d9422c1359284a83708e8d4c91ef43bd3b458bc9ce0710464ca6b08"
+    }
+  ],
+  "headline_seed": 17,
+  "rule": "Seed 17 fixed before new runs; no replacement based on test mAP. Historical scores are not new reruns."
+}

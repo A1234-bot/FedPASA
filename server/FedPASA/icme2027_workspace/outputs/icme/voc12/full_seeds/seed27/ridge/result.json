@@ -1,0 +1,85 @@
+{
+  "dataset": "voc12",
+  "method": {
+    "method": "label_aware_federated_ridge_statistics",
+    "clients": 1,
+    "regularization": 0.03,
+    "regularization_scale": 1.5444250548079939,
+    "individual_examples_transmitted": false,
+    "statistics_dtype": "float64",
+    "estimated_communication_MiB": 8.482978820800781
+  },
+  "protocol": {
+    "training_side_validation_fraction": 0.2,
+    "split_seed": 27,
+    "test_labels_used_for_selection": false,
+    "features": [
+      "cls",
+      "patch_mean",
+      "patch_max_text"
+    ]
+  },
+  "tuning": [
+    {
+      "alpha": 0.0001,
+      "validation_mAP": 92.80394057897092
+    },
+    {
+      "alpha": 0.0003,
+      "validation_mAP": 92.81995827274285
+    },
+    {
+      "alpha": 0.001,
+      "validation_mAP": 92.86238214997307
+    },
+    {
+      "alpha": 0.003,
+      "validation_mAP": 92.927730738302
+    },
+    {
+      "alpha": 0.01,
+      "validation_mAP": 93.06841725923952
+    },
+    {
+      "alpha": 0.03,
+      "validation_mAP": 93.19156338364418
+    },
+    {
+      "alpha": 0.1,
+      "validation_mAP": 93.14954846494228
+    }
+  ],
+  "selection": {
+    "alpha": 0.03,
+    "validation_mAP": 93.19156338364418
+  },
+  "test": {
+    "mAP": 93.68888447774899,
+    "per_class_AP": [
+      99.80385692978908,
+      95.95870788617236,
+      98.68167624475288,
+      96.68609805464726,
+      81.25691043760726,
+      96.00870408182026,
+      89.56570614947537,
+      99.69329518558258,
+      86.00979375554236,
+      98.48147322410755,
+      85.12874478775666,
+      99.38561945812677,
+      98.60197831755282,
+      96.78174721656528,
+      97.76604915824284,
+      78.94383493037061,
+      98.26638877401405,
+      83.49535992743029,
+      99.45417534830572,
+      93.80756968711789
+    ],
+    "strongest_fedmpt_mAP": null,
+    "margin_over_strongest_fedmpt_points": null,
+    "passes_strongest_fedmpt_plus_2": null
+  },
+  "runtime_seconds": 0.41376599995419383
+}

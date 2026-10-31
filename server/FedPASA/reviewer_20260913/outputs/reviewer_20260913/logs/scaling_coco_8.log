@@ -1,0 +1,21 @@
+BANK client=1/1 images=11451 classes=79
+DISK_BANK coco 1 / 8
+BANK client=1/1 images=15889 classes=80
+DISK_BANK coco 2 / 8
+BANK client=1/1 images=16950 classes=80
+DISK_BANK coco 3 / 8
+BANK client=1/1 images=6004 classes=78
+DISK_BANK coco 4 / 8
+BANK client=1/1 images=7777 classes=78
+DISK_BANK coco 5 / 8
+BANK client=1/1 images=8269 classes=79
+DISK_BANK coco 6 / 8
+BANK client=1/1 images=7273 classes=80
+DISK_BANK coco 7 / 8
+BANK client=1/1 images=8468 classes=79
+DISK_BANK coco 8 / 8
+EVALUATE coco 0/40137 adapters=3
+EVALUATE coco 12800/40137 adapters=3
+EVALUATE coco 25600/40137 adapters=3
+EVALUATE coco 38400/40137 adapters=3
+COMPLETE {'phase': 'qa', 'dataset': 'coco', 'clients': 8, 'seed': 17, 'beta': None, 'method': 'ridge'}

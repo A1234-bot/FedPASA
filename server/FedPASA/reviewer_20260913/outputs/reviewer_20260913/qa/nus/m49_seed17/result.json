@@ -1,0 +1,1122 @@
+{
+  "status": "COMPLETE",
+  "rows": [
+    {
+      "dataset": "nus",
+      "method": "QAFedPASA",
+      "mAP": 50.64116465662438,
+      "clients": 49,
+      "partition_seed": 17,
+      "beta": null,
+      "raw_local_union_patches": 1341704,
+      "local_bank_payload_max_bytes": 86427000,
+      "bank_build_seconds": 102.58214113605209,
+      "fit_seconds": 1.288806573022157,
+      "score_max_abs_vs_central": 1.210719347000122e-08
+    },
+    {
+      "dataset": "nus",
+      "method": "Local Top-K + Union + GDA",
+      "mAP": 47.22345226302348,
+      "clients": 49,
+      "partition_seed": 17,
+      "beta": null,
+      "raw_local_union_patches": 1341704,
+      "local_bank_payload_max_bytes": 86427000,
+      "bank_build_seconds": 102.58214113605209,
+      "fit_seconds": 9.683462402084842,
+      "score_max_abs_vs_central": 0.004499109461903572
+    },
+    {
+      "dataset": "nus",
+      "method": "Centralized PIAA-style GDA",
+      "mAP": 50.64116465414228,
+      "clients": 49,
+      "partition_seed": 17,
+      "beta": null,
+      "raw_local_union_patches": 1341704,
+      "local_bank_payload_max_bytes": 86427000,
+      "bank_build_seconds": 102.58214113605209,
+      "fit_seconds": 0.3644633910153061,
+      "score_max_abs_vs_central": 0.0
+    },
+    {
+      "dataset": "nus",
+      "method": "Three-view Ridge",
+      "mAP": 60.193006436744845,
+      "clients": 49,
+      "partition_seed": 17,
+      "beta": null,
+      "calibration": "historical training-only affine rules fixed across all partitions"
+    },
+    {
+      "dataset": "nus",
+      "method": "FedPASA-Full (locked 3-split rule)",
+      "mAP": 60.671965970157196,
+      "clients": 49,
+      "partition_seed": 17,
+      "beta": null,
+      "calibration": "historical training-only affine rules fixed across all partitions"
+    },
+    {
+      "dataset": "nus",
+      "method": "FedPASA-Full (locked seed17)",
+      "mAP": 60.680159882829564,
+      "clients": 49,
+      "partition_seed": 17,
+      "beta": null,
+      "calibration": "historical training-only affine rules fixed across all partitions"
+    }
+  ],
+  "qa_profile": {
+    "client_packet_seconds": 0.2750618231948465,
+    "server_solve_selection_seconds": 0.09405427286401391,
+    "qa_total_fit_seconds": 1.288806573022157,
+    "bank_build_seconds": 102.58214113605209,
+    "messages": [
+      {
+        "stage": "_global_quantile_selection",
+        "bytes": 5366816,
+        "packed_bytes": 5366816,
+        "FP32_bytes": 5366816,
+        "packed_FP32_bytes": 5366816
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_purification_packet",
+        "bytes": 1944,
+        "packed_bytes": 1944,
+        "FP32_bytes": 972,
+        "packed_FP32_bytes": 972
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      },
+      {
+        "stage": "_moment_packet",
+        "bytes": 2762000,
+        "packed_bytes": 1715472,
+        "FP32_bytes": 1381000,
+        "packed_FP32_bytes": 857736
+      }
+    ]
+  },
+  "total_shared_inference_seconds": 6.960915626958013,
+  "naive_metadata": {
+    "threshold_clamps": 78,
+    "selected_patches": 26610,
+    "method": "streamed local union; global purification with disclosed clamp"
+  },
+  "scope": "real full-population local Top-K rebuild, not repartitioning preselected global bank"
+}

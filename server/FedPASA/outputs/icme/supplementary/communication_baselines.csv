@@ -1,0 +1,41 @@
+﻿dataset,scheme,clients,MiB,bytes,formula,direction,accounting
+voc07,Global selected patch embeddings (oracle payload lower bound),12,20.0,20971520,C*K*D*4; global selection coordination excluded,client-to-server only,analytical dense payload; no transport headers/downlink
+voc07,Local selected patch embeddings,12,240.0,251658240,"M*C*K*D*4; dense upper bound, selection changes",client-to-server only,analytical dense payload; no transport headers/downlink
+voc07,All CLS features + labels,12,10.169418334960938,10663408,N*(D+C)*4,client-to-server only,analytical dense payload; no transport headers/downlink
+voc07,All patch features + labels,12,1918.655746459961,2011856368,N*(P*D+C)*4,client-to-server only,analytical dense payload; no transport headers/downlink
+voc07,Local GDA models,12,0.46966552734375,492480,M*(D*C+C)*4; not estimator preserving,client-to-server only,analytical dense payload; no transport headers/downlink
+voc07,FedPASA QA FP32,12,26.35015869140625,27630144,M*(C*K+2*(D^2+2*C*D+2*C)+3*C)*4,client-to-server only,analytical dense payload; no transport headers/downlink
+voc07,FedPASA Ridge FP32,12,50.89787292480469,53370288,M*(F^2+F*C+F+C+1)*4,client-to-server only,analytical dense payload; no transport headers/downlink
+voc07,FedPASA Ridge FP64 (actual accumulation),12,101.79574584960938,106740576,M*(F^2+F*C+F+C+1)*8,client-to-server only,analytical dense payload; no transport headers/downlink
+voc07,FedPASA total FP32 wire,12,77.24803161621094,81000432,QA FP32 + Ridge FP32,client-to-server only,analytical dense payload; no transport headers/downlink
+voc07,FedPASA total FP64 ridge reference,12,128.14590454101562,134370720,QA FP32 + Ridge FP64,client-to-server only,analytical dense payload; no transport headers/downlink
+voc12,Global selected patch embeddings (oracle payload lower bound),12,20.0,20971520,C*K*D*4; global selection coordination excluded,client-to-server only,analytical dense payload; no transport headers/downlink
+voc12,Local selected patch embeddings,12,240.0,251658240,"M*C*K*D*4; dense upper bound, selection changes",client-to-server only,analytical dense payload; no transport headers/downlink
+voc12,All CLS features + labels,12,11.602188110351562,12165776,N*(D+C)*4,client-to-server only,analytical dense payload; no transport headers/downlink
+voc12,All patch features + labels,12,2188.9752349853516,2295306896,N*(P*D+C)*4,client-to-server only,analytical dense payload; no transport headers/downlink
+voc12,Local GDA models,12,0.46966552734375,492480,M*(D*C+C)*4; not estimator preserving,client-to-server only,analytical dense payload; no transport headers/downlink
+voc12,FedPASA QA FP32,12,26.35015869140625,27630144,M*(C*K+2*(D^2+2*C*D+2*C)+3*C)*4,client-to-server only,analytical dense payload; no transport headers/downlink
+voc12,FedPASA Ridge FP32,12,50.89787292480469,53370288,M*(F^2+F*C+F+C+1)*4,client-to-server only,analytical dense payload; no transport headers/downlink
+voc12,FedPASA Ridge FP64 (actual accumulation),12,101.79574584960938,106740576,M*(F^2+F*C+F+C+1)*8,client-to-server only,analytical dense payload; no transport headers/downlink
+voc12,FedPASA total FP32 wire,12,77.24803161621094,81000432,QA FP32 + Ridge FP32,client-to-server only,analytical dense payload; no transport headers/downlink
+voc12,FedPASA total FP64 ridge reference,12,128.14590454101562,134370720,QA FP32 + Ridge FP64,client-to-server only,analytical dense payload; no transport headers/downlink
+coco,Global selected patch embeddings (oracle payload lower bound),48,80.0,83886080,C*K*D*4; global selection coordination excluded,client-to-server only,analytical dense payload; no transport headers/downlink
+coco,Local selected patch embeddings,48,3840.0,4026531840,"M*C*K*D*4; dense upper bound, selection changes",client-to-server only,analytical dense payload; no transport headers/downlink
+coco,All CLS features + labels,48,185.36358642578125,194367808,N*(D+C)*4,client-to-server only,analytical dense payload; no transport headers/downlink
+coco,All patch features + labels,48,31446.68194580078,32974235968,N*(P*D+C)*4,client-to-server only,analytical dense payload; no transport headers/downlink
+coco,Local GDA models,48,7.5146484375,7879680,M*(D*C+C)*4; not estimator preserving,client-to-server only,analytical dense payload; no transport headers/downlink
+coco,FedPASA QA FP32,48,133.6025390625,140092416,M*(C*K+2*(D^2+2*C*D+2*C)+3*C)*4,client-to-server only,analytical dense payload; no transport headers/downlink
+coco,FedPASA Ridge FP32,48,239.56072998046875,251197632,M*(F^2+F*C+F+C+1)*4,client-to-server only,analytical dense payload; no transport headers/downlink
+coco,FedPASA Ridge FP64 (actual accumulation),48,479.1214599609375,502395264,M*(F^2+F*C+F+C+1)*8,client-to-server only,analytical dense payload; no transport headers/downlink
+coco,FedPASA total FP32 wire,48,373.16326904296875,391290048,QA FP32 + Ridge FP32,client-to-server only,analytical dense payload; no transport headers/downlink
+coco,FedPASA total FP64 ridge reference,48,612.7239990234375,642487680,QA FP32 + Ridge FP64,client-to-server only,analytical dense payload; no transport headers/downlink
+nus,Global selected patch embeddings (oracle payload lower bound),49,81.0,84934656,C*K*D*4; global selection coordination excluded,client-to-server only,analytical dense payload; no transport headers/downlink
+nus,Local selected patch embeddings,49,3969.0,4161798144,"M*C*K*D*4; dense upper bound, selection changes",client-to-server only,analytical dense payload; no transport headers/downlink
+nus,All CLS features + labels,49,339.31732177734375,355800000,N*(D+C)*4,client-to-server only,analytical dense payload; no transport headers/downlink
+nus,All patch features + labels,49,57468.223571777344,60259800000,N*(P*D+C)*4,client-to-server only,analytical dense payload; no transport headers/downlink
+nus,Local GDA models,49,7.767093658447266,8144388,M*(D*C+C)*4; not estimator preserving,client-to-server only,analytical dense payload; no transport headers/downlink
+nus,FedPASA QA FP32,49,136.86574935913086,143514140,M*(C*K+2*(D^2+2*C*D+2*C)+3*C)*4,client-to-server only,analytical dense payload; no transport headers/downlink
+nus,FedPASA Ridge FP32,49,245.18635940551758,257096532,M*(F^2+F*C+F+C+1)*4,client-to-server only,analytical dense payload; no transport headers/downlink
+nus,FedPASA Ridge FP64 (actual accumulation),49,490.37271881103516,514193064,M*(F^2+F*C+F+C+1)*8,client-to-server only,analytical dense payload; no transport headers/downlink
+nus,FedPASA total FP32 wire,49,382.05210876464844,400610672,QA FP32 + Ridge FP32,client-to-server only,analytical dense payload; no transport headers/downlink
+nus,FedPASA total FP64 ridge reference,49,627.238468170166,657707204,QA FP32 + Ridge FP64,client-to-server only,analytical dense payload; no transport headers/downlink

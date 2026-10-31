@@ -1,0 +1,36 @@
+{
+  "time": "2026-09-22T18:25:27.234669+00:00",
+  "devices": {
+    "/dev/nvidia0": {
+      "errno": 1,
+      "error": "[Errno 1] Operation not permitted: '/dev/nvidia0'"
+    },
+    "/dev/nvidiactl": {
+      "errno": 1,
+      "error": "[Errno 1] Operation not permitted: '/dev/nvidiactl'"
+    },
+    "/dev/nvidia-uvm": {
+      "errno": 1,
+      "error": "[Errno 1] Operation not permitted: '/dev/nvidia-uvm'"
+    }
+  },
+  "nvml": {
+    "returncode": 255,
+    "stdout": "Failed to initialize NVML: Unknown Error\n",
+    "stderr": ""
+  },
+  "cuda_probe": {
+    "returncode": 1,
+    "stdout": "available False\n",
+    "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"/root/autodl-tmp/miniconda3/envs/fbu/lib/python3.10/site-packages/torch/cuda/__init__.py\", line 478, in _lazy_init\n    torch._C._cuda_init()\nRuntimeError: No CUDA GPUs are available\n"
+  },
+  "progress": {
+    "status": "RUNNING",
+    "round": 40,
+    "completed_clients": 7,
+    "target_rounds": 200,
+    "time": "2026-09-22T18:25:03Z"
+  },
+  "tmux": "full_protocol_20260919: 1 windows (created Tue Sep 22 11:39:05 2026)",
+  "memory_events": "low 0\nhigh 0\nmax 3354\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n"
+}

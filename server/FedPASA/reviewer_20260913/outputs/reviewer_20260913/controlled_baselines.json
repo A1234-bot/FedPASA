@@ -1,0 +1,1170 @@
+[
+  {
+    "dataset": "coco",
+    "method": "Centralized Ridge",
+    "mAP": 79.82984112839291,
+    "features": "cls+patch_mean+patch_max_text",
+    "alpha": 0.0001,
+    "split_seed": 17,
+    "partition_seed": 7,
+    "clients": 10,
+    "client_fitting_seconds": 0.7187218931503594,
+    "server_solve_seconds": 0,
+    "fit_wall_seconds": 0.7187218931503594,
+    "uploads_per_client": 0,
+    "uplink_FP64_bytes": 0
+  },
+  {
+    "dataset": "coco",
+    "method": "Three-view pooled Ridge",
+    "mAP": 79.82984111760146,
+    "features": "cls+patch_mean+patch_max_text",
+    "alpha": 0.0001,
+    "split_seed": 17,
+    "partition_seed": 7,
+    "clients": 10,
+    "client_fitting_seconds": 0.8015259949024767,
+    "server_solve_seconds": 0.017739268951117992,
+    "fit_wall_seconds": 0.8192652638535947,
+    "uploads_per_client": 1,
+    "uplink_FP64_bytes": 104665680
+  },
+  {
+    "dataset": "coco",
+    "method": "Local Ridge + Avg (matched penalty)",
+    "mAP": 79.06865346570629,
+    "features": "cls+patch_mean+patch_max_text",
+    "alpha": 0.0001,
+    "split_seed": 17,
+    "partition_seed": 7,
+    "clients": 10,
+    "client_fitting_seconds": 0.8843561098910868,
+    "server_solve_seconds": 0,
+    "fit_wall_seconds": 0.8843561098910868,
+    "uploads_per_client": 1,
+    "uplink_FP64_bytes": 3536000
+  },
+  {
+    "dataset": "coco",
+    "method": "Local Ridge + Avg",
+    "mAP": 79.07759695961873,
+    "features": "cls+patch_mean+patch_max_text",
+    "alpha": 0.03,
+    "validation_tuning": [
+      [
+        78.77978322106779,
+        0.0001
+      ],
+      [
+        78.79436098708543,
+        0.0003
+      ],
+      [
+        78.83400495346484,
+        0.001
+      ],
+      [
+        78.8909840378331,
+        0.003
+      ],
+      [
+        78.98564095123993,
+        0.01
+      ],
+      [
+        78.98748183486342,
+        0.03
+      ],
+      [
+        78.80029163085348,
+        0.1
+      ]
+    ],
+    "split_seed": 17,
+    "clients": 10
+  },
+  {
+    "dataset": "coco",
+    "method": "Fed3R-style pooled ridge",
+    "mAP": 76.12784056051997,
+    "features": "normalized CLS; no bias or centering; multilabel adaptation",
+    "lambda_value": 0.001,
+    "split_seed": 17,
+    "clients": 10,
+    "validation_tuning": [
+      [
+        76.33134129314541,
+        1e-06
+      ],
+      [
+        76.33133516720241,
+        1e-05
+      ],
+      [
+        76.33129824685014,
+        0.0001
+      ],
+      [
+        76.33148099423217,
+        0.001
+      ],
+      [
+        76.32684469858249,
+        0.01
+      ],
+      [
+        76.30755808482989,
+        0.1
+      ],
+      [
+        76.23057049695942,
+        1
+      ],
+      [
+        75.76516150366075,
+        10
+      ],
+      [
+        73.16687434931353,
+        100
+      ]
+    ],
+    "client_fitting_seconds": 0.19171620882116258,
+    "server_solve_seconds": 0.0020493229385465384,
+    "fit_wall_seconds": 0.19376553175970912,
+    "uploads_per_client": 1,
+    "uplink_FP64_bytes": 24248320
+  },
+  {
+    "dataset": "nus",
+    "method": "Centralized Ridge",
+    "mAP": 60.19300692686526,
+    "features": "cls+patch_mean+patch_max_text",
+    "alpha": 0.0001,
+    "split_seed": 17,
+    "partition_seed": 7,
+    "clients": 10,
+    "client_fitting_seconds": 1.3130760409403592,
+    "server_solve_seconds": 0,
+    "fit_wall_seconds": 1.3130760409403592,
+    "uploads_per_client": 0,
+    "uplink_FP64_bytes": 0
+  },
+  {
+    "dataset": "nus",
+    "method": "Three-view pooled Ridge",
+    "mAP": 60.19300692686526,
+    "features": "cls+patch_mean+patch_max_text",
+    "alpha": 0.0001,
+    "split_seed": 17,
+    "partition_seed": 7,
+    "clients": 10,
+    "client_fitting_seconds": 1.5029767130035907,
+    "server_solve_seconds": 0.015557002974674106,
+    "fit_wall_seconds": 1.5185337159782648,
+    "uploads_per_client": 1,
+    "uplink_FP64_bytes": 104937360
+  },
+  {
+    "dataset": "nus",
+    "method": "Local Ridge + Avg (matched penalty)",
+    "mAP": 60.02554842172587,
+    "features": "cls+patch_mean+patch_max_text",
+    "alpha": 0.0001,
+    "split_seed": 17,
+    "partition_seed": 7,
+    "clients": 10,
+    "client_fitting_seconds": 1.5897574808914214,
+    "server_solve_seconds": 0,
+    "fit_wall_seconds": 1.5897574808914214,
+    "uploads_per_client": 1,
+    "uplink_FP64_bytes": 3583440
+  },
+  {
+    "dataset": "nus",
+    "method": "Local Ridge + Avg",
+    "mAP": 60.06562995559891,
+    "features": "cls+patch_mean+patch_max_text",
+    "alpha": 0.01,
+    "validation_tuning": [
+      [
+        60.580717622627176,
+        0.0001
+      ],
+      [
+        60.582066467957716,
+        0.0003
+      ],
+      [
+        60.60746093058368,
+        0.001
+      ],
+      [
+        60.65264998927189,
+        0.003
+      ],
+      [
+        60.695297928180295,
+        0.01
+      ],
+      [
+        60.645897229887716,
+        0.03
+      ],
+      [
+        60.65557175026826,
+        0.1
+      ]
+    ],
+    "split_seed": 17,
+    "clients": 10
+  },
+  {
+    "dataset": "nus",
+    "method": "Fed3R-style pooled ridge",
+    "mAP": 58.40696247221244,
+    "features": "normalized CLS; no bias or centering; multilabel adaptation",
+    "lambda_value": 0.001,
+    "split_seed": 17,
+    "clients": 10,
+    "validation_tuning": [
+      [
+        58.78041359269177,
+        1e-06
+      ],
+      [
+        58.780479056779356,
+        1e-05
+      ],
+      [
+        58.78075485230209,
+        0.0001
+      ],
+      [
+        58.781786523700006,
+        0.001
+      ],
+      [
+        58.77960140059876,
+        0.01
+      ],
+      [
+        58.74787325879246,
+        0.1
+      ],
+      [
+        58.7267968251992,
+        1
+      ],
+      [
+        58.61524389710971,
+        10
+      ],
+      [
+        57.82541522683765,
+        100
+      ]
+    ],
+    "client_fitting_seconds": 0.3912335420027375,
+    "server_solve_seconds": 0.0019773710519075394,
+    "fit_wall_seconds": 0.39321091305464506,
+    "uploads_per_client": 1,
+    "uplink_FP64_bytes": 24289280
+  },
+  {
+    "dataset": "voc07",
+    "method": "Centralized Ridge",
+    "mAP": 94.0326052113062,
+    "features": "cls+patch_mean+patch_max_text",
+    "alpha": 0.03,
+    "split_seed": 17,
+    "partition_seed": 7,
+    "clients": 10,
+    "client_fitting_seconds": 0.055846541887149215,
+    "server_solve_seconds": 0,
+    "fit_wall_seconds": 0.055846541887149215,
+    "uploads_per_client": 0,
+    "uplink_FP64_bytes": 0
+  },
+  {
+    "dataset": "voc07",
+    "method": "Three-view pooled Ridge",
+    "mAP": 94.0326052113062,
+    "features": "cls+patch_mean+patch_max_text",
+    "alpha": 0.03,
+    "split_seed": 17,
+    "partition_seed": 7,
+    "clients": 10,
+    "client_fitting_seconds": 0.05109604890458286,
+    "server_solve_seconds": 0.014722900930792093,
+    "fit_wall_seconds": 0.06581894983537495,
+    "uploads_per_client": 1,
+    "uplink_FP64_bytes": 88950480
+  },
+  {
+    "dataset": "voc07",
+    "method": "Local Ridge + Avg (matched penalty)",
+    "mAP": 89.0816666180976,
+    "features": "cls+patch_mean+patch_max_text",
+    "alpha": 0.03,
+    "split_seed": 17,
+    "partition_seed": 7,
+    "clients": 10,
+    "client_fitting_seconds": 0.12813398684374988,
+    "server_solve_seconds": 0,
+    "fit_wall_seconds": 0.12813398684374988,
+    "uploads_per_client": 1,
+    "uplink_FP64_bytes": 836000
+  },
+  {
+    "dataset": "voc07",
+    "method": "Local Ridge + Avg",
+    "mAP": 91.41308824625823,
+    "features": "cls+patch_mean+patch_max_text",
+    "alpha": 0.1,
+    "validation_tuning": [
+      [
+        79.5945562213362,
+        0.0001
+      ],
+      [
+        79.75133629162706,
+        0.0003
+      ],
+      [
+        80.32065454703569,
+        0.001
+      ],
+      [
+        81.7099071548221,
+        0.003
+      ],
+      [
+        84.26460899614248,
+        0.01
+      ],
+      [
+        87.2611026791313,
+        0.03
+      ],
+      [
+        89.95398515428876,
+        0.1
+      ]
+    ],
+    "split_seed": 17,
+    "clients": 10
+  },
+  {
+    "dataset": "voc07",
+    "method": "Fed3R-style pooled ridge",
+    "mAP": 91.79941100807181,
+    "features": "normalized CLS; no bias or centering; multilabel adaptation",
+    "lambda_value": 0.1,
+    "split_seed": 17,
+    "clients": 10,
+    "validation_tuning": [
+      [
+        92.31426048776177,
+        1e-06
+      ],
+      [
+        92.31338398013995,
+        1e-05
+      ],
+      [
+        92.31442106614051,
+        0.0001
+      ],
+      [
+        92.32947167157313,
+        0.001
+      ],
+      [
+        92.37285015471457,
+        0.01
+      ],
+      [
+        92.39428773459366,
+        0.1
+      ],
+      [
+        92.10089505405065,
+        1
+      ],
+      [
+        90.3246645065242,
+        10
+      ],
+      [
+        86.08730498637745,
+        100
+      ]
+    ],
+    "client_fitting_seconds": 0.013326311949640512,
+    "server_solve_seconds": 0.0015449710190296173,
+    "fit_wall_seconds": 0.01487128296867013,
+    "uploads_per_client": 1,
+    "uplink_FP64_bytes": 21790720
+  },
+  {
+    "dataset": "voc12",
+    "method": "Centralized Ridge",
+    "mAP": 93.65172008542257,
+    "features": "cls+patch_mean+patch_max_text",
+    "alpha": 0.1,
+    "split_seed": 17,
+    "partition_seed": 7,
+    "clients": 10,
+    "client_fitting_seconds": 0.06074687303043902,
+    "server_solve_seconds": 0,
+    "fit_wall_seconds": 0.06074687303043902,
+    "uploads_per_client": 0,
+    "uplink_FP64_bytes": 0
+  },
+  {
+    "dataset": "voc12",
+    "method": "Three-view pooled Ridge",
+    "mAP": 93.65172008542257,
+    "features": "cls+patch_mean+patch_max_text",
+    "alpha": 0.1,
+    "split_seed": 17,
+    "partition_seed": 7,
+    "clients": 10,
+    "client_fitting_seconds": 0.05672388384118676,
+    "server_solve_seconds": 0.010638718027621508,
+    "fit_wall_seconds": 0.06736260186880827,
+    "uploads_per_client": 1,
+    "uplink_FP64_bytes": 88950480
+  },
+  {
+    "dataset": "voc12",
+    "method": "Local Ridge + Avg (matched penalty)",
+    "mAP": 91.08330263224109,
+    "features": "cls+patch_mean+patch_max_text",
+    "alpha": 0.1,
+    "split_seed": 17,
+    "partition_seed": 7,
+    "clients": 10,
+    "client_fitting_seconds": 0.12073553586378694,
+    "server_solve_seconds": 0,
+    "fit_wall_seconds": 0.12073553586378694,
+    "uploads_per_client": 1,
+    "uplink_FP64_bytes": 836000
+  },
+  {
+    "dataset": "voc12",
+    "method": "Local Ridge + Avg",
+    "mAP": 91.08330263224109,
+    "features": "cls+patch_mean+patch_max_text",
+    "alpha": 0.1,
+    "validation_tuning": [
+      [
+        77.17514398080374,
+        0.0001
+      ],
+      [
+        77.52386077122742,
+        0.0003
+      ],
+      [
+        78.51511549536936,
+        0.001
+      ],
+      [
+        80.30295417240951,
+        0.003
+      ],
+      [
+        82.88662303987779,
+        0.01
+      ],
+      [
+        85.16851693698732,
+        0.03
+      ],
+      [
+        87.85582193501381,
+        0.1
+      ]
+    ],
+    "split_seed": 17,
+    "clients": 10
+  },
+  {
+    "dataset": "voc12",
+    "method": "Fed3R-style pooled ridge",
+    "mAP": 91.43471923575903,
+    "features": "normalized CLS; no bias or centering; multilabel adaptation",
+    "lambda_value": 0.1,
+    "split_seed": 17,
+    "clients": 10,
+    "validation_tuning": [
+      [
+        90.77731348411291,
+        1e-06
+      ],
+      [
+        90.77736243683022,
+        1e-05
+      ],
+      [
+        90.78108613276905,
+        0.0001
+      ],
+      [
+        90.77757824212419,
+        0.001
+      ],
+      [
+        90.79264935500456,
+        0.01
+      ],
+      [
+        90.84514186326726,
+        0.1
+      ],
+      [
+        90.70330873091679,
+        1
+      ],
+      [
+        89.22016605951593,
+        10
+      ],
+      [
+        84.89430773171662,
+        100
+      ]
+    ],
+    "client_fitting_seconds": 0.014790903078392148,
+    "server_solve_seconds": 0.0015797391533851624,
+    "fit_wall_seconds": 0.01637064223177731,
+    "uploads_per_client": 1,
+    "uplink_FP64_bytes": 21790720
+  },
+  {
+    "dataset": "coco",
+    "method": "FedAvg Linear Head",
+    "mAP": 43.23834492147835,
+    "features": "cls+patch_mean+patch_max_text",
+    "rounds": 50,
+    "uploads_per_client": 50,
+    "local_epochs": 1,
+    "batch_size": 256,
+    "loss": "BCEWithLogits",
+    "optimizer": "SGD momentum 0.9; reset each local round",
+    "selected_lr": 1.0,
+    "clients": 10,
+    "partition_seed": 7,
+    "split_seed": 17,
+    "client_fitting_seconds": 3.0713768522255123,
+    "server_solve_seconds": 0.013621865538880229,
+    "fit_wall_seconds": 3.0849987177643925,
+    "selection_seconds": 7.893258666852489,
+    "uplink_FP32_bytes": 176800000
+  },
+  {
+    "dataset": "nus",
+    "method": "FedAvg Linear Head",
+    "mAP": 20.97536573332844,
+    "features": "cls+patch_mean+patch_max_text",
+    "rounds": 50,
+    "uploads_per_client": 50,
+    "local_epochs": 1,
+    "batch_size": 256,
+    "loss": "BCEWithLogits",
+    "optimizer": "SGD momentum 0.9; reset each local round",
+    "selected_lr": 1.0,
+    "clients": 10,
+    "partition_seed": 7,
+    "split_seed": 17,
+    "client_fitting_seconds": 5.345495748100802,
+    "server_solve_seconds": 0.013698142720386386,
+    "fit_wall_seconds": 5.359193890821189,
+    "selection_seconds": 13.459516748553142,
+    "uplink_FP32_bytes": 179172000
+  },
+  {
+    "dataset": "voc07",
+    "method": "FedAvg Linear Head",
+    "mAP": 29.82846177454586,
+    "features": "cls+patch_mean+patch_max_text",
+    "rounds": 50,
+    "uploads_per_client": 50,
+    "local_epochs": 1,
+    "batch_size": 256,
+    "loss": "BCEWithLogits",
+    "optimizer": "SGD momentum 0.9; reset each local round",
+    "selected_lr": 1.0,
+    "clients": 10,
+    "partition_seed": 7,
+    "split_seed": 17,
+    "client_fitting_seconds": 0.32871798565611243,
+    "server_solve_seconds": 0.012289497070014477,
+    "fit_wall_seconds": 0.3410074827261269,
+    "selection_seconds": 1.3650331115350127,
+    "uplink_FP32_bytes": 41800000
+  },
+  {
+    "dataset": "voc12",
+    "method": "FedAvg Linear Head",
+    "mAP": 35.09839969013582,
+    "features": "cls+patch_mean+patch_max_text",
+    "rounds": 50,
+    "uploads_per_client": 50,
+    "local_epochs": 1,
+    "batch_size": 256,
+    "loss": "BCEWithLogits",
+    "optimizer": "SGD momentum 0.9; reset each local round",
+    "selected_lr": 1.0,
+    "clients": 10,
+    "partition_seed": 7,
+    "split_seed": 17,
+    "client_fitting_seconds": 0.35299735818989575,
+    "server_solve_seconds": 0.012306334683671594,
+    "fit_wall_seconds": 0.36530369287356734,
+    "selection_seconds": 1.461505154846236,
+    "uplink_FP32_bytes": 41800000
+  },
+  {
+    "dataset": "coco",
+    "method": "QAFedPASA",
+    "mAP": 73.19298745954835,
+    "clients": 10,
+    "partition_seed": 7,
+    "beta": null,
+    "raw_local_union_patches": 331212,
+    "local_bank_payload_max_bytes": 92939704,
+    "bank_build_seconds": 37.39218671200797,
+    "fit_seconds": 0.46236122213304043,
+    "score_max_abs_vs_central": 1.7881393432617188e-07
+  },
+  {
+    "dataset": "coco",
+    "method": "Local Top-K + Union + GDA",
+    "mAP": 66.89379735090738,
+    "clients": 10,
+    "partition_seed": 7,
+    "beta": null,
+    "raw_local_union_patches": 331212,
+    "local_bank_payload_max_bytes": 92939704,
+    "bank_build_seconds": 37.39218671200797,
+    "fit_seconds": 2.3724574130028486,
+    "score_max_abs_vs_central": 0.7917553186416626
+  },
+  {
+    "dataset": "coco",
+    "method": "Naive local GDA averaging",
+    "mAP": 71.22679381502606,
+    "clients": 10,
+    "partition_seed": 7,
+    "beta": null,
+    "raw_local_union_patches": 331212,
+    "local_bank_payload_max_bytes": 92939704,
+    "bank_build_seconds": 37.39218671200797,
+    "fit_seconds": 2.055561564862728,
+    "score_max_abs_vs_central": 0.7214455604553223
+  },
+  {
+    "dataset": "coco",
+    "method": "Centralized PIAA-style GDA",
+    "mAP": 73.19298745954835,
+    "clients": 10,
+    "partition_seed": 7,
+    "beta": null,
+    "raw_local_union_patches": 331212,
+    "local_bank_payload_max_bytes": 92939704,
+    "bank_build_seconds": 37.39218671200797,
+    "fit_seconds": 0.2218206999823451,
+    "score_max_abs_vs_central": 0.0
+  },
+  {
+    "dataset": "coco",
+    "method": "Three-view Ridge",
+    "mAP": 79.82984111760146,
+    "clients": 10,
+    "partition_seed": 7,
+    "beta": null,
+    "calibration": "historical training-only affine rules fixed across all partitions"
+  },
+  {
+    "dataset": "coco",
+    "method": "FedPASA-Full (locked 3-split rule)",
+    "mAP": 80.56565849073115,
+    "clients": 10,
+    "partition_seed": 7,
+    "beta": null,
+    "calibration": "historical training-only affine rules fixed across all partitions"
+  },
+  {
+    "dataset": "coco",
+    "method": "FedPASA-Full (locked seed17)",
+    "mAP": 80.39853849563855,
+    "clients": 10,
+    "partition_seed": 7,
+    "beta": null,
+    "calibration": "historical training-only affine rules fixed across all partitions"
+  },
+  {
+    "dataset": "nus",
+    "method": "QAFedPASA",
+    "mAP": 50.64116465662438,
+    "clients": 10,
+    "partition_seed": 7,
+    "beta": null,
+    "raw_local_union_patches": 372605,
+    "local_bank_payload_max_bytes": 96688944,
+    "bank_build_seconds": 107.174317517085,
+    "fit_seconds": 0.6466392257716507,
+    "score_max_abs_vs_central": 1.210719347000122e-08
+  },
+  {
+    "dataset": "nus",
+    "method": "Local Top-K + Union + GDA",
+    "mAP": 47.19850060793072,
+    "clients": 10,
+    "partition_seed": 7,
+    "beta": null,
+    "raw_local_union_patches": 372605,
+    "local_bank_payload_max_bytes": 96688944,
+    "bank_build_seconds": 107.174317517085,
+    "fit_seconds": 3.8407907369546592,
+    "score_max_abs_vs_central": 0.0024490011855959892
+  },
+  {
+    "dataset": "nus",
+    "method": "Naive local GDA averaging",
+    "mAP": 50.104166465049495,
+    "clients": 10,
+    "partition_seed": 7,
+    "beta": null,
+    "raw_local_union_patches": 372605,
+    "local_bank_payload_max_bytes": 96688944,
+    "bank_build_seconds": 107.174317517085,
+    "fit_seconds": 3.5490383501164615,
+    "score_max_abs_vs_central": 0.01144317351281643
+  },
+  {
+    "dataset": "nus",
+    "method": "Centralized PIAA-style GDA",
+    "mAP": 50.64116465414228,
+    "clients": 10,
+    "partition_seed": 7,
+    "beta": null,
+    "raw_local_union_patches": 372605,
+    "local_bank_payload_max_bytes": 96688944,
+    "bank_build_seconds": 107.174317517085,
+    "fit_seconds": 0.40828454098664224,
+    "score_max_abs_vs_central": 0.0
+  },
+  {
+    "dataset": "nus",
+    "method": "Three-view Ridge",
+    "mAP": 60.193006436744845,
+    "clients": 10,
+    "partition_seed": 7,
+    "beta": null,
+    "calibration": "historical training-only affine rules fixed across all partitions"
+  },
+  {
+    "dataset": "nus",
+    "method": "FedPASA-Full (locked 3-split rule)",
+    "mAP": 60.67196596912474,
+    "clients": 10,
+    "partition_seed": 7,
+    "beta": null,
+    "calibration": "historical training-only affine rules fixed across all partitions"
+  },
+  {
+    "dataset": "nus",
+    "method": "FedPASA-Full (locked seed17)",
+    "mAP": 60.680159882829564,
+    "clients": 10,
+    "partition_seed": 7,
+    "beta": null,
+    "calibration": "historical training-only affine rules fixed across all partitions"
+  },
+  {
+    "dataset": "voc07",
+    "method": "QAFedPASA",
+    "mAP": 92.52865494403272,
+    "clients": 10,
+    "partition_seed": 7,
+    "beta": null,
+    "raw_local_union_patches": 60836,
+    "local_bank_payload_max_bytes": 18710432,
+    "bank_build_seconds": 1.350848883856088,
+    "fit_seconds": 0.12797231483273208,
+    "score_max_abs_vs_central": 0.0
+  },
+  {
+    "dataset": "voc07",
+    "method": "Local Top-K + Union + GDA",
+    "mAP": 89.44060655174647,
+    "clients": 10,
+    "partition_seed": 7,
+    "beta": null,
+    "raw_local_union_patches": 60836,
+    "local_bank_payload_max_bytes": 18710432,
+    "bank_build_seconds": 1.350848883856088,
+    "fit_seconds": 0.3210390000604093,
+    "score_max_abs_vs_central": 0.37743625044822693
+  },
+  {
+    "dataset": "voc07",
+    "method": "Naive local GDA averaging",
+    "mAP": 91.61217883353932,
+    "clients": 10,
+    "partition_seed": 7,
+    "beta": null,
+    "raw_local_union_patches": 60836,
+    "local_bank_payload_max_bytes": 18710432,
+    "bank_build_seconds": 1.350848883856088,
+    "fit_seconds": 0.7130562809761614,
+    "score_max_abs_vs_central": 0.35542410612106323
+  },
+  {
+    "dataset": "voc07",
+    "method": "Centralized PIAA-style GDA",
+    "mAP": 92.52865494403272,
+    "clients": 10,
+    "partition_seed": 7,
+    "beta": null,
+    "raw_local_union_patches": 60836,
+    "local_bank_payload_max_bytes": 18710432,
+    "bank_build_seconds": 1.350848883856088,
+    "fit_seconds": 0.10408649989403784,
+    "score_max_abs_vs_central": 0.0
+  },
+  {
+    "dataset": "voc07",
+    "method": "Three-view Ridge",
+    "mAP": 94.0326052113062,
+    "clients": 10,
+    "partition_seed": 7,
+    "beta": null,
+    "calibration": "historical training-only affine rules fixed across all partitions"
+  },
+  {
+    "dataset": "voc07",
+    "method": "FedPASA-Full (locked 3-split rule)",
+    "mAP": 94.22048647588836,
+    "clients": 10,
+    "partition_seed": 7,
+    "beta": null,
+    "calibration": "historical training-only affine rules fixed across all partitions"
+  },
+  {
+    "dataset": "voc07",
+    "method": "FedPASA-Full (locked seed17)",
+    "mAP": 94.07355960096186,
+    "clients": 10,
+    "partition_seed": 7,
+    "beta": null,
+    "calibration": "historical training-only affine rules fixed across all partitions"
+  },
+  {
+    "dataset": "voc12",
+    "method": "QAFedPASA",
+    "mAP": 92.28733984452879,
+    "clients": 10,
+    "partition_seed": 7,
+    "beta": null,
+    "raw_local_union_patches": 62826,
+    "local_bank_payload_max_bytes": 18301088,
+    "bank_build_seconds": 1.5676637578289956,
+    "fit_seconds": 0.12514891987666488,
+    "score_max_abs_vs_central": 5.21540641784668e-08
+  },
+  {
+    "dataset": "voc12",
+    "method": "Local Top-K + Union + GDA",
+    "mAP": 88.5800184098307,
+    "clients": 10,
+    "partition_seed": 7,
+    "beta": null,
+    "raw_local_union_patches": 62826,
+    "local_bank_payload_max_bytes": 18301088,
+    "bank_build_seconds": 1.5676637578289956,
+    "fit_seconds": 0.3469576630741358,
+    "score_max_abs_vs_central": 0.3845112919807434
+  },
+  {
+    "dataset": "voc12",
+    "method": "Naive local GDA averaging",
+    "mAP": 91.01751761406467,
+    "clients": 10,
+    "partition_seed": 7,
+    "beta": null,
+    "raw_local_union_patches": 62826,
+    "local_bank_payload_max_bytes": 18301088,
+    "bank_build_seconds": 1.5676637578289956,
+    "fit_seconds": 0.7236627170350403,
+    "score_max_abs_vs_central": 0.408264696598053
+  },
+  {
+    "dataset": "voc12",
+    "method": "Centralized PIAA-style GDA",
+    "mAP": 92.28733984452879,
+    "clients": 10,
+    "partition_seed": 7,
+    "beta": null,
+    "raw_local_union_patches": 62826,
+    "local_bank_payload_max_bytes": 18301088,
+    "bank_build_seconds": 1.5676637578289956,
+    "fit_seconds": 0.10080175194889307,
+    "score_max_abs_vs_central": 0.0
+  },
+  {
+    "dataset": "voc12",
+    "method": "Three-view Ridge",
+    "mAP": 93.68537434618325,
+    "clients": 10,
+    "partition_seed": 7,
+    "beta": null,
+    "calibration": "historical training-only affine rules fixed across all partitions"
+  },
+  {
+    "dataset": "voc12",
+    "method": "FedPASA-Full (locked 3-split rule)",
+    "mAP": 93.98235588060857,
+    "clients": 10,
+    "partition_seed": 7,
+    "beta": null,
+    "calibration": "historical training-only affine rules fixed across all partitions"
+  },
+  {
+    "dataset": "voc12",
+    "method": "FedPASA-Full (locked seed17)",
+    "mAP": 93.83480457075399,
+    "clients": 10,
+    "partition_seed": 7,
+    "beta": null,
+    "calibration": "historical training-only affine rules fixed across all partitions"
+  },
+  {
+    "dataset": "coco",
+    "method": "Full exact runtime rerun seed7",
+    "mAP": 80.57554478148084,
+    "seed": 7,
+    "alpha": 0.0001,
+    "validation_tuning": [
+      80.11863975404566,
+      80.11336007598612,
+      80.10098069559051,
+      80.0749811280047,
+      79.97796255223884,
+      79.71846203128987,
+      79.10679283519416
+    ],
+    "seconds": 46.46650865697302
+  },
+  {
+    "dataset": "coco",
+    "method": "Full exact runtime rerun seed17",
+    "mAP": 80.54798079711244,
+    "seed": 17,
+    "alpha": 0.0001,
+    "validation_tuning": [
+      80.03916049164559,
+      80.03460716071508,
+      80.0154125712778,
+      79.98010257863871,
+      79.85413573550613,
+      79.59628953156408,
+      78.9751573954921
+    ],
+    "seconds": 45.52708296710625
+  },
+  {
+    "dataset": "coco",
+    "method": "Full exact runtime rerun seed27",
+    "mAP": 80.41107515851816,
+    "seed": 27,
+    "alpha": 0.0001,
+    "validation_tuning": [
+      79.89928316579832,
+      79.89570171987185,
+      79.88469658360054,
+      79.85101900156147,
+      79.7449704952982,
+      79.49315159632475,
+      78.8274300100658
+    ],
+    "seconds": 45.558455628110096
+  },
+  {
+    "dataset": "coco",
+    "method": "FedPASA-Full exact runtime rerun (3 splits)",
+    "mAP": 80.57877978028806
+  },
+  {
+    "dataset": "nus",
+    "method": "Full exact runtime rerun seed7",
+    "mAP": 60.50830084841811,
+    "seed": 7,
+    "alpha": 0.0001,
+    "validation_tuning": [
+      60.89673712586846,
+      60.89171441656632,
+      60.86276627349536,
+      60.81302158712116,
+      60.74027959263139,
+      60.607329088172825,
+      60.20821047264313
+    ],
+    "seconds": 114.94467714591883
+  },
+  {
+    "dataset": "nus",
+    "method": "Full exact runtime rerun seed17",
+    "mAP": 60.63326237582585,
+    "seed": 17,
+    "alpha": 0.0001,
+    "validation_tuning": [
+      61.40577559418339,
+      61.40215303337159,
+      61.383243865885504,
+      61.348641056719025,
+      61.273130932116494,
+      61.043558784046304,
+      60.69573324113693
+    ],
+    "seconds": 111.31660719402134
+  },
+  {
+    "dataset": "nus",
+    "method": "Full exact runtime rerun seed27",
+    "mAP": 60.48926767661252,
+    "seed": 27,
+    "alpha": 0.0001,
+    "validation_tuning": [
+      61.25482963410565,
+      61.25025648844582,
+      61.251801790279224,
+      61.2158514684737,
+      61.09430070898251,
+      60.94374047206015,
+      60.57342007472295
+    ],
+    "seconds": 114.514619381167
+  },
+  {
+    "dataset": "nus",
+    "method": "FedPASA-Full exact runtime rerun (3 splits)",
+    "mAP": 60.678535964041146
+  },
+  {
+    "dataset": "voc07",
+    "method": "Full exact runtime rerun seed7",
+    "mAP": 94.18651448749523,
+    "seed": 7,
+    "alpha": 0.03,
+    "validation_tuning": [
+      92.91131243529207,
+      92.9481674913464,
+      93.00397367458959,
+      93.11359316759524,
+      93.29283166112876,
+      93.39522107599922,
+      93.35765298616643
+    ],
+    "seconds": 2.199909548042342
+  },
+  {
+    "dataset": "voc07",
+    "method": "Full exact runtime rerun seed17",
+    "mAP": 94.07355960096186,
+    "seed": 17,
+    "alpha": 0.03,
+    "validation_tuning": [
+      94.2584564952466,
+      94.26612267279314,
+      94.30921019124071,
+      94.38380729918633,
+      94.44971825837352,
+      94.46417262354089,
+      94.40388470398611
+    ],
+    "seconds": 2.1477428518701345
+  },
+  {
+    "dataset": "voc07",
+    "method": "Full exact runtime rerun seed27",
+    "mAP": 94.12282216294601,
+    "seed": 27,
+    "alpha": 0.03,
+    "validation_tuning": [
+      93.26477336875683,
+      93.28482961997825,
+      93.37906393702097,
+      93.51401336732744,
+      93.7355250481961,
+      93.85133610980367,
+      93.82299379090553
+    ],
+    "seconds": 2.1615254709031433
+  },
+  {
+    "dataset": "voc07",
+    "method": "FedPASA-Full exact runtime rerun (3 splits)",
+    "mAP": 94.22048647588836
+  },
+  {
+    "dataset": "voc12",
+    "method": "Full exact runtime rerun seed7",
+    "mAP": 93.84780649015465,
+    "seed": 7,
+    "alpha": 0.1,
+    "validation_tuning": [
+      93.52473841616427,
+      93.5379456636919,
+      93.62063743980566,
+      93.68214089927805,
+      93.80580026405345,
+      93.92672797661768,
+      94.0187024676176
+    ],
+    "seconds": 2.326703425962478
+  },
+  {
+    "dataset": "voc12",
+    "method": "Full exact runtime rerun seed17",
+    "mAP": 93.83480457075399,
+    "seed": 17,
+    "alpha": 0.1,
+    "validation_tuning": [
+      92.90273707301557,
+      92.8934074048273,
+      92.95322922854805,
+      93.07455305297677,
+      93.21301139942403,
+      93.35061995330335,
+      93.3681420140385
+    ],
+    "seconds": 2.4305742760188878
+  },
+  {
+    "dataset": "voc12",
+    "method": "Full exact runtime rerun seed27",
+    "mAP": 93.91234254994978,
+    "seed": 27,
+    "alpha": 0.03,
+    "validation_tuning": [
+      92.80394057897092,
+      92.81995827274285,
+      92.86238214997307,
+      92.927730738302,
+      93.06841725923952,
+      93.19156338364418,
+      93.14954846494228
+    ],
+    "seconds": 2.297594950068742
+  },
+  {
+    "dataset": "voc12",
+    "method": "FedPASA-Full exact runtime rerun (3 splits)",
+    "mAP": 93.98235588060857
+  }
+]

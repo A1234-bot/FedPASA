@@ -1,0 +1,14 @@
+{
+  "purpose": "Performance experiments on training data only",
+  "preserved": [
+    "200 rounds",
+    "10 clients",
+    "seed 7",
+    "batch size 32",
+    "SGD schedule",
+    "BF16",
+    "original data and partitions"
+  ],
+  "acceptance": "Three consecutive steps: identical logits, loss, gradients and SGD parameters on both datasets before deployment; independent end-to-end timing",
+  "formal_results_untouched": true
+}

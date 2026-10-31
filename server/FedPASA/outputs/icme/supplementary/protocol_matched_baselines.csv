@@ -1,0 +1,19 @@
+﻿dataset,method,mAP,status,clients,partition_seed,selection_seeds,input,provenance,official_reproduction,completed_round,target_rounds,last_measured_round,last_measured_mAP
+coco,Centralized,72.98428492424908,COMPLETE,10,7,7,frozen CLIP cache,direct full-test inference,False,,,,
+coco,Naive-A local-TopK union,66.91810698963023,COMPLETE,10,7,7,frozen CLIP cache,direct full-test evaluation,False,,,,
+coco,Naive-B local-GDA average,71.30938665441256,COMPLETE,10,7,7,frozen CLIP cache,direct full-test evaluation,False,,,,
+coco,GlobalQuota-GDA-Avg,65.90240358131487,COMPLETE,10,7,7,frozen CLIP cache,direct full-test inference,False,,,,
+coco,Fed3R-style CLS ridge,76.12784056051997,COMPLETE,10,7,7,frozen CLIP cache,direct full-test inference,False,,,,
+coco,QAFedPASA,72.98428492129186,COMPLETE,10,7,7,frozen CLIP cache,direct full-test inference,False,,,,
+coco,Pooled Ridge,79.82984497277612,COMPLETE,10,7,7,frozen CLIP cache,direct full-test inference,False,,,,
+coco,FedPASA-Full,80.528002433412,COMPLETE,10,7,7/17/27,frozen CLIP cache,existing locked full scores,False,,,,
+coco,FedMPT (disclosed repaired rerun),69.80611229981797,COMPLETE,10,7,fixed last round; no test selection,"same images, 224 crop, same CLIP checkpoint; prompted features recomputed",result.json,False,200,200,200,69.80611229981797
+nus,Centralized,50.62047031660038,COMPLETE,10,7,7,frozen CLIP cache,direct full-test inference,False,,,,
+nus,Naive-A local-TopK union,47.197457905718394,COMPLETE,10,7,7,frozen CLIP cache,direct full-test evaluation,False,,,,
+nus,Naive-B local-GDA average,50.1228749488456,COMPLETE,10,7,7,frozen CLIP cache,direct full-test evaluation,False,,,,
+nus,GlobalQuota-GDA-Avg,46.0495097034607,COMPLETE,10,7,7,frozen CLIP cache,direct full-test inference,False,,,,
+nus,Fed3R-style CLS ridge,58.407115013118236,COMPLETE,10,7,7,frozen CLIP cache,direct full-test inference,False,,,,
+nus,QAFedPASA,50.62047031660038,COMPLETE,10,7,7,frozen CLIP cache,direct full-test inference,False,,,,
+nus,Pooled Ridge,60.19300440009305,COMPLETE,10,7,7,frozen CLIP cache,direct full-test inference,False,,,,
+nus,FedPASA-Full,60.67067302390697,COMPLETE,10,7,7/17/27,frozen CLIP cache,existing locked full scores,False,,,,
+nus,FedMPT (disclosed repaired rerun),35.82352714696033,COMPLETE,10,7,fixed last round; no test selection,"same images, 224 crop, same CLIP checkpoint; prompted features recomputed",result.json,False,200,200,200,35.82352714696033

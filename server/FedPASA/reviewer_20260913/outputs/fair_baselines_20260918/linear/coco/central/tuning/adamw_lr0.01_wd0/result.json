@@ -1,0 +1,80 @@
+{
+  "status": "COMPLETE",
+  "mode": "central",
+  "config": {
+    "optimizer": "adamw",
+    "lr": 0.01,
+    "weight_decay": 0.0
+  },
+  "seed": 17,
+  "rounds": 200,
+  "best_round": 60,
+  "best_validation_mAP": 80.43261573501586,
+  "train_seconds": 14.02837049405207,
+  "validation_seconds": 1.074568566022208,
+  "peak_cuda_MiB": 446.64501953125,
+  "uplink_bytes": 0,
+  "downlink_bytes": 0,
+  "curve": [
+    {
+      "round": 20,
+      "train_BCE": 0.040678270161151886,
+      "train_seconds": 1.2403768849908374,
+      "validation_mAP": 79.85439703063052
+    },
+    {
+      "round": 40,
+      "train_BCE": 0.03815560042858124,
+      "train_seconds": 2.5788820399611723,
+      "validation_mAP": 80.37846038531832
+    },
+    {
+      "round": 60,
+      "train_BCE": 0.03697352483868599,
+      "train_seconds": 4.781296862958698,
+      "validation_mAP": 80.43261573501586
+    },
+    {
+      "round": 80,
+      "train_BCE": 0.03613900765776634,
+      "train_seconds": 6.587232100981055,
+      "validation_mAP": 80.37113868567917
+    },
+    {
+      "round": 100,
+      "train_BCE": 0.03550012409687042,
+      "train_seconds": 7.847688070993172,
+      "validation_mAP": 80.30135416591013
+    },
+    {
+      "round": 120,
+      "train_BCE": 0.03510360047221184,
+      "train_seconds": 9.13128582702484,
+      "validation_mAP": 80.22604517125153
+    },
+    {
+      "round": 140,
+      "train_BCE": 0.03471554443240166,
+      "train_seconds": 10.331490650045453,
+      "validation_mAP": 80.1640442256631
+    },
+    {
+      "round": 160,
+      "train_BCE": 0.034418366849422455,
+      "train_seconds": 11.546982147061499,
+      "validation_mAP": 80.07356729541571
+    },
+    {
+      "round": 180,
+      "train_BCE": 0.03421058505773544,
+      "train_seconds": 12.802617110020947,
+      "validation_mAP": 80.00112956590424
+    },
+    {
+      "round": 200,
+      "train_BCE": 0.03387153893709183,
+      "train_seconds": 14.02837049405207,
+      "validation_mAP": 79.94933011078086
+    }
+  ]
+}

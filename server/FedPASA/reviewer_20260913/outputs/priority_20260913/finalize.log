@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/root/autodl-tmp/FedPASA/reviewer_20260913/scripts/build_priority_report.py", line 109, in <module>
+    if __name__=='__main__':main()
+  File "/root/autodl-tmp/FedPASA/reviewer_20260913/scripts/build_priority_report.py", line 25, in main
+    v=r.read(BASE/q);assert v['status']=='COMPLETE',v
+AssertionError: {'status': 'NEEDS_ATTENTION', 'jobs': [{'name': 'controlled_coco', 'status': 'COMPLETE', 'start': 1789282510.5184755, 'returncode': 0, 'end': 1789282708.2248542}, {'name': 'controlled_nus', 'status': 'COMPLETE', 'start': 1789282708.22486, 'returncode': 0, 'end': 1789283168.3101609}, {'name': 'packed_coco', 'status': 'COMPLETE', 'start': 1789283168.310164, 'returncode': 0, 'end': 1789283213.1783552}, {'name': 'packed_nus', 'status': 'COMPLETE', 'start': 1789283213.1783588, 'returncode': 0, 'end': 1789283299.0072725}, {'name': 'backbone', 'status': 'FAILED', 'start': 1789284648.9308696, 'returncode': 1, 'end': 1789284654.324477}, {'name': 'ties_coco', 'status': 'COMPLETE', 'start': 1789284654.3244803, 'returncode': 0, 'end': 1789284722.5197856}, {'name': 'ties_nus', 'status': 'COMPLETE', 'start': 1789284722.519789, 'returncode': 0, 'end': 1789284826.6320076}]}
+Traceback (most recent call last):
+  File "/root/autodl-tmp/FedPASA/reviewer_20260913/scripts/finalize_priority_archive.py", line 23, in <module>
+    if __name__=='__main__':main()
+  File "/root/autodl-tmp/FedPASA/reviewer_20260913/scripts/finalize_priority_archive.py", line 12, in main
+    subprocess.run([sys.executable,str(ROOT/'scripts/build_priority_report.py')],check=True)
+  File "/root/autodl-tmp/miniconda3/envs/fbu/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/root/autodl-tmp/miniconda3/envs/fbu/bin/python', '/root/autodl-tmp/FedPASA/reviewer_20260913/scripts/build_priority_report.py']' returned non-zero exit status 1.

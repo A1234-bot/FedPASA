@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/root/autodl-tmp/FedPASA/reviewer_20260913/scripts/run_full_calibration_protocol.py", line 101, in <module>
+    p=argparse.ArgumentParser();p.add_argument('--dataset',required=True);a=p.parse_args();run(a.dataset)
+  File "/root/autodl-tmp/FedPASA/reviewer_20260913/scripts/run_full_calibration_protocol.py", line 55, in run
+    if err>1e-6:raise AssertionError((d,seed,'central reference differs',err))
+AssertionError: ('voc07', 7, 'central reference differs', 2.384185791015625e-06)
+Traceback (most recent call last):
+  File "/root/autodl-tmp/FedPASA/reviewer_20260913/scripts/run_full_calibration_protocol.py", line 103, in <module>
+    p=argparse.ArgumentParser();p.add_argument('--dataset',required=True);a=p.parse_args();run(a.dataset)
+  File "/root/autodl-tmp/FedPASA/reviewer_20260913/scripts/run_full_calibration_protocol.py", line 90, in run
+    np.save(dest/'distributed_test_scores.npy',s);labels=np.load(c/'test_targets.npy');cm=mean_average_precision(labels,central)[0];dm=mean_average_precision(labels,s)[0]
+TypeError: unsupported operand type(s) for /: 'int' and 'str'
+CALIBRATION_COMPLETE voc07 94.22048683088519 94.22048683088519

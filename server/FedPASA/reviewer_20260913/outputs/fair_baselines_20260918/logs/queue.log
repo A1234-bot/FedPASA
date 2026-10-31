@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/root/autodl-tmp/FedPASA/reviewer_20260913/scripts/fair_baselines_queue.py", line 39, in <module>
+    if __name__=='__main__':main()
+  File "/root/autodl-tmp/FedPASA/reviewer_20260913/scripts/fair_baselines_queue.py", line 33, in main
+    code=subprocess.call(cmd,cwd=ROOT,stdout=log,stderr=subprocess.STDOUT)
+  File "/root/autodl-tmp/miniconda3/envs/fbu/lib/python3.10/subprocess.py", line 347, in call
+    return p.wait(timeout=timeout)
+  File "/root/autodl-tmp/miniconda3/envs/fbu/lib/python3.10/subprocess.py", line 1209, in wait
+    return self._wait(timeout=timeout)
+  File "/root/autodl-tmp/miniconda3/envs/fbu/lib/python3.10/subprocess.py", line 1959, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/root/autodl-tmp/miniconda3/envs/fbu/lib/python3.10/subprocess.py", line 1917, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt

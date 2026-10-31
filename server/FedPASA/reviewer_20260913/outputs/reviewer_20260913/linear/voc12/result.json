@@ -1,0 +1,157 @@
+{
+  "status": "COMPLETE",
+  "rows": [
+    {
+      "dataset": "voc12",
+      "method": "Centralized Ridge",
+      "mAP": 93.65172008542257,
+      "features": "cls+patch_mean+patch_max_text",
+      "alpha": 0.1,
+      "split_seed": 17,
+      "partition_seed": 7,
+      "clients": 10,
+      "client_fitting_seconds": 0.06074687303043902,
+      "server_solve_seconds": 0,
+      "fit_wall_seconds": 0.06074687303043902,
+      "uploads_per_client": 0,
+      "uplink_FP64_bytes": 0
+    },
+    {
+      "dataset": "voc12",
+      "method": "Three-view pooled Ridge",
+      "mAP": 93.65172008542257,
+      "features": "cls+patch_mean+patch_max_text",
+      "alpha": 0.1,
+      "split_seed": 17,
+      "partition_seed": 7,
+      "clients": 10,
+      "client_fitting_seconds": 0.05672388384118676,
+      "server_solve_seconds": 0.010638718027621508,
+      "fit_wall_seconds": 0.06736260186880827,
+      "uploads_per_client": 1,
+      "uplink_FP64_bytes": 88950480
+    },
+    {
+      "dataset": "voc12",
+      "method": "Local Ridge + Avg (matched penalty)",
+      "mAP": 91.08330263224109,
+      "features": "cls+patch_mean+patch_max_text",
+      "alpha": 0.1,
+      "split_seed": 17,
+      "partition_seed": 7,
+      "clients": 10,
+      "client_fitting_seconds": 0.12073553586378694,
+      "server_solve_seconds": 0,
+      "fit_wall_seconds": 0.12073553586378694,
+      "uploads_per_client": 1,
+      "uplink_FP64_bytes": 836000
+    },
+    {
+      "dataset": "voc12",
+      "method": "Local Ridge + Avg",
+      "mAP": 91.08330263224109,
+      "features": "cls+patch_mean+patch_max_text",
+      "alpha": 0.1,
+      "validation_tuning": [
+        [
+          77.17514398080374,
+          0.0001
+        ],
+        [
+          77.52386077122742,
+          0.0003
+        ],
+        [
+          78.51511549536936,
+          0.001
+        ],
+        [
+          80.30295417240951,
+          0.003
+        ],
+        [
+          82.88662303987779,
+          0.01
+        ],
+        [
+          85.16851693698732,
+          0.03
+        ],
+        [
+          87.85582193501381,
+          0.1
+        ]
+      ],
+      "split_seed": 17,
+      "clients": 10
+    },
+    {
+      "dataset": "voc12",
+      "method": "Fed3R-style pooled ridge",
+      "mAP": 91.43471923575903,
+      "features": "normalized CLS; no bias or centering; multilabel adaptation",
+      "lambda_value": 0.1,
+      "split_seed": 17,
+      "clients": 10,
+      "validation_tuning": [
+        [
+          90.77731348411291,
+          1e-06
+        ],
+        [
+          90.77736243683022,
+          1e-05
+        ],
+        [
+          90.78108613276905,
+          0.0001
+        ],
+        [
+          90.77757824212419,
+          0.001
+        ],
+        [
+          90.79264935500456,
+          0.01
+        ],
+        [
+          90.84514186326726,
+          0.1
+        ],
+        [
+          90.70330873091679,
+          1
+        ],
+        [
+          89.22016605951593,
+          10
+        ],
+        [
+          84.89430773171662,
+          100
+        ]
+      ],
+      "client_fitting_seconds": 0.014790903078392148,
+      "server_solve_seconds": 0.0015797391533851624,
+      "fit_wall_seconds": 0.01637064223177731,
+      "uploads_per_client": 1,
+      "uplink_FP64_bytes": 21790720
+    }
+  ],
+  "packing": [
+    {
+      "dtype": "float64",
+      "dense_bytes": 88950480,
+      "packed_bytes": 45394800,
+      "mAP": 93.65172008542257,
+      "max_abs_score_error": 0.0
+    },
+    {
+      "dtype": "float32",
+      "dense_bytes": 44475280,
+      "packed_bytes": 22697440,
+      "mAP": 93.6517563197141,
+      "max_abs_score_error": 6.837770342826843e-06
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "status": "COMPLETE",
+  "mode": "fedavg",
+  "config": {
+    "optimizer": "sgd",
+    "lr": 10.0,
+    "weight_decay": 0.0
+  },
+  "seed": 37,
+  "rounds": 200,
+  "best_round": 200,
+  "best_validation_mAP": 49.144335832516376,
+  "train_seconds": 25.69651101459749,
+  "validation_seconds": 2.364462333964184,
+  "peak_cuda_MiB": 804.77392578125,
+  "uplink_bytes": 716688000,
+  "downlink_bytes": 716688000,
+  "curve": [
+    {
+      "round": 20,
+      "train_BCE": 0.06590451300144196,
+      "train_seconds": 2.537697255727835,
+      "validation_mAP": 32.10540331136603
+    },
+    {
+      "round": 40,
+      "train_BCE": 0.058821287006139755,
+      "train_seconds": 5.039637585054152,
+      "validation_mAP": 39.13681589209119
+    },
+    {
+      "round": 60,
+      "train_BCE": 0.05474736914038658,
+      "train_seconds": 7.612252893857658,
+      "validation_mAP": 42.469324183402954
+    },
+    {
+      "round": 80,
+      "train_BCE": 0.051953501999378204,
+      "train_seconds": 10.238692820072174,
+      "validation_mAP": 44.598269612760504
+    },
+    {
+      "round": 100,
+      "train_BCE": 0.04985950142145157,
+      "train_seconds": 12.852664952748455,
+      "validation_mAP": 46.036926351627216
+    },
+    {
+      "round": 120,
+      "train_BCE": 0.04820747300982475,
+      "train_seconds": 15.382651225780137,
+      "validation_mAP": 46.87590391805071
+    },
+    {
+      "round": 140,
+      "train_BCE": 0.04685915634036064,
+      "train_seconds": 17.89510618778877,
+      "validation_mAP": 47.64465678292297
+    },
+    {
+      "round": 160,
+      "train_BCE": 0.045732565224170685,
+      "train_seconds": 20.51305038877763,
+      "validation_mAP": 48.200940827296904
+    },
+    {
+      "round": 180,
+      "train_BCE": 0.044775962829589844,
+      "train_seconds": 23.059533294755965,
+      "validation_mAP": 48.72360797135034
+    },
+    {
+      "round": 200,
+      "train_BCE": 0.043950680643320084,
+      "train_seconds": 25.69651101459749,
+      "validation_mAP": 49.144335832516376
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "dataset": "coco",
+    "entropy": "round_1e-4",
+    "tie_policy": "local",
+    "clients": 10,
+    "seed": 7,
+    "full_training_patches": 16087876,
+    "classes_with_tied_cutoff": 55,
+    "patch_id_recall": 0.998388671875,
+    "selected_patches": 40960,
+    "mAP": 72.98936427896194,
+    "central_mAP": 72.97436348010547,
+    "max_abs_weight_error": 16.506866455078125,
+    "relative_weight_l2_error": 0.020795488749609563,
+    "max_abs_bias_error": 5.54486083984375,
+    "max_abs_score_error": 0.038640379905700684,
+    "relative_score_l2_error": 0.006926602425462612,
+    "extra_tie_key_MiB": 0.0,
+    "score_provenance": "direct full-test inference; freshly recomputed central for each precision"
+  },
+  {
+    "dataset": "coco",
+    "entropy": "round_1e-4",
+    "tie_policy": "shared",
+    "clients": 10,
+    "seed": 7,
+    "full_training_patches": 16087876,
+    "classes_with_tied_cutoff": 55,
+    "patch_id_recall": 1.0,
+    "selected_patches": 40960,
+    "mAP": 72.97436348389319,
+    "central_mAP": 72.97436348010547,
+    "max_abs_weight_error": 7.62939453125e-06,
+    "relative_weight_l2_error": 5.648151368743595e-10,
+    "max_abs_bias_error": 0.0,
+    "max_abs_score_error": 1.341104507446289e-07,
+    "relative_score_l2_error": 5.0051033215392974e-09,
+    "extra_tie_key_MiB": 3.125,
+    "score_provenance": "direct full-test inference; freshly recomputed central for each precision"
+  }
+]

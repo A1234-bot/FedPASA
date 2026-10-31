@@ -1,0 +1,42 @@
+[
+  {
+    "dataset": "nus",
+    "entropy": "round_1e-4",
+    "tie_policy": "local",
+    "clients": 10,
+    "seed": 7,
+    "full_training_patches": 29400000,
+    "classes_with_tied_cutoff": 49,
+    "patch_id_recall": 0.9990596064814815,
+    "selected_patches": 41472,
+    "mAP": 50.62336797076369,
+    "central_mAP": 50.62317286289699,
+    "max_abs_weight_error": 0.33502197265625,
+    "relative_weight_l2_error": 0.003907220487387892,
+    "max_abs_bias_error": 0.07358551025390625,
+    "max_abs_score_error": 1.2733973562717438e-05,
+    "relative_score_l2_error": 7.645424275365557e-05,
+    "extra_tie_key_MiB": 0.0,
+    "score_provenance": "direct full-test inference; freshly recomputed central for each precision"
+  },
+  {
+    "dataset": "nus",
+    "entropy": "round_1e-4",
+    "tie_policy": "shared",
+    "clients": 10,
+    "seed": 7,
+    "full_training_patches": 29400000,
+    "classes_with_tied_cutoff": 49,
+    "patch_id_recall": 1.0,
+    "selected_patches": 41472,
+    "mAP": 50.623172915437884,
+    "central_mAP": 50.62317286289699,
+    "max_abs_weight_error": 1.9073486328125e-06,
+    "relative_weight_l2_error": 6.891501215576363e-10,
+    "max_abs_bias_error": 0.0,
+    "max_abs_score_error": 1.5832483768463135e-08,
+    "relative_score_l2_error": 7.185911296150013e-09,
+    "extra_tie_key_MiB": 3.1640625,
+    "score_provenance": "direct full-test inference; freshly recomputed central for each precision"
+  }
+]

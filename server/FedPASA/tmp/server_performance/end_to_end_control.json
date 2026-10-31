@@ -1,0 +1,62 @@
+[
+  {
+    "dataset": "coco",
+    "variant": "baseline",
+    "seconds_per_step": 0.5109253170399461,
+    "loader_wait_seconds": 36.99328119144775,
+    "steps": 100,
+    "comparison_optimizer_steps": 102,
+    "final_parameters_bitwise_equal": true,
+    "max_parameter_error": 0.0,
+    "cpu_threads": 4,
+    "workers": 2,
+    "checkpointing": true,
+    "cache_static_text": false,
+    "fused_checks": false
+  },
+  {
+    "dataset": "coco",
+    "variant": "optimized",
+    "seconds_per_step": 0.09849789350992069,
+    "loader_wait_seconds": 0.008143175393342972,
+    "steps": 100,
+    "comparison_optimizer_steps": 102,
+    "final_parameters_bitwise_equal": true,
+    "max_parameter_error": 0.0,
+    "cpu_threads": 1,
+    "workers": 4,
+    "checkpointing": false,
+    "cache_static_text": true,
+    "fused_checks": true
+  },
+  {
+    "dataset": "nus",
+    "variant": "baseline",
+    "seconds_per_step": 0.4465186656196602,
+    "loader_wait_seconds": 30.402955565718003,
+    "steps": 100,
+    "comparison_optimizer_steps": 102,
+    "final_parameters_bitwise_equal": true,
+    "max_parameter_error": 0.0,
+    "cpu_threads": 4,
+    "workers": 2,
+    "checkpointing": true,
+    "cache_static_text": false,
+    "fused_checks": false
+  },
+  {
+    "dataset": "nus",
+    "variant": "optimized",
+    "seconds_per_step": 0.10060073725064285,
+    "loader_wait_seconds": 0.007268988178111613,
+    "steps": 100,
+    "comparison_optimizer_steps": 102,
+    "final_parameters_bitwise_equal": true,
+    "max_parameter_error": 0.0,
+    "cpu_threads": 1,
+    "workers": 8,
+    "checkpointing": false,
+    "cache_static_text": true,
+    "fused_checks": true
+  }
+]

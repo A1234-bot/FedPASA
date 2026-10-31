@@ -1,0 +1,48 @@
+{
+  "updated_at": "2026-09-07T19:57:07.977058+08:00",
+  "status": "DEPLOYED",
+  "facts": [
+    {
+      "dataset": "coco",
+      "warm_baseline_seconds_per_batch": 0.14125900991959497,
+      "warm_optimized_seconds_per_batch": 0.0987039207504131,
+      "warm_speedup": 1.4311387921133192,
+      "first_pass_baseline_seconds_per_batch": 0.5109253170399461,
+      "workers": 4,
+      "cpu_threads": 1,
+      "peak_allocated_MiB": 7523.87890625,
+      "controls_102_steps_bitwise_equal": true
+    },
+    {
+      "dataset": "nus",
+      "warm_baseline_seconds_per_batch": 0.1414992357196752,
+      "warm_optimized_seconds_per_batch": 0.09900186515995302,
+      "warm_speedup": 1.4292582820642927,
+      "first_pass_baseline_seconds_per_batch": 0.4465186656196602,
+      "workers": 8,
+      "cpu_threads": 1,
+      "peak_allocated_MiB": 7609.705078125,
+      "controls_102_steps_bitwise_equal": true
+    }
+  ],
+  "preserved": [
+    "200 rounds",
+    "batch size 32",
+    "10 clients",
+    "partition seed 7",
+    "original image IDs, targets and partitions",
+    "BF16",
+    "SGD and learning-rate schedule"
+  ],
+  "changes": [
+    "disable activation recomputation",
+    "cache frozen text tokenization/embeddings only",
+    "combine finite-gradient checks",
+    "one compute thread",
+    "4 COCO / 8 NUS loader workers"
+  ],
+  "limitation": "First-pass 4-5x comparison includes cache warming and is not a causal code speedup. Reversed-order warm controls establish about 1.43x. Full-client production observations are required for a final ETA.",
+  "log": "outputs/server_logs/fedmpt_optimized_20260907.log",
+  "session": "fedpasa_fedmpt",
+  "checkpoint_protection": "Formal checkpoint hashes unchanged across benchmarks; pre-optimization copies retained in tmp/server_performance/checkpoints_before."
+}

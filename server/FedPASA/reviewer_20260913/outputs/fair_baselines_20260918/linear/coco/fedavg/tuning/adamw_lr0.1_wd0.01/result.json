@@ -1,0 +1,80 @@
+{
+  "status": "COMPLETE",
+  "mode": "fedavg",
+  "config": {
+    "optimizer": "adamw",
+    "lr": 0.1,
+    "weight_decay": 0.01
+  },
+  "seed": 17,
+  "rounds": 200,
+  "best_round": 200,
+  "best_validation_mAP": 78.32878842411478,
+  "train_seconds": 22.14481341218925,
+  "validation_seconds": 1.0967805100081023,
+  "peak_cuda_MiB": 446.875,
+  "uplink_bytes": 707200000,
+  "downlink_bytes": 707200000,
+  "curve": [
+    {
+      "round": 20,
+      "train_BCE": 0.05306104198098183,
+      "train_seconds": 2.3919965080276597,
+      "validation_mAP": 77.22792328837411
+    },
+    {
+      "round": 40,
+      "train_BCE": 0.04840247705578804,
+      "train_seconds": 4.7208348670683336,
+      "validation_mAP": 78.02547759161239
+    },
+    {
+      "round": 60,
+      "train_BCE": 0.047869618982076645,
+      "train_seconds": 7.081101509131258,
+      "validation_mAP": 78.19454137135226
+    },
+    {
+      "round": 80,
+      "train_BCE": 0.04796718806028366,
+      "train_seconds": 9.479540293163154,
+      "validation_mAP": 78.2104972072927
+    },
+    {
+      "round": 100,
+      "train_BCE": 0.047618262469768524,
+      "train_seconds": 11.72574371114024,
+      "validation_mAP": 78.29563879951162
+    },
+    {
+      "round": 120,
+      "train_BCE": 0.04759230092167854,
+      "train_seconds": 14.06955528803519,
+      "validation_mAP": 78.28770377884497
+    },
+    {
+      "round": 140,
+      "train_BCE": 0.04784395173192024,
+      "train_seconds": 16.416487869108096,
+      "validation_mAP": 78.24827363323628
+    },
+    {
+      "round": 160,
+      "train_BCE": 0.048376694321632385,
+      "train_seconds": 18.7125809811987,
+      "validation_mAP": 78.32585229880472
+    },
+    {
+      "round": 180,
+      "train_BCE": 0.04756370186805725,
+      "train_seconds": 20.74470471116365,
+      "validation_mAP": 78.325069407644
+    },
+    {
+      "round": 200,
+      "train_BCE": 0.04740459471940994,
+      "train_seconds": 22.14481341218925,
+      "validation_mAP": 78.32878842411478
+    }
+  ]
+}
