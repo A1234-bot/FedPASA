@@ -1,0 +1,163 @@
+{
+  "bank": [
+    {
+      "dataset": "nus",
+      "rows": 2048,
+      "cpu_seconds": 4.839018356986344,
+      "gpu_seconds": 2.5622813800000586,
+      "bitwise_equal": true
+    },
+    {
+      "dataset": "coco",
+      "rows": 2048,
+      "cpu_seconds": 2.5733208819874562,
+      "gpu_seconds": 2.3096740629989654,
+      "bitwise_equal": true
+    }
+  ],
+  "algebra": [
+    {
+      "dataset": "nus",
+      "ridge_cpu_seconds": 0.017678236996289343,
+      "ridge_gpu_seconds": 0.1645319319795817,
+      "ridge_weight_max_error": 5.960464477539063e-08,
+      "gda_cpu_seconds": 0.7683346509875264,
+      "gda_gpu_seconds": 0.539851470006397,
+      "gda_weight_max_error": 1.862645149230957e-09
+    },
+    {
+      "dataset": "coco",
+      "ridge_cpu_seconds": 0.014839278999716043,
+      "ridge_gpu_seconds": 0.01261838199570775,
+      "ridge_weight_max_error": 5.960464477539063e-08,
+      "gda_cpu_seconds": 0.6299419699935243,
+      "gda_gpu_seconds": 0.5496937819989398,
+      "gda_weight_max_error": 0.0
+    }
+  ],
+  "e2e": {
+    "0": {
+      "seconds": 2.058897559007164,
+      "result": {
+        "rows": [
+          {
+            "key": "global_0",
+            "fit": {
+              "raw": 288,
+              "kept": 41,
+              "clamps": 0,
+              "logical_patch_uplink_bytes": 32992,
+              "central_score_error": 0.0,
+              "central_weight_error": 0.0
+            },
+            "full": {
+              "raw": 360,
+              "kept": 50,
+              "clamps": 0,
+              "logical_patch_uplink_bytes": 33280,
+              "central_score_error": 0.0,
+              "central_weight_error": 0.0
+            },
+            "central_full_score_error": 4.76837158203125e-07,
+            "mAP": 51.19926784230662,
+            "patch_mAP": 49.7595387969094
+          }
+        ],
+        "ridge_mAP": 47.93894958861734,
+        "central_full_mAP": 51.19926784230662,
+        "alpha": 1e-06,
+        "central_alpha": 1e-06,
+        "participants": 5,
+        "samples": 40
+      }
+    },
+    "1": {
+      "seconds": 2.4578775450063404,
+      "result": {
+        "rows": [
+          {
+            "key": "global_0",
+            "fit": {
+              "raw": 288,
+              "kept": 41,
+              "clamps": 0,
+              "logical_patch_uplink_bytes": 32992,
+              "central_score_error": 0.0,
+              "central_weight_error": 0.0
+            },
+            "full": {
+              "raw": 360,
+              "kept": 50,
+              "clamps": 0,
+              "logical_patch_uplink_bytes": 33280,
+              "central_score_error": 0.0,
+              "central_weight_error": 0.0
+            },
+            "central_full_score_error": 4.76837158203125e-07,
+            "mAP": 51.19926784230662,
+            "patch_mAP": 49.7595387969094
+          }
+        ],
+        "ridge_mAP": 47.93894958861734,
+        "central_full_mAP": 51.19926784230662,
+        "alpha": 1e-06,
+        "central_alpha": 1e-06,
+        "participants": 5,
+        "samples": 40
+      }
+    }
+  },
+  "metric": [
+    {
+      "dataset": "nus",
+      "case": "real",
+      "cpu_seconds": 0.644251304998761,
+      "gpu_seconds": 0.26032604300417006,
+      "max_error": 0.0
+    },
+    {
+      "dataset": "nus",
+      "case": "ties",
+      "cpu_seconds": 0.3060433179780375,
+      "gpu_seconds": 0.12598090298706666,
+      "max_error": 0.0
+    },
+    {
+      "dataset": "nus",
+      "case": "constant",
+      "cpu_seconds": 0.22884699600399472,
+      "gpu_seconds": 0.15125406699371524,
+      "max_error": 0.0
+    },
+    {
+      "dataset": "coco",
+      "case": "real",
+      "cpu_seconds": 0.5154045170056634,
+      "gpu_seconds": 0.08732479400350712,
+      "max_error": 0.0
+    },
+    {
+      "dataset": "coco",
+      "case": "ties",
+      "cpu_seconds": 0.18097768697771244,
+      "gpu_seconds": 0.09134515700861812,
+      "max_error": 0.0
+    },
+    {
+      "dataset": "coco",
+      "case": "constant",
+      "cpu_seconds": 0.14629919599974528,
+      "gpu_seconds": 0.07253505699918605,
+      "max_error": 0.0
+    }
+  ],
+  "status": "PASS",
+  "candidate_sha256": {
+    "src/fedpasa/gpu_ops": "e0acd8ec1ca30f053149c51f05fe2a6c659725a1063a074aed349f41c92bcbee",
+    "src/fedpasa/core": "3cabd30a456514178d649043a957f1734c185a44a6636454ac35cb6878713b13",
+    "src/fedpasa/supervised": "0eeedd0a23fb5046d3d93c70e3db23d43a134557acfe879cb3527b724c0235b0",
+    "scripts/strengthen_accuracy": "f841a42f297656d76d03f23d61ce63deb18df0792c515272091d64a9a1b82181",
+    "scripts/run_reviewer_evidence": "529002bac2288692e0fcecf3b30260f45cd9a060f9f9dfb722ed57d3a3380fa5",
+    "scripts/strengthen_queue": "bca71550998be40b977a125d69d6b39ecd0a13ce0ee2603cda322199d5b00305"
+  }
+}

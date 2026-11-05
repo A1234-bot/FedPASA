@@ -1,0 +1,26 @@
+{
+  "status": "DEPLOYED",
+  "scheduler_pid": 7661,
+  "parallel_limit": 4,
+  "installed_sha256": {
+    "src/fedpasa/cache_io": "e3a1bc7f1bae266ff4419f53b7b4c236a0b1cd00b40f0a5306b581b622306b0a",
+    "src/fedpasa/core": "3951e31c0dda4536ee80748eca08fc088a49c047fbd5481307f9b7de91e665c6",
+    "scripts/strengthen_accuracy": "53e428bdf3743813b4ece1ae7113972239747c8c7210f7c81e6904b583d81d78",
+    "scripts/strengthen_queue": "39e2e1cafee8da10f2bbab4184c06dcdd7dc009f6f046fedd1063be9e626eb41",
+    "scripts/strengthen_participation": "a6275a1733be0dd6c7559a4b870968ed11f727d6c6fe26d15201d710a3f8f77b",
+    "scripts/run_label_patch_fusion": "c49e86fd16a11db0b0b0c5e8363da8dc9848ff67b974279a42160cac05f6bdb1"
+  },
+  "benchmark": {
+    "2": 85.9350509775104,
+    "3": 64.72982712749217,
+    "4": 58.67994126598933
+  },
+  "backup": "/root/autodl-tmp/FedPASA_strengthen_20261103/outputs/strengthen_20261103/recovery/io-handoff-7636",
+  "read_ahead_refinement": {
+    "time": 1793700250.9213934,
+    "cutoff": "only below 1/16 image density",
+    "reason": "Full scans showed small-page I/O pressure; keep default kernel read-ahead at higher density",
+    "activation": "Fresh internal experiment processes; existing processes finish with their loaded version",
+    "benchmark_branch_unchanged": true
+  }
+}

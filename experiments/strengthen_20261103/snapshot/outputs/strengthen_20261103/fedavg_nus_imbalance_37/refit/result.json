@@ -1,0 +1,50 @@
+{
+  "status": "COMPLETE",
+  "mode": "fedavg",
+  "config": {
+    "optimizer": "sgd",
+    "lr": 1000.0,
+    "weight_decay": 0.0
+  },
+  "seed": 37,
+  "rounds": 120,
+  "best_round": null,
+  "best_validation_mAP": null,
+  "train_seconds": 13.934224714088487,
+  "validation_seconds": 0.020226138032739982,
+  "peak_cuda_MiB": 838.19482421875,
+  "uplink_bytes": 430012800,
+  "downlink_bytes": 430012800,
+  "curve": [
+    {
+      "round": 20,
+      "train_BCE": 0.03244009613990784,
+      "train_seconds": 2.1630789639020804
+    },
+    {
+      "round": 40,
+      "train_BCE": 0.03165240213274956,
+      "train_seconds": 4.37405204391689
+    },
+    {
+      "round": 60,
+      "train_BCE": 0.031606126576662064,
+      "train_seconds": 6.5561218499497045
+    },
+    {
+      "round": 80,
+      "train_BCE": 0.031645674258470535,
+      "train_seconds": 8.739093328971649
+    },
+    {
+      "round": 100,
+      "train_BCE": 0.030810026451945305,
+      "train_seconds": 10.930895397032145
+    },
+    {
+      "round": 120,
+      "train_BCE": 0.030820494517683983,
+      "train_seconds": 13.934224714088487
+    }
+  ]
+}

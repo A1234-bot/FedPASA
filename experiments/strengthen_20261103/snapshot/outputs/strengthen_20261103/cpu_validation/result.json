@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "scope": "Small real-cache CPU smoke; does not establish CPU/GPU equality or full-job performance",
+  "runtime": {
+    "device": "cpu",
+    "cpu_model": "Intel(R) Core(TM) Ultra 9 285K",
+    "torch_version": "2.11.0+cu128",
+    "server_cpu_threads": 4,
+    "client_cpu_threads": 1,
+    "client_compute_concurrency": 1,
+    "cpu_quota": "200000 100000",
+    "memory_limit": "4294967296",
+    "gpu_model": null,
+    "timing_group": "cpu_0f1fe1e4c2"
+  },
+  "checks": {
+    "sgd": "CPU step repeat bitwise equal; validation finite",
+    "adamw": "CPU step repeat bitwise equal; validation finite",
+    "ridge": "CPU sufficient statistics finite, expected dimensions",
+    "full": "CPU bank, quantile alignment, purification and PIAA inference finite on real samples"
+  }
+}

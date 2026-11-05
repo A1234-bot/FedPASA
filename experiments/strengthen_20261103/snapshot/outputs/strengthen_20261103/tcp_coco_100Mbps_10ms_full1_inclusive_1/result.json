@@ -1,0 +1,6074 @@
+{
+  "status": "COMPLETE",
+  "dataset": "coco",
+  "mAP": 80.54943645512004,
+  "device": "cuda",
+  "clients": 10,
+  "server_pid": 13461,
+  "client_pids": [
+    13481,
+    13483,
+    13484,
+    13486,
+    13479,
+    13482,
+    13485,
+    13477,
+    13478,
+    13480
+  ],
+  "total_fitting_wall_seconds": 134.32458549700095,
+  "server_solve_calibration_seconds": 4.061605408001924,
+  "serialization_deserialization_seconds_all_processes": 0.15626634791260585,
+  "client_compute_seconds_sum": 90.38240203095484,
+  "inference_seconds": 7.128954364015954,
+  "reference_verification_seconds_excluded": 1.4989777519949712,
+  "reference_checks": [
+    {
+      "phase": "full",
+      "qa_weight_error": 0.0,
+      "qa_bias_error": 0.0,
+      "absolute_tolerance": 1e-06,
+      "relative_tolerance": 0,
+      "bitwise_identical": true
+    },
+    {
+      "phase": "17",
+      "qa_weight_error": 0.0,
+      "qa_bias_error": 0.0,
+      "absolute_tolerance": 1e-06,
+      "relative_tolerance": 0,
+      "bitwise_identical": true
+    }
+  ],
+  "historical_comparison": null,
+  "network": {
+    "uplink_payload_bytes": 397214008,
+    "downlink_payload_bytes": 60089761,
+    "uplink_framed_bytes": 397215208,
+    "downlink_framed_bytes": 60090881,
+    "uplink_stages": 15,
+    "downlink_stages": 14,
+    "server_serialize_seconds": 0.01351652282755822,
+    "server_deserialize_seconds": 0.08005662509822287,
+    "messages": [
+      {
+        "direction": "recv",
+        "stage": "hello",
+        "client": -1,
+        "payload_bytes": 46,
+        "framed_bytes": 54,
+        "deserialize_seconds": 7.25302379578352e-06,
+        "io_seconds": 0.005117594002513215
+      },
+      {
+        "direction": "send",
+        "stage": "full/ridge_statistics/request",
+        "client": 4,
+        "payload_bytes": 110,
+        "framed_bytes": 118,
+        "serialize_seconds": 2.1439918782562017e-06,
+        "io_seconds": 0.005266170017421246
+      },
+      {
+        "direction": "recv",
+        "stage": "full/ridge_statistics",
+        "client": 4,
+        "payload_bytes": 10466857,
+        "framed_bytes": 10466865,
+        "deserialize_seconds": 0.003126250026980415,
+        "io_seconds": 4.637394518009387
+      },
+      {
+        "direction": "send",
+        "stage": "full/entropy/request",
+        "client": 4,
+        "payload_bytes": 94,
+        "framed_bytes": 102,
+        "serialize_seconds": 4.2000028770416975e-06,
+        "io_seconds": 0.005147010000655428
+      },
+      {
+        "direction": "recv",
+        "stage": "full/entropy",
+        "client": 4,
+        "payload_bytes": 128985,
+        "framed_bytes": 128993,
+        "deserialize_seconds": 0.00012514600530266762,
+        "io_seconds": 0.016489855013787746
+      },
+      {
+        "direction": "send",
+        "stage": "full/preliminary_moments/request",
+        "client": 4,
+        "payload_bytes": 22237,
+        "framed_bytes": 22245,
+        "serialize_seconds": 5.9762009186670184e-05,
+        "io_seconds": 0.00706740899477154
+      },
+      {
+        "direction": "recv",
+        "stage": "full/preliminary_moments",
+        "client": 4,
+        "payload_bytes": 2754145,
+        "framed_bytes": 2754153,
+        "deserialize_seconds": 0.001156118989456445,
+        "io_seconds": 0.2924326090142131
+      },
+      {
+        "direction": "send",
+        "stage": "full/purification_statistics/request",
+        "client": 4,
+        "payload_bytes": 328619,
+        "framed_bytes": 328627,
+        "serialize_seconds": 7.349299266934395e-05,
+        "io_seconds": 0.03166933500324376
+      },
+      {
+        "direction": "recv",
+        "stage": "full/purification_statistics",
+        "client": 4,
+        "payload_bytes": 2159,
+        "framed_bytes": 2167,
+        "deserialize_seconds": 2.768801641650498e-05,
+        "io_seconds": 0.010673281998606399
+      },
+      {
+        "direction": "send",
+        "stage": "full/final_moments/request",
+        "client": 4,
+        "payload_bytes": 879,
+        "framed_bytes": 887,
+        "serialize_seconds": 2.8395006665959954e-05,
+        "io_seconds": 0.005200921994401142
+      },
+      {
+        "direction": "recv",
+        "stage": "full/final_moments",
+        "client": 4,
+        "payload_bytes": 2754139,
+        "framed_bytes": 2754147,
+        "deserialize_seconds": 0.00021576901781372726,
+        "io_seconds": 0.27138619701145217
+      },
+      {
+        "direction": "send",
+        "stage": "17/ridge_statistics/request",
+        "client": 4,
+        "payload_bytes": 104,
+        "framed_bytes": 112,
+        "serialize_seconds": 3.150984412059188e-06,
+        "io_seconds": 0.005273435992421582
+      },
+      {
+        "direction": "recv",
+        "stage": "17/ridge_statistics",
+        "client": 4,
+        "payload_bytes": 10466855,
+        "framed_bytes": 10466863,
+        "deserialize_seconds": 0.0032342139747925103,
+        "io_seconds": 3.6421100680017844
+      },
+      {
+        "direction": "send",
+        "stage": "17/entropy/request",
+        "client": 4,
+        "payload_bytes": 88,
+        "framed_bytes": 96,
+        "serialize_seconds": 4.498986527323723e-06,
+        "io_seconds": 0.00527641799999401
+      },
+      {
+        "direction": "recv",
+        "stage": "17/entropy",
+        "client": 4,
+        "payload_bytes": 125357,
+        "framed_bytes": 125365,
+        "deserialize_seconds": 0.00026159899425692856,
+        "io_seconds": 0.016211454989388585
+      },
+      {
+        "direction": "send",
+        "stage": "17/preliminary_moments/request",
+        "client": 4,
+        "payload_bytes": 21954,
+        "framed_bytes": 21962,
+        "serialize_seconds": 5.625700578093529e-05,
+        "io_seconds": 0.006898123014252633
+      },
+      {
+        "direction": "recv",
+        "stage": "17/preliminary_moments",
+        "client": 4,
+        "payload_bytes": 2754143,
+        "framed_bytes": 2754151,
+        "deserialize_seconds": 0.00020005798432976007,
+        "io_seconds": 0.29270806699059904
+      },
+      {
+        "direction": "send",
+        "stage": "17/purification_statistics/request",
+        "client": 4,
+        "payload_bytes": 328613,
+        "framed_bytes": 328621,
+        "serialize_seconds": 5.46779774595052e-05,
+        "io_seconds": 0.031672531011281535
+      },
+      {
+        "direction": "recv",
+        "stage": "17/purification_statistics",
+        "client": 4,
+        "payload_bytes": 2157,
+        "framed_bytes": 2165,
+        "deserialize_seconds": 4.1121995309367776e-05,
+        "io_seconds": 0.010443653998663649
+      },
+      {
+        "direction": "send",
+        "stage": "17/final_moments/request",
+        "client": 4,
+        "payload_bytes": 873,
+        "framed_bytes": 881,
+        "serialize_seconds": 2.8412992833182216e-05,
+        "io_seconds": 0.005398003006121144
+      },
+      {
+        "direction": "recv",
+        "stage": "17/final_moments",
+        "client": 4,
+        "payload_bytes": 2754137,
+        "framed_bytes": 2754145,
+        "deserialize_seconds": 0.0001968790020328015,
+        "io_seconds": 0.27046751501620747
+      },
+      {
+        "direction": "send",
+        "stage": "17/validation_scores_labels/request",
+        "client": 4,
+        "payload_bytes": 4762186,
+        "framed_bytes": 4762194,
+        "serialize_seconds": 0.0010514360037632287,
+        "io_seconds": 0.3864209440071136
+      },
+      {
+        "direction": "recv",
+        "stage": "17/validation_scores_labels",
+        "client": 4,
+        "payload_bytes": 6240268,
+        "framed_bytes": 6240276,
+        "deserialize_seconds": 0.00032123798155225813,
+        "io_seconds": 0.9302911170234438
+      },
+      {
+        "direction": "send",
+        "stage": "17/calibration_ack/request",
+        "client": 4,
+        "payload_bytes": 1924,
+        "framed_bytes": 1932,
+        "serialize_seconds": 4.2575004044920206e-05,
+        "io_seconds": 0.005401303991675377
+      },
+      {
+        "direction": "recv",
+        "stage": "17/calibration_ack",
+        "client": 4,
+        "payload_bytes": 44,
+        "framed_bytes": 52,
+        "deserialize_seconds": 5.649984814226627e-06,
+        "io_seconds": 0.005649322993122041
+      },
+      {
+        "direction": "send",
+        "stage": "deploy_ack/request",
+        "client": 4,
+        "payload_bytes": 518091,
+        "framed_bytes": 518099,
+        "serialize_seconds": 6.545201176777482e-05,
+        "io_seconds": 0.046912535006413236
+      },
+      {
+        "direction": "recv",
+        "stage": "deploy_ack",
+        "client": 4,
+        "payload_bytes": 36,
+        "framed_bytes": 44,
+        "deserialize_seconds": 5.8549921959638596e-06,
+        "io_seconds": 0.00575735600432381
+      },
+      {
+        "direction": "send",
+        "stage": "stop",
+        "client": 4,
+        "payload_bytes": 31,
+        "framed_bytes": 39,
+        "serialize_seconds": 5.526992026716471e-06,
+        "io_seconds": 0.005266564985504374
+      },
+      {
+        "direction": "recv",
+        "stage": "client_metrics",
+        "client": 4,
+        "payload_bytes": 2765,
+        "framed_bytes": 2773,
+        "deserialize_seconds": 3.907000063918531e-05,
+        "io_seconds": 1.7466983990743756e-05
+      },
+      {
+        "direction": "recv",
+        "stage": "hello",
+        "client": -1,
+        "payload_bytes": 46,
+        "framed_bytes": 54,
+        "deserialize_seconds": 9.770155884325504e-07,
+        "io_seconds": 5.7349971029907465e-06
+      },
+      {
+        "direction": "send",
+        "stage": "full/ridge_statistics/request",
+        "client": 6,
+        "payload_bytes": 110,
+        "framed_bytes": 118,
+        "serialize_seconds": 2.0790030248463154e-06,
+        "io_seconds": 0.0052963970229029655
+      },
+      {
+        "direction": "recv",
+        "stage": "full/ridge_statistics",
+        "client": 6,
+        "payload_bytes": 10466857,
+        "framed_bytes": 10466865,
+        "deserialize_seconds": 0.0029914659971836954,
+        "io_seconds": 4.608153387001948
+      },
+      {
+        "direction": "send",
+        "stage": "full/entropy/request",
+        "client": 6,
+        "payload_bytes": 94,
+        "framed_bytes": 102,
+        "serialize_seconds": 4.672998329624534e-06,
+        "io_seconds": 0.005381480004871264
+      },
+      {
+        "direction": "recv",
+        "stage": "full/entropy",
+        "client": 6,
+        "payload_bytes": 119352,
+        "framed_bytes": 119360,
+        "deserialize_seconds": 0.0001503670064266771,
+        "io_seconds": 0.015518397995037958
+      },
+      {
+        "direction": "send",
+        "stage": "full/preliminary_moments/request",
+        "client": 6,
+        "payload_bytes": 22024,
+        "framed_bytes": 22032,
+        "serialize_seconds": 5.39350148756057e-05,
+        "io_seconds": 0.007162855996284634
+      },
+      {
+        "direction": "recv",
+        "stage": "full/preliminary_moments",
+        "client": 6,
+        "payload_bytes": 2754145,
+        "framed_bytes": 2754153,
+        "deserialize_seconds": 0.0011769559932872653,
+        "io_seconds": 0.2892394440132193
+      },
+      {
+        "direction": "send",
+        "stage": "full/purification_statistics/request",
+        "client": 6,
+        "payload_bytes": 328619,
+        "framed_bytes": 328627,
+        "serialize_seconds": 3.526199725456536e-05,
+        "io_seconds": 0.03168323100544512
+      },
+      {
+        "direction": "recv",
+        "stage": "full/purification_statistics",
+        "client": 6,
+        "payload_bytes": 2159,
+        "framed_bytes": 2167,
+        "deserialize_seconds": 3.637699410319328e-05,
+        "io_seconds": 0.010331042023608461
+      },
+      {
+        "direction": "send",
+        "stage": "full/final_moments/request",
+        "client": 6,
+        "payload_bytes": 879,
+        "framed_bytes": 887,
+        "serialize_seconds": 3.084697527810931e-05,
+        "io_seconds": 0.005387534998590127
+      },
+      {
+        "direction": "recv",
+        "stage": "full/final_moments",
+        "client": 6,
+        "payload_bytes": 2754139,
+        "framed_bytes": 2754147,
+        "deserialize_seconds": 0.0009194530139211565,
+        "io_seconds": 0.27114905600319616
+      },
+      {
+        "direction": "send",
+        "stage": "17/ridge_statistics/request",
+        "client": 6,
+        "payload_bytes": 104,
+        "framed_bytes": 112,
+        "serialize_seconds": 2.1920131985098124e-06,
+        "io_seconds": 0.00530106300720945
+      },
+      {
+        "direction": "recv",
+        "stage": "17/ridge_statistics",
+        "client": 6,
+        "payload_bytes": 10466855,
+        "framed_bytes": 10466863,
+        "deserialize_seconds": 0.0030107010097708553,
+        "io_seconds": 3.952931134001119
+      },
+      {
+        "direction": "send",
+        "stage": "17/entropy/request",
+        "client": 6,
+        "payload_bytes": 88,
+        "framed_bytes": 96,
+        "serialize_seconds": 3.975001163780689e-06,
+        "io_seconds": 0.00528476299950853
+      },
+      {
+        "direction": "recv",
+        "stage": "17/entropy",
+        "client": 6,
+        "payload_bytes": 112444,
+        "framed_bytes": 112452,
+        "deserialize_seconds": 7.702800212427974e-05,
+        "io_seconds": 0.015129959007026628
+      },
+      {
+        "direction": "send",
+        "stage": "17/preliminary_moments/request",
+        "client": 6,
+        "payload_bytes": 21543,
+        "framed_bytes": 21551,
+        "serialize_seconds": 6.093099364079535e-05,
+        "io_seconds": 0.007193849014583975
+      },
+      {
+        "direction": "recv",
+        "stage": "17/preliminary_moments",
+        "client": 6,
+        "payload_bytes": 2754143,
+        "framed_bytes": 2754151,
+        "deserialize_seconds": 0.00019168201833963394,
+        "io_seconds": 0.29027821400086395
+      },
+      {
+        "direction": "send",
+        "stage": "17/purification_statistics/request",
+        "client": 6,
+        "payload_bytes": 328613,
+        "framed_bytes": 328621,
+        "serialize_seconds": 3.231098526157439e-05,
+        "io_seconds": 0.03177125798538327
+      },
+      {
+        "direction": "recv",
+        "stage": "17/purification_statistics",
+        "client": 6,
+        "payload_bytes": 2157,
+        "framed_bytes": 2165,
+        "deserialize_seconds": 2.6691006496548653e-05,
+        "io_seconds": 0.010257674002787098
+      },
+      {
+        "direction": "send",
+        "stage": "17/final_moments/request",
+        "client": 6,
+        "payload_bytes": 873,
+        "framed_bytes": 881,
+        "serialize_seconds": 2.7189002139493823e-05,
+        "io_seconds": 0.005380167014664039
+      },
+      {
+        "direction": "recv",
+        "stage": "17/final_moments",
+        "client": 6,
+        "payload_bytes": 2754137,
+        "framed_bytes": 2754145,
+        "deserialize_seconds": 0.0002026410074904561,
+        "io_seconds": 0.2719228419882711
+      },
+      {
+        "direction": "send",
+        "stage": "17/validation_scores_labels/request",
+        "client": 6,
+        "payload_bytes": 4762186,
+        "framed_bytes": 4762194,
+        "serialize_seconds": 0.0008414440089836717,
+        "io_seconds": 0.3864282479917165
+      },
+      {
+        "direction": "recv",
+        "stage": "17/validation_scores_labels",
+        "client": 6,
+        "payload_bytes": 6715340,
+        "framed_bytes": 6715348,
+        "deserialize_seconds": 0.0002790899889077991,
+        "io_seconds": 0.9573780880018603
+      },
+      {
+        "direction": "send",
+        "stage": "17/calibration_ack/request",
+        "client": 6,
+        "payload_bytes": 1924,
+        "framed_bytes": 1932,
+        "serialize_seconds": 3.7173012970015407e-05,
+        "io_seconds": 0.005397408007411286
+      },
+      {
+        "direction": "recv",
+        "stage": "17/calibration_ack",
+        "client": 6,
+        "payload_bytes": 44,
+        "framed_bytes": 52,
+        "deserialize_seconds": 5.9710000641644e-06,
+        "io_seconds": 0.00564779998967424
+      },
+      {
+        "direction": "send",
+        "stage": "deploy_ack/request",
+        "client": 6,
+        "payload_bytes": 518091,
+        "framed_bytes": 518099,
+        "serialize_seconds": 5.515501834452152e-05,
+        "io_seconds": 0.046890162979252636
+      },
+      {
+        "direction": "recv",
+        "stage": "deploy_ack",
+        "client": 6,
+        "payload_bytes": 36,
+        "framed_bytes": 44,
+        "deserialize_seconds": 5.870999302715063e-06,
+        "io_seconds": 0.005738693987950683
+      },
+      {
+        "direction": "send",
+        "stage": "stop",
+        "client": 6,
+        "payload_bytes": 31,
+        "framed_bytes": 39,
+        "serialize_seconds": 6.521004252135754e-06,
+        "io_seconds": 0.005212553020101041
+      },
+      {
+        "direction": "recv",
+        "stage": "client_metrics",
+        "client": 6,
+        "payload_bytes": 2765,
+        "framed_bytes": 2773,
+        "deserialize_seconds": 2.0684994524344802e-05,
+        "io_seconds": 6.225978722795844e-06
+      },
+      {
+        "direction": "recv",
+        "stage": "hello",
+        "client": -1,
+        "payload_bytes": 46,
+        "framed_bytes": 54,
+        "deserialize_seconds": 7.922004442662e-06,
+        "io_seconds": 0.005575643997872248
+      },
+      {
+        "direction": "send",
+        "stage": "full/ridge_statistics/request",
+        "client": 7,
+        "payload_bytes": 110,
+        "framed_bytes": 118,
+        "serialize_seconds": 2.114014932885766e-06,
+        "io_seconds": 0.005252756003756076
+      },
+      {
+        "direction": "recv",
+        "stage": "full/ridge_statistics",
+        "client": 7,
+        "payload_bytes": 10466857,
+        "framed_bytes": 10466865,
+        "deserialize_seconds": 0.003113036014838144,
+        "io_seconds": 3.7704111260245554
+      },
+      {
+        "direction": "send",
+        "stage": "full/entropy/request",
+        "client": 7,
+        "payload_bytes": 94,
+        "framed_bytes": 102,
+        "serialize_seconds": 4.139990778639913e-06,
+        "io_seconds": 0.0052666910050902516
+      },
+      {
+        "direction": "recv",
+        "stage": "full/entropy",
+        "client": 7,
+        "payload_bytes": 114257,
+        "framed_bytes": 114265,
+        "deserialize_seconds": 0.00011753197759389877,
+        "io_seconds": 0.015362272009951994
+      },
+      {
+        "direction": "send",
+        "stage": "full/preliminary_moments/request",
+        "client": 7,
+        "payload_bytes": 19800,
+        "framed_bytes": 19808,
+        "serialize_seconds": 6.622797809541225e-05,
+        "io_seconds": 0.006782181008020416
+      },
+      {
+        "direction": "recv",
+        "stage": "full/preliminary_moments",
+        "client": 7,
+        "payload_bytes": 2754145,
+        "framed_bytes": 2754153,
+        "deserialize_seconds": 0.0010802150063682348,
+        "io_seconds": 0.2893348200013861
+      },
+      {
+        "direction": "send",
+        "stage": "full/purification_statistics/request",
+        "client": 7,
+        "payload_bytes": 328619,
+        "framed_bytes": 328627,
+        "serialize_seconds": 3.348800237290561e-05,
+        "io_seconds": 0.03173884400166571
+      },
+      {
+        "direction": "recv",
+        "stage": "full/purification_statistics",
+        "client": 7,
+        "payload_bytes": 2159,
+        "framed_bytes": 2167,
+        "deserialize_seconds": 2.717398456297815e-05,
+        "io_seconds": 0.010140465979930013
+      },
+      {
+        "direction": "send",
+        "stage": "full/final_moments/request",
+        "client": 7,
+        "payload_bytes": 879,
+        "framed_bytes": 887,
+        "serialize_seconds": 2.8044974897056818e-05,
+        "io_seconds": 0.005192512006033212
+      },
+      {
+        "direction": "recv",
+        "stage": "full/final_moments",
+        "client": 7,
+        "payload_bytes": 2754139,
+        "framed_bytes": 2754147,
+        "deserialize_seconds": 0.0009343330166302621,
+        "io_seconds": 0.269538624008419
+      },
+      {
+        "direction": "send",
+        "stage": "17/ridge_statistics/request",
+        "client": 7,
+        "payload_bytes": 104,
+        "framed_bytes": 112,
+        "serialize_seconds": 2.4279870558530092e-06,
+        "io_seconds": 0.0052863809978589416
+      },
+      {
+        "direction": "recv",
+        "stage": "17/ridge_statistics",
+        "client": 7,
+        "payload_bytes": 10466855,
+        "framed_bytes": 10466863,
+        "deserialize_seconds": 0.00305671599926427,
+        "io_seconds": 3.124083005997818
+      },
+      {
+        "direction": "send",
+        "stage": "17/entropy/request",
+        "client": 7,
+        "payload_bytes": 88,
+        "framed_bytes": 96,
+        "serialize_seconds": 3.577006282284856e-06,
+        "io_seconds": 0.0052221489895600826
+      },
+      {
+        "direction": "recv",
+        "stage": "17/entropy",
+        "client": 7,
+        "payload_bytes": 107289,
+        "framed_bytes": 107297,
+        "deserialize_seconds": 8.622198947705328e-05,
+        "io_seconds": 0.014661730994703248
+      },
+      {
+        "direction": "send",
+        "stage": "17/preliminary_moments/request",
+        "client": 7,
+        "payload_bytes": 20993,
+        "framed_bytes": 21001,
+        "serialize_seconds": 6.501900497823954e-05,
+        "io_seconds": 0.0071681319968774915
+      },
+      {
+        "direction": "recv",
+        "stage": "17/preliminary_moments",
+        "client": 7,
+        "payload_bytes": 2754143,
+        "framed_bytes": 2754151,
+        "deserialize_seconds": 0.0002093980147037655,
+        "io_seconds": 0.28953451101551764
+      },
+      {
+        "direction": "send",
+        "stage": "17/purification_statistics/request",
+        "client": 7,
+        "payload_bytes": 328613,
+        "framed_bytes": 328621,
+        "serialize_seconds": 3.417101106606424e-05,
+        "io_seconds": 0.03156701900297776
+      },
+      {
+        "direction": "recv",
+        "stage": "17/purification_statistics",
+        "client": 7,
+        "payload_bytes": 2157,
+        "framed_bytes": 2165,
+        "deserialize_seconds": 3.518300945870578e-05,
+        "io_seconds": 0.010219169984338805
+      },
+      {
+        "direction": "send",
+        "stage": "17/final_moments/request",
+        "client": 7,
+        "payload_bytes": 873,
+        "framed_bytes": 881,
+        "serialize_seconds": 2.7089001378044486e-05,
+        "io_seconds": 0.005329309991793707
+      },
+      {
+        "direction": "recv",
+        "stage": "17/final_moments",
+        "client": 7,
+        "payload_bytes": 2754137,
+        "framed_bytes": 2754145,
+        "deserialize_seconds": 0.00027445200248621404,
+        "io_seconds": 0.2694213039940223
+      },
+      {
+        "direction": "send",
+        "stage": "17/validation_scores_labels/request",
+        "client": 7,
+        "payload_bytes": 4762186,
+        "framed_bytes": 4762194,
+        "serialize_seconds": 0.0008395189943257719,
+        "io_seconds": 0.3865347139944788
+      },
+      {
+        "direction": "recv",
+        "stage": "17/validation_scores_labels",
+        "client": 7,
+        "payload_bytes": 4865300,
+        "framed_bytes": 4865308,
+        "deserialize_seconds": 0.0002485810255166143,
+        "io_seconds": 0.6912939079920761
+      },
+      {
+        "direction": "send",
+        "stage": "17/calibration_ack/request",
+        "client": 7,
+        "payload_bytes": 1924,
+        "framed_bytes": 1932,
+        "serialize_seconds": 2.8167007258161902e-05,
+        "io_seconds": 0.005402048991527408
+      },
+      {
+        "direction": "recv",
+        "stage": "17/calibration_ack",
+        "client": 7,
+        "payload_bytes": 44,
+        "framed_bytes": 52,
+        "deserialize_seconds": 5.900015821680427e-06,
+        "io_seconds": 0.005708950979169458
+      },
+      {
+        "direction": "send",
+        "stage": "deploy_ack/request",
+        "client": 7,
+        "payload_bytes": 518091,
+        "framed_bytes": 518099,
+        "serialize_seconds": 5.4875999921932817e-05,
+        "io_seconds": 0.04672761200345121
+      },
+      {
+        "direction": "recv",
+        "stage": "deploy_ack",
+        "client": 7,
+        "payload_bytes": 36,
+        "framed_bytes": 44,
+        "deserialize_seconds": 1.234101364389062e-05,
+        "io_seconds": 0.005709399003535509
+      },
+      {
+        "direction": "send",
+        "stage": "stop",
+        "client": 7,
+        "payload_bytes": 31,
+        "framed_bytes": 39,
+        "serialize_seconds": 5.7549914345145226e-06,
+        "io_seconds": 0.005164011003216729
+      },
+      {
+        "direction": "recv",
+        "stage": "client_metrics",
+        "client": 7,
+        "payload_bytes": 2765,
+        "framed_bytes": 2773,
+        "deserialize_seconds": 1.5008001355454326e-05,
+        "io_seconds": 5.9940211940556765e-06
+      },
+      {
+        "direction": "recv",
+        "stage": "hello",
+        "client": -1,
+        "payload_bytes": 46,
+        "framed_bytes": 54,
+        "deserialize_seconds": 9.060022421181202e-07,
+        "io_seconds": 4.006025847047567e-06
+      },
+      {
+        "direction": "send",
+        "stage": "full/ridge_statistics/request",
+        "client": 9,
+        "payload_bytes": 110,
+        "framed_bytes": 118,
+        "serialize_seconds": 2.16200714930892e-06,
+        "io_seconds": 0.005286764993797988
+      },
+      {
+        "direction": "recv",
+        "stage": "full/ridge_statistics",
+        "client": 9,
+        "payload_bytes": 10466857,
+        "framed_bytes": 10466865,
+        "deserialize_seconds": 0.0034624559921212494,
+        "io_seconds": 5.920541373983724
+      },
+      {
+        "direction": "send",
+        "stage": "full/entropy/request",
+        "client": 9,
+        "payload_bytes": 94,
+        "framed_bytes": 102,
+        "serialize_seconds": 4.748988430947065e-06,
+        "io_seconds": 0.005223426007432863
+      },
+      {
+        "direction": "recv",
+        "stage": "full/entropy",
+        "client": 9,
+        "payload_bytes": 159105,
+        "framed_bytes": 159113,
+        "deserialize_seconds": 0.0001277910196222365,
+        "io_seconds": 0.01873356499709189
+      },
+      {
+        "direction": "send",
+        "stage": "full/preliminary_moments/request",
+        "client": 9,
+        "payload_bytes": 48415,
+        "framed_bytes": 48423,
+        "serialize_seconds": 0.00010294601088389754,
+        "io_seconds": 0.00926324600004591
+      },
+      {
+        "direction": "recv",
+        "stage": "full/preliminary_moments",
+        "client": 9,
+        "payload_bytes": 2754145,
+        "framed_bytes": 2754153,
+        "deserialize_seconds": 0.0010862489871215075,
+        "io_seconds": 0.3208713399944827
+      },
+      {
+        "direction": "send",
+        "stage": "full/purification_statistics/request",
+        "client": 9,
+        "payload_bytes": 328619,
+        "framed_bytes": 328627,
+        "serialize_seconds": 4.1445979150012136e-05,
+        "io_seconds": 0.03153840100276284
+      },
+      {
+        "direction": "recv",
+        "stage": "full/purification_statistics",
+        "client": 9,
+        "payload_bytes": 2159,
+        "framed_bytes": 2167,
+        "deserialize_seconds": 3.957399167120457e-05,
+        "io_seconds": 0.0175348790071439
+      },
+      {
+        "direction": "send",
+        "stage": "full/final_moments/request",
+        "client": 9,
+        "payload_bytes": 879,
+        "framed_bytes": 887,
+        "serialize_seconds": 2.8434005798771977e-05,
+        "io_seconds": 0.005312421009875834
+      },
+      {
+        "direction": "recv",
+        "stage": "full/final_moments",
+        "client": 9,
+        "payload_bytes": 2754139,
+        "framed_bytes": 2754147,
+        "deserialize_seconds": 0.0010545410041231662,
+        "io_seconds": 0.2763474079838488
+      },
+      {
+        "direction": "send",
+        "stage": "17/ridge_statistics/request",
+        "client": 9,
+        "payload_bytes": 104,
+        "framed_bytes": 112,
+        "serialize_seconds": 2.315995516255498e-06,
+        "io_seconds": 0.005305727012455463
+      },
+      {
+        "direction": "recv",
+        "stage": "17/ridge_statistics",
+        "client": 9,
+        "payload_bytes": 10466855,
+        "framed_bytes": 10466863,
+        "deserialize_seconds": 0.0031261259864550084,
+        "io_seconds": 5.0617234780220315
+      },
+      {
+        "direction": "send",
+        "stage": "17/entropy/request",
+        "client": 9,
+        "payload_bytes": 88,
+        "framed_bytes": 96,
+        "serialize_seconds": 3.961991751566529e-06,
+        "io_seconds": 0.005272398004308343
+      },
+      {
+        "direction": "recv",
+        "stage": "17/entropy",
+        "client": 9,
+        "payload_bytes": 155803,
+        "framed_bytes": 155811,
+        "deserialize_seconds": 0.0001419809996150434,
+        "io_seconds": 0.01853590100654401
+      },
+      {
+        "direction": "send",
+        "stage": "17/preliminary_moments/request",
+        "client": 9,
+        "payload_bytes": 47614,
+        "framed_bytes": 47622,
+        "serialize_seconds": 9.327300358563662e-05,
+        "io_seconds": 0.009279020014218986
+      },
+      {
+        "direction": "recv",
+        "stage": "17/preliminary_moments",
+        "client": 9,
+        "payload_bytes": 2754143,
+        "framed_bytes": 2754151,
+        "deserialize_seconds": 0.00019051801064051688,
+        "io_seconds": 0.31814855299307965
+      },
+      {
+        "direction": "send",
+        "stage": "17/purification_statistics/request",
+        "client": 9,
+        "payload_bytes": 328613,
+        "framed_bytes": 328621,
+        "serialize_seconds": 4.251499194651842e-05,
+        "io_seconds": 0.031444562977412716
+      },
+      {
+        "direction": "recv",
+        "stage": "17/purification_statistics",
+        "client": 9,
+        "payload_bytes": 2157,
+        "framed_bytes": 2165,
+        "deserialize_seconds": 3.289600135758519e-05,
+        "io_seconds": 0.015380905999336392
+      },
+      {
+        "direction": "send",
+        "stage": "17/final_moments/request",
+        "client": 9,
+        "payload_bytes": 873,
+        "framed_bytes": 881,
+        "serialize_seconds": 2.8493988793343306e-05,
+        "io_seconds": 0.005270296998787671
+      },
+      {
+        "direction": "recv",
+        "stage": "17/final_moments",
+        "client": 9,
+        "payload_bytes": 2754137,
+        "framed_bytes": 2754145,
+        "deserialize_seconds": 0.00029999701655469835,
+        "io_seconds": 0.27452779799932614
+      },
+      {
+        "direction": "send",
+        "stage": "17/validation_scores_labels/request",
+        "client": 9,
+        "payload_bytes": 4762186,
+        "framed_bytes": 4762194,
+        "serialize_seconds": 0.0007749439973849803,
+        "io_seconds": 0.3866636810125783
+      },
+      {
+        "direction": "recv",
+        "stage": "17/validation_scores_labels",
+        "client": 9,
+        "payload_bytes": 8058332,
+        "framed_bytes": 8058340,
+        "deserialize_seconds": 0.00035224398015998304,
+        "io_seconds": 1.1567318949964829
+      },
+      {
+        "direction": "send",
+        "stage": "17/calibration_ack/request",
+        "client": 9,
+        "payload_bytes": 1924,
+        "framed_bytes": 1932,
+        "serialize_seconds": 3.712699981406331e-05,
+        "io_seconds": 0.005403746996307746
+      },
+      {
+        "direction": "recv",
+        "stage": "17/calibration_ack",
+        "client": 9,
+        "payload_bytes": 44,
+        "framed_bytes": 52,
+        "deserialize_seconds": 1.2911012163385749e-05,
+        "io_seconds": 0.005671660997904837
+      },
+      {
+        "direction": "send",
+        "stage": "deploy_ack/request",
+        "client": 9,
+        "payload_bytes": 518091,
+        "framed_bytes": 518099,
+        "serialize_seconds": 6.063398905098438e-05,
+        "io_seconds": 0.04673151401220821
+      },
+      {
+        "direction": "recv",
+        "stage": "deploy_ack",
+        "client": 9,
+        "payload_bytes": 36,
+        "framed_bytes": 44,
+        "deserialize_seconds": 5.711015546694398e-06,
+        "io_seconds": 0.005760732979979366
+      },
+      {
+        "direction": "send",
+        "stage": "stop",
+        "client": 9,
+        "payload_bytes": 31,
+        "framed_bytes": 39,
+        "serialize_seconds": 5.943991709500551e-06,
+        "io_seconds": 0.005211635987507179
+      },
+      {
+        "direction": "recv",
+        "stage": "client_metrics",
+        "client": 9,
+        "payload_bytes": 2765,
+        "framed_bytes": 2773,
+        "deserialize_seconds": 1.6120000509545207e-05,
+        "io_seconds": 5.433015758171678e-06
+      },
+      {
+        "direction": "recv",
+        "stage": "hello",
+        "client": -1,
+        "payload_bytes": 46,
+        "framed_bytes": 54,
+        "deserialize_seconds": 6.963004125282168e-06,
+        "io_seconds": 0.0022861089964862913
+      },
+      {
+        "direction": "send",
+        "stage": "full/ridge_statistics/request",
+        "client": 2,
+        "payload_bytes": 110,
+        "framed_bytes": 118,
+        "serialize_seconds": 2.089975168928504e-06,
+        "io_seconds": 0.005250580987194553
+      },
+      {
+        "direction": "recv",
+        "stage": "full/ridge_statistics",
+        "client": 2,
+        "payload_bytes": 10466857,
+        "framed_bytes": 10466865,
+        "deserialize_seconds": 0.000642052007606253,
+        "io_seconds": 5.092694979015505
+      },
+      {
+        "direction": "send",
+        "stage": "full/entropy/request",
+        "client": 2,
+        "payload_bytes": 94,
+        "framed_bytes": 102,
+        "serialize_seconds": 4.016997991129756e-06,
+        "io_seconds": 0.005204868008149788
+      },
+      {
+        "direction": "recv",
+        "stage": "full/entropy",
+        "client": 2,
+        "payload_bytes": 138613,
+        "framed_bytes": 138621,
+        "deserialize_seconds": 9.035097900778055e-05,
+        "io_seconds": 0.017212192004080862
+      },
+      {
+        "direction": "send",
+        "stage": "full/preliminary_moments/request",
+        "client": 2,
+        "payload_bytes": 20686,
+        "framed_bytes": 20694,
+        "serialize_seconds": 7.498700870200992e-05,
+        "io_seconds": 0.006941158993868157
+      },
+      {
+        "direction": "recv",
+        "stage": "full/preliminary_moments",
+        "client": 2,
+        "payload_bytes": 2754145,
+        "framed_bytes": 2754153,
+        "deserialize_seconds": 0.0008683500054758042,
+        "io_seconds": 0.2900929249881301
+      },
+      {
+        "direction": "send",
+        "stage": "full/purification_statistics/request",
+        "client": 2,
+        "payload_bytes": 328619,
+        "framed_bytes": 328627,
+        "serialize_seconds": 3.596898750402033e-05,
+        "io_seconds": 0.03161748999264091
+      },
+      {
+        "direction": "recv",
+        "stage": "full/purification_statistics",
+        "client": 2,
+        "payload_bytes": 2159,
+        "framed_bytes": 2167,
+        "deserialize_seconds": 3.817700780928135e-05,
+        "io_seconds": 0.0104399919800926
+      },
+      {
+        "direction": "send",
+        "stage": "full/final_moments/request",
+        "client": 2,
+        "payload_bytes": 879,
+        "framed_bytes": 887,
+        "serialize_seconds": 3.035800182260573e-05,
+        "io_seconds": 0.005381502007367089
+      },
+      {
+        "direction": "recv",
+        "stage": "full/final_moments",
+        "client": 2,
+        "payload_bytes": 2754139,
+        "framed_bytes": 2754147,
+        "deserialize_seconds": 0.0002102630096487701,
+        "io_seconds": 0.27072223799768835
+      },
+      {
+        "direction": "send",
+        "stage": "17/ridge_statistics/request",
+        "client": 2,
+        "payload_bytes": 104,
+        "framed_bytes": 112,
+        "serialize_seconds": 2.1379964891821146e-06,
+        "io_seconds": 0.005245812004432082
+      },
+      {
+        "direction": "recv",
+        "stage": "17/ridge_statistics",
+        "client": 2,
+        "payload_bytes": 10466855,
+        "framed_bytes": 10466863,
+        "deserialize_seconds": 0.002961209014756605,
+        "io_seconds": 3.923363979003625
+      },
+      {
+        "direction": "send",
+        "stage": "17/entropy/request",
+        "client": 2,
+        "payload_bytes": 88,
+        "framed_bytes": 96,
+        "serialize_seconds": 4.144996637478471e-06,
+        "io_seconds": 0.0052816669922322035
+      },
+      {
+        "direction": "recv",
+        "stage": "17/entropy",
+        "client": 2,
+        "payload_bytes": 133932,
+        "framed_bytes": 133940,
+        "deserialize_seconds": 0.0001079800131265074,
+        "io_seconds": 0.016640527988784015
+      },
+      {
+        "direction": "send",
+        "stage": "17/preliminary_moments/request",
+        "client": 2,
+        "payload_bytes": 20256,
+        "framed_bytes": 20264,
+        "serialize_seconds": 7.395001011900604e-05,
+        "io_seconds": 0.006929436989594251
+      },
+      {
+        "direction": "recv",
+        "stage": "17/preliminary_moments",
+        "client": 2,
+        "payload_bytes": 2754143,
+        "framed_bytes": 2754151,
+        "deserialize_seconds": 0.0002731540007516742,
+        "io_seconds": 0.2956256039906293
+      },
+      {
+        "direction": "send",
+        "stage": "17/purification_statistics/request",
+        "client": 2,
+        "payload_bytes": 328613,
+        "framed_bytes": 328621,
+        "serialize_seconds": 3.25630244333297e-05,
+        "io_seconds": 0.031532824999885634
+      },
+      {
+        "direction": "recv",
+        "stage": "17/purification_statistics",
+        "client": 2,
+        "payload_bytes": 2157,
+        "framed_bytes": 2165,
+        "deserialize_seconds": 3.820500569418073e-05,
+        "io_seconds": 0.010152671980904415
+      },
+      {
+        "direction": "send",
+        "stage": "17/final_moments/request",
+        "client": 2,
+        "payload_bytes": 873,
+        "framed_bytes": 881,
+        "serialize_seconds": 2.8416980057954788e-05,
+        "io_seconds": 0.005370505008613691
+      },
+      {
+        "direction": "recv",
+        "stage": "17/final_moments",
+        "client": 2,
+        "payload_bytes": 2754137,
+        "framed_bytes": 2754145,
+        "deserialize_seconds": 0.00019048599642701447,
+        "io_seconds": 0.2705925339832902
+      },
+      {
+        "direction": "send",
+        "stage": "17/validation_scores_labels/request",
+        "client": 2,
+        "payload_bytes": 4762186,
+        "framed_bytes": 4762194,
+        "serialize_seconds": 0.0007742129964753985,
+        "io_seconds": 0.3865489390154835
+      },
+      {
+        "direction": "recv",
+        "stage": "17/validation_scores_labels",
+        "client": 2,
+        "payload_bytes": 6477804,
+        "framed_bytes": 6477812,
+        "deserialize_seconds": 0.0002796639746520668,
+        "io_seconds": 0.9373803440248594
+      },
+      {
+        "direction": "send",
+        "stage": "17/calibration_ack/request",
+        "client": 2,
+        "payload_bytes": 1924,
+        "framed_bytes": 1932,
+        "serialize_seconds": 2.1298008505254984e-05,
+        "io_seconds": 0.005399728019256145
+      },
+      {
+        "direction": "recv",
+        "stage": "17/calibration_ack",
+        "client": 2,
+        "payload_bytes": 44,
+        "framed_bytes": 52,
+        "deserialize_seconds": 4.631991032510996e-06,
+        "io_seconds": 0.005625934019917622
+      },
+      {
+        "direction": "send",
+        "stage": "deploy_ack/request",
+        "client": 2,
+        "payload_bytes": 518091,
+        "framed_bytes": 518099,
+        "serialize_seconds": 7.418700261041522e-05,
+        "io_seconds": 0.04686003198730759
+      },
+      {
+        "direction": "recv",
+        "stage": "deploy_ack",
+        "client": 2,
+        "payload_bytes": 36,
+        "framed_bytes": 44,
+        "deserialize_seconds": 5.304988007992506e-06,
+        "io_seconds": 0.005801981984404847
+      },
+      {
+        "direction": "send",
+        "stage": "stop",
+        "client": 2,
+        "payload_bytes": 31,
+        "framed_bytes": 39,
+        "serialize_seconds": 6.183021469041705e-06,
+        "io_seconds": 0.005188492999877781
+      },
+      {
+        "direction": "recv",
+        "stage": "client_metrics",
+        "client": 2,
+        "payload_bytes": 2765,
+        "framed_bytes": 2773,
+        "deserialize_seconds": 4.09010099247098e-05,
+        "io_seconds": 5.631998647004366e-06
+      },
+      {
+        "direction": "recv",
+        "stage": "hello",
+        "client": -1,
+        "payload_bytes": 46,
+        "framed_bytes": 54,
+        "deserialize_seconds": 1.1196010746061802e-05,
+        "io_seconds": 0.005276073992718011
+      },
+      {
+        "direction": "send",
+        "stage": "full/ridge_statistics/request",
+        "client": 5,
+        "payload_bytes": 110,
+        "framed_bytes": 118,
+        "serialize_seconds": 2.0230072550475597e-06,
+        "io_seconds": 0.005260491016088054
+      },
+      {
+        "direction": "recv",
+        "stage": "full/ridge_statistics",
+        "client": 5,
+        "payload_bytes": 10466857,
+        "framed_bytes": 10466865,
+        "deserialize_seconds": 0.0007817680016160011,
+        "io_seconds": 4.759662373980973
+      },
+      {
+        "direction": "send",
+        "stage": "full/entropy/request",
+        "client": 5,
+        "payload_bytes": 94,
+        "framed_bytes": 102,
+        "serialize_seconds": 4.272005753591657e-06,
+        "io_seconds": 0.005271261994494125
+      },
+      {
+        "direction": "recv",
+        "stage": "full/entropy",
+        "client": 5,
+        "payload_bytes": 130155,
+        "framed_bytes": 130163,
+        "deserialize_seconds": 9.86380036920309e-05,
+        "io_seconds": 0.016247021994786337
+      },
+      {
+        "direction": "send",
+        "stage": "full/preliminary_moments/request",
+        "client": 5,
+        "payload_bytes": 18547,
+        "framed_bytes": 18555,
+        "serialize_seconds": 5.45359798707068e-05,
+        "io_seconds": 0.006956147990422323
+      },
+      {
+        "direction": "recv",
+        "stage": "full/preliminary_moments",
+        "client": 5,
+        "payload_bytes": 2754145,
+        "framed_bytes": 2754153,
+        "deserialize_seconds": 0.0011024150007870048,
+        "io_seconds": 0.2864068229973782
+      },
+      {
+        "direction": "send",
+        "stage": "full/purification_statistics/request",
+        "client": 5,
+        "payload_bytes": 328619,
+        "framed_bytes": 328627,
+        "serialize_seconds": 4.667299799621105e-05,
+        "io_seconds": 0.03163365900400095
+      },
+      {
+        "direction": "recv",
+        "stage": "full/purification_statistics",
+        "client": 5,
+        "payload_bytes": 2159,
+        "framed_bytes": 2167,
+        "deserialize_seconds": 4.6208995627239347e-05,
+        "io_seconds": 0.009800405008718371
+      },
+      {
+        "direction": "send",
+        "stage": "full/final_moments/request",
+        "client": 5,
+        "payload_bytes": 879,
+        "framed_bytes": 887,
+        "serialize_seconds": 2.8331007342785597e-05,
+        "io_seconds": 0.005345428013242781
+      },
+      {
+        "direction": "recv",
+        "stage": "full/final_moments",
+        "client": 5,
+        "payload_bytes": 2754139,
+        "framed_bytes": 2754147,
+        "deserialize_seconds": 0.00026517498190514743,
+        "io_seconds": 0.26971753500401974
+      },
+      {
+        "direction": "send",
+        "stage": "17/ridge_statistics/request",
+        "client": 5,
+        "payload_bytes": 104,
+        "framed_bytes": 112,
+        "serialize_seconds": 6.072979886084795e-06,
+        "io_seconds": 0.0053918590128887445
+      },
+      {
+        "direction": "recv",
+        "stage": "17/ridge_statistics",
+        "client": 5,
+        "payload_bytes": 10466855,
+        "framed_bytes": 10466863,
+        "deserialize_seconds": 0.0031951740093063563,
+        "io_seconds": 3.9542584440205246
+      },
+      {
+        "direction": "send",
+        "stage": "17/entropy/request",
+        "client": 5,
+        "payload_bytes": 88,
+        "framed_bytes": 96,
+        "serialize_seconds": 4.782021278515458e-06,
+        "io_seconds": 0.005271256988635287
+      },
+      {
+        "direction": "recv",
+        "stage": "17/entropy",
+        "client": 5,
+        "payload_bytes": 123308,
+        "framed_bytes": 123316,
+        "deserialize_seconds": 8.915498619899154e-05,
+        "io_seconds": 0.015812085999641567
+      },
+      {
+        "direction": "send",
+        "stage": "17/preliminary_moments/request",
+        "client": 5,
+        "payload_bytes": 18875,
+        "framed_bytes": 18883,
+        "serialize_seconds": 5.396798951551318e-05,
+        "io_seconds": 0.006838674016762525
+      },
+      {
+        "direction": "recv",
+        "stage": "17/preliminary_moments",
+        "client": 5,
+        "payload_bytes": 2754143,
+        "framed_bytes": 2754151,
+        "deserialize_seconds": 0.00021620499319396913,
+        "io_seconds": 0.2863014960021246
+      },
+      {
+        "direction": "send",
+        "stage": "17/purification_statistics/request",
+        "client": 5,
+        "payload_bytes": 328613,
+        "framed_bytes": 328621,
+        "serialize_seconds": 3.7551013519987464e-05,
+        "io_seconds": 0.031794537004316226
+      },
+      {
+        "direction": "recv",
+        "stage": "17/purification_statistics",
+        "client": 5,
+        "payload_bytes": 2157,
+        "framed_bytes": 2165,
+        "deserialize_seconds": 2.5626999558880925e-05,
+        "io_seconds": 0.009799599007237703
+      },
+      {
+        "direction": "send",
+        "stage": "17/final_moments/request",
+        "client": 5,
+        "payload_bytes": 873,
+        "framed_bytes": 881,
+        "serialize_seconds": 2.8080976335331798e-05,
+        "io_seconds": 0.005416389991296455
+      },
+      {
+        "direction": "recv",
+        "stage": "17/final_moments",
+        "client": 5,
+        "payload_bytes": 2754137,
+        "framed_bytes": 2754145,
+        "deserialize_seconds": 0.00019099900964647532,
+        "io_seconds": 0.2701267180091236
+      },
+      {
+        "direction": "send",
+        "stage": "17/validation_scores_labels/request",
+        "client": 5,
+        "payload_bytes": 4762186,
+        "framed_bytes": 4762194,
+        "serialize_seconds": 0.0007843490166123956,
+        "io_seconds": 0.38656773799448274
+      },
+      {
+        "direction": "recv",
+        "stage": "17/validation_scores_labels",
+        "client": 5,
+        "payload_bytes": 7144732,
+        "framed_bytes": 7144740,
+        "deserialize_seconds": 0.0002971600042656064,
+        "io_seconds": 1.0056244419829454
+      },
+      {
+        "direction": "send",
+        "stage": "17/calibration_ack/request",
+        "client": 5,
+        "payload_bytes": 1924,
+        "framed_bytes": 1932,
+        "serialize_seconds": 3.656200715340674e-05,
+        "io_seconds": 0.005395309999585152
+      },
+      {
+        "direction": "recv",
+        "stage": "17/calibration_ack",
+        "client": 5,
+        "payload_bytes": 44,
+        "framed_bytes": 52,
+        "deserialize_seconds": 5.880981916561723e-06,
+        "io_seconds": 0.005659517977619544
+      },
+      {
+        "direction": "send",
+        "stage": "deploy_ack/request",
+        "client": 5,
+        "payload_bytes": 518091,
+        "framed_bytes": 518099,
+        "serialize_seconds": 9.073599358089268e-05,
+        "io_seconds": 0.04683331900741905
+      },
+      {
+        "direction": "recv",
+        "stage": "deploy_ack",
+        "client": 5,
+        "payload_bytes": 36,
+        "framed_bytes": 44,
+        "deserialize_seconds": 5.87699469178915e-06,
+        "io_seconds": 0.005585194012382999
+      },
+      {
+        "direction": "send",
+        "stage": "stop",
+        "client": 5,
+        "payload_bytes": 31,
+        "framed_bytes": 39,
+        "serialize_seconds": 4.314992111176252e-06,
+        "io_seconds": 0.005184268986340612
+      },
+      {
+        "direction": "recv",
+        "stage": "client_metrics",
+        "client": 5,
+        "payload_bytes": 2765,
+        "framed_bytes": 2773,
+        "deserialize_seconds": 1.3042008504271507e-05,
+        "io_seconds": 5.763024091720581e-06
+      },
+      {
+        "direction": "recv",
+        "stage": "hello",
+        "client": -1,
+        "payload_bytes": 46,
+        "framed_bytes": 54,
+        "deserialize_seconds": 1.127898576669395e-05,
+        "io_seconds": 0.005211447976762429
+      },
+      {
+        "direction": "send",
+        "stage": "full/ridge_statistics/request",
+        "client": 8,
+        "payload_bytes": 110,
+        "framed_bytes": 118,
+        "serialize_seconds": 2.1099986042827368e-06,
+        "io_seconds": 0.005289561988320202
+      },
+      {
+        "direction": "recv",
+        "stage": "full/ridge_statistics",
+        "client": 8,
+        "payload_bytes": 10466857,
+        "framed_bytes": 10466865,
+        "deserialize_seconds": 0.0006507209909614176,
+        "io_seconds": 6.307109343993943
+      },
+      {
+        "direction": "send",
+        "stage": "full/entropy/request",
+        "client": 8,
+        "payload_bytes": 94,
+        "framed_bytes": 102,
+        "serialize_seconds": 4.089990397915244e-06,
+        "io_seconds": 0.005339461989933625
+      },
+      {
+        "direction": "recv",
+        "stage": "full/entropy",
+        "client": 8,
+        "payload_bytes": 143481,
+        "framed_bytes": 143489,
+        "deserialize_seconds": 8.483999408781528e-05,
+        "io_seconds": 0.017388944019330665
+      },
+      {
+        "direction": "send",
+        "stage": "full/preliminary_moments/request",
+        "client": 8,
+        "payload_bytes": 36292,
+        "framed_bytes": 36300,
+        "serialize_seconds": 8.003399125300348e-05,
+        "io_seconds": 0.008195301023079082
+      },
+      {
+        "direction": "recv",
+        "stage": "full/preliminary_moments",
+        "client": 8,
+        "payload_bytes": 2754145,
+        "framed_bytes": 2754153,
+        "deserialize_seconds": 0.0010888900142163038,
+        "io_seconds": 0.30732875800458714
+      },
+      {
+        "direction": "send",
+        "stage": "full/purification_statistics/request",
+        "client": 8,
+        "payload_bytes": 328619,
+        "framed_bytes": 328627,
+        "serialize_seconds": 3.337798989377916e-05,
+        "io_seconds": 0.03162506999797188
+      },
+      {
+        "direction": "recv",
+        "stage": "full/purification_statistics",
+        "client": 8,
+        "payload_bytes": 2159,
+        "framed_bytes": 2167,
+        "deserialize_seconds": 4.369899397715926e-05,
+        "io_seconds": 0.013387097016675398
+      },
+      {
+        "direction": "send",
+        "stage": "full/final_moments/request",
+        "client": 8,
+        "payload_bytes": 879,
+        "framed_bytes": 887,
+        "serialize_seconds": 2.730300184339285e-05,
+        "io_seconds": 0.00527467398205772
+      },
+      {
+        "direction": "recv",
+        "stage": "full/final_moments",
+        "client": 8,
+        "payload_bytes": 2754139,
+        "framed_bytes": 2754147,
+        "deserialize_seconds": 0.0008951519848778844,
+        "io_seconds": 0.27507672700448893
+      },
+      {
+        "direction": "send",
+        "stage": "17/ridge_statistics/request",
+        "client": 8,
+        "payload_bytes": 104,
+        "framed_bytes": 112,
+        "serialize_seconds": 2.095010131597519e-06,
+        "io_seconds": 0.005291598994517699
+      },
+      {
+        "direction": "recv",
+        "stage": "17/ridge_statistics",
+        "client": 8,
+        "payload_bytes": 10466855,
+        "framed_bytes": 10466863,
+        "deserialize_seconds": 0.002969862980535254,
+        "io_seconds": 5.451621693995548
+      },
+      {
+        "direction": "send",
+        "stage": "17/entropy/request",
+        "client": 8,
+        "payload_bytes": 88,
+        "framed_bytes": 96,
+        "serialize_seconds": 3.6349811125546694e-06,
+        "io_seconds": 0.005269581015454605
+      },
+      {
+        "direction": "recv",
+        "stage": "17/entropy",
+        "client": 8,
+        "payload_bytes": 139941,
+        "framed_bytes": 139949,
+        "deserialize_seconds": 7.775798439979553e-05,
+        "io_seconds": 0.01729099699878134
+      },
+      {
+        "direction": "send",
+        "stage": "17/preliminary_moments/request",
+        "client": 8,
+        "payload_bytes": 36865,
+        "framed_bytes": 36873,
+        "serialize_seconds": 7.997200009413064e-05,
+        "io_seconds": 0.008355591999134049
+      },
+      {
+        "direction": "recv",
+        "stage": "17/preliminary_moments",
+        "client": 8,
+        "payload_bytes": 2754143,
+        "framed_bytes": 2754151,
+        "deserialize_seconds": 0.00020529600442387164,
+        "io_seconds": 0.3056432210141793
+      },
+      {
+        "direction": "send",
+        "stage": "17/purification_statistics/request",
+        "client": 8,
+        "payload_bytes": 328613,
+        "framed_bytes": 328621,
+        "serialize_seconds": 3.339801332913339e-05,
+        "io_seconds": 0.031637658015824854
+      },
+      {
+        "direction": "recv",
+        "stage": "17/purification_statistics",
+        "client": 8,
+        "payload_bytes": 2157,
+        "framed_bytes": 2165,
+        "deserialize_seconds": 3.725299029611051e-05,
+        "io_seconds": 0.013603633007733151
+      },
+      {
+        "direction": "send",
+        "stage": "17/final_moments/request",
+        "client": 8,
+        "payload_bytes": 873,
+        "framed_bytes": 881,
+        "serialize_seconds": 3.07890004478395e-05,
+        "io_seconds": 0.005343547003576532
+      },
+      {
+        "direction": "recv",
+        "stage": "17/final_moments",
+        "client": 8,
+        "payload_bytes": 2754137,
+        "framed_bytes": 2754145,
+        "deserialize_seconds": 0.0001897730107884854,
+        "io_seconds": 0.2751873939996585
+      },
+      {
+        "direction": "send",
+        "stage": "17/validation_scores_labels/request",
+        "client": 8,
+        "payload_bytes": 4762186,
+        "framed_bytes": 4762194,
+        "serialize_seconds": 0.0006274179904721677,
+        "io_seconds": 0.38643615099135786
+      },
+      {
+        "direction": "recv",
+        "stage": "17/validation_scores_labels",
+        "client": 8,
+        "payload_bytes": 8711556,
+        "framed_bytes": 8711564,
+        "deserialize_seconds": 0.00035535599454306066,
+        "io_seconds": 1.2573488980124239
+      },
+      {
+        "direction": "send",
+        "stage": "17/calibration_ack/request",
+        "client": 8,
+        "payload_bytes": 1924,
+        "framed_bytes": 1932,
+        "serialize_seconds": 4.367702058516443e-05,
+        "io_seconds": 0.005412800994236022
+      },
+      {
+        "direction": "recv",
+        "stage": "17/calibration_ack",
+        "client": 8,
+        "payload_bytes": 44,
+        "framed_bytes": 52,
+        "deserialize_seconds": 5.854002665728331e-06,
+        "io_seconds": 0.005708580021746457
+      },
+      {
+        "direction": "send",
+        "stage": "deploy_ack/request",
+        "client": 8,
+        "payload_bytes": 518091,
+        "framed_bytes": 518099,
+        "serialize_seconds": 4.882898065261543e-05,
+        "io_seconds": 0.04682604200206697
+      },
+      {
+        "direction": "recv",
+        "stage": "deploy_ack",
+        "client": 8,
+        "payload_bytes": 36,
+        "framed_bytes": 44,
+        "deserialize_seconds": 5.949026672169566e-06,
+        "io_seconds": 0.005739718995755538
+      },
+      {
+        "direction": "send",
+        "stage": "stop",
+        "client": 8,
+        "payload_bytes": 31,
+        "framed_bytes": 39,
+        "serialize_seconds": 3.416003892198205e-06,
+        "io_seconds": 0.005174043006263673
+      },
+      {
+        "direction": "recv",
+        "stage": "client_metrics",
+        "client": 8,
+        "payload_bytes": 2765,
+        "framed_bytes": 2773,
+        "deserialize_seconds": 1.2904987670481205e-05,
+        "io_seconds": 5.827983841300011e-06
+      },
+      {
+        "direction": "recv",
+        "stage": "hello",
+        "client": -1,
+        "payload_bytes": 46,
+        "framed_bytes": 54,
+        "deserialize_seconds": 6.2489998526871204e-06,
+        "io_seconds": 0.001386482996167615
+      },
+      {
+        "direction": "send",
+        "stage": "full/ridge_statistics/request",
+        "client": 0,
+        "payload_bytes": 110,
+        "framed_bytes": 118,
+        "serialize_seconds": 7.238995749503374e-06,
+        "io_seconds": 0.005253847019048408
+      },
+      {
+        "direction": "recv",
+        "stage": "full/ridge_statistics",
+        "client": 0,
+        "payload_bytes": 10466857,
+        "framed_bytes": 10466865,
+        "deserialize_seconds": 0.003046775993425399,
+        "io_seconds": 7.050678378000157
+      },
+      {
+        "direction": "send",
+        "stage": "full/entropy/request",
+        "client": 0,
+        "payload_bytes": 94,
+        "framed_bytes": 102,
+        "serialize_seconds": 3.811001079156995e-06,
+        "io_seconds": 0.005310065986122936
+      },
+      {
+        "direction": "recv",
+        "stage": "full/entropy",
+        "client": 0,
+        "payload_bytes": 141737,
+        "framed_bytes": 141745,
+        "deserialize_seconds": 0.00010735599789768457,
+        "io_seconds": 0.01724014600040391
+      },
+      {
+        "direction": "send",
+        "stage": "full/preliminary_moments/request",
+        "client": 0,
+        "payload_bytes": 65840,
+        "framed_bytes": 65848,
+        "serialize_seconds": 8.640901069156826e-05,
+        "io_seconds": 0.010585185984382406
+      },
+      {
+        "direction": "recv",
+        "stage": "full/preliminary_moments",
+        "client": 0,
+        "payload_bytes": 2754145,
+        "framed_bytes": 2754153,
+        "deserialize_seconds": 0.000186677003512159,
+        "io_seconds": 0.353708321985323
+      },
+      {
+        "direction": "send",
+        "stage": "full/purification_statistics/request",
+        "client": 0,
+        "payload_bytes": 328619,
+        "framed_bytes": 328627,
+        "serialize_seconds": 5.7456985814496875e-05,
+        "io_seconds": 0.03149515500990674
+      },
+      {
+        "direction": "recv",
+        "stage": "full/purification_statistics",
+        "client": 0,
+        "payload_bytes": 2159,
+        "framed_bytes": 2167,
+        "deserialize_seconds": 3.875201218761504e-05,
+        "io_seconds": 0.01988656201865524
+      },
+      {
+        "direction": "send",
+        "stage": "full/final_moments/request",
+        "client": 0,
+        "payload_bytes": 879,
+        "framed_bytes": 887,
+        "serialize_seconds": 2.7928006602451205e-05,
+        "io_seconds": 0.005366689991205931
+      },
+      {
+        "direction": "recv",
+        "stage": "full/final_moments",
+        "client": 0,
+        "payload_bytes": 2754139,
+        "framed_bytes": 2754147,
+        "deserialize_seconds": 0.00019166900892741978,
+        "io_seconds": 0.27821782301180065
+      },
+      {
+        "direction": "send",
+        "stage": "17/ridge_statistics/request",
+        "client": 0,
+        "payload_bytes": 104,
+        "framed_bytes": 112,
+        "serialize_seconds": 0.00021518900757655501,
+        "io_seconds": 0.005197215999942273
+      },
+      {
+        "direction": "recv",
+        "stage": "17/ridge_statistics",
+        "client": 0,
+        "payload_bytes": 10466855,
+        "framed_bytes": 10466863,
+        "deserialize_seconds": 0.0029931959870737046,
+        "io_seconds": 5.415901533007855
+      },
+      {
+        "direction": "send",
+        "stage": "17/entropy/request",
+        "client": 0,
+        "payload_bytes": 88,
+        "framed_bytes": 96,
+        "serialize_seconds": 5.537993274629116e-06,
+        "io_seconds": 0.005263153987471014
+      },
+      {
+        "direction": "recv",
+        "stage": "17/entropy",
+        "client": 0,
+        "payload_bytes": 136881,
+        "framed_bytes": 136889,
+        "deserialize_seconds": 0.00010303797898814082,
+        "io_seconds": 0.016873535991180688
+      },
+      {
+        "direction": "send",
+        "stage": "17/preliminary_moments/request",
+        "client": 0,
+        "payload_bytes": 64472,
+        "framed_bytes": 64480,
+        "serialize_seconds": 7.603300036862493e-05,
+        "io_seconds": 0.010403847001725808
+      },
+      {
+        "direction": "recv",
+        "stage": "17/preliminary_moments",
+        "client": 0,
+        "payload_bytes": 2754143,
+        "framed_bytes": 2754151,
+        "deserialize_seconds": 0.0002389949804637581,
+        "io_seconds": 0.3435513509903103
+      },
+      {
+        "direction": "send",
+        "stage": "17/purification_statistics/request",
+        "client": 0,
+        "payload_bytes": 328613,
+        "framed_bytes": 328621,
+        "serialize_seconds": 6.454999675042927e-05,
+        "io_seconds": 0.03163727599894628
+      },
+      {
+        "direction": "recv",
+        "stage": "17/purification_statistics",
+        "client": 0,
+        "payload_bytes": 2157,
+        "framed_bytes": 2165,
+        "deserialize_seconds": 3.6684999940916896e-05,
+        "io_seconds": 0.019096178002655506
+      },
+      {
+        "direction": "send",
+        "stage": "17/final_moments/request",
+        "client": 0,
+        "payload_bytes": 873,
+        "framed_bytes": 881,
+        "serialize_seconds": 2.5112007278949022e-05,
+        "io_seconds": 0.005335677997209132
+      },
+      {
+        "direction": "recv",
+        "stage": "17/final_moments",
+        "client": 0,
+        "payload_bytes": 2754137,
+        "framed_bytes": 2754145,
+        "deserialize_seconds": 0.0002538760018069297,
+        "io_seconds": 0.27777566798613407
+      },
+      {
+        "direction": "send",
+        "stage": "17/validation_scores_labels/request",
+        "client": 0,
+        "payload_bytes": 4762186,
+        "framed_bytes": 4762194,
+        "serialize_seconds": 0.001729790004901588,
+        "io_seconds": 0.3865426949923858
+      },
+      {
+        "direction": "recv",
+        "stage": "17/validation_scores_labels",
+        "client": 0,
+        "payload_bytes": 9935780,
+        "framed_bytes": 9935788,
+        "deserialize_seconds": 0.0004244640003889799,
+        "io_seconds": 1.4219099069887307
+      },
+      {
+        "direction": "send",
+        "stage": "17/calibration_ack/request",
+        "client": 0,
+        "payload_bytes": 1924,
+        "framed_bytes": 1932,
+        "serialize_seconds": 3.0006980523467064e-05,
+        "io_seconds": 0.005617051006993279
+      },
+      {
+        "direction": "recv",
+        "stage": "17/calibration_ack",
+        "client": 0,
+        "payload_bytes": 44,
+        "framed_bytes": 52,
+        "deserialize_seconds": 6.80901575833559e-06,
+        "io_seconds": 0.005665646021952853
+      },
+      {
+        "direction": "send",
+        "stage": "deploy_ack/request",
+        "client": 0,
+        "payload_bytes": 518091,
+        "framed_bytes": 518099,
+        "serialize_seconds": 0.00012014800449833274,
+        "io_seconds": 0.04676036999444477
+      },
+      {
+        "direction": "recv",
+        "stage": "deploy_ack",
+        "client": 0,
+        "payload_bytes": 36,
+        "framed_bytes": 44,
+        "deserialize_seconds": 6.344984285533428e-06,
+        "io_seconds": 0.00575765100074932
+      },
+      {
+        "direction": "send",
+        "stage": "stop",
+        "client": 0,
+        "payload_bytes": 31,
+        "framed_bytes": 39,
+        "serialize_seconds": 3.644003299996257e-06,
+        "io_seconds": 0.0051768909906968474
+      },
+      {
+        "direction": "recv",
+        "stage": "client_metrics",
+        "client": 0,
+        "payload_bytes": 2769,
+        "framed_bytes": 2777,
+        "deserialize_seconds": 1.682300353422761e-05,
+        "io_seconds": 5.445996066555381e-06
+      },
+      {
+        "direction": "recv",
+        "stage": "hello",
+        "client": -1,
+        "payload_bytes": 46,
+        "framed_bytes": 54,
+        "deserialize_seconds": 1.0463001672178507e-05,
+        "io_seconds": 0.005113371997140348
+      },
+      {
+        "direction": "send",
+        "stage": "full/ridge_statistics/request",
+        "client": 1,
+        "payload_bytes": 110,
+        "framed_bytes": 118,
+        "serialize_seconds": 2.3869797587394714e-06,
+        "io_seconds": 0.0053031520219519734
+      },
+      {
+        "direction": "recv",
+        "stage": "full/ridge_statistics",
+        "client": 1,
+        "payload_bytes": 10466857,
+        "framed_bytes": 10466865,
+        "deserialize_seconds": 0.00321204200736247,
+        "io_seconds": 4.980049912002869
+      },
+      {
+        "direction": "send",
+        "stage": "full/entropy/request",
+        "client": 1,
+        "payload_bytes": 94,
+        "framed_bytes": 102,
+        "serialize_seconds": 3.741995897144079e-06,
+        "io_seconds": 0.005216581019340083
+      },
+      {
+        "direction": "recv",
+        "stage": "full/entropy",
+        "client": 1,
+        "payload_bytes": 117532,
+        "framed_bytes": 117540,
+        "deserialize_seconds": 0.00010773498797789216,
+        "io_seconds": 0.01547850901260972
+      },
+      {
+        "direction": "send",
+        "stage": "full/preliminary_moments/request",
+        "client": 1,
+        "payload_bytes": 16726,
+        "framed_bytes": 16734,
+        "serialize_seconds": 6.115299765951931e-05,
+        "io_seconds": 0.006573588005267084
+      },
+      {
+        "direction": "recv",
+        "stage": "full/preliminary_moments",
+        "client": 1,
+        "payload_bytes": 2754145,
+        "framed_bytes": 2754153,
+        "deserialize_seconds": 0.00020546000450849533,
+        "io_seconds": 0.2865754690137692
+      },
+      {
+        "direction": "send",
+        "stage": "full/purification_statistics/request",
+        "client": 1,
+        "payload_bytes": 328619,
+        "framed_bytes": 328627,
+        "serialize_seconds": 5.413300823420286e-05,
+        "io_seconds": 0.03153981198556721
+      },
+      {
+        "direction": "recv",
+        "stage": "full/purification_statistics",
+        "client": 1,
+        "payload_bytes": 2159,
+        "framed_bytes": 2167,
+        "deserialize_seconds": 4.779899609275162e-05,
+        "io_seconds": 0.009501252003246918
+      },
+      {
+        "direction": "send",
+        "stage": "full/final_moments/request",
+        "client": 1,
+        "payload_bytes": 879,
+        "framed_bytes": 887,
+        "serialize_seconds": 2.871500328183174e-05,
+        "io_seconds": 0.005434959981357679
+      },
+      {
+        "direction": "recv",
+        "stage": "full/final_moments",
+        "client": 1,
+        "payload_bytes": 2754139,
+        "framed_bytes": 2754147,
+        "deserialize_seconds": 0.0002080109843518585,
+        "io_seconds": 0.2706169309967663
+      },
+      {
+        "direction": "send",
+        "stage": "17/ridge_statistics/request",
+        "client": 1,
+        "payload_bytes": 104,
+        "framed_bytes": 112,
+        "serialize_seconds": 2.2460008040070534e-06,
+        "io_seconds": 0.005281269986880943
+      },
+      {
+        "direction": "recv",
+        "stage": "17/ridge_statistics",
+        "client": 1,
+        "payload_bytes": 10466855,
+        "framed_bytes": 10466863,
+        "deserialize_seconds": 0.0029356479935813695,
+        "io_seconds": 3.97985058001359
+      },
+      {
+        "direction": "send",
+        "stage": "17/entropy/request",
+        "client": 1,
+        "payload_bytes": 88,
+        "framed_bytes": 96,
+        "serialize_seconds": 4.924979293718934e-06,
+        "io_seconds": 0.005222375999437645
+      },
+      {
+        "direction": "recv",
+        "stage": "17/entropy",
+        "client": 1,
+        "payload_bytes": 112090,
+        "framed_bytes": 112098,
+        "deserialize_seconds": 0.00010604801354929805,
+        "io_seconds": 0.015173633000813425
+      },
+      {
+        "direction": "send",
+        "stage": "17/preliminary_moments/request",
+        "client": 1,
+        "payload_bytes": 16994,
+        "framed_bytes": 17002,
+        "serialize_seconds": 6.0004007536917925e-05,
+        "io_seconds": 0.006642306980211288
+      },
+      {
+        "direction": "recv",
+        "stage": "17/preliminary_moments",
+        "client": 1,
+        "payload_bytes": 2754143,
+        "framed_bytes": 2754151,
+        "deserialize_seconds": 0.00024449999909847975,
+        "io_seconds": 0.29243818900431506
+      },
+      {
+        "direction": "send",
+        "stage": "17/purification_statistics/request",
+        "client": 1,
+        "payload_bytes": 328613,
+        "framed_bytes": 328621,
+        "serialize_seconds": 6.742600817233324e-05,
+        "io_seconds": 0.03160978402593173
+      },
+      {
+        "direction": "recv",
+        "stage": "17/purification_statistics",
+        "client": 1,
+        "payload_bytes": 2157,
+        "framed_bytes": 2165,
+        "deserialize_seconds": 3.147899406030774e-05,
+        "io_seconds": 0.009401221992447972
+      },
+      {
+        "direction": "send",
+        "stage": "17/final_moments/request",
+        "client": 1,
+        "payload_bytes": 873,
+        "framed_bytes": 881,
+        "serialize_seconds": 3.155198646709323e-05,
+        "io_seconds": 0.005208911985391751
+      },
+      {
+        "direction": "recv",
+        "stage": "17/final_moments",
+        "client": 1,
+        "payload_bytes": 2754137,
+        "framed_bytes": 2754145,
+        "deserialize_seconds": 0.0002066289889626205,
+        "io_seconds": 0.2709295189997647
+      },
+      {
+        "direction": "send",
+        "stage": "17/validation_scores_labels/request",
+        "client": 1,
+        "payload_bytes": 4762186,
+        "framed_bytes": 4762194,
+        "serialize_seconds": 0.0008516980160493404,
+        "io_seconds": 0.38646028298535384
+      },
+      {
+        "direction": "recv",
+        "stage": "17/validation_scores_labels",
+        "client": 1,
+        "payload_bytes": 6199156,
+        "framed_bytes": 6199164,
+        "deserialize_seconds": 0.0002827639982569963,
+        "io_seconds": 0.9123717049951665
+      },
+      {
+        "direction": "send",
+        "stage": "17/calibration_ack/request",
+        "client": 1,
+        "payload_bytes": 1924,
+        "framed_bytes": 1932,
+        "serialize_seconds": 2.7812988264486194e-05,
+        "io_seconds": 0.0053993020264897496
+      },
+      {
+        "direction": "recv",
+        "stage": "17/calibration_ack",
+        "client": 1,
+        "payload_bytes": 44,
+        "framed_bytes": 52,
+        "deserialize_seconds": 2.187007339671254e-06,
+        "io_seconds": 0.0056820229801815
+      },
+      {
+        "direction": "send",
+        "stage": "deploy_ack/request",
+        "client": 1,
+        "payload_bytes": 518091,
+        "framed_bytes": 518099,
+        "serialize_seconds": 7.669601473025978e-05,
+        "io_seconds": 0.04684056297992356
+      },
+      {
+        "direction": "recv",
+        "stage": "deploy_ack",
+        "client": 1,
+        "payload_bytes": 36,
+        "framed_bytes": 44,
+        "deserialize_seconds": 5.109002813696861e-06,
+        "io_seconds": 0.005808432004414499
+      },
+      {
+        "direction": "send",
+        "stage": "stop",
+        "client": 1,
+        "payload_bytes": 31,
+        "framed_bytes": 39,
+        "serialize_seconds": 3.962981281802058e-06,
+        "io_seconds": 0.005180367996217683
+      },
+      {
+        "direction": "recv",
+        "stage": "client_metrics",
+        "client": 1,
+        "payload_bytes": 2765,
+        "framed_bytes": 2773,
+        "deserialize_seconds": 3.0306022381410003e-05,
+        "io_seconds": 0.00032922401442192495
+      },
+      {
+        "direction": "recv",
+        "stage": "hello",
+        "client": -1,
+        "payload_bytes": 46,
+        "framed_bytes": 54,
+        "deserialize_seconds": 6.009009666740894e-06,
+        "io_seconds": 0.0029041699890512973
+      },
+      {
+        "direction": "send",
+        "stage": "full/ridge_statistics/request",
+        "client": 3,
+        "payload_bytes": 110,
+        "framed_bytes": 118,
+        "serialize_seconds": 2.921005943790078e-06,
+        "io_seconds": 0.0052348870085552335
+      },
+      {
+        "direction": "recv",
+        "stage": "full/ridge_statistics",
+        "client": 3,
+        "payload_bytes": 10466857,
+        "framed_bytes": 10466865,
+        "deserialize_seconds": 0.0030911630019545555,
+        "io_seconds": 7.753935396991437
+      },
+      {
+        "direction": "send",
+        "stage": "full/entropy/request",
+        "client": 3,
+        "payload_bytes": 94,
+        "framed_bytes": 102,
+        "serialize_seconds": 4.402012564241886e-06,
+        "io_seconds": 0.005269960995065048
+      },
+      {
+        "direction": "recv",
+        "stage": "full/entropy",
+        "client": 3,
+        "payload_bytes": 154907,
+        "framed_bytes": 154915,
+        "deserialize_seconds": 0.00015267700655385852,
+        "io_seconds": 0.01843628298956901
+      },
+      {
+        "direction": "send",
+        "stage": "full/preliminary_moments/request",
+        "client": 3,
+        "payload_bytes": 66301,
+        "framed_bytes": 66309,
+        "serialize_seconds": 0.0001108029973693192,
+        "io_seconds": 0.010700238985009491
+      },
+      {
+        "direction": "recv",
+        "stage": "full/preliminary_moments",
+        "client": 3,
+        "payload_bytes": 2754145,
+        "framed_bytes": 2754153,
+        "deserialize_seconds": 0.0009558179881423712,
+        "io_seconds": 0.34508615199592896
+      },
+      {
+        "direction": "send",
+        "stage": "full/purification_statistics/request",
+        "client": 3,
+        "payload_bytes": 328619,
+        "framed_bytes": 328627,
+        "serialize_seconds": 3.484298940747976e-05,
+        "io_seconds": 0.03145217098062858
+      },
+      {
+        "direction": "recv",
+        "stage": "full/purification_statistics",
+        "client": 3,
+        "payload_bytes": 2159,
+        "framed_bytes": 2167,
+        "deserialize_seconds": 4.988099681213498e-05,
+        "io_seconds": 0.019453759014140815
+      },
+      {
+        "direction": "send",
+        "stage": "full/final_moments/request",
+        "client": 3,
+        "payload_bytes": 879,
+        "framed_bytes": 887,
+        "serialize_seconds": 3.911400563083589e-05,
+        "io_seconds": 0.005347327009076253
+      },
+      {
+        "direction": "recv",
+        "stage": "full/final_moments",
+        "client": 3,
+        "payload_bytes": 2754139,
+        "framed_bytes": 2754147,
+        "deserialize_seconds": 0.0001938659988809377,
+        "io_seconds": 0.28080285497708246
+      },
+      {
+        "direction": "send",
+        "stage": "17/ridge_statistics/request",
+        "client": 3,
+        "payload_bytes": 104,
+        "framed_bytes": 112,
+        "serialize_seconds": 2.0269944798201323e-06,
+        "io_seconds": 0.005287610023515299
+      },
+      {
+        "direction": "recv",
+        "stage": "17/ridge_statistics",
+        "client": 3,
+        "payload_bytes": 10466855,
+        "framed_bytes": 10466863,
+        "deserialize_seconds": 0.0030373299960047007,
+        "io_seconds": 6.470615212019766
+      },
+      {
+        "direction": "send",
+        "stage": "17/entropy/request",
+        "client": 3,
+        "payload_bytes": 88,
+        "framed_bytes": 96,
+        "serialize_seconds": 4.294997779652476e-06,
+        "io_seconds": 0.005270255001960322
+      },
+      {
+        "direction": "recv",
+        "stage": "17/entropy",
+        "client": 3,
+        "payload_bytes": 151909,
+        "framed_bytes": 151917,
+        "deserialize_seconds": 0.0001047859841492027,
+        "io_seconds": 0.018241484998725355
+      },
+      {
+        "direction": "send",
+        "stage": "17/preliminary_moments/request",
+        "client": 3,
+        "payload_bytes": 67207,
+        "framed_bytes": 67215,
+        "serialize_seconds": 9.866699110716581e-05,
+        "io_seconds": 0.010571549995802343
+      },
+      {
+        "direction": "recv",
+        "stage": "17/preliminary_moments",
+        "client": 3,
+        "payload_bytes": 2754143,
+        "framed_bytes": 2754151,
+        "deserialize_seconds": 0.00018247400294058025,
+        "io_seconds": 0.3464961870049592
+      },
+      {
+        "direction": "send",
+        "stage": "17/purification_statistics/request",
+        "client": 3,
+        "payload_bytes": 328613,
+        "framed_bytes": 328621,
+        "serialize_seconds": 3.3513002563267946e-05,
+        "io_seconds": 0.03164214300340973
+      },
+      {
+        "direction": "recv",
+        "stage": "17/purification_statistics",
+        "client": 3,
+        "payload_bytes": 2157,
+        "framed_bytes": 2165,
+        "deserialize_seconds": 4.151000757701695e-05,
+        "io_seconds": 0.019691866007633507
+      },
+      {
+        "direction": "send",
+        "stage": "17/final_moments/request",
+        "client": 3,
+        "payload_bytes": 873,
+        "framed_bytes": 881,
+        "serialize_seconds": 2.9632006771862507e-05,
+        "io_seconds": 0.005282294994685799
+      },
+      {
+        "direction": "recv",
+        "stage": "17/final_moments",
+        "client": 3,
+        "payload_bytes": 2754137,
+        "framed_bytes": 2754145,
+        "deserialize_seconds": 0.0001907210098579526,
+        "io_seconds": 0.28163529801531695
+      },
+      {
+        "direction": "send",
+        "stage": "17/validation_scores_labels/request",
+        "client": 3,
+        "payload_bytes": 4762186,
+        "framed_bytes": 4762194,
+        "serialize_seconds": 0.0008324200171045959,
+        "io_seconds": 0.3865920289827045
+      },
+      {
+        "direction": "recv",
+        "stage": "17/validation_scores_labels",
+        "client": 3,
+        "payload_bytes": 10643820,
+        "framed_bytes": 10643828,
+        "deserialize_seconds": 0.0007451870187651366,
+        "io_seconds": 1.5575207329820842
+      },
+      {
+        "direction": "send",
+        "stage": "17/calibration_ack/request",
+        "client": 3,
+        "payload_bytes": 1924,
+        "framed_bytes": 1932,
+        "serialize_seconds": 4.726400948129594e-05,
+        "io_seconds": 0.005480830994201824
+      },
+      {
+        "direction": "recv",
+        "stage": "17/calibration_ack",
+        "client": 3,
+        "payload_bytes": 44,
+        "framed_bytes": 52,
+        "deserialize_seconds": 6.6159991547465324e-06,
+        "io_seconds": 0.005742793990066275
+      },
+      {
+        "direction": "send",
+        "stage": "deploy_ack/request",
+        "client": 3,
+        "payload_bytes": 518091,
+        "framed_bytes": 518099,
+        "serialize_seconds": 7.944597746245563e-05,
+        "io_seconds": 0.046894098981283605
+      },
+      {
+        "direction": "recv",
+        "stage": "deploy_ack",
+        "client": 3,
+        "payload_bytes": 36,
+        "framed_bytes": 44,
+        "deserialize_seconds": 4.460016498342156e-06,
+        "io_seconds": 0.005766596004832536
+      },
+      {
+        "direction": "send",
+        "stage": "stop",
+        "client": 3,
+        "payload_bytes": 31,
+        "framed_bytes": 39,
+        "serialize_seconds": 3.7259887903928757e-06,
+        "io_seconds": 0.005180870997719467
+      },
+      {
+        "direction": "recv",
+        "stage": "client_metrics",
+        "client": 3,
+        "payload_bytes": 2773,
+        "framed_bytes": 2781,
+        "deserialize_seconds": 2.95360223390162e-05,
+        "io_seconds": 0.0051658719894476235
+      }
+    ],
+    "transport": "Application-paced TCP loopback when SUPPLEMENT_MBIT/RTT_MS set; pickle5 payload plus 8-byte application frame header; excludes TCP/IP and kernel retransmission bytes",
+    "algorithm_uplink_stages": 11,
+    "algorithm_uplink_payload_bytes": 397185086,
+    "algorithm_uplink_framed_bytes": 397185966,
+    "selection_calibration_uplink_framed_bytes": 74992168,
+    "stage_count_note": "Algorithm uploads exclude hello, acknowledgement and telemetry; all-protocol totals include these control messages."
+  },
+  "phases": [
+    {
+      "phase": "full",
+      "wall_seconds": 61.65581382199889
+    },
+    {
+      "phase": "17",
+      "wall_seconds": 70.4763660869794
+    }
+  ],
+  "client_stats": [
+    {
+      "work": [
+        {
+          "stage": "full/ridge_statistics",
+          "op": "begin",
+          "phase": "full",
+          "seconds": 3.792735091992654
+        },
+        {
+          "stage": "full/entropy",
+          "op": "entropy",
+          "phase": "full",
+          "seconds": 0.00022729398915544152
+        },
+        {
+          "stage": "full/preliminary_moments",
+          "op": "moments",
+          "phase": "full",
+          "seconds": 0.06583900898112915
+        },
+        {
+          "stage": "full/purification_statistics",
+          "op": "purification",
+          "phase": "full",
+          "seconds": 0.004807980003533885
+        },
+        {
+          "stage": "full/final_moments",
+          "op": "final_moments",
+          "phase": "full",
+          "seconds": 0.044937389000551775
+        },
+        {
+          "stage": "17/ridge_statistics",
+          "op": "begin",
+          "phase": "17",
+          "seconds": 2.7981506700161844
+        },
+        {
+          "stage": "17/entropy",
+          "op": "entropy",
+          "phase": "17",
+          "seconds": 0.0002420470118522644
+        },
+        {
+          "stage": "17/preliminary_moments",
+          "op": "moments",
+          "phase": "17",
+          "seconds": 0.0661672500136774
+        },
+        {
+          "stage": "17/purification_statistics",
+          "op": "purification",
+          "phase": "17",
+          "seconds": 0.004623341985279694
+        },
+        {
+          "stage": "17/final_moments",
+          "op": "final_moments",
+          "phase": "17",
+          "seconds": 0.04391972298617475
+        },
+        {
+          "stage": "17/validation_scores_labels",
+          "op": "validation",
+          "phase": "17",
+          "seconds": 0.4244485439849086
+        },
+        {
+          "stage": "17/calibration_ack",
+          "op": "calibration",
+          "phase": "17",
+          "seconds": 8.393698954023421e-05
+        },
+        {
+          "stage": "deploy_ack",
+          "op": "deploy",
+          "phase": "",
+          "seconds": 9.876099647954106e-05
+        }
+      ],
+      "wire": [
+        {
+          "direction": "send",
+          "stage": "hello",
+          "client": 4,
+          "payload_bytes": 46,
+          "framed_bytes": 54,
+          "serialize_seconds": 7.21399555914104e-06,
+          "io_seconds": 0.005164100002730265
+        },
+        {
+          "direction": "recv",
+          "stage": "full/ridge_statistics/request",
+          "client": 4,
+          "payload_bytes": 110,
+          "framed_bytes": 118,
+          "deserialize_seconds": 1.4809018466621637e-05,
+          "io_seconds": 25.17840486697969
+        },
+        {
+          "direction": "send",
+          "stage": "full/ridge_statistics",
+          "client": 4,
+          "payload_bytes": 10466857,
+          "framed_bytes": 10466865,
+          "serialize_seconds": 0.0010645540023688227,
+          "io_seconds": 0.8432347849884536
+        },
+        {
+          "direction": "recv",
+          "stage": "full/entropy/request",
+          "client": 4,
+          "payload_bytes": 94,
+          "framed_bytes": 102,
+          "deserialize_seconds": 1.0406016372144222e-05,
+          "io_seconds": 0.008605833019828424
+        },
+        {
+          "direction": "send",
+          "stage": "full/entropy",
+          "client": 4,
+          "payload_bytes": 128985,
+          "framed_bytes": 128993,
+          "serialize_seconds": 0.00019195000641047955,
+          "io_seconds": 0.015749315993161872
+        },
+        {
+          "direction": "recv",
+          "stage": "full/preliminary_moments/request",
+          "client": 4,
+          "payload_bytes": 22237,
+          "framed_bytes": 22245,
+          "deserialize_seconds": 7.229801849462092e-05,
+          "io_seconds": 26.84365577599965
+        },
+        {
+          "direction": "send",
+          "stage": "full/preliminary_moments",
+          "client": 4,
+          "payload_bytes": 2754145,
+          "framed_bytes": 2754153,
+          "serialize_seconds": 0.00039632400148548186,
+          "io_seconds": 0.22577540299971588
+        },
+        {
+          "direction": "recv",
+          "stage": "full/purification_statistics/request",
+          "client": 4,
+          "payload_bytes": 328619,
+          "framed_bytes": 328627,
+          "deserialize_seconds": 6.37889897916466e-05,
+          "io_seconds": 1.7946702420013025
+        },
+        {
+          "direction": "send",
+          "stage": "full/purification_statistics",
+          "client": 4,
+          "payload_bytes": 2159,
+          "framed_bytes": 2167,
+          "serialize_seconds": 3.269800799898803e-05,
+          "io_seconds": 0.005429640004877001
+        },
+        {
+          "direction": "recv",
+          "stage": "full/final_moments/request",
+          "client": 4,
+          "payload_bytes": 879,
+          "framed_bytes": 887,
+          "deserialize_seconds": 4.9542984925210476e-05,
+          "io_seconds": 1.3517842139990535
+        },
+        {
+          "direction": "send",
+          "stage": "full/final_moments",
+          "client": 4,
+          "payload_bytes": 2754139,
+          "framed_bytes": 2754147,
+          "serialize_seconds": 0.0003190239949617535,
+          "io_seconds": 0.22575043002143502
+        },
+        {
+          "direction": "recv",
+          "stage": "17/ridge_statistics/request",
+          "client": 4,
+          "payload_bytes": 104,
+          "framed_bytes": 112,
+          "deserialize_seconds": 1.0916002793237567e-05,
+          "io_seconds": 21.34387744401465
+        },
+        {
+          "direction": "send",
+          "stage": "17/ridge_statistics",
+          "client": 4,
+          "payload_bytes": 10466855,
+          "framed_bytes": 10466863,
+          "serialize_seconds": 0.0007416330045089126,
+          "io_seconds": 0.8428655650059227
+        },
+        {
+          "direction": "recv",
+          "stage": "17/entropy/request",
+          "client": 4,
+          "payload_bytes": 88,
+          "framed_bytes": 96,
+          "deserialize_seconds": 1.0472984286025167e-05,
+          "io_seconds": 0.008844878000672907
+        },
+        {
+          "direction": "send",
+          "stage": "17/entropy",
+          "client": 4,
+          "payload_bytes": 125357,
+          "framed_bytes": 125365,
+          "serialize_seconds": 0.0001956310006789863,
+          "io_seconds": 0.015459490998182446
+        },
+        {
+          "direction": "recv",
+          "stage": "17/preliminary_moments/request",
+          "client": 4,
+          "payload_bytes": 21954,
+          "framed_bytes": 21962,
+          "deserialize_seconds": 8.159197750501335e-05,
+          "io_seconds": 23.025457454001298
+        },
+        {
+          "direction": "send",
+          "stage": "17/preliminary_moments",
+          "client": 4,
+          "payload_bytes": 2754143,
+          "framed_bytes": 2754151,
+          "serialize_seconds": 0.00040174199966713786,
+          "io_seconds": 0.22575656601111405
+        },
+        {
+          "direction": "recv",
+          "stage": "17/purification_statistics/request",
+          "client": 4,
+          "payload_bytes": 328613,
+          "framed_bytes": 328621,
+          "deserialize_seconds": 6.806800956837833e-05,
+          "io_seconds": 1.775359498016769
+        },
+        {
+          "direction": "send",
+          "stage": "17/purification_statistics",
+          "client": 4,
+          "payload_bytes": 2157,
+          "framed_bytes": 2165,
+          "serialize_seconds": 3.228700370527804e-05,
+          "io_seconds": 0.005432507983641699
+        },
+        {
+          "direction": "recv",
+          "stage": "17/final_moments/request",
+          "client": 4,
+          "payload_bytes": 873,
+          "framed_bytes": 881,
+          "deserialize_seconds": 4.358298610895872e-05,
+          "io_seconds": 1.3474937949795276
+        },
+        {
+          "direction": "send",
+          "stage": "17/final_moments",
+          "client": 4,
+          "payload_bytes": 2754137,
+          "framed_bytes": 2754145,
+          "serialize_seconds": 0.0003282609977759421,
+          "io_seconds": 0.22583676400245167
+        },
+        {
+          "direction": "recv",
+          "stage": "17/validation_scores_labels/request",
+          "client": 4,
+          "payload_bytes": 4762186,
+          "framed_bytes": 4762194,
+          "deserialize_seconds": 0.0005099060072097927,
+          "io_seconds": 8.316023451014189
+        },
+        {
+          "direction": "send",
+          "stage": "17/validation_scores_labels",
+          "client": 4,
+          "payload_bytes": 6240268,
+          "framed_bytes": 6240276,
+          "serialize_seconds": 0.000371859990991652,
+          "io_seconds": 0.5047756420099176
+        },
+        {
+          "direction": "recv",
+          "stage": "17/calibration_ack/request",
+          "client": 4,
+          "payload_bytes": 1924,
+          "framed_bytes": 1932,
+          "deserialize_seconds": 3.985301009379327e-05,
+          "io_seconds": 10.862242208997486
+        },
+        {
+          "direction": "send",
+          "stage": "17/calibration_ack",
+          "client": 4,
+          "payload_bytes": 44,
+          "framed_bytes": 52,
+          "serialize_seconds": 3.2059906516224146e-06,
+          "io_seconds": 0.005202508997172117
+        },
+        {
+          "direction": "recv",
+          "stage": "deploy_ack/request",
+          "client": 4,
+          "payload_bytes": 518091,
+          "framed_bytes": 518099,
+          "deserialize_seconds": 8.453900227323174e-05,
+          "io_seconds": 0.32488493400160223
+        },
+        {
+          "direction": "send",
+          "stage": "deploy_ack",
+          "client": 4,
+          "payload_bytes": 36,
+          "framed_bytes": 44,
+          "serialize_seconds": 2.2650056052953005e-06,
+          "io_seconds": 0.005261559999780729
+        },
+        {
+          "direction": "recv",
+          "stage": "stop",
+          "client": 4,
+          "payload_bytes": 31,
+          "framed_bytes": 39,
+          "deserialize_seconds": 6.057001883164048e-06,
+          "io_seconds": 0.2685671520011965
+        }
+      ],
+      "pid": 13481,
+      "peak_RSS_MiB": 3195.5390625
+    },
+    {
+      "work": [
+        {
+          "stage": "full/ridge_statistics",
+          "op": "begin",
+          "phase": "full",
+          "seconds": 3.7623373930109665
+        },
+        {
+          "stage": "full/entropy",
+          "op": "entropy",
+          "phase": "full",
+          "seconds": 0.00022392498794943094
+        },
+        {
+          "stage": "full/preliminary_moments",
+          "op": "moments",
+          "phase": "full",
+          "seconds": 0.06263070600107312
+        },
+        {
+          "stage": "full/purification_statistics",
+          "op": "purification",
+          "phase": "full",
+          "seconds": 0.0045130660000722855
+        },
+        {
+          "stage": "full/final_moments",
+          "op": "final_moments",
+          "phase": "full",
+          "seconds": 0.04471299800206907
+        },
+        {
+          "stage": "17/ridge_statistics",
+          "op": "begin",
+          "phase": "17",
+          "seconds": 3.1089604959997814
+        },
+        {
+          "stage": "17/entropy",
+          "op": "entropy",
+          "phase": "17",
+          "seconds": 0.00023210799554362893
+        },
+        {
+          "stage": "17/preliminary_moments",
+          "op": "moments",
+          "phase": "17",
+          "seconds": 0.06367435900028795
+        },
+        {
+          "stage": "17/purification_statistics",
+          "op": "purification",
+          "phase": "17",
+          "seconds": 0.004417959018610418
+        },
+        {
+          "stage": "17/final_moments",
+          "op": "final_moments",
+          "phase": "17",
+          "seconds": 0.04541640801471658
+        },
+        {
+          "stage": "17/validation_scores_labels",
+          "op": "validation",
+          "phase": "17",
+          "seconds": 0.4138907899905462
+        },
+        {
+          "stage": "17/calibration_ack",
+          "op": "calibration",
+          "phase": "17",
+          "seconds": 8.408501162193716e-05
+        },
+        {
+          "stage": "deploy_ack",
+          "op": "deploy",
+          "phase": "",
+          "seconds": 9.573099669069052e-05
+        }
+      ],
+      "wire": [
+        {
+          "direction": "send",
+          "stage": "hello",
+          "client": 6,
+          "payload_bytes": 46,
+          "framed_bytes": 54,
+          "serialize_seconds": 7.861002814024687e-06,
+          "io_seconds": 0.005160850996617228
+        },
+        {
+          "direction": "recv",
+          "stage": "full/ridge_statistics/request",
+          "client": 6,
+          "payload_bytes": 110,
+          "framed_bytes": 118,
+          "deserialize_seconds": 1.7929996829479933e-05,
+          "io_seconds": 34.63377246900927
+        },
+        {
+          "direction": "send",
+          "stage": "full/ridge_statistics",
+          "client": 6,
+          "payload_bytes": 10466857,
+          "framed_bytes": 10466865,
+          "serialize_seconds": 0.0007629090105183423,
+          "io_seconds": 0.8447467340156436
+        },
+        {
+          "direction": "recv",
+          "stage": "full/entropy/request",
+          "client": 6,
+          "payload_bytes": 94,
+          "framed_bytes": 102,
+          "deserialize_seconds": 1.0413001291453838e-05,
+          "io_seconds": 0.008703358005732298
+        },
+        {
+          "direction": "send",
+          "stage": "full/entropy",
+          "client": 6,
+          "payload_bytes": 119352,
+          "framed_bytes": 119360,
+          "serialize_seconds": 0.00019741000141948462,
+          "io_seconds": 0.014826220023678616
+        },
+        {
+          "direction": "recv",
+          "stage": "full/preliminary_moments/request",
+          "client": 6,
+          "payload_bytes": 22024,
+          "framed_bytes": 22032,
+          "deserialize_seconds": 7.19660019967705e-05,
+          "io_seconds": 18.01393697099411
+        },
+        {
+          "direction": "send",
+          "stage": "full/preliminary_moments",
+          "client": 6,
+          "payload_bytes": 2754145,
+          "framed_bytes": 2754153,
+          "serialize_seconds": 0.00039097899571061134,
+          "io_seconds": 0.2257271580165252
+        },
+        {
+          "direction": "recv",
+          "stage": "full/purification_statistics/request",
+          "client": 6,
+          "payload_bytes": 328619,
+          "framed_bytes": 328627,
+          "deserialize_seconds": 6.715199560858309e-05,
+          "io_seconds": 1.2863000489887781
+        },
+        {
+          "direction": "send",
+          "stage": "full/purification_statistics",
+          "client": 6,
+          "payload_bytes": 2159,
+          "framed_bytes": 2167,
+          "serialize_seconds": 2.926398883573711e-05,
+          "io_seconds": 0.0054562400036957115
+        },
+        {
+          "direction": "recv",
+          "stage": "full/final_moments/request",
+          "client": 6,
+          "payload_bytes": 879,
+          "framed_bytes": 887,
+          "deserialize_seconds": 5.05350180901587e-05,
+          "io_seconds": 1.8206444660027046
+        },
+        {
+          "direction": "send",
+          "stage": "full/final_moments",
+          "client": 6,
+          "payload_bytes": 2754139,
+          "framed_bytes": 2754147,
+          "serialize_seconds": 0.0003167839895468205,
+          "io_seconds": 0.22570948698557913
+        },
+        {
+          "direction": "recv",
+          "stage": "17/ridge_statistics/request",
+          "client": 6,
+          "payload_bytes": 104,
+          "framed_bytes": 112,
+          "deserialize_seconds": 1.2176984455436468e-05,
+          "io_seconds": 28.448488258989528
+        },
+        {
+          "direction": "send",
+          "stage": "17/ridge_statistics",
+          "client": 6,
+          "payload_bytes": 10466855,
+          "framed_bytes": 10466863,
+          "serialize_seconds": 0.0007442179776262492,
+          "io_seconds": 0.8428958390140906
+        },
+        {
+          "direction": "recv",
+          "stage": "17/entropy/request",
+          "client": 6,
+          "payload_bytes": 88,
+          "framed_bytes": 96,
+          "deserialize_seconds": 1.16279989015311e-05,
+          "io_seconds": 0.00858527998207137
+        },
+        {
+          "direction": "send",
+          "stage": "17/entropy",
+          "client": 6,
+          "payload_bytes": 112444,
+          "framed_bytes": 112452,
+          "serialize_seconds": 0.0002010999887716025,
+          "io_seconds": 0.01437953399727121
+        },
+        {
+          "direction": "recv",
+          "stage": "17/preliminary_moments/request",
+          "client": 6,
+          "payload_bytes": 21543,
+          "framed_bytes": 21551,
+          "deserialize_seconds": 6.752298213541508e-05,
+          "io_seconds": 15.652783363999333
+        },
+        {
+          "direction": "send",
+          "stage": "17/preliminary_moments",
+          "client": 6,
+          "payload_bytes": 2754143,
+          "framed_bytes": 2754151,
+          "serialize_seconds": 0.00038978600059635937,
+          "io_seconds": 0.22585384600097314
+        },
+        {
+          "direction": "recv",
+          "stage": "17/purification_statistics/request",
+          "client": 6,
+          "payload_bytes": 328613,
+          "framed_bytes": 328621,
+          "deserialize_seconds": 6.993202259764075e-05,
+          "io_seconds": 1.2680727929982822
+        },
+        {
+          "direction": "send",
+          "stage": "17/purification_statistics",
+          "client": 6,
+          "payload_bytes": 2157,
+          "framed_bytes": 2165,
+          "serialize_seconds": 2.979699638672173e-05,
+          "io_seconds": 0.005426718998933211
+        },
+        {
+          "direction": "recv",
+          "stage": "17/final_moments/request",
+          "client": 6,
+          "payload_bytes": 873,
+          "framed_bytes": 881,
+          "deserialize_seconds": 4.051899304613471e-05,
+          "io_seconds": 1.815655465994496
+        },
+        {
+          "direction": "send",
+          "stage": "17/final_moments",
+          "client": 6,
+          "payload_bytes": 2754137,
+          "framed_bytes": 2754145,
+          "serialize_seconds": 0.00032236898550763726,
+          "io_seconds": 0.22583856398705393
+        },
+        {
+          "direction": "recv",
+          "stage": "17/validation_scores_labels/request",
+          "client": 6,
+          "payload_bytes": 4762186,
+          "framed_bytes": 4762194,
+          "deserialize_seconds": 0.0003937519795726985,
+          "io_seconds": 10.475708986981772
+        },
+        {
+          "direction": "send",
+          "stage": "17/validation_scores_labels",
+          "client": 6,
+          "payload_bytes": 6715340,
+          "framed_bytes": 6715348,
+          "serialize_seconds": 0.000354594987584278,
+          "io_seconds": 0.5425241379998624
+        },
+        {
+          "direction": "recv",
+          "stage": "17/calibration_ack/request",
+          "client": 6,
+          "payload_bytes": 1924,
+          "framed_bytes": 1932,
+          "deserialize_seconds": 3.550201654434204e-05,
+          "io_seconds": 8.144248041993706
+        },
+        {
+          "direction": "send",
+          "stage": "17/calibration_ack",
+          "client": 6,
+          "payload_bytes": 44,
+          "framed_bytes": 52,
+          "serialize_seconds": 5.823996616527438e-06,
+          "io_seconds": 0.005186851019971073
+        },
+        {
+          "direction": "recv",
+          "stage": "deploy_ack/request",
+          "client": 6,
+          "payload_bytes": 518091,
+          "framed_bytes": 518099,
+          "deserialize_seconds": 7.291897782124579e-05,
+          "io_seconds": 0.4079081869858783
+        },
+        {
+          "direction": "send",
+          "stage": "deploy_ack",
+          "client": 6,
+          "payload_bytes": 36,
+          "framed_bytes": 44,
+          "serialize_seconds": 2.176006091758609e-06,
+          "io_seconds": 0.005295546987326816
+        },
+        {
+          "direction": "recv",
+          "stage": "stop",
+          "client": 6,
+          "payload_bytes": 31,
+          "framed_bytes": 39,
+          "deserialize_seconds": 6.2470207922160625e-06,
+          "io_seconds": 0.16855093601043336
+        }
+      ],
+      "pid": 13483,
+      "peak_RSS_MiB": 3384.796875
+    },
+    {
+      "work": [
+        {
+          "stage": "full/ridge_statistics",
+          "op": "begin",
+          "phase": "full",
+          "seconds": 2.9262142940133344
+        },
+        {
+          "stage": "full/entropy",
+          "op": "entropy",
+          "phase": "full",
+          "seconds": 0.00022676499793305993
+        },
+        {
+          "stage": "full/preliminary_moments",
+          "op": "moments",
+          "phase": "full",
+          "seconds": 0.06275667299632914
+        },
+        {
+          "stage": "full/purification_statistics",
+          "op": "purification",
+          "phase": "full",
+          "seconds": 0.004248419019859284
+        },
+        {
+          "stage": "full/final_moments",
+          "op": "final_moments",
+          "phase": "full",
+          "seconds": 0.04314699201495387
+        },
+        {
+          "stage": "17/ridge_statistics",
+          "op": "begin",
+          "phase": "17",
+          "seconds": 2.279863641015254
+        },
+        {
+          "stage": "17/entropy",
+          "op": "entropy",
+          "phase": "17",
+          "seconds": 0.00021004900918342173
+        },
+        {
+          "stage": "17/preliminary_moments",
+          "op": "moments",
+          "phase": "17",
+          "seconds": 0.06312442102353089
+        },
+        {
+          "stage": "17/purification_statistics",
+          "op": "purification",
+          "phase": "17",
+          "seconds": 0.0043994199950248
+        },
+        {
+          "stage": "17/final_moments",
+          "op": "final_moments",
+          "phase": "17",
+          "seconds": 0.0430744540062733
+        },
+        {
+          "stage": "17/validation_scores_labels",
+          "op": "validation",
+          "phase": "17",
+          "seconds": 0.29555061901919544
+        },
+        {
+          "stage": "17/calibration_ack",
+          "op": "calibration",
+          "phase": "17",
+          "seconds": 8.39540152810514e-05
+        },
+        {
+          "stage": "deploy_ack",
+          "op": "deploy",
+          "phase": "",
+          "seconds": 9.204700472764671e-05
+        }
+      ],
+      "wire": [
+        {
+          "direction": "send",
+          "stage": "hello",
+          "client": 7,
+          "payload_bytes": 46,
+          "framed_bytes": 54,
+          "serialize_seconds": 6.157002644613385e-06,
+          "io_seconds": 0.005424591014161706
+        },
+        {
+          "direction": "recv",
+          "stage": "full/ridge_statistics/request",
+          "client": 7,
+          "payload_bytes": 110,
+          "framed_bytes": 118,
+          "deserialize_seconds": 7.472001016139984e-06,
+          "io_seconds": 39.26572289899923
+        },
+        {
+          "direction": "send",
+          "stage": "full/ridge_statistics",
+          "client": 7,
+          "payload_bytes": 10466857,
+          "framed_bytes": 10466865,
+          "serialize_seconds": 0.0010841210023500025,
+          "io_seconds": 0.8428470600047149
+        },
+        {
+          "direction": "recv",
+          "stage": "full/entropy/request",
+          "client": 7,
+          "payload_bytes": 94,
+          "framed_bytes": 102,
+          "deserialize_seconds": 9.295996278524399e-06,
+          "io_seconds": 0.00868167498265393
+        },
+        {
+          "direction": "send",
+          "stage": "full/entropy",
+          "client": 7,
+          "payload_bytes": 114257,
+          "framed_bytes": 114265,
+          "serialize_seconds": 0.00018984099733643234,
+          "io_seconds": 0.0145872870052699
+        },
+        {
+          "direction": "recv",
+          "stage": "full/preliminary_moments/request",
+          "client": 7,
+          "payload_bytes": 19800,
+          "framed_bytes": 19808,
+          "deserialize_seconds": 6.886199116706848e-05,
+          "io_seconds": 14.511538279999513
+        },
+        {
+          "direction": "send",
+          "stage": "full/preliminary_moments",
+          "client": 7,
+          "payload_bytes": 2754145,
+          "framed_bytes": 2754153,
+          "serialize_seconds": 0.0003706050047185272,
+          "io_seconds": 0.2257952030049637
+        },
+        {
+          "direction": "recv",
+          "stage": "full/purification_statistics/request",
+          "client": 7,
+          "payload_bytes": 328619,
+          "framed_bytes": 328627,
+          "deserialize_seconds": 7.289400673471391e-05,
+          "io_seconds": 1.0310242069826927
+        },
+        {
+          "direction": "send",
+          "stage": "full/purification_statistics",
+          "client": 7,
+          "payload_bytes": 2159,
+          "framed_bytes": 2167,
+          "serialize_seconds": 3.0719005735591054e-05,
+          "io_seconds": 0.00543477400788106
+        },
+        {
+          "direction": "recv",
+          "stage": "full/final_moments/request",
+          "client": 7,
+          "payload_bytes": 879,
+          "framed_bytes": 887,
+          "deserialize_seconds": 3.8072001188993454e-05,
+          "io_seconds": 2.0560395990032703
+        },
+        {
+          "direction": "send",
+          "stage": "full/final_moments",
+          "client": 7,
+          "payload_bytes": 2754139,
+          "framed_bytes": 2754147,
+          "serialize_seconds": 0.0003167889954056591,
+          "io_seconds": 0.2258036720158998
+        },
+        {
+          "direction": "recv",
+          "stage": "17/ridge_statistics/request",
+          "client": 7,
+          "payload_bytes": 104,
+          "framed_bytes": 112,
+          "deserialize_seconds": 1.003002398647368e-05,
+          "io_seconds": 32.15453296501073
+        },
+        {
+          "direction": "send",
+          "stage": "17/ridge_statistics",
+          "client": 7,
+          "payload_bytes": 10466855,
+          "framed_bytes": 10466863,
+          "serialize_seconds": 0.0007482549990527332,
+          "io_seconds": 0.8430790529819205
+        },
+        {
+          "direction": "recv",
+          "stage": "17/entropy/request",
+          "client": 7,
+          "payload_bytes": 88,
+          "framed_bytes": 96,
+          "deserialize_seconds": 1.0168005246669054e-05,
+          "io_seconds": 0.008681122999405488
+        },
+        {
+          "direction": "send",
+          "stage": "17/entropy",
+          "client": 7,
+          "payload_bytes": 107289,
+          "framed_bytes": 107297,
+          "serialize_seconds": 0.0001787630026228726,
+          "io_seconds": 0.014041674992768094
+        },
+        {
+          "direction": "recv",
+          "stage": "17/preliminary_moments/request",
+          "client": 7,
+          "payload_bytes": 20993,
+          "framed_bytes": 21001,
+          "deserialize_seconds": 7.178899249993265e-05,
+          "io_seconds": 12.797955147980247
+        },
+        {
+          "direction": "send",
+          "stage": "17/preliminary_moments",
+          "client": 7,
+          "payload_bytes": 2754143,
+          "framed_bytes": 2754151,
+          "serialize_seconds": 0.00038556300569325686,
+          "io_seconds": 0.22579185300855897
+        },
+        {
+          "direction": "recv",
+          "stage": "17/purification_statistics/request",
+          "client": 7,
+          "payload_bytes": 328613,
+          "framed_bytes": 328621,
+          "deserialize_seconds": 5.508499452844262e-05,
+          "io_seconds": 1.0127954850031529
+        },
+        {
+          "direction": "send",
+          "stage": "17/purification_statistics",
+          "client": 7,
+          "payload_bytes": 2157,
+          "framed_bytes": 2165,
+          "serialize_seconds": 3.229902358725667e-05,
+          "io_seconds": 0.00540965999243781
+        },
+        {
+          "direction": "recv",
+          "stage": "17/final_moments/request",
+          "client": 7,
+          "payload_bytes": 873,
+          "framed_bytes": 881,
+          "deserialize_seconds": 3.882299643009901e-05,
+          "io_seconds": 2.0512963199871592
+        },
+        {
+          "direction": "send",
+          "stage": "17/final_moments",
+          "client": 7,
+          "payload_bytes": 2754137,
+          "framed_bytes": 2754145,
+          "serialize_seconds": 0.0003222610102966428,
+          "io_seconds": 0.22575508800218813
+        },
+        {
+          "direction": "recv",
+          "stage": "17/validation_scores_labels/request",
+          "client": 7,
+          "payload_bytes": 4762186,
+          "framed_bytes": 4762194,
+          "deserialize_seconds": 0.0005134370003361255,
+          "io_seconds": 11.546639484993648
+        },
+        {
+          "direction": "send",
+          "stage": "17/validation_scores_labels",
+          "client": 7,
+          "payload_bytes": 4865300,
+          "framed_bytes": 4865308,
+          "serialize_seconds": 0.00029627798357978463,
+          "io_seconds": 0.39460995598346926
+        },
+        {
+          "direction": "recv",
+          "stage": "17/calibration_ack/request",
+          "client": 7,
+          "payload_bytes": 1924,
+          "framed_bytes": 1932,
+          "deserialize_seconds": 3.8439000491052866e-05,
+          "io_seconds": 7.07544163899729
+        },
+        {
+          "direction": "send",
+          "stage": "17/calibration_ack",
+          "client": 7,
+          "payload_bytes": 44,
+          "framed_bytes": 52,
+          "serialize_seconds": 2.549990313127637e-06,
+          "io_seconds": 0.005323650984792039
+        },
+        {
+          "direction": "recv",
+          "stage": "deploy_ack/request",
+          "client": 7,
+          "payload_bytes": 518091,
+          "framed_bytes": 518099,
+          "deserialize_seconds": 7.2975002694875e-05,
+          "io_seconds": 0.4492067520041019
+        },
+        {
+          "direction": "send",
+          "stage": "deploy_ack",
+          "client": 7,
+          "payload_bytes": 36,
+          "framed_bytes": 44,
+          "serialize_seconds": 2.47600837610662e-06,
+          "io_seconds": 0.005264653998892754
+        },
+        {
+          "direction": "recv",
+          "stage": "stop",
+          "client": 7,
+          "payload_bytes": 31,
+          "framed_bytes": 39,
+          "deserialize_seconds": 5.103996954858303e-06,
+          "io_seconds": 0.12117209701682441
+        }
+      ],
+      "pid": 13484,
+      "peak_RSS_MiB": 2809.40234375
+    },
+    {
+      "work": [
+        {
+          "stage": "full/ridge_statistics",
+          "op": "begin",
+          "phase": "full",
+          "seconds": 5.070140414987691
+        },
+        {
+          "stage": "full/entropy",
+          "op": "entropy",
+          "phase": "full",
+          "seconds": 0.00022228300804272294
+        },
+        {
+          "stage": "full/preliminary_moments",
+          "op": "moments",
+          "phase": "full",
+          "seconds": 0.09345169900916517
+        },
+        {
+          "stage": "full/purification_statistics",
+          "op": "purification",
+          "phase": "full",
+          "seconds": 0.011690396000631154
+        },
+        {
+          "stage": "full/final_moments",
+          "op": "final_moments",
+          "phase": "full",
+          "seconds": 0.049935782997636124
+        },
+        {
+          "stage": "17/ridge_statistics",
+          "op": "begin",
+          "phase": "17",
+          "seconds": 4.217714091006201
+        },
+        {
+          "stage": "17/entropy",
+          "op": "entropy",
+          "phase": "17",
+          "seconds": 0.00026395500754006207
+        },
+        {
+          "stage": "17/preliminary_moments",
+          "op": "moments",
+          "phase": "17",
+          "seconds": 0.09133768299943767
+        },
+        {
+          "stage": "17/purification_statistics",
+          "op": "purification",
+          "phase": "17",
+          "seconds": 0.009552117990097031
+        },
+        {
+          "stage": "17/final_moments",
+          "op": "final_moments",
+          "phase": "17",
+          "seconds": 0.048138812999241054
+        },
+        {
+          "stage": "17/validation_scores_labels",
+          "op": "validation",
+          "phase": "17",
+          "seconds": 0.5054512289934792
+        },
+        {
+          "stage": "17/calibration_ack",
+          "op": "calibration",
+          "phase": "17",
+          "seconds": 8.686198270879686e-05
+        },
+        {
+          "stage": "deploy_ack",
+          "op": "deploy",
+          "phase": "",
+          "seconds": 9.886000771075487e-05
+        }
+      ],
+      "wire": [
+        {
+          "direction": "send",
+          "stage": "hello",
+          "client": 9,
+          "payload_bytes": 46,
+          "framed_bytes": 54,
+          "serialize_seconds": 5.890993634238839e-06,
+          "io_seconds": 0.005131165991770104
+        },
+        {
+          "direction": "recv",
+          "stage": "full/ridge_statistics/request",
+          "client": 9,
+          "payload_bytes": 110,
+          "framed_bytes": 118,
+          "deserialize_seconds": 1.2178992619737983e-05,
+          "io_seconds": 49.40170038500219
+        },
+        {
+          "direction": "send",
+          "stage": "full/ridge_statistics",
+          "client": 9,
+          "payload_bytes": 10466857,
+          "framed_bytes": 10466865,
+          "serialize_seconds": 0.00436174200149253,
+          "io_seconds": 0.8457920560031198
+        },
+        {
+          "direction": "recv",
+          "stage": "full/entropy/request",
+          "client": 9,
+          "payload_bytes": 94,
+          "framed_bytes": 102,
+          "deserialize_seconds": 9.60900797508657e-06,
+          "io_seconds": 0.00898003700422123
+        },
+        {
+          "direction": "send",
+          "stage": "full/entropy",
+          "client": 9,
+          "payload_bytes": 159105,
+          "framed_bytes": 159113,
+          "serialize_seconds": 0.00019775799592025578,
+          "io_seconds": 0.0180577700084541
+        },
+        {
+          "direction": "recv",
+          "stage": "full/preliminary_moments/request",
+          "client": 9,
+          "payload_bytes": 48415,
+          "framed_bytes": 48423,
+          "deserialize_seconds": 0.00010020099580287933,
+          "io_seconds": 2.8384339660115074
+        },
+        {
+          "direction": "send",
+          "stage": "full/preliminary_moments",
+          "client": 9,
+          "payload_bytes": 2754145,
+          "framed_bytes": 2754153,
+          "serialize_seconds": 0.0012423759908415377,
+          "io_seconds": 0.22577337099937722
+        },
+        {
+          "direction": "recv",
+          "stage": "full/purification_statistics/request",
+          "client": 9,
+          "payload_bytes": 328619,
+          "framed_bytes": 328627,
+          "deserialize_seconds": 8.753701695241034e-05,
+          "io_seconds": 0.46964826600742526
+        },
+        {
+          "direction": "send",
+          "stage": "full/purification_statistics",
+          "client": 9,
+          "payload_bytes": 2159,
+          "framed_bytes": 2167,
+          "serialize_seconds": 3.826202009804547e-05,
+          "io_seconds": 0.005435808998299763
+        },
+        {
+          "direction": "recv",
+          "stage": "full/final_moments/request",
+          "client": 9,
+          "payload_bytes": 879,
+          "framed_bytes": 887,
+          "deserialize_seconds": 3.757097874768078e-05,
+          "io_seconds": 2.5189236699952744
+        },
+        {
+          "direction": "send",
+          "stage": "full/final_moments",
+          "client": 9,
+          "payload_bytes": 2754139,
+          "framed_bytes": 2754147,
+          "serialize_seconds": 0.00032196802203543484,
+          "io_seconds": 0.2258197509800084
+        },
+        {
+          "direction": "recv",
+          "stage": "17/ridge_statistics/request",
+          "client": 9,
+          "payload_bytes": 104,
+          "framed_bytes": 112,
+          "deserialize_seconds": 1.0549003491178155e-05,
+          "io_seconds": 40.225943278026534
+        },
+        {
+          "direction": "send",
+          "stage": "17/ridge_statistics",
+          "client": 9,
+          "payload_bytes": 10466855,
+          "framed_bytes": 10466863,
+          "serialize_seconds": 0.0007387189834844321,
+          "io_seconds": 0.8429365599877201
+        },
+        {
+          "direction": "recv",
+          "stage": "17/entropy/request",
+          "client": 9,
+          "payload_bytes": 88,
+          "framed_bytes": 96,
+          "deserialize_seconds": 9.404000593349338e-06,
+          "io_seconds": 0.008777005015872419
+        },
+        {
+          "direction": "send",
+          "stage": "17/entropy",
+          "client": 9,
+          "payload_bytes": 155803,
+          "framed_bytes": 155811,
+          "serialize_seconds": 0.00021582201588898897,
+          "io_seconds": 0.01776515899109654
+        },
+        {
+          "direction": "recv",
+          "stage": "17/preliminary_moments/request",
+          "client": 9,
+          "payload_bytes": 47614,
+          "framed_bytes": 47622,
+          "deserialize_seconds": 8.674099808558822e-05,
+          "io_seconds": 2.8345824819989502
+        },
+        {
+          "direction": "send",
+          "stage": "17/preliminary_moments",
+          "client": 9,
+          "payload_bytes": 2754143,
+          "framed_bytes": 2754151,
+          "serialize_seconds": 0.00040079798782244325,
+          "io_seconds": 0.22597914698417298
+        },
+        {
+          "direction": "recv",
+          "stage": "17/purification_statistics/request",
+          "client": 9,
+          "payload_bytes": 328613,
+          "framed_bytes": 328621,
+          "deserialize_seconds": 7.141899550333619e-05,
+          "io_seconds": 0.4578040619962849
+        },
+        {
+          "direction": "send",
+          "stage": "17/purification_statistics",
+          "client": 9,
+          "payload_bytes": 2157,
+          "framed_bytes": 2165,
+          "serialize_seconds": 3.565099905245006e-05,
+          "io_seconds": 0.005403019022196531
+        },
+        {
+          "direction": "recv",
+          "stage": "17/final_moments/request",
+          "client": 9,
+          "payload_bytes": 873,
+          "framed_bytes": 881,
+          "deserialize_seconds": 4.932901356369257e-05,
+          "io_seconds": 2.514886660996126
+        },
+        {
+          "direction": "send",
+          "stage": "17/final_moments",
+          "client": 9,
+          "payload_bytes": 2754137,
+          "framed_bytes": 2754145,
+          "serialize_seconds": 0.00032194898813031614,
+          "io_seconds": 0.22575823700753972
+        },
+        {
+          "direction": "recv",
+          "stage": "17/validation_scores_labels/request",
+          "client": 9,
+          "payload_bytes": 4762186,
+          "framed_bytes": 4762194,
+          "deserialize_seconds": 0.0003596800088416785,
+          "io_seconds": 13.711394941987237
+        },
+        {
+          "direction": "send",
+          "stage": "17/validation_scores_labels",
+          "client": 9,
+          "payload_bytes": 8058332,
+          "framed_bytes": 8058340,
+          "serialize_seconds": 0.00040855302358977497,
+          "io_seconds": 0.650185839011101
+        },
+        {
+          "direction": "recv",
+          "stage": "17/calibration_ack/request",
+          "client": 9,
+          "payload_bytes": 1924,
+          "framed_bytes": 1932,
+          "deserialize_seconds": 5.681198672391474e-05,
+          "io_seconds": 3.9066344830207527
+        },
+        {
+          "direction": "send",
+          "stage": "17/calibration_ack",
+          "client": 9,
+          "payload_bytes": 44,
+          "framed_bytes": 52,
+          "serialize_seconds": 2.495013177394867e-06,
+          "io_seconds": 0.005205897992709652
+        },
+        {
+          "direction": "recv",
+          "stage": "deploy_ack/request",
+          "client": 9,
+          "payload_bytes": 518091,
+          "framed_bytes": 518099,
+          "deserialize_seconds": 7.710998761467636e-05,
+          "io_seconds": 0.5321086409967393
+        },
+        {
+          "direction": "send",
+          "stage": "deploy_ack",
+          "client": 9,
+          "payload_bytes": 36,
+          "framed_bytes": 44,
+          "serialize_seconds": 2.2519961930811405e-06,
+          "io_seconds": 0.005227359011769295
+        },
+        {
+          "direction": "recv",
+          "stage": "stop",
+          "client": 9,
+          "payload_bytes": 31,
+          "framed_bytes": 39,
+          "deserialize_seconds": 5.9759768191725016e-06,
+          "io_seconds": 0.0212157939968165
+        }
+      ],
+      "pid": 13486,
+      "peak_RSS_MiB": 3720.4375
+    },
+    {
+      "work": [
+        {
+          "stage": "full/ridge_statistics",
+          "op": "begin",
+          "phase": "full",
+          "seconds": 4.248524833004922
+        },
+        {
+          "stage": "full/entropy",
+          "op": "entropy",
+          "phase": "full",
+          "seconds": 0.0002088960027322173
+        },
+        {
+          "stage": "full/preliminary_moments",
+          "op": "moments",
+          "phase": "full",
+          "seconds": 0.06371583300642669
+        },
+        {
+          "stage": "full/purification_statistics",
+          "op": "purification",
+          "phase": "full",
+          "seconds": 0.004589418997056782
+        },
+        {
+          "stage": "full/final_moments",
+          "op": "final_moments",
+          "phase": "full",
+          "seconds": 0.04412162897642702
+        },
+        {
+          "stage": "17/ridge_statistics",
+          "op": "begin",
+          "phase": "17",
+          "seconds": 3.0791472280106973
+        },
+        {
+          "stage": "17/entropy",
+          "op": "entropy",
+          "phase": "17",
+          "seconds": 0.0002177409769501537
+        },
+        {
+          "stage": "17/preliminary_moments",
+          "op": "moments",
+          "phase": "17",
+          "seconds": 0.06910301398602314
+        },
+        {
+          "stage": "17/purification_statistics",
+          "op": "purification",
+          "phase": "17",
+          "seconds": 0.004330235009547323
+        },
+        {
+          "stage": "17/final_moments",
+          "op": "final_moments",
+          "phase": "17",
+          "seconds": 0.04407929099397734
+        },
+        {
+          "stage": "17/validation_scores_labels",
+          "op": "validation",
+          "phase": "17",
+          "seconds": 0.4126821079989895
+        },
+        {
+          "stage": "17/calibration_ack",
+          "op": "calibration",
+          "phase": "17",
+          "seconds": 8.153298404067755e-05
+        },
+        {
+          "stage": "deploy_ack",
+          "op": "deploy",
+          "phase": "",
+          "seconds": 9.329098975285888e-05
+        }
+      ],
+      "wire": [
+        {
+          "direction": "send",
+          "stage": "hello",
+          "client": 2,
+          "payload_bytes": 46,
+          "framed_bytes": 54,
+          "serialize_seconds": 8.00701673142612e-06,
+          "io_seconds": 0.0051737909961957484
+        },
+        {
+          "direction": "recv",
+          "stage": "full/ridge_statistics/request",
+          "client": 2,
+          "payload_bytes": 110,
+          "framed_bytes": 118,
+          "deserialize_seconds": 1.9163999240845442e-05,
+          "io_seconds": 12.262585909018526
+        },
+        {
+          "direction": "send",
+          "stage": "full/ridge_statistics",
+          "client": 2,
+          "payload_bytes": 10466857,
+          "framed_bytes": 10466865,
+          "serialize_seconds": 0.0007410869875457138,
+          "io_seconds": 0.843136929004686
+        },
+        {
+          "direction": "recv",
+          "stage": "full/entropy/request",
+          "client": 2,
+          "payload_bytes": 94,
+          "framed_bytes": 102,
+          "deserialize_seconds": 7.7290169429034e-06,
+          "io_seconds": 0.006174092995934188
+        },
+        {
+          "direction": "send",
+          "stage": "full/entropy",
+          "client": 2,
+          "payload_bytes": 138613,
+          "framed_bytes": 138621,
+          "serialize_seconds": 0.00019839100423268974,
+          "io_seconds": 0.016529481014003977
+        },
+        {
+          "direction": "recv",
+          "stage": "full/preliminary_moments/request",
+          "client": 2,
+          "payload_bytes": 20686,
+          "framed_bytes": 20694,
+          "deserialize_seconds": 8.036199142225087e-05,
+          "io_seconds": 38.64250225797878
+        },
+        {
+          "direction": "send",
+          "stage": "full/preliminary_moments",
+          "client": 2,
+          "payload_bytes": 2754145,
+          "framed_bytes": 2754153,
+          "serialize_seconds": 0.0003941890026908368,
+          "io_seconds": 0.22561307300929911
+        },
+        {
+          "direction": "recv",
+          "stage": "full/purification_statistics/request",
+          "client": 2,
+          "payload_bytes": 328619,
+          "framed_bytes": 328627,
+          "deserialize_seconds": 7.025600643828511e-05,
+          "io_seconds": 2.3586781559861265
+        },
+        {
+          "direction": "send",
+          "stage": "full/purification_statistics",
+          "client": 2,
+          "payload_bytes": 2159,
+          "framed_bytes": 2167,
+          "serialize_seconds": 3.258898505009711e-05,
+          "io_seconds": 0.005487980990437791
+        },
+        {
+          "direction": "recv",
+          "stage": "full/final_moments/request",
+          "client": 2,
+          "payload_bytes": 879,
+          "framed_bytes": 887,
+          "deserialize_seconds": 4.475901369005442e-05,
+          "io_seconds": 0.8826825709838886
+        },
+        {
+          "direction": "send",
+          "stage": "full/final_moments",
+          "client": 2,
+          "payload_bytes": 2754139,
+          "framed_bytes": 2754147,
+          "serialize_seconds": 0.00032394001027569175,
+          "io_seconds": 0.2258547570090741
+        },
+        {
+          "direction": "recv",
+          "stage": "17/ridge_statistics/request",
+          "client": 2,
+          "payload_bytes": 104,
+          "framed_bytes": 112,
+          "deserialize_seconds": 1.130098826251924e-05,
+          "io_seconds": 11.449769984988961
+        },
+        {
+          "direction": "send",
+          "stage": "17/ridge_statistics",
+          "client": 2,
+          "payload_bytes": 10466855,
+          "framed_bytes": 10466863,
+          "serialize_seconds": 0.0007441719935741276,
+          "io_seconds": 0.8431144299975131
+        },
+        {
+          "direction": "recv",
+          "stage": "17/entropy/request",
+          "client": 2,
+          "payload_bytes": 88,
+          "framed_bytes": 96,
+          "deserialize_seconds": 1.0050018317997456e-05,
+          "io_seconds": 0.008659251005155966
+        },
+        {
+          "direction": "send",
+          "stage": "17/entropy",
+          "client": 2,
+          "payload_bytes": 133932,
+          "framed_bytes": 133940,
+          "serialize_seconds": 0.00019009099924005568,
+          "io_seconds": 0.015951438021147624
+        },
+        {
+          "direction": "recv",
+          "stage": "17/preliminary_moments/request",
+          "client": 2,
+          "payload_bytes": 20256,
+          "framed_bytes": 20264,
+          "deserialize_seconds": 8.072101627476513e-05,
+          "io_seconds": 32.540951589006
+        },
+        {
+          "direction": "send",
+          "stage": "17/preliminary_moments",
+          "client": 2,
+          "payload_bytes": 2754143,
+          "framed_bytes": 2754151,
+          "serialize_seconds": 0.0003875959955621511,
+          "io_seconds": 0.22571381201851182
+        },
+        {
+          "direction": "recv",
+          "stage": "17/purification_statistics/request",
+          "client": 2,
+          "payload_bytes": 328613,
+          "framed_bytes": 328621,
+          "deserialize_seconds": 5.9645011788234115e-05,
+          "io_seconds": 2.339557870000135
+        },
+        {
+          "direction": "send",
+          "stage": "17/purification_statistics",
+          "client": 2,
+          "payload_bytes": 2157,
+          "framed_bytes": 2165,
+          "serialize_seconds": 2.9977993108332157e-05,
+          "io_seconds": 0.0054532730136998
+        },
+        {
+          "direction": "recv",
+          "stage": "17/final_moments/request",
+          "client": 2,
+          "payload_bytes": 873,
+          "framed_bytes": 881,
+          "deserialize_seconds": 3.384202136658132e-05,
+          "io_seconds": 0.8776254660042468
+        },
+        {
+          "direction": "send",
+          "stage": "17/final_moments",
+          "client": 2,
+          "payload_bytes": 2754137,
+          "framed_bytes": 2754145,
+          "serialize_seconds": 0.0003202509833499789,
+          "io_seconds": 0.22579968100762926
+        },
+        {
+          "direction": "recv",
+          "stage": "17/validation_scores_labels/request",
+          "client": 2,
+          "payload_bytes": 4762186,
+          "framed_bytes": 4762194,
+          "deserialize_seconds": 0.0003876230039168149,
+          "io_seconds": 5.605518765019951
+        },
+        {
+          "direction": "send",
+          "stage": "17/validation_scores_labels",
+          "client": 2,
+          "payload_bytes": 6477804,
+          "framed_bytes": 6477812,
+          "serialize_seconds": 0.00034811801742762327,
+          "io_seconds": 0.5236646880221087
+        },
+        {
+          "direction": "recv",
+          "stage": "17/calibration_ack/request",
+          "client": 2,
+          "payload_bytes": 1924,
+          "framed_bytes": 1932,
+          "deserialize_seconds": 4.9283000407740474e-05,
+          "io_seconds": 14.106786819000263
+        },
+        {
+          "direction": "send",
+          "stage": "17/calibration_ack",
+          "client": 2,
+          "payload_bytes": 44,
+          "framed_bytes": 52,
+          "serialize_seconds": 4.027009708806872e-06,
+          "io_seconds": 0.005199381004786119
+        },
+        {
+          "direction": "recv",
+          "stage": "deploy_ack/request",
+          "client": 2,
+          "payload_bytes": 518091,
+          "framed_bytes": 518099,
+          "deserialize_seconds": 7.948800339363515e-05,
+          "io_seconds": 0.241778145020362
+        },
+        {
+          "direction": "send",
+          "stage": "deploy_ack",
+          "client": 2,
+          "payload_bytes": 36,
+          "framed_bytes": 44,
+          "serialize_seconds": 2.2979802452027798e-06,
+          "io_seconds": 0.005219978018430993
+        },
+        {
+          "direction": "recv",
+          "stage": "stop",
+          "client": 2,
+          "payload_bytes": 31,
+          "framed_bytes": 39,
+          "deserialize_seconds": 6.512011168524623e-06,
+          "io_seconds": 0.39485975200659595
+        }
+      ],
+      "pid": 13479,
+      "peak_RSS_MiB": 3173.59765625
+    },
+    {
+      "work": [
+        {
+          "stage": "full/ridge_statistics",
+          "op": "begin",
+          "phase": "full",
+          "seconds": 3.9099563350027893
+        },
+        {
+          "stage": "full/entropy",
+          "op": "entropy",
+          "phase": "full",
+          "seconds": 0.00021696198382414877
+        },
+        {
+          "stage": "full/preliminary_moments",
+          "op": "moments",
+          "phase": "full",
+          "seconds": 0.05982967000454664
+        },
+        {
+          "stage": "full/purification_statistics",
+          "op": "purification",
+          "phase": "full",
+          "seconds": 0.00399938301416114
+        },
+        {
+          "stage": "full/final_moments",
+          "op": "final_moments",
+          "phase": "full",
+          "seconds": 0.043239605001872405
+        },
+        {
+          "stage": "17/ridge_statistics",
+          "op": "begin",
+          "phase": "17",
+          "seconds": 3.109199013997568
+        },
+        {
+          "stage": "17/entropy",
+          "op": "entropy",
+          "phase": "17",
+          "seconds": 0.00023513598716817796
+        },
+        {
+          "stage": "17/preliminary_moments",
+          "op": "moments",
+          "phase": "17",
+          "seconds": 0.059596691018668935
+        },
+        {
+          "stage": "17/purification_statistics",
+          "op": "purification",
+          "phase": "17",
+          "seconds": 0.003967963013565168
+        },
+        {
+          "stage": "17/final_moments",
+          "op": "final_moments",
+          "phase": "17",
+          "seconds": 0.04352884000400081
+        },
+        {
+          "stage": "17/validation_scores_labels",
+          "op": "validation",
+          "phase": "17",
+          "seconds": 0.427735876000952
+        },
+        {
+          "stage": "17/calibration_ack",
+          "op": "calibration",
+          "phase": "17",
+          "seconds": 9.34970157686621e-05
+        },
+        {
+          "stage": "deploy_ack",
+          "op": "deploy",
+          "phase": "",
+          "seconds": 0.00010120298247784376
+        }
+      ],
+      "wire": [
+        {
+          "direction": "send",
+          "stage": "hello",
+          "client": 5,
+          "payload_bytes": 46,
+          "framed_bytes": 54,
+          "serialize_seconds": 7.448979886248708e-06,
+          "io_seconds": 0.005313109024427831
+        },
+        {
+          "direction": "recv",
+          "stage": "full/ridge_statistics/request",
+          "client": 5,
+          "payload_bytes": 110,
+          "framed_bytes": 118,
+          "deserialize_seconds": 1.2172007700428367e-05,
+          "io_seconds": 29.830298081971705
+        },
+        {
+          "direction": "send",
+          "stage": "full/ridge_statistics",
+          "client": 5,
+          "payload_bytes": 10466857,
+          "framed_bytes": 10466865,
+          "serialize_seconds": 0.003877439012285322,
+          "io_seconds": 0.8455033880018163
+        },
+        {
+          "direction": "recv",
+          "stage": "full/entropy/request",
+          "client": 5,
+          "payload_bytes": 94,
+          "framed_bytes": 102,
+          "deserialize_seconds": 1.052400330081582e-05,
+          "io_seconds": 0.0063915320206433535
+        },
+        {
+          "direction": "send",
+          "stage": "full/entropy",
+          "client": 5,
+          "payload_bytes": 130155,
+          "framed_bytes": 130163,
+          "serialize_seconds": 0.00017346098320558667,
+          "io_seconds": 0.0156251740118023
+        },
+        {
+          "direction": "recv",
+          "stage": "full/preliminary_moments/request",
+          "client": 5,
+          "payload_bytes": 18547,
+          "framed_bytes": 18555,
+          "deserialize_seconds": 6.128600216470659e-05,
+          "io_seconds": 22.356763852993026
+        },
+        {
+          "direction": "send",
+          "stage": "full/preliminary_moments",
+          "client": 5,
+          "payload_bytes": 2754145,
+          "framed_bytes": 2754153,
+          "serialize_seconds": 0.00039547900087200105,
+          "io_seconds": 0.22573848700267263
+        },
+        {
+          "direction": "recv",
+          "stage": "full/purification_statistics/request",
+          "client": 5,
+          "payload_bytes": 328619,
+          "framed_bytes": 328627,
+          "deserialize_seconds": 6.770499749109149e-05,
+          "io_seconds": 1.5423468079825398
+        },
+        {
+          "direction": "send",
+          "stage": "full/purification_statistics",
+          "client": 5,
+          "payload_bytes": 2159,
+          "framed_bytes": 2167,
+          "serialize_seconds": 3.1042989576235414e-05,
+          "io_seconds": 0.0054446889844257385
+        },
+        {
+          "direction": "recv",
+          "stage": "full/final_moments/request",
+          "client": 5,
+          "payload_bytes": 879,
+          "framed_bytes": 887,
+          "deserialize_seconds": 3.2383017241954803e-05,
+          "io_seconds": 1.5872841410164256
+        },
+        {
+          "direction": "send",
+          "stage": "full/final_moments",
+          "client": 5,
+          "payload_bytes": 2754139,
+          "framed_bytes": 2754147,
+          "serialize_seconds": 0.000316821999149397,
+          "io_seconds": 0.22578630899079144
+        },
+        {
+          "direction": "recv",
+          "stage": "17/ridge_statistics/request",
+          "client": 5,
+          "payload_bytes": 104,
+          "framed_bytes": 112,
+          "deserialize_seconds": 8.773000445216894e-06,
+          "io_seconds": 24.741188824002165
+        },
+        {
+          "direction": "send",
+          "stage": "17/ridge_statistics",
+          "client": 5,
+          "payload_bytes": 10466855,
+          "framed_bytes": 10466863,
+          "serialize_seconds": 0.0007620899996254593,
+          "io_seconds": 0.8439581629936583
+        },
+        {
+          "direction": "recv",
+          "stage": "17/entropy/request",
+          "client": 5,
+          "payload_bytes": 88,
+          "framed_bytes": 96,
+          "deserialize_seconds": 9.69998654909432e-06,
+          "io_seconds": 0.00881668899091892
+        },
+        {
+          "direction": "send",
+          "stage": "17/entropy",
+          "client": 5,
+          "payload_bytes": 123308,
+          "framed_bytes": 123316,
+          "serialize_seconds": 0.00020494000636972487,
+          "io_seconds": 0.015127202001167461
+        },
+        {
+          "direction": "recv",
+          "stage": "17/preliminary_moments/request",
+          "client": 5,
+          "payload_bytes": 18875,
+          "framed_bytes": 18883,
+          "deserialize_seconds": 6.941199535503983e-05,
+          "io_seconds": 19.340945389994886
+        },
+        {
+          "direction": "send",
+          "stage": "17/preliminary_moments",
+          "client": 5,
+          "payload_bytes": 2754143,
+          "framed_bytes": 2754151,
+          "serialize_seconds": 0.0003899599832948297,
+          "io_seconds": 0.22585929700289853
+        },
+        {
+          "direction": "recv",
+          "stage": "17/purification_statistics/request",
+          "client": 5,
+          "payload_bytes": 328613,
+          "framed_bytes": 328621,
+          "deserialize_seconds": 6.058099097572267e-05,
+          "io_seconds": 1.5242086850048508
+        },
+        {
+          "direction": "send",
+          "stage": "17/purification_statistics",
+          "client": 5,
+          "payload_bytes": 2157,
+          "framed_bytes": 2165,
+          "serialize_seconds": 2.954999217763543e-05,
+          "io_seconds": 0.005447731004096568
+        },
+        {
+          "direction": "recv",
+          "stage": "17/final_moments/request",
+          "client": 5,
+          "payload_bytes": 873,
+          "framed_bytes": 881,
+          "deserialize_seconds": 3.838498378172517e-05,
+          "io_seconds": 1.5819819169992115
+        },
+        {
+          "direction": "send",
+          "stage": "17/final_moments",
+          "client": 5,
+          "payload_bytes": 2754137,
+          "framed_bytes": 2754145,
+          "serialize_seconds": 0.00032458401983603835,
+          "io_seconds": 0.22585179199813865
+        },
+        {
+          "direction": "recv",
+          "stage": "17/validation_scores_labels/request",
+          "client": 5,
+          "payload_bytes": 4762186,
+          "framed_bytes": 4762194,
+          "deserialize_seconds": 0.0003621669893618673,
+          "io_seconds": 9.359217040997464
+        },
+        {
+          "direction": "send",
+          "stage": "17/validation_scores_labels",
+          "client": 5,
+          "payload_bytes": 7144732,
+          "framed_bytes": 7144740,
+          "serialize_seconds": 0.00037707400042563677,
+          "io_seconds": 0.576872039004229
+        },
+        {
+          "direction": "recv",
+          "stage": "17/calibration_ack/request",
+          "client": 5,
+          "payload_bytes": 1924,
+          "framed_bytes": 1932,
+          "deserialize_seconds": 4.310297663323581e-05,
+          "io_seconds": 9.479090398992412
+        },
+        {
+          "direction": "send",
+          "stage": "17/calibration_ack",
+          "client": 5,
+          "payload_bytes": 44,
+          "framed_bytes": 52,
+          "serialize_seconds": 2.7740024961531162e-06,
+          "io_seconds": 0.005204671004321426
+        },
+        {
+          "direction": "recv",
+          "stage": "deploy_ack/request",
+          "client": 5,
+          "payload_bytes": 518091,
+          "framed_bytes": 518099,
+          "deserialize_seconds": 7.620698306709528e-05,
+          "io_seconds": 0.36644471299950965
+        },
+        {
+          "direction": "send",
+          "stage": "deploy_ack",
+          "client": 5,
+          "payload_bytes": 36,
+          "framed_bytes": 44,
+          "serialize_seconds": 2.9449875000864267e-06,
+          "io_seconds": 0.005136251013027504
+        },
+        {
+          "direction": "recv",
+          "stage": "stop",
+          "client": 5,
+          "payload_bytes": 31,
+          "framed_bytes": 39,
+          "deserialize_seconds": 6.526010110974312e-06,
+          "io_seconds": 0.24193938297685236
+        }
+      ],
+      "pid": 13482,
+      "peak_RSS_MiB": 3441.9765625
+    },
+    {
+      "work": [
+        {
+          "stage": "full/ridge_statistics",
+          "op": "begin",
+          "phase": "full",
+          "seconds": 5.457257906993618
+        },
+        {
+          "stage": "full/entropy",
+          "op": "entropy",
+          "phase": "full",
+          "seconds": 0.00022226301371119916
+        },
+        {
+          "stage": "full/preliminary_moments",
+          "op": "moments",
+          "phase": "full",
+          "seconds": 0.08066261999192648
+        },
+        {
+          "stage": "full/purification_statistics",
+          "op": "purification",
+          "phase": "full",
+          "seconds": 0.0074774110107682645
+        },
+        {
+          "stage": "full/final_moments",
+          "op": "final_moments",
+          "phase": "full",
+          "seconds": 0.0486544469895307
+        },
+        {
+          "stage": "17/ridge_statistics",
+          "op": "begin",
+          "phase": "17",
+          "seconds": 4.601965706009651
+        },
+        {
+          "stage": "17/entropy",
+          "op": "entropy",
+          "phase": "17",
+          "seconds": 0.00023354199947789311
+        },
+        {
+          "stage": "17/preliminary_moments",
+          "op": "moments",
+          "phase": "17",
+          "seconds": 0.07898614299483597
+        },
+        {
+          "stage": "17/purification_statistics",
+          "op": "purification",
+          "phase": "17",
+          "seconds": 0.0077495390141848475
+        },
+        {
+          "stage": "17/final_moments",
+          "op": "final_moments",
+          "phase": "17",
+          "seconds": 0.04877273697638884
+        },
+        {
+          "stage": "17/validation_scores_labels",
+          "op": "validation",
+          "phase": "17",
+          "seconds": 0.5537894789886195
+        },
+        {
+          "stage": "17/calibration_ack",
+          "op": "calibration",
+          "phase": "17",
+          "seconds": 9.17759898584336e-05
+        },
+        {
+          "stage": "deploy_ack",
+          "op": "deploy",
+          "phase": "",
+          "seconds": 9.347900049760938e-05
+        }
+      ],
+      "wire": [
+        {
+          "direction": "send",
+          "stage": "hello",
+          "client": 8,
+          "payload_bytes": 46,
+          "framed_bytes": 54,
+          "serialize_seconds": 7.4909767135977745e-06,
+          "io_seconds": 0.005302932986523956
+        },
+        {
+          "direction": "recv",
+          "stage": "full/ridge_statistics/request",
+          "client": 8,
+          "payload_bytes": 110,
+          "framed_bytes": 118,
+          "deserialize_seconds": 1.2805976439267397e-05,
+          "io_seconds": 43.03258099901723
+        },
+        {
+          "direction": "send",
+          "stage": "full/ridge_statistics",
+          "client": 8,
+          "payload_bytes": 10466857,
+          "framed_bytes": 10466865,
+          "serialize_seconds": 0.003946916986024007,
+          "io_seconds": 0.8456429439829662
+        },
+        {
+          "direction": "recv",
+          "stage": "full/entropy/request",
+          "client": 8,
+          "payload_bytes": 94,
+          "framed_bytes": 102,
+          "deserialize_seconds": 1.0457995813339949e-05,
+          "io_seconds": 0.006243238021852449
+        },
+        {
+          "direction": "send",
+          "stage": "full/entropy",
+          "client": 8,
+          "payload_bytes": 143481,
+          "framed_bytes": 143489,
+          "serialize_seconds": 0.0001738860155455768,
+          "io_seconds": 0.01679374699597247
+        },
+        {
+          "direction": "recv",
+          "stage": "full/preliminary_moments/request",
+          "client": 8,
+          "payload_bytes": 36292,
+          "framed_bytes": 36300,
+          "deserialize_seconds": 9.493299876339734e-05,
+          "io_seconds": 8.474153023998952
+        },
+        {
+          "direction": "send",
+          "stage": "full/preliminary_moments",
+          "client": 8,
+          "payload_bytes": 2754145,
+          "framed_bytes": 2754153,
+          "serialize_seconds": 0.000396146991988644,
+          "io_seconds": 0.2258199800271541
+        },
+        {
+          "direction": "recv",
+          "stage": "full/purification_statistics/request",
+          "client": 8,
+          "payload_bytes": 328619,
+          "framed_bytes": 328627,
+          "deserialize_seconds": 5.0967006245628e-05,
+          "io_seconds": 0.7560548920009751
+        },
+        {
+          "direction": "send",
+          "stage": "full/purification_statistics",
+          "client": 8,
+          "payload_bytes": 2159,
+          "framed_bytes": 2167,
+          "serialize_seconds": 3.6425015423446894e-05,
+          "io_seconds": 0.005530326016014442
+        },
+        {
+          "direction": "recv",
+          "stage": "full/final_moments/request",
+          "client": 8,
+          "payload_bytes": 879,
+          "framed_bytes": 887,
+          "deserialize_seconds": 5.499902181327343e-05,
+          "io_seconds": 2.286759251001058
+        },
+        {
+          "direction": "send",
+          "stage": "full/final_moments",
+          "client": 8,
+          "payload_bytes": 2754139,
+          "framed_bytes": 2754147,
+          "serialize_seconds": 0.0003240939986426383,
+          "io_seconds": 0.22576550199300982
+        },
+        {
+          "direction": "recv",
+          "stage": "17/ridge_statistics/request",
+          "client": 8,
+          "payload_bytes": 104,
+          "framed_bytes": 112,
+          "deserialize_seconds": 9.635987225919962e-06,
+          "io_seconds": 35.025774230016395
+        },
+        {
+          "direction": "send",
+          "stage": "17/ridge_statistics",
+          "client": 8,
+          "payload_bytes": 10466855,
+          "framed_bytes": 10466863,
+          "serialize_seconds": 0.004031816002679989,
+          "io_seconds": 0.8454149079916533
+        },
+        {
+          "direction": "recv",
+          "stage": "17/entropy/request",
+          "client": 8,
+          "payload_bytes": 88,
+          "framed_bytes": 96,
+          "deserialize_seconds": 9.717012289911509e-06,
+          "io_seconds": 0.008473213005345315
+        },
+        {
+          "direction": "send",
+          "stage": "17/entropy",
+          "client": 8,
+          "payload_bytes": 139941,
+          "framed_bytes": 139949,
+          "serialize_seconds": 0.00019560300279408693,
+          "io_seconds": 0.016642889997456223
+        },
+        {
+          "direction": "recv",
+          "stage": "17/preliminary_moments/request",
+          "client": 8,
+          "payload_bytes": 36865,
+          "framed_bytes": 36873,
+          "deserialize_seconds": 8.122800500132143e-05,
+          "io_seconds": 7.613531462993706
+        },
+        {
+          "direction": "send",
+          "stage": "17/preliminary_moments",
+          "client": 8,
+          "payload_bytes": 2754143,
+          "framed_bytes": 2754151,
+          "serialize_seconds": 0.0003945629869122058,
+          "io_seconds": 0.22579923301236704
+        },
+        {
+          "direction": "recv",
+          "stage": "17/purification_statistics/request",
+          "client": 8,
+          "payload_bytes": 328613,
+          "framed_bytes": 328621,
+          "deserialize_seconds": 5.55720180273056e-05,
+          "io_seconds": 0.74049630202353
+        },
+        {
+          "direction": "send",
+          "stage": "17/purification_statistics",
+          "client": 8,
+          "payload_bytes": 2157,
+          "framed_bytes": 2165,
+          "serialize_seconds": 3.6452984204515815e-05,
+          "io_seconds": 0.005417885986389592
+        },
+        {
+          "direction": "recv",
+          "stage": "17/final_moments/request",
+          "client": 8,
+          "payload_bytes": 873,
+          "framed_bytes": 881,
+          "deserialize_seconds": 3.5307020880281925e-05,
+          "io_seconds": 2.2811155449890066
+        },
+        {
+          "direction": "send",
+          "stage": "17/final_moments",
+          "client": 8,
+          "payload_bytes": 2754137,
+          "framed_bytes": 2754145,
+          "serialize_seconds": 0.0003387700126040727,
+          "io_seconds": 0.22574292900389992
+        },
+        {
+          "direction": "recv",
+          "stage": "17/validation_scores_labels/request",
+          "client": 8,
+          "payload_bytes": 4762186,
+          "framed_bytes": 4762194,
+          "deserialize_seconds": 0.0003567340027075261,
+          "io_seconds": 12.345196287002182
+        },
+        {
+          "direction": "send",
+          "stage": "17/validation_scores_labels",
+          "client": 8,
+          "payload_bytes": 8711556,
+          "framed_bytes": 8711564,
+          "serialize_seconds": 0.00044835300650447607,
+          "io_seconds": 0.702464828005759
+        },
+        {
+          "direction": "recv",
+          "stage": "17/calibration_ack/request",
+          "client": 8,
+          "payload_bytes": 1924,
+          "framed_bytes": 1932,
+          "deserialize_seconds": 4.3045001802966e-05,
+          "io_seconds": 5.441157040011603
+        },
+        {
+          "direction": "send",
+          "stage": "17/calibration_ack",
+          "client": 8,
+          "payload_bytes": 44,
+          "framed_bytes": 52,
+          "serialize_seconds": 2.8859940357506275e-06,
+          "io_seconds": 0.005272287002298981
+        },
+        {
+          "direction": "recv",
+          "stage": "deploy_ack/request",
+          "client": 8,
+          "payload_bytes": 518091,
+          "framed_bytes": 518099,
+          "deserialize_seconds": 9.216400212608278e-05,
+          "io_seconds": 0.49067423900123686
+        },
+        {
+          "direction": "send",
+          "stage": "deploy_ack",
+          "client": 8,
+          "payload_bytes": 36,
+          "framed_bytes": 44,
+          "serialize_seconds": 2.4129985831677914e-06,
+          "io_seconds": 0.005255179014056921
+        },
+        {
+          "direction": "recv",
+          "stage": "stop",
+          "client": 8,
+          "payload_bytes": 31,
+          "framed_bytes": 39,
+          "deserialize_seconds": 5.645997589454055e-06,
+          "io_seconds": 0.08928224301780574
+        }
+      ],
+      "pid": 13485,
+      "peak_RSS_MiB": 3943.41015625
+    },
+    {
+      "work": [
+        {
+          "stage": "full/ridge_statistics",
+          "op": "begin",
+          "phase": "full",
+          "seconds": 6.207013257982908
+        },
+        {
+          "stage": "full/entropy",
+          "op": "entropy",
+          "phase": "full",
+          "seconds": 0.0002062050043605268
+        },
+        {
+          "stage": "full/preliminary_moments",
+          "op": "moments",
+          "phase": "full",
+          "seconds": 0.12693098999443464
+        },
+        {
+          "stage": "full/purification_statistics",
+          "op": "purification",
+          "phase": "full",
+          "seconds": 0.014224835991626605
+        },
+        {
+          "stage": "full/final_moments",
+          "op": "final_moments",
+          "phase": "full",
+          "seconds": 0.05166739597916603
+        },
+        {
+          "stage": "17/ridge_statistics",
+          "op": "begin",
+          "phase": "17",
+          "seconds": 4.571852157008834
+        },
+        {
+          "stage": "17/entropy",
+          "op": "entropy",
+          "phase": "17",
+          "seconds": 0.00022870200336910784
+        },
+        {
+          "stage": "17/preliminary_moments",
+          "op": "moments",
+          "phase": "17",
+          "seconds": 0.11709206597879529
+        },
+        {
+          "stage": "17/purification_statistics",
+          "op": "purification",
+          "phase": "17",
+          "seconds": 0.01319745197542943
+        },
+        {
+          "stage": "17/final_moments",
+          "op": "final_moments",
+          "phase": "17",
+          "seconds": 0.051466053002513945
+        },
+        {
+          "stage": "17/validation_scores_labels",
+          "op": "validation",
+          "phase": "17",
+          "seconds": 0.6195489139936399
+        },
+        {
+          "stage": "17/calibration_ack",
+          "op": "calibration",
+          "phase": "17",
+          "seconds": 0.00010130202281288803
+        },
+        {
+          "stage": "deploy_ack",
+          "op": "deploy",
+          "phase": "",
+          "seconds": 0.00011588499182835221
+        }
+      ],
+      "wire": [
+        {
+          "direction": "send",
+          "stage": "hello",
+          "client": 0,
+          "payload_bytes": 46,
+          "framed_bytes": 54,
+          "serialize_seconds": 5.929003236815333e-06,
+          "io_seconds": 0.005164118018001318
+        },
+        {
+          "direction": "recv",
+          "stage": "full/ridge_statistics/request",
+          "client": 0,
+          "payload_bytes": 110,
+          "framed_bytes": 118,
+          "deserialize_seconds": 6.221001967787743e-06,
+          "io_seconds": 0.1380178560211789
+        },
+        {
+          "direction": "send",
+          "stage": "full/ridge_statistics",
+          "client": 0,
+          "payload_bytes": 10466857,
+          "framed_bytes": 10466865,
+          "serialize_seconds": 0.0007160870009101927,
+          "io_seconds": 0.8427831250010058
+        },
+        {
+          "direction": "recv",
+          "stage": "full/entropy/request",
+          "client": 0,
+          "payload_bytes": 94,
+          "framed_bytes": 102,
+          "deserialize_seconds": 9.821000276133418e-06,
+          "io_seconds": 0.009040295000886545
+        },
+        {
+          "direction": "send",
+          "stage": "full/entropy",
+          "client": 0,
+          "payload_bytes": 141737,
+          "framed_bytes": 141745,
+          "serialize_seconds": 0.00019684000289998949,
+          "io_seconds": 0.016589120990829542
+        },
+        {
+          "direction": "recv",
+          "stage": "full/preliminary_moments/request",
+          "client": 0,
+          "payload_bytes": 65840,
+          "framed_bytes": 65848,
+          "deserialize_seconds": 0.00010288698831573129,
+          "io_seconds": 48.11954973399406
+        },
+        {
+          "direction": "send",
+          "stage": "full/preliminary_moments",
+          "client": 0,
+          "payload_bytes": 2754145,
+          "framed_bytes": 2754153,
+          "serialize_seconds": 0.0003840469871647656,
+          "io_seconds": 0.225961524003651
+        },
+        {
+          "direction": "recv",
+          "stage": "full/purification_statistics/request",
+          "client": 0,
+          "payload_bytes": 328619,
+          "framed_bytes": 328627,
+          "deserialize_seconds": 5.9708982007578015e-05,
+          "io_seconds": 2.8568101760174613
+        },
+        {
+          "direction": "send",
+          "stage": "full/purification_statistics",
+          "client": 0,
+          "payload_bytes": 2159,
+          "framed_bytes": 2167,
+          "serialize_seconds": 4.085098044015467e-05,
+          "io_seconds": 0.00533064900082536
+        },
+        {
+          "direction": "recv",
+          "stage": "full/final_moments/request",
+          "client": 0,
+          "payload_bytes": 879,
+          "framed_bytes": 887,
+          "deserialize_seconds": 3.557800664566457e-05,
+          "io_seconds": 0.40574353700503707
+        },
+        {
+          "direction": "send",
+          "stage": "full/final_moments",
+          "client": 0,
+          "payload_bytes": 2754139,
+          "framed_bytes": 2754147,
+          "serialize_seconds": 0.00031380102154798806,
+          "io_seconds": 0.22585975099354982
+        },
+        {
+          "direction": "recv",
+          "stage": "17/ridge_statistics/request",
+          "client": 0,
+          "payload_bytes": 104,
+          "framed_bytes": 112,
+          "deserialize_seconds": 1.2353993952274323e-05,
+          "io_seconds": 2.54698326200014
+        },
+        {
+          "direction": "send",
+          "stage": "17/ridge_statistics",
+          "client": 0,
+          "payload_bytes": 10466855,
+          "framed_bytes": 10466863,
+          "serialize_seconds": 0.0007567520078737289,
+          "io_seconds": 0.8429423539782874
+        },
+        {
+          "direction": "recv",
+          "stage": "17/entropy/request",
+          "client": 0,
+          "payload_bytes": 88,
+          "framed_bytes": 96,
+          "deserialize_seconds": 1.0461983038112521e-05,
+          "io_seconds": 0.00864970000111498
+        },
+        {
+          "direction": "send",
+          "stage": "17/entropy",
+          "client": 0,
+          "payload_bytes": 136881,
+          "framed_bytes": 136889,
+          "serialize_seconds": 0.00019264299771748483,
+          "io_seconds": 0.016206258995225653
+        },
+        {
+          "direction": "recv",
+          "stage": "17/preliminary_moments/request",
+          "client": 0,
+          "payload_bytes": 64472,
+          "framed_bytes": 64480,
+          "deserialize_seconds": 9.163402137346566e-05,
+          "io_seconds": 39.85332643700531
+        },
+        {
+          "direction": "send",
+          "stage": "17/preliminary_moments",
+          "client": 0,
+          "payload_bytes": 2754143,
+          "framed_bytes": 2754151,
+          "serialize_seconds": 0.00038972400943748653,
+          "io_seconds": 0.22573184600332752
+        },
+        {
+          "direction": "recv",
+          "stage": "17/purification_statistics/request",
+          "client": 0,
+          "payload_bytes": 328613,
+          "framed_bytes": 328621,
+          "deserialize_seconds": 6.455701077356935e-05,
+          "io_seconds": 2.8499687960138544
+        },
+        {
+          "direction": "send",
+          "stage": "17/purification_statistics",
+          "client": 0,
+          "payload_bytes": 2157,
+          "framed_bytes": 2165,
+          "serialize_seconds": 4.1552993934601545e-05,
+          "io_seconds": 0.005503936990862712
+        },
+        {
+          "direction": "recv",
+          "stage": "17/final_moments/request",
+          "client": 0,
+          "payload_bytes": 873,
+          "framed_bytes": 881,
+          "deserialize_seconds": 3.788599860854447e-05,
+          "io_seconds": 0.4005975589971058
+        },
+        {
+          "direction": "send",
+          "stage": "17/final_moments",
+          "client": 0,
+          "payload_bytes": 2754137,
+          "framed_bytes": 2754145,
+          "serialize_seconds": 0.00032698200084269047,
+          "io_seconds": 0.22573278099298477
+        },
+        {
+          "direction": "recv",
+          "stage": "17/validation_scores_labels/request",
+          "client": 0,
+          "payload_bytes": 4762186,
+          "framed_bytes": 4762194,
+          "deserialize_seconds": 0.0003932940016966313,
+          "io_seconds": 3.0419358689978253
+        },
+        {
+          "direction": "send",
+          "stage": "17/validation_scores_labels",
+          "client": 0,
+          "payload_bytes": 9935780,
+          "framed_bytes": 9935788,
+          "serialize_seconds": 0.0005216270219534636,
+          "io_seconds": 0.8011782270041294
+        },
+        {
+          "direction": "recv",
+          "stage": "17/calibration_ack/request",
+          "client": 0,
+          "payload_bytes": 1924,
+          "framed_bytes": 1932,
+          "deserialize_seconds": 3.945099888369441e-05,
+          "io_seconds": 16.716316703008488
+        },
+        {
+          "direction": "send",
+          "stage": "17/calibration_ack",
+          "client": 0,
+          "payload_bytes": 44,
+          "framed_bytes": 52,
+          "serialize_seconds": 2.348999259993434e-06,
+          "io_seconds": 0.005208359012613073
+        },
+        {
+          "direction": "recv",
+          "stage": "deploy_ack/request",
+          "client": 0,
+          "payload_bytes": 518091,
+          "framed_bytes": 518099,
+          "deserialize_seconds": 0.00010376999853178859,
+          "io_seconds": 0.15838859500945546
+        },
+        {
+          "direction": "send",
+          "stage": "deploy_ack",
+          "client": 0,
+          "payload_bytes": 36,
+          "framed_bytes": 44,
+          "serialize_seconds": 2.2370077203959227e-06,
+          "io_seconds": 0.005228776019066572
+        },
+        {
+          "direction": "recv",
+          "stage": "stop",
+          "client": 0,
+          "payload_bytes": 31,
+          "framed_bytes": 39,
+          "deserialize_seconds": 5.99399209022522e-06,
+          "io_seconds": 0.5159221880021505
+        }
+      ],
+      "pid": 13477,
+      "peak_RSS_MiB": 4210.5859375
+    },
+    {
+      "work": [
+        {
+          "stage": "full/ridge_statistics",
+          "op": "begin",
+          "phase": "full",
+          "seconds": 4.1361024719954
+        },
+        {
+          "stage": "full/entropy",
+          "op": "entropy",
+          "phase": "full",
+          "seconds": 0.000211373990168795
+        },
+        {
+          "stage": "full/preliminary_moments",
+          "op": "moments",
+          "phase": "full",
+          "seconds": 0.06005124401417561
+        },
+        {
+          "stage": "full/purification_statistics",
+          "op": "purification",
+          "phase": "full",
+          "seconds": 0.0037428679934237152
+        },
+        {
+          "stage": "full/final_moments",
+          "op": "final_moments",
+          "phase": "full",
+          "seconds": 0.04407723498297855
+        },
+        {
+          "stage": "17/ridge_statistics",
+          "op": "begin",
+          "phase": "17",
+          "seconds": 3.1358314039825927
+        },
+        {
+          "stage": "17/entropy",
+          "op": "entropy",
+          "phase": "17",
+          "seconds": 0.00022707300377078354
+        },
+        {
+          "stage": "17/preliminary_moments",
+          "op": "moments",
+          "phase": "17",
+          "seconds": 0.06577741701039486
+        },
+        {
+          "stage": "17/purification_statistics",
+          "op": "purification",
+          "phase": "17",
+          "seconds": 0.0036988810170441866
+        },
+        {
+          "stage": "17/final_moments",
+          "op": "final_moments",
+          "phase": "17",
+          "seconds": 0.04446026499499567
+        },
+        {
+          "stage": "17/validation_scores_labels",
+          "op": "validation",
+          "phase": "17",
+          "seconds": 0.4101655889826361
+        },
+        {
+          "stage": "17/calibration_ack",
+          "op": "calibration",
+          "phase": "17",
+          "seconds": 0.00010944702080450952
+        },
+        {
+          "stage": "deploy_ack",
+          "op": "deploy",
+          "phase": "",
+          "seconds": 0.00010619897511787713
+        }
+      ],
+      "wire": [
+        {
+          "direction": "send",
+          "stage": "hello",
+          "client": 1,
+          "payload_bytes": 46,
+          "framed_bytes": 54,
+          "serialize_seconds": 7.0359965320676565e-06,
+          "io_seconds": 0.00513169399346225
+        },
+        {
+          "direction": "recv",
+          "stage": "full/ridge_statistics/request",
+          "client": 1,
+          "payload_bytes": 110,
+          "framed_bytes": 118,
+          "deserialize_seconds": 8.301023626700044e-06,
+          "io_seconds": 7.091495254979236
+        },
+        {
+          "direction": "send",
+          "stage": "full/ridge_statistics",
+          "client": 1,
+          "payload_bytes": 10466857,
+          "framed_bytes": 10466865,
+          "serialize_seconds": 0.0007352950051426888,
+          "io_seconds": 0.8429426980146673
+        },
+        {
+          "direction": "recv",
+          "stage": "full/entropy/request",
+          "client": 1,
+          "payload_bytes": 94,
+          "framed_bytes": 102,
+          "deserialize_seconds": 7.735012331977487e-06,
+          "io_seconds": 0.008710975002031773
+        },
+        {
+          "direction": "send",
+          "stage": "full/entropy",
+          "client": 1,
+          "payload_bytes": 117532,
+          "framed_bytes": 117540,
+          "serialize_seconds": 0.00019105899264104664,
+          "io_seconds": 0.014897424989612773
+        },
+        {
+          "direction": "recv",
+          "stage": "full/preliminary_moments/request",
+          "client": 1,
+          "payload_bytes": 16726,
+          "framed_bytes": 16734,
+          "deserialize_seconds": 7.279400597326458e-05,
+          "io_seconds": 43.4699172959954
+        },
+        {
+          "direction": "send",
+          "stage": "full/preliminary_moments",
+          "client": 1,
+          "payload_bytes": 2754145,
+          "framed_bytes": 2754153,
+          "serialize_seconds": 0.00036905400338582695,
+          "io_seconds": 0.22577549400739372
+        },
+        {
+          "direction": "recv",
+          "stage": "full/purification_statistics/request",
+          "client": 1,
+          "payload_bytes": 328619,
+          "framed_bytes": 328627,
+          "deserialize_seconds": 6.202000076882541e-05,
+          "io_seconds": 2.6148887450108305
+        },
+        {
+          "direction": "send",
+          "stage": "full/purification_statistics",
+          "client": 1,
+          "payload_bytes": 2159,
+          "framed_bytes": 2167,
+          "serialize_seconds": 3.030302468687296e-05,
+          "io_seconds": 0.0054083009890746325
+        },
+        {
+          "direction": "recv",
+          "stage": "full/final_moments/request",
+          "client": 1,
+          "payload_bytes": 879,
+          "framed_bytes": 887,
+          "deserialize_seconds": 3.3491989597678185e-05,
+          "io_seconds": 0.6485031240154058
+        },
+        {
+          "direction": "send",
+          "stage": "full/final_moments",
+          "client": 1,
+          "payload_bytes": 2754139,
+          "framed_bytes": 2754147,
+          "serialize_seconds": 0.00031916098669171333,
+          "io_seconds": 0.22586038601002656
+        },
+        {
+          "direction": "recv",
+          "stage": "17/ridge_statistics/request",
+          "client": 1,
+          "payload_bytes": 104,
+          "framed_bytes": 112,
+          "deserialize_seconds": 1.0482996003702283e-05,
+          "io_seconds": 7.717406443000073
+        },
+        {
+          "direction": "send",
+          "stage": "17/ridge_statistics",
+          "client": 1,
+          "payload_bytes": 10466855,
+          "framed_bytes": 10466863,
+          "serialize_seconds": 0.0007353109831456095,
+          "io_seconds": 0.8429331229999661
+        },
+        {
+          "direction": "recv",
+          "stage": "17/entropy/request",
+          "client": 1,
+          "payload_bytes": 88,
+          "framed_bytes": 96,
+          "deserialize_seconds": 8.656003046780825e-06,
+          "io_seconds": 0.00854365699342452
+        },
+        {
+          "direction": "send",
+          "stage": "17/entropy",
+          "client": 1,
+          "payload_bytes": 112090,
+          "framed_bytes": 112098,
+          "serialize_seconds": 0.00018744298722594976,
+          "io_seconds": 0.014390064985491335
+        },
+        {
+          "direction": "recv",
+          "stage": "17/preliminary_moments/request",
+          "client": 1,
+          "payload_bytes": 16994,
+          "framed_bytes": 17002,
+          "deserialize_seconds": 5.9193000197410583e-05,
+          "io_seconds": 36.19514611500199
+        },
+        {
+          "direction": "send",
+          "stage": "17/preliminary_moments",
+          "client": 1,
+          "payload_bytes": 2754143,
+          "framed_bytes": 2754151,
+          "serialize_seconds": 0.0005371180013753474,
+          "io_seconds": 0.22575500298989937
+        },
+        {
+          "direction": "recv",
+          "stage": "17/purification_statistics/request",
+          "client": 1,
+          "payload_bytes": 328613,
+          "framed_bytes": 328621,
+          "deserialize_seconds": 5.403498653322458e-05,
+          "io_seconds": 2.6014435450197197
+        },
+        {
+          "direction": "send",
+          "stage": "17/purification_statistics",
+          "client": 1,
+          "payload_bytes": 2157,
+          "framed_bytes": 2165,
+          "serialize_seconds": 2.9880990041419864e-05,
+          "io_seconds": 0.005307195999193937
+        },
+        {
+          "direction": "recv",
+          "stage": "17/final_moments/request",
+          "client": 1,
+          "payload_bytes": 873,
+          "framed_bytes": 881,
+          "deserialize_seconds": 3.861699951812625e-05,
+          "io_seconds": 0.6427843850106001
+        },
+        {
+          "direction": "send",
+          "stage": "17/final_moments",
+          "client": 1,
+          "payload_bytes": 2754137,
+          "framed_bytes": 2754145,
+          "serialize_seconds": 0.0003204180102329701,
+          "io_seconds": 0.2258012589882128
+        },
+        {
+          "direction": "recv",
+          "stage": "17/validation_scores_labels/request",
+          "client": 1,
+          "payload_bytes": 4762186,
+          "framed_bytes": 4762194,
+          "deserialize_seconds": 0.0003697659994941205,
+          "io_seconds": 4.580933037010254
+        },
+        {
+          "direction": "send",
+          "stage": "17/validation_scores_labels",
+          "client": 1,
+          "payload_bytes": 6199156,
+          "framed_bytes": 6199164,
+          "serialize_seconds": 0.00033062699367292225,
+          "io_seconds": 0.5012171710259281
+        },
+        {
+          "direction": "recv",
+          "stage": "17/calibration_ack/request",
+          "client": 1,
+          "payload_bytes": 1924,
+          "framed_bytes": 1932,
+          "deserialize_seconds": 3.6080979043617845e-05,
+          "io_seconds": 15.421588830999099
+        },
+        {
+          "direction": "send",
+          "stage": "17/calibration_ack",
+          "client": 1,
+          "payload_bytes": 44,
+          "framed_bytes": 52,
+          "serialize_seconds": 3.2249954529106617e-06,
+          "io_seconds": 0.005237779987510294
+        },
+        {
+          "direction": "recv",
+          "stage": "deploy_ack/request",
+          "client": 1,
+          "payload_bytes": 518091,
+          "framed_bytes": 518099,
+          "deserialize_seconds": 8.135702228173614e-05,
+          "io_seconds": 0.20000288198934868
+        },
+        {
+          "direction": "send",
+          "stage": "deploy_ack",
+          "client": 1,
+          "payload_bytes": 36,
+          "framed_bytes": 44,
+          "serialize_seconds": 2.1180021576583385e-06,
+          "io_seconds": 0.005237603996647522
+        },
+        {
+          "direction": "recv",
+          "stage": "stop",
+          "client": 1,
+          "payload_bytes": 31,
+          "framed_bytes": 39,
+          "deserialize_seconds": 5.560985300689936e-06,
+          "io_seconds": 0.4683395719912369
+        }
+      ],
+      "pid": 13478,
+      "peak_RSS_MiB": 3165.1875
+    },
+    {
+      "work": [
+        {
+          "stage": "full/ridge_statistics",
+          "op": "begin",
+          "phase": "full",
+          "seconds": 6.909936926007504
+        },
+        {
+          "stage": "full/entropy",
+          "op": "entropy",
+          "phase": "full",
+          "seconds": 0.0002457890077494085
+        },
+        {
+          "stage": "full/preliminary_moments",
+          "op": "moments",
+          "phase": "full",
+          "seconds": 0.1184577890089713
+        },
+        {
+          "stage": "full/purification_statistics",
+          "op": "purification",
+          "phase": "full",
+          "seconds": 0.013631634006742388
+        },
+        {
+          "stage": "full/final_moments",
+          "op": "final_moments",
+          "phase": "full",
+          "seconds": 0.05427254899404943
+        },
+        {
+          "stage": "17/ridge_statistics",
+          "op": "begin",
+          "phase": "17",
+          "seconds": 5.623407531995326
+        },
+        {
+          "stage": "17/entropy",
+          "op": "entropy",
+          "phase": "17",
+          "seconds": 0.00023638899438083172
+        },
+        {
+          "stage": "17/preliminary_moments",
+          "op": "moments",
+          "phase": "17",
+          "seconds": 0.11982406899915077
+        },
+        {
+          "stage": "17/purification_statistics",
+          "op": "purification",
+          "phase": "17",
+          "seconds": 0.013879169971914962
+        },
+        {
+          "stage": "17/final_moments",
+          "op": "final_moments",
+          "phase": "17",
+          "seconds": 0.05520608299411833
+        },
+        {
+          "stage": "17/validation_scores_labels",
+          "op": "validation",
+          "phase": "17",
+          "seconds": 0.6978170460206456
+        },
+        {
+          "stage": "17/calibration_ack",
+          "op": "calibration",
+          "phase": "17",
+          "seconds": 8.938400424085557e-05
+        },
+        {
+          "stage": "deploy_ack",
+          "op": "deploy",
+          "phase": "",
+          "seconds": 9.171501733362675e-05
+        }
+      ],
+      "wire": [
+        {
+          "direction": "send",
+          "stage": "hello",
+          "client": 3,
+          "payload_bytes": 46,
+          "framed_bytes": 54,
+          "serialize_seconds": 5.443987902253866e-06,
+          "io_seconds": 0.00519889299175702
+        },
+        {
+          "direction": "recv",
+          "stage": "full/ridge_statistics/request",
+          "client": 3,
+          "payload_bytes": 110,
+          "framed_bytes": 118,
+          "deserialize_seconds": 1.463800435885787e-05,
+          "io_seconds": 17.219408824981656
+        },
+        {
+          "direction": "send",
+          "stage": "full/ridge_statistics",
+          "client": 3,
+          "payload_bytes": 10466857,
+          "framed_bytes": 10466865,
+          "serialize_seconds": 0.0007408249948639423,
+          "io_seconds": 0.8428530060045887
+        },
+        {
+          "direction": "recv",
+          "stage": "full/entropy/request",
+          "client": 3,
+          "payload_bytes": 94,
+          "framed_bytes": 102,
+          "deserialize_seconds": 8.840986993163824e-06,
+          "io_seconds": 0.008727091975742951
+        },
+        {
+          "direction": "send",
+          "stage": "full/entropy",
+          "client": 3,
+          "payload_bytes": 154907,
+          "framed_bytes": 154915,
+          "serialize_seconds": 0.0001964080147445202,
+          "io_seconds": 0.01775789397652261
+        },
+        {
+          "direction": "recv",
+          "stage": "full/preliminary_moments/request",
+          "client": 3,
+          "payload_bytes": 66301,
+          "framed_bytes": 66309,
+          "deserialize_seconds": 0.00010181398829445243,
+          "io_seconds": 31.158162433013786
+        },
+        {
+          "direction": "send",
+          "stage": "full/preliminary_moments",
+          "client": 3,
+          "payload_bytes": 2754145,
+          "framed_bytes": 2754153,
+          "serialize_seconds": 0.00037344900192692876,
+          "io_seconds": 0.2257841330138035
+        },
+        {
+          "direction": "recv",
+          "stage": "full/purification_statistics/request",
+          "client": 3,
+          "payload_bytes": 328619,
+          "framed_bytes": 328627,
+          "deserialize_seconds": 5.046202568337321e-05,
+          "io_seconds": 2.0438754240167327
+        },
+        {
+          "direction": "send",
+          "stage": "full/purification_statistics",
+          "client": 3,
+          "payload_bytes": 2159,
+          "framed_bytes": 2167,
+          "serialize_seconds": 4.429600085131824e-05,
+          "io_seconds": 0.0054290379921440035
+        },
+        {
+          "direction": "recv",
+          "stage": "full/final_moments/request",
+          "client": 3,
+          "payload_bytes": 879,
+          "framed_bytes": 887,
+          "deserialize_seconds": 3.6034994991496205e-05,
+          "io_seconds": 1.1080409070127644
+        },
+        {
+          "direction": "send",
+          "stage": "full/final_moments",
+          "client": 3,
+          "payload_bytes": 2754139,
+          "framed_bytes": 2754147,
+          "serialize_seconds": 0.0003110049874521792,
+          "io_seconds": 0.2258732320042327
+        },
+        {
+          "direction": "recv",
+          "stage": "17/ridge_statistics/request",
+          "client": 3,
+          "payload_bytes": 104,
+          "framed_bytes": 112,
+          "deserialize_seconds": 1.028200495056808e-05,
+          "io_seconds": 15.117099885013886
+        },
+        {
+          "direction": "send",
+          "stage": "17/ridge_statistics",
+          "client": 3,
+          "payload_bytes": 10466855,
+          "framed_bytes": 10466863,
+          "serialize_seconds": 0.0012031140213366598,
+          "io_seconds": 0.8456688840233255
+        },
+        {
+          "direction": "recv",
+          "stage": "17/entropy/request",
+          "client": 3,
+          "payload_bytes": 88,
+          "framed_bytes": 96,
+          "deserialize_seconds": 9.662006050348282e-06,
+          "io_seconds": 0.008668958995258436
+        },
+        {
+          "direction": "send",
+          "stage": "17/entropy",
+          "client": 3,
+          "payload_bytes": 151909,
+          "framed_bytes": 151917,
+          "serialize_seconds": 0.00019422799232415855,
+          "io_seconds": 0.017575097997905686
+        },
+        {
+          "direction": "recv",
+          "stage": "17/preliminary_moments/request",
+          "client": 3,
+          "payload_bytes": 67207,
+          "framed_bytes": 67215,
+          "deserialize_seconds": 9.297500946559012e-05,
+          "io_seconds": 26.344950156024424
+        },
+        {
+          "direction": "send",
+          "stage": "17/preliminary_moments",
+          "client": 3,
+          "payload_bytes": 2754143,
+          "framed_bytes": 2754151,
+          "serialize_seconds": 0.000413077010307461,
+          "io_seconds": 0.2258005559851881
+        },
+        {
+          "direction": "recv",
+          "stage": "17/purification_statistics/request",
+          "client": 3,
+          "payload_bytes": 328613,
+          "framed_bytes": 328621,
+          "deserialize_seconds": 5.1642011385411024e-05,
+          "io_seconds": 2.023773282999173
+        },
+        {
+          "direction": "send",
+          "stage": "17/purification_statistics",
+          "client": 3,
+          "payload_bytes": 2157,
+          "framed_bytes": 2165,
+          "serialize_seconds": 4.46150079369545e-05,
+          "io_seconds": 0.005471654993016273
+        },
+        {
+          "direction": "recv",
+          "stage": "17/final_moments/request",
+          "client": 3,
+          "payload_bytes": 873,
+          "framed_bytes": 881,
+          "deserialize_seconds": 3.36740049533546e-05,
+          "io_seconds": 1.1023677209741436
+        },
+        {
+          "direction": "send",
+          "stage": "17/final_moments",
+          "client": 3,
+          "payload_bytes": 2754137,
+          "framed_bytes": 2754145,
+          "serialize_seconds": 0.0003252199967391789,
+          "io_seconds": 0.22572948801098391
+        },
+        {
+          "direction": "recv",
+          "stage": "17/validation_scores_labels/request",
+          "client": 3,
+          "payload_bytes": 4762186,
+          "framed_bytes": 4762194,
+          "deserialize_seconds": 0.000489186990307644,
+          "io_seconds": 6.644361021986697
+        },
+        {
+          "direction": "send",
+          "stage": "17/validation_scores_labels",
+          "client": 3,
+          "payload_bytes": 10643820,
+          "framed_bytes": 10643828,
+          "serialize_seconds": 0.0005405079864431173,
+          "io_seconds": 0.8584588379890192
+        },
+        {
+          "direction": "recv",
+          "stage": "17/calibration_ack/request",
+          "client": 3,
+          "payload_bytes": 1924,
+          "framed_bytes": 1932,
+          "deserialize_seconds": 4.643099964596331e-05,
+          "io_seconds": 12.17171636101557
+        },
+        {
+          "direction": "send",
+          "stage": "17/calibration_ack",
+          "client": 3,
+          "payload_bytes": 44,
+          "framed_bytes": 52,
+          "serialize_seconds": 2.3270258679986e-06,
+          "io_seconds": 0.005195120989810675
+        },
+        {
+          "direction": "recv",
+          "stage": "deploy_ack/request",
+          "client": 3,
+          "payload_bytes": 518091,
+          "framed_bytes": 518099,
+          "deserialize_seconds": 7.92359933257103e-05,
+          "io_seconds": 0.28330225800164044
+        },
+        {
+          "direction": "send",
+          "stage": "deploy_ack",
+          "client": 3,
+          "payload_bytes": 36,
+          "framed_bytes": 44,
+          "serialize_seconds": 2.396001946181059e-06,
+          "io_seconds": 0.005261115002213046
+        },
+        {
+          "direction": "recv",
+          "stage": "stop",
+          "client": 3,
+          "payload_bytes": 31,
+          "framed_bytes": 39,
+          "deserialize_seconds": 5.972979124635458e-06,
+          "io_seconds": 0.3680292979988735
+        }
+      ],
+      "pid": 13480,
+      "peak_RSS_MiB": 4481.125
+    }
+  ],
+  "test_labels_used_for_selection": false,
+  "finished": "2026-11-03T11:18:59Z",
+  "scope": "TCP loopback cached-feature end-to-end fitting, selection, calibration and deployment; client concurrency limited to one; timings exclude feature extraction, provisioning, metric audit, and independent reference verification",
+  "peak_server_RSS_MiB": 9468.16015625,
+  "simulated_mbps": 100.0,
+  "simulated_rtt_ms": 10.0,
+  "network_scope": "application-paced TCP loopback; fixed per-message one-way delay and sender pacing; not measured WAN or OS traffic shaping",
+  "scope_mode": "search_and_refit",
+  "test_score_sha256": "f0ead69de3d705267ea9e3ff187777e1bc70333d22f348c9fe68ff5987524ce0"
+}

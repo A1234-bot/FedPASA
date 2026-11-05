@@ -1,0 +1,80 @@
+{
+  "status": "COMPLETE",
+  "mode": "fedavg",
+  "config": {
+    "optimizer": "adamw",
+    "lr": 0.1,
+    "weight_decay": 0.01
+  },
+  "seed": 37,
+  "rounds": 200,
+  "best_round": 120,
+  "best_validation_mAP": 80.22325132401382,
+  "train_seconds": 18.635111444978975,
+  "validation_seconds": 1.148139022057876,
+  "peak_cuda_MiB": 446.87158203125,
+  "uplink_bytes": 707200000,
+  "downlink_bytes": 707200000,
+  "curve": [
+    {
+      "round": 20,
+      "train_BCE": 0.04142908751964569,
+      "train_seconds": 1.2895812479837332,
+      "validation_mAP": 79.57338230228511
+    },
+    {
+      "round": 40,
+      "train_BCE": 0.04017741605639458,
+      "train_seconds": 2.938980065024225,
+      "validation_mAP": 80.01973117754986
+    },
+    {
+      "round": 60,
+      "train_BCE": 0.03972034901380539,
+      "train_seconds": 4.810905908001587,
+      "validation_mAP": 80.10983146123255
+    },
+    {
+      "round": 80,
+      "train_BCE": 0.03952110931277275,
+      "train_seconds": 7.045390116021736,
+      "validation_mAP": 80.16208786960195
+    },
+    {
+      "round": 100,
+      "train_BCE": 0.03945481404662132,
+      "train_seconds": 9.03278451404185,
+      "validation_mAP": 80.1945156650256
+    },
+    {
+      "round": 120,
+      "train_BCE": 0.039457980543375015,
+      "train_seconds": 10.86796398300794,
+      "validation_mAP": 80.22325132401382
+    },
+    {
+      "round": 140,
+      "train_BCE": 0.03940855711698532,
+      "train_seconds": 13.036321137973573,
+      "validation_mAP": 80.20459962635339
+    },
+    {
+      "round": 160,
+      "train_BCE": 0.03932502865791321,
+      "train_seconds": 15.202693753934,
+      "validation_mAP": 80.2084662060969
+    },
+    {
+      "round": 180,
+      "train_BCE": 0.03941364213824272,
+      "train_seconds": 16.82158579895622,
+      "validation_mAP": 80.20311300074508
+    },
+    {
+      "round": 200,
+      "train_BCE": 0.03942546993494034,
+      "train_seconds": 18.635111444978975,
+      "validation_mAP": 80.2074046770363
+    }
+  ]
+}

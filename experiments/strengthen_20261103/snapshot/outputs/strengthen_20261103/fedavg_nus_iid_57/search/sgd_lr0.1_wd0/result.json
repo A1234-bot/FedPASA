@@ -1,0 +1,80 @@
+{
+  "status": "COMPLETE",
+  "mode": "fedavg",
+  "config": {
+    "optimizer": "sgd",
+    "lr": 0.1,
+    "weight_decay": 0.0
+  },
+  "seed": 57,
+  "rounds": 200,
+  "best_round": 200,
+  "best_validation_mAP": 13.357664510620056,
+  "train_seconds": 19.62285083316965,
+  "validation_seconds": 2.206752141006291,
+  "peak_cuda_MiB": 804.7734375,
+  "uplink_bytes": 716688000,
+  "downlink_bytes": 716688000,
+  "curve": [
+    {
+      "round": 20,
+      "train_BCE": 0.12217288464307785,
+      "train_seconds": 2.559851774974959,
+      "validation_mAP": 5.596989604022249
+    },
+    {
+      "round": 40,
+      "train_BCE": 0.09930400550365448,
+      "train_seconds": 4.298370132019045,
+      "validation_mAP": 7.164825976146771
+    },
+    {
+      "round": 60,
+      "train_BCE": 0.09247604012489319,
+      "train_seconds": 6.037218689016299,
+      "validation_mAP": 8.257604973074532
+    },
+    {
+      "round": 80,
+      "train_BCE": 0.0892690122127533,
+      "train_seconds": 7.717350270046154,
+      "validation_mAP": 9.240594585672298
+    },
+    {
+      "round": 100,
+      "train_BCE": 0.08738259971141815,
+      "train_seconds": 9.412663834140403,
+      "validation_mAP": 10.102546215061599
+    },
+    {
+      "round": 120,
+      "train_BCE": 0.08610609173774719,
+      "train_seconds": 11.120675737067359,
+      "validation_mAP": 10.85430774074102
+    },
+    {
+      "round": 140,
+      "train_BCE": 0.08515624701976776,
+      "train_seconds": 12.803182134055533,
+      "validation_mAP": 11.53126604972642
+    },
+    {
+      "round": 160,
+      "train_BCE": 0.08439827710390091,
+      "train_seconds": 14.510175700095715,
+      "validation_mAP": 12.165949907113216
+    },
+    {
+      "round": 180,
+      "train_BCE": 0.08376239240169525,
+      "train_seconds": 16.34238239316619,
+      "validation_mAP": 12.774292228770712
+    },
+    {
+      "round": 200,
+      "train_BCE": 0.0832085832953453,
+      "train_seconds": 19.62285083316965,
+      "validation_mAP": 13.357664510620056
+    }
+  ]
+}

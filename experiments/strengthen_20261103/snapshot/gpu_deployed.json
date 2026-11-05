@@ -1,0 +1,181 @@
+{
+  "time_beijing": "2026-11-03T17:29:59+08:00",
+  "status": "RUNNING",
+  "counts": {
+    "COMPLETE": 53,
+    "RUNNING": 4,
+    "PENDING": 103
+  },
+  "parallel_limit": 4,
+  "tasks": [
+    {
+      "id": "partial_nus_0.25_77",
+      "elapsed_minutes": 2.84,
+      "processes": [
+        {
+          "pid": 3160,
+          "command": [
+            "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+            "-X",
+            "faulthandler",
+            "/root/autodl-tmp/FedPASA_strengthen_20261103/scripts/strengthen_queue.py",
+            "--job",
+            "partial_nus_0.25_77"
+          ],
+          "gpu_accuracy": "1"
+        },
+        {
+          "pid": 3168,
+          "command": [
+            "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+            "-X",
+            "faulthandler",
+            "/root/autodl-tmp/FedPASA_strengthen_20261103/scripts/strengthen_accuracy.py",
+            "--participation-inner",
+            "nus",
+            "77",
+            "0.25",
+            "/root/autodl-tmp/FedPASA_strengthen_20261103/outputs/strengthen_20261103/partial_nus_0.25_77/inner7",
+            "7"
+          ],
+          "gpu_accuracy": "1"
+        }
+      ],
+      "log_age_seconds": 3.16,
+      "log_tail": "8\nBANK client=1/1 images=46841 classes=81\nFUSION_PIAA images=128/60260\nFUSION_PIAA images=6528/60260\nFUSION_PIAA images=12928/60260\nFUSION_PIAA images=19328/60260\nFUSION_PIAA images=25728/60260\nFUSION_PIAA images=32128/60260\nFUSION_PIAA images=38528/60260\nFUSION_PIAA images=44928/60260\nFUSION_PIAA images=51328/60260\nFUSION_PIAA images=57728/60260\nFUSION_PIAA images=60260/60260\nBANK client=1/1 images=10545 classes=81\nDISK_BANK nus 1 / 5\nBANK client=1/1 images=14912 classes=81\nDISK_BANK nus 2 / 5\n"
+    },
+    {
+      "id": "partial_nus_0.5_37",
+      "elapsed_minutes": 2.57,
+      "processes": [
+        {
+          "pid": 3190,
+          "command": [
+            "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+            "-X",
+            "faulthandler",
+            "/root/autodl-tmp/FedPASA_strengthen_20261103/scripts/strengthen_queue.py",
+            "--job",
+            "partial_nus_0.5_37"
+          ],
+          "gpu_accuracy": "1"
+        },
+        {
+          "pid": 3200,
+          "command": [
+            "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+            "-X",
+            "faulthandler",
+            "/root/autodl-tmp/FedPASA_strengthen_20261103/scripts/strengthen_accuracy.py",
+            "--participation-inner",
+            "nus",
+            "37",
+            "0.5",
+            "/root/autodl-tmp/FedPASA_strengthen_20261103/outputs/strengthen_20261103/partial_nus_0.5_37/inner7",
+            "7"
+          ],
+          "gpu_accuracy": "1"
+        }
+      ],
+      "log_age_seconds": 22.72,
+      "log_tail": "K_BANK nus 4 / 10\nBANK client=1/1 images=2419 classes=80\nDISK_BANK nus 5 / 10\nBANK client=1/1 images=1992 classes=80\nDISK_BANK nus 6 / 10\nBANK client=1/1 images=5411 classes=81\nDISK_BANK nus 7 / 10\nBANK client=1/1 images=7157 classes=81\nDISK_BANK nus 8 / 10\nBANK client=1/1 images=6049 classes=81\nDISK_BANK nus 9 / 10\nBANK client=1/1 images=5404 classes=81\nDISK_BANK nus 10 / 10\nFUSION_PIAA images=128/13549\nFUSION_PIAA images=6528/13549\nFUSION_PIAA images=12928/13549\nFUSION_PIAA images=13549/13549\n"
+    },
+    {
+      "id": "partial_nus_0.5_47",
+      "elapsed_minutes": 2.3,
+      "processes": [
+        {
+          "pid": 3235,
+          "command": [
+            "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+            "-X",
+            "faulthandler",
+            "/root/autodl-tmp/FedPASA_strengthen_20261103/scripts/strengthen_queue.py",
+            "--job",
+            "partial_nus_0.5_47"
+          ],
+          "gpu_accuracy": "1"
+        },
+        {
+          "pid": 3243,
+          "command": [
+            "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+            "-X",
+            "faulthandler",
+            "/root/autodl-tmp/FedPASA_strengthen_20261103/scripts/strengthen_accuracy.py",
+            "--participation-inner",
+            "nus",
+            "47",
+            "0.5",
+            "/root/autodl-tmp/FedPASA_strengthen_20261103/outputs/strengthen_20261103/partial_nus_0.5_47/inner7",
+            "7"
+          ],
+          "gpu_accuracy": "1"
+        }
+      ],
+      "log_age_seconds": 1.18,
+      "log_tail": "=1/1 images=6575 classes=81\nDISK_BANK nus 3 / 10\nBANK client=1/1 images=2439 classes=81\nDISK_BANK nus 4 / 10\nBANK client=1/1 images=11935 classes=81\nDISK_BANK nus 5 / 10\nBANK client=1/1 images=7217 classes=81\nDISK_BANK nus 6 / 10\nBANK client=1/1 images=6015 classes=81\nDISK_BANK nus 7 / 10\nBANK client=1/1 images=5334 classes=81\nDISK_BANK nus 8 / 10\nBANK client=1/1 images=6205 classes=81\nDISK_BANK nus 9 / 10\nBANK client=1/1 images=3448 classes=81\nDISK_BANK nus 10 / 10\nFUSION_PIAA images=128/15290\n"
+    },
+    {
+      "id": "partial_nus_0.5_57",
+      "elapsed_minutes": 2.04,
+      "processes": [
+        {
+          "pid": 3298,
+          "command": [
+            "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+            "-X",
+            "faulthandler",
+            "/root/autodl-tmp/FedPASA_strengthen_20261103/scripts/strengthen_queue.py",
+            "--job",
+            "partial_nus_0.5_57"
+          ],
+          "gpu_accuracy": "1"
+        },
+        {
+          "pid": 3306,
+          "command": [
+            "/root/autodl-tmp/miniconda3/envs/fbu/bin/python",
+            "-X",
+            "faulthandler",
+            "/root/autodl-tmp/FedPASA_strengthen_20261103/scripts/strengthen_accuracy.py",
+            "--participation-inner",
+            "nus",
+            "57",
+            "0.5",
+            "/root/autodl-tmp/FedPASA_strengthen_20261103/outputs/strengthen_20261103/partial_nus_0.5_57/inner7",
+            "7"
+          ],
+          "gpu_accuracy": "1"
+        }
+      ],
+      "log_age_seconds": 3.16,
+      "log_tail": "=65039 classes=81\nFUSION_PIAA images=128/16260\nFUSION_PIAA images=6528/16260\nFUSION_PIAA images=12928/16260\nFUSION_PIAA images=16260/16260\nBANK client=1/1 images=8384 classes=81\nDISK_BANK nus 1 / 10\nBANK client=1/1 images=6817 classes=81\nDISK_BANK nus 2 / 10\nBANK client=1/1 images=5978 classes=81\nDISK_BANK nus 3 / 10\nBANK client=1/1 images=6542 classes=81\nDISK_BANK nus 4 / 10\nBANK client=1/1 images=2442 classes=81\nDISK_BANK nus 5 / 10\nBANK client=1/1 images=11959 classes=81\nDISK_BANK nus 6 / 10\n"
+    }
+  ],
+  "gpu_samples": [
+    "9 %, 13638 MiB, 32607 MiB",
+    "8 %, 13638 MiB, 32607 MiB",
+    "9 %, 13638 MiB, 32607 MiB",
+    "8 %, 13638 MiB, 32607 MiB",
+    "8 %, 13638 MiB, 32607 MiB",
+    "8 %, 13638 MiB, 32607 MiB",
+    "8 %, 13638 MiB, 32607 MiB",
+    "7 %, 13638 MiB, 32607 MiB",
+    "8 %, 13638 MiB, 32607 MiB",
+    "6 %, 13638 MiB, 32607 MiB"
+  ],
+  "cpu_quota_percent": 68.4,
+  "admission_available_GiB": 2.34,
+  "memory_events": {
+    "low": "0",
+    "high": "0",
+    "max": "645861",
+    "oom": "0",
+    "oom_kill": "0",
+    "oom_group_kill": "0",
+    "sock_throttled": "201"
+  },
+  "installed_hashes_match_validation": true,
+  "handoff_log": "WAITING_FOR_CURRENT_JOB partial_coco_0.75_47\nHANDOFF_COMPLETE 3080\n"
+}

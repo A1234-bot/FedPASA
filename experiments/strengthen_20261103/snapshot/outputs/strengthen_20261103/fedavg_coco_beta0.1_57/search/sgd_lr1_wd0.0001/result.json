@@ -1,0 +1,80 @@
+{
+  "status": "COMPLETE",
+  "mode": "fedavg",
+  "config": {
+    "optimizer": "sgd",
+    "lr": 1.0,
+    "weight_decay": 0.0001
+  },
+  "seed": 57,
+  "rounds": 200,
+  "best_round": 200,
+  "best_validation_mAP": 40.83840833515767,
+  "train_seconds": 10.1839119271026,
+  "validation_seconds": 1.1963775549374986,
+  "peak_cuda_MiB": 446.53564453125,
+  "uplink_bytes": 707200000,
+  "downlink_bytes": 707200000,
+  "curve": [
+    {
+      "round": 20,
+      "train_BCE": 0.13853733241558075,
+      "train_seconds": 1.0174057339900173,
+      "validation_mAP": 20.959313802538666
+    },
+    {
+      "round": 40,
+      "train_BCE": 0.13691255450248718,
+      "train_seconds": 2.04062112205429,
+      "validation_mAP": 30.584139776813196
+    },
+    {
+      "round": 60,
+      "train_BCE": 0.13614675402641296,
+      "train_seconds": 3.092731907061534,
+      "validation_mAP": 35.045649897855455
+    },
+    {
+      "round": 80,
+      "train_BCE": 0.13565318286418915,
+      "train_seconds": 4.100266102090245,
+      "validation_mAP": 37.35548761937555
+    },
+    {
+      "round": 100,
+      "train_BCE": 0.1353245973587036,
+      "train_seconds": 5.113203200075077,
+      "validation_mAP": 38.703782959568535
+    },
+    {
+      "round": 120,
+      "train_BCE": 0.13510610163211823,
+      "train_seconds": 6.12266296314192,
+      "validation_mAP": 39.53357416310961
+    },
+    {
+      "round": 140,
+      "train_BCE": 0.13496387004852295,
+      "train_seconds": 7.139176389173372,
+      "validation_mAP": 40.07808529446591
+    },
+    {
+      "round": 160,
+      "train_BCE": 0.13486339151859283,
+      "train_seconds": 8.152921718196012,
+      "validation_mAP": 40.43674915907946
+    },
+    {
+      "round": 180,
+      "train_BCE": 0.1347966343164444,
+      "train_seconds": 9.175511053181253,
+      "validation_mAP": 40.67526706826124
+    },
+    {
+      "round": 200,
+      "train_BCE": 0.1347525715827942,
+      "train_seconds": 10.1839119271026,
+      "validation_mAP": 40.83840833515767
+    }
+  ]
+}

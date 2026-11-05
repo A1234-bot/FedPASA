@@ -1,0 +1,43 @@
+{
+  "status": "COMPLETE",
+  "job": "partial_nus_0.5_77",
+  "compute_backend": "cuda_dense_sort_integer_gather_io_v2",
+  "rows": [
+    {
+      "key": "global_0",
+      "fit": {
+        "raw": 41472,
+        "kept": 40449,
+        "clamps": 2,
+        "logical_patch_uplink_bytes": 56877976,
+        "central_score_error": 0.012712400406599045,
+        "central_weight_error": 2048.40869140625
+      },
+      "full": {
+        "raw": 41472,
+        "kept": 41472,
+        "clamps": 0,
+        "logical_patch_uplink_bytes": 56887624,
+        "central_score_error": 1.6763806343078613e-08,
+        "central_weight_error": 3.814697265625e-06
+      },
+      "central_full_score_error": 1.9131536483764648,
+      "mAP": 60.45078387786925,
+      "patch_mAP": 50.6262409392719
+    }
+  ],
+  "ridge_mAP": 59.85771857980122,
+  "central_full_mAP": 60.4108214051171,
+  "alpha": 1e-05,
+  "central_alpha": 1e-05,
+  "participants": 10,
+  "samples": 74066,
+  "global_0_three_mAP": 60.6211360834842,
+  "central_three_mAP": 60.607510041101,
+  "ridge_three_mAP": 59.84657190158188,
+  "splits": [
+    7,
+    17,
+    27
+  ]
+}
